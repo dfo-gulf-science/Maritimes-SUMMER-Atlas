@@ -1,0 +1,7 @@
+# Discussion
+The current document is not meant to replace stock assessments, species-specific analyses of abundance, biomass and distribution, or any targeted attempts to integrate information about species or group of species from the wide and disparate sources of data about marine organisms in the area covered by the DFO Maritimes summer trawl survey. It is rather meant to provide a reproducible set of tools to extract and visualise the information collected in the DFO Maritimes summer trawl survey.
+
+It is hoped that this document can provide a stepping stone to conduct other ecological analyses using the trawl survey data.
+
+# Acknowledgements
+We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region.

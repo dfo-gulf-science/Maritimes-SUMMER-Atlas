@@ -1,0 +1,217 @@
+%%%%% Set up %%%%%
+
+% Set document style and font size
+\documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
+%% maxwidth is the original width if it is less than linewidth
+%% otherwise use linewidth (to make sure the graphics do not exceed the margin)
+\makeatletter
+\def\maxwidth{ %
+  \ifdim\Gin@nat@width>\linewidth
+    \linewidth
+  \else
+    \Gin@nat@width
+  \fi
+}
+\makeatother
+
+\definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
+\newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
+\newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
+\newcommand{\hlcom}[1]{\textcolor[rgb]{0.678,0.584,0.686}{\textit{#1}}}%
+\newcommand{\hlopt}[1]{\textcolor[rgb]{0,0,0}{#1}}%
+\newcommand{\hlstd}[1]{\textcolor[rgb]{0.345,0.345,0.345}{#1}}%
+\newcommand{\hlkwa}[1]{\textcolor[rgb]{0.161,0.373,0.58}{\textbf{#1}}}%
+\newcommand{\hlkwb}[1]{\textcolor[rgb]{0.69,0.353,0.396}{#1}}%
+\newcommand{\hlkwc}[1]{\textcolor[rgb]{0.333,0.667,0.333}{#1}}%
+\newcommand{\hlkwd}[1]{\textcolor[rgb]{0.737,0.353,0.396}{\textbf{#1}}}%
+\let\hlipl\hlkwb
+
+\usepackage{framed}
+\makeatletter
+\newenvironment{kframe}{%
+ \def\at@end@of@kframe{}%
+ \ifinner\ifhmode%
+  \def\at@end@of@kframe{\end{minipage}}%
+  \begin{minipage}{\columnwidth}%
+ \fi\fi%
+ \def\FrameCommand##1{\hskip\@totalleftmargin \hskip-\fboxsep
+ \colorbox{shadecolor}{##1}\hskip-\fboxsep
+     % There is no \\@totalrightmargin, so:
+     \hskip-\linewidth \hskip-\@totalleftmargin \hskip\columnwidth}%
+ \MakeFramed {\advance\hsize-\width
+   \@totalleftmargin\z@ \linewidth\hsize
+   \@setminipage}}%
+ {\par\unskip\endMakeFramed%
+ \at@end@of@kframe}
+\makeatother
+
+\definecolor{shadecolor}{rgb}{.97, .97, .97}
+\definecolor{messagecolor}{rgb}{0, 0, 0}
+\definecolor{warningcolor}{rgb}{1, 0, 1}
+\definecolor{errorcolor}{rgb}{1, 0, 0}
+\newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
+
+\usepackage{alltt}
+
+% File path to resources (style file etc)
+\newcommand{\locRepo}{csas-style}
+
+% Style file for DFO Technical Reports
+\usepackage{\locRepo/tech-report}
+
+% header-includes from R markdown entry
+\usepackage{float}
+\usepackage{makeidx}
+\makeindex
+
+%%%%% Variables %%%%%
+
+% New definitions: Title, year, report number, authors
+% Protect lower case words (i.e., species names) in \Addlcwords{}, in "TechReport.sty"
+\newcommand{\trTitle}{Marine Fish and Invertebrate Atlas: Summarizing Geographic Distribution and Population Indices in the Scotian Shelf and Bay of Fundy (1970-2020)}
+\newcommand{\trYear}{2021}
+\newcommand{\trReportNum}{nnn}
+% Optional
+\newcommand{\trAuthFootA}{Email: \href{mailto:Daniel.Ricard@dfo-mpo.gc.ca}{\nolinkurl{Daniel.Ricard@dfo-mpo.gc.ca}} \textbar{} telephone: (506) 851-6216}
+\newcommand{\trAuthsLong}{Daniel Ricard \textsuperscript{1} Catalina Gomez \textsuperscript{2}}
+\newcommand{\trAuthsBack}{Ricard, D. and Gomez, C.}
+
+% New definition: Address
+\newcommand{\trAddy}{\textsuperscript{1}Science Branch\\
+Gulf Region\\
+Fisheries and Oceans Canada\\
+Moncton, New Brunswick, E1C 5K4, Canada\\
+\textsuperscript{2}Science Branch\\
+Maritimes Region\\
+Fisheries and Oceans Canada\\
+Dartmouth, Nova Scotia, B2Y 4A2, Canada\\}
+
+% Abstract
+\newcommand{\trAbstract}{The summer groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy started in 1970 and was designed to measure the distribution and abundance of major commercial fish species. Over time, additional information on non-commercial species was collected, and allowed considerable insight into ecosystem function and structure, as documented in many primary publications whose analyses used the survey data. The same groundfish survey database has also been used to produce species status reports, atlases of species distribution and remains an essential source of information for stock assessments in the Maritimes Region of Fisheries and Oceans Canada. This report builds on previous work and former atlases by updating a comprehensive suite of indices to assess population status and environmental preferences of 104 species. For each species, trends in geographic distribution and biomass or abundance were plotted. The spatial extent of distribution was plotted over time to gauge how the area occupied has changed. The relationship between abundance or biomass and spatial extent reflected whether the species distribution expands when abundance or biomass increases. Length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Depth, temperature and salinity preferences were estimated to gauge the range of suitable environmental parameters for each species. Finally, for each stratum, the slope describing how local density varies with regional abundance was estimated.}
+
+% Resume (i.e., French abstract)
+\newcommand{\trResume}{Voici le résumé. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+
+\newcommand{\trISBN}{}
+
+\DeclareGraphicsExtensions{.png,.pdf}
+%%%%% Start %%%%%
+
+% Start the document
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+
+% commands and environments needed by pandoc snippets
+% extracted from the output of `pandoc -s`
+%% Make R markdown code chunks work
+\usepackage{array}
+\usepackage{amssymb,amsmath}
+\usepackage{color}
+\usepackage{fancyvrb}
+
+% From default template:
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\begin{document}
+
+%%%% Front matter %%%%%
+
+% Add the first few pages
+\frontmatter
+
+%%%%% Drafts %%%%%
+
+%\linenumbers  % Line numbers
+%\onehalfspacing  % Extra space between lines
+\renewcommand{\headrulewidth}{0.5pt}  % Header line
+\renewcommand{\footrulewidth}{0.5pt}  % footer line
+%\pagestyle{fancy}\fancyhead[c]{Draft: Do not cite or circulate}  % Header text
+
+\newcommand{\lt}{\ensuremath <}
+\newcommand{\gt}{\ensuremath >}
+
+%Defines cslreferences environment
+%Required by pandoc 2.8
+%Copied from https://github.com/rstudio/rmarkdown/issues/1649
+
+%%%%% Main document %%%%%
+\hypertarget{sec:introduction}{%
+\section{Introduction}\label{sec:introduction}}
+
+The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The groundfish survey database storing the information collected during the annual survey provides the main source of fisheries-independent information for marine species in the region. This information is routinely used to support stock assessments, to produce species status reports and has been previously used to publish atlases of species distribution.
+
+The current document is an update of an earlier report (Ricard and Shackell \protect\hyperlink{ref-Ricard:MARatlas:2013}{2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (DFO \protect\hyperlink{ref-DFO:2016}{2016}) and (FGP link TBA). The present atlas follows on the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (Bourdages and Ouellet \protect\hyperlink{ref-Bourdages:NGatlas:2012}{2012}), southern Gulf of St.~Lawrence (Benoît et al. \protect\hyperlink{ref-Benoit:etal:2003:techreport}{2003}) and on earlier work in the Scotian Shelf (Simon and Comeau \protect\hyperlink{ref-Simon:Comeau:1994}{1994}; Horsman and Shackell \protect\hyperlink{ref-Horsman:atlas:2009}{2009}).
+
+To facilitate updates and foster collaboration on the analyses of the survey data, the R computer code (R Core Team \protect\hyperlink{ref-R:2020}{2020}) necessary to extract, update and reproduce results is made available in a git repository (Ricard and Gomez \protect\hyperlink{ref-Ricard-Gomez-2021}{2021}).
+
+The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). Temporal trends are plotted by NAFO regions for several species. For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}). These slopes were then plotted against a habitat suitability index to identify important strata for each species. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (Perry and Smith \protect\hyperlink{ref-Perry:Smith:1994:cjfas}{1994}). A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example Clark and Emberley (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
+
+\hypertarget{refs}{}
+\leavevmode\hypertarget{ref-Benoit:etal:2003:techreport}{}%
+Benoît, H.P., Abgrall, M.-J., and Swain, D.P. 2003. \href{http://publications.gc.ca/site/eng/428386/publication.html}{An assessment of the general status of marine and diadromous fish species in the southern Gulf of St. Lawrence based on annual bottom trawl surveys (1971-2002)}. Can. Tech. Rep. Fish. Aquat. Sci. 2472: iv + 183 p.
+
+\leavevmode\hypertarget{ref-Bourdages:NGatlas:2012}{}%
+Bourdages, H., and Ouellet, J.-F. 2012. \href{http://publications.gc.ca/site/eng/425663/publication.html}{Geographic distribution and abundance indices of marine fish in the northern Gulf of St. Lawrence (1990-2009)}. Can. Tech. Rep. Fish. Aquat. Sci. 2963: vi + 171 p.
+
+\leavevmode\hypertarget{ref-ClarkEmberley2011}{}%
+Clark, D.W., and Emberley, J. 2011. Update of the 2010 summer scotian shelf and bay of fundy research vessel survey. Can. Tech. Rep. Fish. Aquat. Sci.: 1238: ix + 98 p.
+
+\leavevmode\hypertarget{ref-DFO:2016}{}%
+DFO. 2016. DFO maritimes research vessel trawl surveys invertebrate observations. Version 7 in obis canada digital collections. Bedford Institute of Oceanography, Dartmouth, NS, Canada, Published by OBIS, Digital 2016.
+
+\leavevmode\hypertarget{ref-Horsman:atlas:2009}{}%
+Horsman, T.L., and Shackell, N.L. 2009. \href{http://publications.gc.ca/site/eng/353896/publication.html}{Atlas of important habitat for key fish species of the Scotian Shelf, Canada}. Can. Tech. Rep. Fish. Aquat. Sci. 2835: viii + 82 p.
+
+\leavevmode\hypertarget{ref-Myers:Stokes:1989}{}%
+Myers, R.A., and Stokes, K. 1989. Density-dependent habitat utilization of groundfish and the improvement of research surveys. (D:15). International Council for the Exploration of the Sea Council Meeting.
+
+\leavevmode\hypertarget{ref-Perry:Smith:1994:cjfas}{}%
+Perry, R.I., and Smith, S.J. 1994. Identifying habitat associations of marine fishes using survey data: An application to the northwest atlantic. Canadian Journal of Fisheries and Aquatic Sciences (51(3)): 589--602.
+
+\leavevmode\hypertarget{ref-R:2020}{}%
+R Core Team. 2020. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
+
+\leavevmode\hypertarget{ref-Ricard-Gomez-2021}{}%
+Ricard, D., and Gomez, C. 2021. Population Status and Important Habitat of Fish and Invertebrates in the Scotian Shelf Bioregion. \url{https://github.com/gomezcatalina/FishInverAtlas_Ricard}; GitHub.
+
+\leavevmode\hypertarget{ref-Ricard:MARatlas:2013}{}%
+Ricard, D., and Shackell, N.L. 2013. \href{http://publications.gc.ca/site/eng/9.589947/publication.html}{Population status (abundance/biomass, geographic extent, body size and condition), important habitat, depth, temperature and salinity of marine fish and invertebrates on the Scotian Shelf and Bay of Fundy (1970-2012)}. Can. Tech. Rep. Fish. Aquat. Sci. 3012: viii + 180 p.
+
+\leavevmode\hypertarget{ref-Simon:Comeau:1994}{}%
+Simon, J.E., and Comeau, P.A. 1994. \href{http://publications.gc.ca/site/eng/46517/publication.html}{Summer distribution and abundance trends of species caught on the Scotian Shelf from 1970-92, by the research vessel groundfish survey}. Can. Tech. Rep. Fish. Aquat. Sci. 1953.
+\end{document}

@@ -1,0 +1,105 @@
+spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylum,class,order,family,scientificname
+241,Atlantic hagfish,Myxine du nord,804,I,101170,http://www.marinespecies.org/aphia.php?p=taxdetails&id=101170,Animalia,Chordata,Myxini,Myxiniformes,Myxinidae,Myxine glutinosa
+240,Sea lamprey,Lamproie marine,16,LR,101174,http://www.marinespecies.org/aphia.php?p=taxdetails&id=101174,Animalia,Chordata,Petromyzonti,Petromyzontiformes,Petromyzontidae,Petromyzon marinus
+10,Atlantic cod,Morue franche,5451,L,126436,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436,Animalia,Chordata,Actinopterygii,Gadiformes,Gadidae,Gadus morhua
+11,Haddock,Aiglefin,5827,L,126437,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437,Animalia,Chordata,Actinopterygii,Gadiformes,Gadidae,Melanogrammus aeglefinus
+12,White hake,Merluche blanche,3524,L,126504,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504,Animalia,Chordata,Actinopterygii,Gadiformes,Phycidae,Urophycis tenuis
+13,Red hake,Merluche écureuil,2195,L,126503,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503,Animalia,Chordata,Actinopterygii,Gadiformes,Phycidae,Urophycis chuss
+14,Silver hake,Merlu argenté,4936,L,158962,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962,Animalia,Chordata,Actinopterygii,Gadiformes,Merlucciidae,Merluccius bilinearis
+15,Cusk,Brosme,688,I,126447,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126447,Animalia,Chordata,Actinopterygii,Gadiformes,Lotidae,Brosme brosme
+16,Pollock,Goberge,2787,L,126441,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441,Animalia,Chordata,Actinopterygii,Gadiformes,Gadidae,Pollachius virens
+17,Atlantic tomcod,Poulamon atlantique,44,LR,158928,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158928,Animalia,Chordata,Actinopterygii,Gadiformes,Gadidae,Microgadus tomcod
+19,Offshore silver hake,Merlu argenté du large,161,LR,158748,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158748,Animalia,Chordata,Actinopterygii,Gadiformes,Merlucciidae,Merluccius albidus
+23,Atlantic redfishes,Sébastes de l'Atlantique,4152,L,126175,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Sebastes
+30,Atlantic halibut,Flétan de l'Atlantique,1634,L,127138,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Hippoglossus hippoglossus
+31,Greenland halibut,Flétan noir,736,I,127144,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127144,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Reinhardtius hippoglossoides
+40,American plaice,Plie canadienne,6023,L,127137,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Hippoglossoides platessoides
+41,Witch flounder,Plie grise,4301,L,127136,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Glyptocephalus cynoglossus
+42,Yellowtail flounder,Limande à queue jaune,3233,L,158879,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Limanda ferruginea
+43,Winter flounder,Limande-plie rouge,1632,L,158885,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Pleuronectidae,Pseudopleuronectes americanus
+44,Gulf Stream flounder,Plie du Gulf Stream,382,I,158791,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158791,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Paralichthyidae,Citharichthys arctifrons
+50,Atlantic wolffish,Loup atlantique,1572,L,126758,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758,Animalia,Chordata,Actinopterygii,Perciformes,Anarhichadidae,Anarhichas lupus
+51,Spotted wolffish,Loup tacheté,20,LR,126759,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126759,Animalia,Chordata,Actinopterygii,Perciformes,Anarhichadidae,Anarhichas minor
+52,Northern wolffish,Loup à tête large,17,LR,126757,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126757,Animalia,Chordata,Actinopterygii,Perciformes,Anarhichadidae,Anarhichas denticulatus
+60,Atlantic herring,Hareng de l'Atlantique,3487,L,126417,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417,Animalia,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Clupea harengus
+61,American shad,Alose savoureuse,468,I,158670,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158670,Animalia,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Alosa sapidissima
+62,Alewife,Gaspareau,977,I,158669,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158669,Animalia,Chordata,Actinopterygii,Clupeiformes,Clupeidae,Alosa pseudoharengus
+63,Rainbow smelt,Éperlan arc-en-ciel,59,LR,126737,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126737,Animalia,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Osmerus mordax
+64,Capelin,Capelan,540,I,126735,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126735,Animalia,Chordata,Actinopterygii,Osmeriformes,Osmeridae,Mallotus villosus
+70,Atlantic mackerel,Maquereau commun,696,I,127023,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127023,Animalia,Chordata,Actinopterygii,Perciformes,Scombridae,Scomber scombrus
+112,Longfin hake,Merluche à longues nageoires,784,I,158988,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158988,Animalia,Chordata,Actinopterygii,Gadiformes,Phycidae,Phycis chesteri
+114,Fourbeard rockling,Motelle à quatre barbillons,693,I,126450,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126450,Animalia,Chordata,Actinopterygii,Gadiformes,Lotidae,Enchelyopus cimbrius
+122,Cunner,Tanche-tautogue,82,LR,159785,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159785,Animalia,Chordata,Actinopterygii,Perciformes,Labridae,Tautogolabrus adspersus
+123,Blackbelly rosefish,Sébaste chèvre,610,I,127251,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127251,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Sebastidae,Helicolenus dactylopterus
+142,Fourspot flounder,Cardeau à quatre ocelles,76,LR,158833,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158833,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Paralichthyidae,Hippoglossina oblonga
+143,Windowpane flounder,Turbot de sable,115,LR,158907,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158907,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Scophthalmidae,Scophthalmus aquosus
+149,Longnose greeneye,Oeil-vert à long nez,45,LR,158868,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158868,Animalia,Chordata,Actinopterygii,Aulopiformes,Chlorophthalmidae,Parasudis truculenta
+150,Lanternfishes,Poissons-lanternes,160,LR,125498,http://www.marinespecies.org/aphia.php?p=taxdetails&id=125498,Animalia,Chordata,Actinopterygii,Myctophiformes,Myctophidae,Myctophidae
+156,Shortnose greeneye,Éperlan du large,78,LR,126336,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126336,Animalia,Chordata,Actinopterygii,Aulopiformes,Chlorophthalmidae,Chlorophthalmus agassizi
+158,Silvery lightfish,Brossé améthyste,52,LR,127312,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127312,Animalia,Chordata,Actinopterygii,Stomiiformes,Sternoptychidae,Maurolicus muelleri
+159,Boa dragonfish,Dragon-boa,20,LR,127374,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127374,Animalia,Chordata,Actinopterygii,Stomiiformes,Stomiidae,Stomias boa
+160,Greater argentine,Grande argentine,963,I,126715,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126715,Animalia,Chordata,Actinopterygii,Argentiniformes,Argentinidae,Argentina silus
+300,Longhorn sculpin,Chaboisseau à dix-huit épines,3292,L,159520,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Myoxocephalus octodecemspinosus
+301,Shorthorn sculpin,Chaboisseau à épines courtes,131,LR,127203,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127203,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Myoxocephalus scorpius
+303,Grubby,Chaboisseau bronzé,40,LR,159519,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159519,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Myoxocephalus aenaeus
+304,Moustache sculpin,Faux-trigle armé,1182,L,127205,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Triglops murrayi
+306,Arctic hookear sculpin,Hameçon neigeux,306,I,127195,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127195,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Artediellus uncinatus
+307,Polar sculpin,Cotte polaire,29,LR,127235,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127235,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Psychrolutidae,Cottunculus microps
+314,Spatulate sculpin,Icèle spatulée,40,LR,127200,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127200,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Icelus spatula
+320,Sea raven,Hémitriptère atlantique,2126,L,159518,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Hemitripteridae,Hemitripterus americanus
+340,Alligatorfish,Poisson-alligator atlantique,1029,L,159459,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Agonidae,Aspidophoroides monopterygius
+341,Arctic alligatorfish,Poisson-alligator arctique,13,LR,274356,http://www.marinespecies.org/aphia.php?p=taxdetails&id=274356,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Agonidae,Ulcina olrikii
+350,Atlantic poacher,Agone atlantique,266,I,127191,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127191,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Agonidae,Leptagonus decagonus
+351,Alligatorfishes,Poissons-alligator,43,LR,125588,http://www.marinespecies.org/aphia.php?p=taxdetails&id=125588,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Agonidae,Agonidae
+400,Monkfish,Baudroie d'Amérique,1970,L,159184,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184,Animalia,Chordata,Actinopterygii,Lophiiformes,Lophiidae,Lophius americanus
+410,Marlin-spike grenadier,Grenadier du Grand Banc,529,I,183289,http://www.marinespecies.org/aphia.php?p=taxdetails&id=183289,Animalia,Chordata,Actinopterygii,Gadiformes,Macrouridae,Nezumia bairdii
+412,Roughnose grenadier,Grenadier-scie,18,LR,126481,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126481,Animalia,Chordata,Actinopterygii,Gadiformes,Macrouridae,Trachyrincus murrayi
+414,Roundnose grenadier,Grenadier de roche,17,LR,158960,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158960,Animalia,Chordata,Actinopterygii,Gadiformes,Macrouridae,Coryphaenoides rupestris
+501,Lumpfish,Lompe,216,I,127214,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127214,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cyclopteridae,Cyclopterus lumpus
+502,Atlantic spiny lumpsucker,Petite poule de mer atlantique,226,I,127217,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127217,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cyclopteridae,Eumicrotremus spinosus
+503,Atlantic seasnail,Limace atlantique,34,LR,159524,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159524,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Liparidae,Liparis atlanticus
+505,Gelatinous snailfish,Limace gélatineuse,27,LR,127218,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127218,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Liparidae,Liparis fabricii
+512,Variegated snailfish,Limace marbée,41,LR,159526,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159526,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Liparidae,Liparis gibbus
+520,Sea tadpole,Petite limace de mer,18,LR,127212,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127212,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Liparidae,Careproctus reinhardti
+603,Wolf eelpout,Lycode à tête longue,40,LR,159258,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159258,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycenchelys verrillii
+604,Slender snipe eel,Avocette ruban,28,LR,126306,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126306,Animalia,Chordata,Actinopterygii,Anguilliformes,Nemichthyidae,Nemichthys scolopaceus
+610,Sand lance,Lançon,1283,I,151520,http://www.marinespecies.org/aphia.php?p=taxdetails&id=151520,Animalia,Chordata,Actinopterygii,Perciformes,Ammodytidae,Ammodytes dubius
+619,Newfoundland eelpout,Lycode du Labrador,64,LR,127117,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127117,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes terraenovae
+620,Newfoundland eelpout,Lycode du Labrador,72,LR,127107,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127107,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes lavalaei
+621,Rock gunnel,Sigouine de roche,21,LR,126996,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126996,Animalia,Chordata,Actinopterygii,Perciformes,Pholidae,Pholis gunnellus
+622,Snakeblenny,Lompénie-serpent,423,I,154675,http://www.marinespecies.org/aphia.php?p=taxdetails&id=154675,Animalia,Chordata,Actinopterygii,Perciformes,Stichaeidae,Lumpenus lampretaeformis
+623,Daubed shanny,Lompénie tachetée,443,I,127072,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127072,Animalia,Chordata,Actinopterygii,Perciformes,Stichaeidae,Leptoclinus maculatus
+625,Radiated shanny,Ulvaire deux-lignes,145,LR,159821,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159821,Animalia,Chordata,Actinopterygii,Perciformes,Stichaeidae,Ulvaria subbifurcata
+626,Fourline snakeblenny,Quatre-lignes atlantique,40,LR,159817,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159817,Animalia,Chordata,Actinopterygii,Perciformes,Stichaeidae,Eumesogrammus praecisus
+630,Wrymouth,Terrassier tacheté,120,LR,159675,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159675,Animalia,Chordata,Actinopterygii,Perciformes,Cryptacanthodidae,Cryptacanthodes maculatus
+637,Spotfin dragonet,Dragonnet tacheté,20,LR,276339,http://www.marinespecies.org/aphia.php?p=taxdetails&id=276339,Animalia,Chordata,Actinopterygii,Perciformes,Callionymidae,Foetorepus agassizii
+640,Ocean pout,Loquette d'Amérique,1478,L,159267,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Zoarces americanus
+641,Arctic eelpout,Lycode arctique,70,LR,127112,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127112,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes reticulatus
+646,Atlantic soft pout,Molasse atlantique,43,LR,127120,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127120,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Melanostigma atlanticum
+647,Vahl's eelpout,Lycode à carreaux,565,I,127118,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127118,Animalia,Chordata,Actinopterygii,Perciformes,Zoarcidae,Lycodes vahlii
+701,Atlantic butterfish,Stromaté fossette,487,I,159828,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159828,Animalia,Chordata,Actinopterygii,Perciformes,Stromateidae,Peprilus triacanthus
+704,Silvery John dory,Saint Pierre argenté,39,LR,127426,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127426,Animalia,Chordata,Actinopterygii,Zeiformes,Zeidae,Zenopsis conchifer
+712,White barracudina,Lussion blanc,196,LR,126352,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126352,Animalia,Chordata,Actinopterygii,Aulopiformes,Paralepididae,Arctozenus risso
+720,Atlantic saury,Balaou atlantique,37,LR,126392,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126392,Animalia,Chordata,Actinopterygii,Beloniformes,Scomberesocidae,Scomberesox saurus
+741,Hatchetfishes,Haches d'argent,21,LR,125603,http://www.marinespecies.org/aphia.php?p=taxdetails&id=125603,Animalia,Chordata,Actinopterygii,Stomiiformes,Sternoptychidae,Sternoptychidae
+742,Atlantic batfish,Malthe atlantique,18,LR,126558,http://www.marinespecies.org/aphia.php?p=taxdetails&id=126558,Animalia,Chordata,Actinopterygii,Lophiiformes,Ogcocephalidae,Dibranchus atlanticus
+816,Spottedfin tonguefish,Langue fil noir,24,LR,159358,http://www.marinespecies.org/aphia.php?p=taxdetails&id=159358,Animalia,Chordata,Actinopterygii,Pleuronectiformes,Cynoglossidae,Symphurus diomedeanus
+880,Atlantic hookear sculpin,Hameçon atlantique,258,I,127193,http://www.marinespecies.org/aphia.php?p=taxdetails&id=127193,Animalia,Chordata,Actinopterygii,Scorpaeniformes,Cottidae,Artediellus atlanticus
+200,Barndoor skate,Grande raie,246,I,158548,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158548,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Dipturus laevis
+201,Thorny skate,Raie épineuse,3937,L,105865,http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Amblyraja radiata
+202,Smooth skate,Raie lisse,1773,L,158554,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Malacoraja senta
+203,Little skate,Raie hérisson,712,I,158551,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158551,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja erinacea
+204,Winter skate,Raie tachetée,1180,L,158553,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja ocellata
+220,Picked dogfish,Aiguillat commun,1985,L,105923,http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923,Animalia,Chordata,Elasmobranchii,Squaliformes,Squalidae,Squalus acanthias
+221,Black dogfish,Aiguillat noir,31,LR,105906,http://www.marinespecies.org/aphia.php?p=taxdetails&id=105906,Animalia,Chordata,Elasmobranchii,Squaliformes,Etmopteridae,Centroscyllium fabricii
+4511,Northern shortfin squid,Encornet rouge nordique,4836,L,153087,http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087,Animalia,Mollusca,Cephalopoda,Oegopsida,Ommastrephidae,Illex illecebrosus
+4512,Longfin inshore squid,Calmar totam,96,LR,574541,http://www.marinespecies.org/aphia.php?p=taxdetails&id=574541,Animalia,Mollusca,Cephalopoda,Myopsida,Loliginidae,Doryteuthis pealeii
+2211,Northern prawn,Crevette nordique,718,S,107649,http://www.marinespecies.org/aphia.php?p=taxdetails&id=107649,Animalia,Arthropoda,Malacostraca,Decapoda,Pandalidae,Pandalus borealis
+2511,Jonah crab,Tourteau jona,1387,S,158056,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158056,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer borealis
+2513,Atlantic rock crab,Tourteau poïnclos,788,S,158057,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158057,Animalia,Arthropoda,Malacostraca,Decapoda,Cancridae,Cancer irroratus
+2521,Arctic lyre crab,Crabe Hyas coarctatus,711,S,107323,http://www.marinespecies.org/aphia.php?p=taxdetails&id=107323,Animalia,Arthropoda,Malacostraca,Decapoda,Oregoniidae,Hyas coarctatus
+2523,Atlantic king crab,Crabe épineux du nord,531,S,107205,http://www.marinespecies.org/aphia.php?p=taxdetails&id=107205,Animalia,Arthropoda,Malacostraca,Decapoda,Lithodidae,Lithodes maja
+2526,Queen crab,Crabe des neiges,1546,S,107315,http://www.marinespecies.org/aphia.php?p=taxdetails&id=107315,Animalia,Arthropoda,Malacostraca,Decapoda,Oregoniidae,Chionoecetes opilio
+2527,Great spider crab,Crabe lyre araignée,625,S,107322,http://www.marinespecies.org/aphia.php?p=taxdetails&id=107322,Animalia,Arthropoda,Malacostraca,Decapoda,Oregoniidae,Hyas araneus
+2532,Red deepsea crab,Crabe rouge,33,SR,158407,http://www.marinespecies.org/aphia.php?p=taxdetails&id=158407,Animalia,Arthropoda,Malacostraca,Decapoda,Geryonidae,Chaceon quinquedens
+2550,American lobster,Homard américain,1623,S,156134,http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134,Animalia,Arthropoda,Malacostraca,Decapoda,Nephropidae,Homarus americanus
