@@ -7,7 +7,7 @@ A number of changes in fishing gear type and vessels used occurred since the ons
 (ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy. 
 
 ```{r map1, fig.cap="(ref:caption-map1)"}
-knitr::include_graphics("../Mapping/annotated-map-NAFO.png")
+knitr::include_graphics("./figures/annotated-map-NAFO.png")
 ```
 
 
@@ -22,7 +22,7 @@ The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] 
 (ref:caption-map2) Map of the Summer survey strata. 
 
 ```{r map2, fig.cap="(ref:caption-map2)"}
-knitr::include_graphics("../Mapping/SUMMER-strata-map.png")
+knitr::include_graphics("./figures/SUMMER-strata-map.png")
 ```
 
 
@@ -35,7 +35,7 @@ The location of representative tows appears in Figure \@ref(fig:map3).
 (ref:caption-map3) Map of the Summer survey tows. 
 
 ```{r map3, fig.cap="(ref:caption-map3)"}
-knitr::include_graphics("../Mapping/SUMMER-tows-map.png")
+knitr::include_graphics("./figures/SUMMER-tows-map.png")
 ```
 
 
@@ -74,7 +74,7 @@ The list of taxa covered in this document is presented in phylogenetic order [@N
 
 ```{r tabspecies}
 library(tidyverse)
-spec.tab <- read.csv("../species-list-for-report-APHIA.csv", encoding = "UTF-8")
+spec.tab <- read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8")
 urls <- spec.tab$url
 sections <- paste0("#sec:",spec.tab$spec)
 

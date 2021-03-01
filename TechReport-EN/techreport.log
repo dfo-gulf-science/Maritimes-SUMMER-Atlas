@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.24)  1 MAR 2021 13:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.24)  1 MAR 2021 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1081,7 +1081,7 @@ LaTeX Info: Redefining \selectfont on input line 150.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 155.
-<tech-report-cover.pdf, id=20, 614.295pt x 794.97pt>
+<tech-report-cover.pdf, id=68, 614.295pt x 794.97pt>
 File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf>
 Package pdftex.def Info: tech-report-cover.pdf  used on input line 155.
@@ -1090,7 +1090,7 @@ File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf>
 Package pdftex.def Info: tech-report-cover.pdf  used on input line 155.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<tech-report-cover.pdf, id=23, page=1, 614.295pt x 794.97pt>
+<tech-report-cover.pdf, id=71, page=1, 614.295pt x 794.97pt>
 File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf, page 1>
 Package pdftex.def Info: tech-report-cover.pdf , page1 used on input line 155.
@@ -1119,7 +1119,7 @@ Package pdftex.def Info: tech-report-cover.pdf , page1 used on input line 155.
 
 pdfTeX warning: pdflatex.exe (file ./csas-style/pages/AquatTechInsCover.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<csas-style/pages/AquatTechInsCover.pdf, id=41, 614.295pt x 794.97pt>
+<csas-style/pages/AquatTechInsCover.pdf, id=89, 614.295pt x 794.97pt>
 File: csas-style/pages/AquatTechInsCover.pdf Graphic file (type pdf)
 <use csas-style/pages/AquatTechInsCover.pdf>
 Package pdftex.def Info: csas-style/pages/AquatTechInsCover.pdf  used on input 
@@ -1142,7 +1142,7 @@ DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./csas-style/pages/AquatTechInsCover.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<csas-style/pages/AquatTechInsCover.pdf, id=44, page=1, 614.295pt x 794.97pt>
+<csas-style/pages/AquatTechInsCover.pdf, id=92, page=1, 614.295pt x 794.97pt>
 File: csas-style/pages/AquatTechInsCover.pdf Graphic file (type pdf)
 <use csas-style/pages/AquatTechInsCover.pdf, page 1>
 Package pdftex.def Info: csas-style/pages/AquatTechInsCover.pdf , page1 used on
@@ -1248,14 +1248,237 @@ dftex.map}] [2
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 \leavevmode
-                 \hypertarget{ref-Bourdages:NGatlas:2012}{}% [1
+l.188 ...y Description}\label{survey-description}}
+                                                   [1
 
 ]
 Package marginnote Info: Using workaround for absolute page number on input lin
 e 188.
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 2
-10.
+<./figures/annotated-map-NAFO.png, id=186, 903.375pt x 903.375pt>
+File: ./figures/annotated-map-NAFO.png Graphic file (type png)
+<use ./figures/annotated-map-NAFO.png>
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
+97.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/annotated-map-NAFO.png Graphic file (type png)
+<use ./figures/annotated-map-NAFO.png>
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
+97.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/annotated-map-NAFO.png Graphic file (type png)
+<use ./figures/annotated-map-NAFO.png>
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
+97.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/annotated-map-NAFO.png Graphic file (type png)
+<use ./figures/annotated-map-NAFO.png>
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
+97.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.207 
+       [2 <./figures/annotated-map-NAFO.png>]
+<./figures/SUMMER-strata-map.png, id=199, 903.375pt x 903.375pt>
+File: ./figures/SUMMER-strata-map.png Graphic file (type png)
+<use ./figures/SUMMER-strata-map.png>
+Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
+3.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-strata-map.png Graphic file (type png)
+<use ./figures/SUMMER-strata-map.png>
+Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
+3.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-strata-map.png Graphic file (type png)
+<use ./figures/SUMMER-strata-map.png>
+Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
+3.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-strata-map.png Graphic file (type png)
+<use ./figures/SUMMER-strata-map.png>
+Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
+3.
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.222 
+       [3 <./figures/SUMMER-strata-map.png>]
+<./figures/SUMMER-tows-map.png, id=209, 903.375pt x 903.375pt>
+File: ./figures/SUMMER-tows-map.png Graphic file (type png)
+<use ./figures/SUMMER-tows-map.png>
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-tows-map.png Graphic file (type png)
+<use ./figures/SUMMER-tows-map.png>
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-tows-map.png Graphic file (type png)
+<use ./figures/SUMMER-tows-map.png>
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+File: ./figures/SUMMER-tows-map.png Graphic file (type png)
+<use ./figures/SUMMER-tows-map.png>
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+
+(pdftex.def)             Requested size: 433.62pt x 433.62886pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.240 
+       [4 <./figures/SUMMER-tows-map.png>]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 243.
+
+Overfull \hbox (4.109pt too wide) in paragraph at lines 245--245
+[]|\T1/phv/b/n/12 (-20) Category| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
+[]|\T1/phv/m/n/12 (+20) species that have more than 1000 records since 1970 and
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--250
+[]|\T1/phv/m/n/12 (+20) invertebrate species that were con-sis-tently sam-pled 
+only
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+[]|\T1/phv/m/n/12 (+20) species with less than 200 catch records over the du-ra
+-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--254
+\T1/phv/m/n/12 (+20) the sur-vey and that have been con-sis-tently iden-ti-fied
+ since
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--256
+[]|\T1/phv/m/n/12 (+20) species with less than 200 catch records and that were
+ []
+
+
+Overfull \hbox (36.79997pt too wide) in paragraph at lines 243--258
+[][] 
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.266 \begin{landscape}
+                        [5]
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]\T1/phv/m/n/10.95 (+20) Table 2. |[]List of species in-cluded in the At-las. 
+The species re-ported here are listed in phy-lo-ge-netic or-der as per Page L. 
+M. et al.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/phv/m/n/10.95 (+20) ([][]2013[][]). For each tax-o-nomic or-der and class, 
+each species is listed in the ta-ble, its tax-o-nomic fam-ily and sci-en-tific 
+name is pro-vided,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/phv/m/n/10.95 (+20) along with its French and En-glish com-mon names, the s
+pecies code used in the sur-vey database, its Aphi-aID and a link to the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+\T1/phv/m/n/10.95 (+20) World Reg-istry of Ma-rine Species, its num-ber of catc
+h records in the sur-vey database and its clas-si-fi-ca-tion cat-e-gory as de-f
+ined in
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 267--272
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 272--277
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 277--279
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 279--281
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 285.
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 281--322
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 322--361
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+
+Overfull \hbox (6.73892pt too wide) in alignment at lines 361--402
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[6
+
+]
+Overfull \hbox (6.73892pt too wide) in alignment at lines 402--441
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[7]
+Overfull \hbox (6.73892pt too wide) in alignment at lines 441--481
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[8]
+Overfull \hbox (6.73892pt too wide) in alignment at lines 481--522
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[9]
+Overfull \hbox (6.73892pt too wide) in alignment at lines 522--561
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[10]
+Overfull \hbox (6.73892pt too wide) in alignment at lines 561--575
+ [] [] [] [] [] [] [] [] [] [] 
+ []
+
+[11] [12] [13
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 642.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 6
+42.
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1263,35 +1486,364 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
+[14]
+Underfull \hbox (badness 6842) in paragraph at lines 644--646
+[][]\T1/phv/m/n/10.95 (+20) Baddeley, R., A. 2015. Spa-tial point pat-terns: Me
+thod-ol-ogy and ap-pli-ca-tions 
+ []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 644--646
+\T1/phv/m/n/10.95 (+20) with R. Chap-man; Hall/CRC Press, Lon-don [][]$\T1/lmtt
+/m/n/10.95 http : / / www . crcpress . com / 
+ []
+
+[15] [16] 
 AED: lastpage setting LastPage
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.217 \end{document}
-                     [2] (./techreport.aux)
+[17] (./techreport.aux)
 Package rerunfilecheck Info: File `techreport.out' has not changed.
-(rerunfilecheck)             Checksum: 0514C626A082C4811FBAA224294AA5B9;346.
+(rerunfilecheck)             Checksum: 59A31791D6BD048753C4551B7CBE150A;2672.
  ) 
 Here is how much of TeX's memory you used:
- 21504 strings out of 480971
- 367666 string characters out of 5906082
- 728757 words of memory out of 5000000
- 38166 multiletter control sequences out of 15000+600000
- 438544 words of font info for 114 fonts, out of 8000000 for 9000
+ 21857 strings out of 480971
+ 372300 string characters out of 5906082
+ 790567 words of memory out of 5000000
+ 38257 multiletter control sequences out of 15000+600000
+ 463954 words of font info for 179 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,17n,91p,1942b,545s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec
-.enc}{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/base/
-8r.enc}<c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/
-lm/lmtt10.pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/
-urw/helvetic/uhvb8a.pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/urw/helvetic/uhvr8a.pfb>
-Output written on techreport.pdf (9 pages, 151495 bytes).
+ 86i,17n,91p,1942b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{sec:2550} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2532} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2527} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2526} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2523} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2521} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2513} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2511} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:2211} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:4512} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:4511} has been referenced but does not exist, r
+eplaced by a fixed one
+
+pdfTeX warning (dest): name{sec:221} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:220} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:204} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:203} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:202} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:201} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:200} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:880} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:816} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:742} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:741} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:720} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:712} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:704} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:701} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:647} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:646} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:641} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:640} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:637} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:630} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:626} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:625} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:623} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:622} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:621} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:620} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:619} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:610} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:604} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:603} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:520} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:512} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:505} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:503} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:502} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:501} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:414} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:412} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:410} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:400} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:351} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:350} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:341} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:340} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:320} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:314} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:307} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:306} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:304} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:303} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:301} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:300} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:160} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:159} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:158} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:156} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:150} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:149} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:143} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:142} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:123} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:122} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:114} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:112} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:70} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:64} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:63} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:62} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:61} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:60} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:52} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:51} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:50} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:44} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:43} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:42} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:41} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:40} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:31} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:30} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:23} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:19} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:17} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:16} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:15} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:14} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:13} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:12} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:11} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:10} has been referenced but does not exist, rep
+laced by a fixed one
+
+pdfTeX warning (dest): name{sec:240} has been referenced but does not exist, re
+placed by a fixed one
+
+pdfTeX warning (dest): name{sec:241} has been referenced but does not exist, re
+placed by a fixed one
+
+{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.e
+nc}{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-m
+athsy.enc}{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/
+lm/lm-mathit.enc}{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc
+/dvips/lm/lm-rm.enc}{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/
+enc/dvips/base/8r.enc}<c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/font
+s/type1/public/lm/lmmi10.pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-di
+st/fonts/type1/public/lm/lmmi6.pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/te
+xmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/Users/RicardD/AppData/Roaming/Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/RicardD/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/Users/RicardD/AppData
+/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmtt10.pfb><c:/Users/RicardD/
+AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/User
+s/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
+b><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic
+/uhvro8a.pfb>
+Output written on techreport.pdf (24 pages, 271298 bytes).
 PDF statistics:
- 167 PDF objects out of 1000 (max. 8388607)
- 140 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 33353 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 766 PDF objects out of 1000 (max. 8388607)
+ 704 compressed objects within 8 object streams
+ 190 named destinations out of 1000 (max. 500000)
+ 62136 words of extra memory for PDF output out of 74296 (max. 10000000)
 

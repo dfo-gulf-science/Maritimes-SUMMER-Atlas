@@ -16,6 +16,7 @@ lapply(necessary, require, character.only=TRUE)
 main.path <- here::here()
 
 report.path <- file.path(main.path, "Report-generation")
+actualreport.path <- file.path(main.path, "TechReport-EN")
 figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
 figcode.path <- file.path(main.path, "Figures-code") ## where to find code for figures
 fig.path <- file.path(main.path, "Figures-actual") ## where to store figures (for report)
