@@ -177,7 +177,7 @@ The summer (July-August) groundfish research vessel survey on the Scotian Shelf 
 
 The current document is an update of an earlier report (Ricard and Shackell \protect\hyperlink{ref-Ricard:MARatlas:2013}{2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (DFO \protect\hyperlink{ref-DFO:2016}{2016}) and (FGP link TBA). The present atlas follows on the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (Bourdages and Ouellet \protect\hyperlink{ref-Bourdages:NGatlas:2012}{2012}), southern Gulf of St.~Lawrence (Benoît et al. \protect\hyperlink{ref-Benoit:etal:2003:techreport}{2003}) and on earlier work in the Scotian Shelf (Simon and Comeau \protect\hyperlink{ref-Simon:Comeau:1994}{1994}; Horsman and Shackell \protect\hyperlink{ref-Horsman:atlas:2009}{2009}).
 
-To facilitate updates and foster collaboration on the analyses of the survey data, the R computer code (R Core Team \protect\hyperlink{ref-R:2020}{2020}) necessary to extract, update and reproduce results is made available in a git repository (Ricard and Gomez \protect\hyperlink{ref-Ricard-Gomez-2021}{2021}).
+To facilitate updates and foster collaboration on the analyses of the survey data, the computer code necessary to extract the data, to perform the analyses presented herein, and to reproduce and update the current document is made available in a git repository (Ricard and Gomez \protect\hyperlink{ref-Ricard-Gomez-2021}{2021}).
 
 The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). Temporal trends are plotted by NAFO regions for several species. For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}). These slopes were then plotted against a habitat suitability index to identify important strata for each species. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (Perry and Smith \protect\hyperlink{ref-Perry:Smith:1994:cjfas}{1994}). A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example Clark and Emberley (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
 
@@ -238,21 +238,25 @@ Fish species caught during the surveys are identified by trained scientific pers
 
 By its nature as a bottom trawl, the fishing gear used in the survey catches certain species better than others. To ensure that meaningful ecological information can be extracted from catch samples, we report the catch records for the subset of species that are caught reliably by the gear. To appear in this atlas, a species must have had a minimum of 10 observations over the duration of the survey activities. While both catch abundance and weight are recorded, the weight of species that appear at low abundances is often recorded as zero in the earlier parts of the survey when scales of appropriate precision were not available.
 
-We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table~\ref{tab:taxocat}). Category ''L'', for ''long'', was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ''S'', for ''short'', was assigned to invertebrate species that were consistently sampled only since 1999 (Tremblay M. J. \protect\hyperlink{ref-Tremblayetal:2007}{2007}). Category ''I'', for ''intermediate'', was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ''LR'', for ''long rare'', and category ''SR'', for ''short rare'').
+We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table~\ref{tab:taxocat}). Category ''LF'', for ''long frequent'', was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ''LI'', for ''long intermediate'', was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ''LR'', for ''long rare''). Category ''SF'', for ''short frequent'', was assigned to invertebrate species that were consistently sampled only since 1999 (Tremblay M. J. \protect\hyperlink{ref-Tremblayetal:2007}{2007}). And category ''SR'', for ''short rare'' for invertebrate species consistently sampled only since 1999 and with less than 200 catch records
 \begin{table}
-\begin{tabular}{p{0.1\textwidth}|p{0.2\textwidth}|p{0.7\textwidth}}
+\begin{tabular}{p{0.1\textwidth}p{0.2\textwidth}p{0.7\textwidth}}
 \toprule
 \bfseries{Category} & \bfseries{Name} & \bfseries{Description} \\
 \midrule
-L & long & species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey \\
+L & \multicolumn{2}{l}{long - consistently identified since the onset of the survey in 1970}\\
 \midrule
-S & short & invertebrate species that were consistently sampled only since 1999 \\
+LF & long frequent & species that have more than 1000 catch records \\
+
+LI & long intermediate & species that had between 1000 and 200 catch records\\
+
+LR & long rare & species with less than 200 catch records\\
 \midrule
-I & intermediate & species that had between 1000 and 200 catch records \\
+S & \multicolumn{2}{l}{short - invertebrate species that were consistently sampled only since 1999}\\
 \midrule
-LR & long rare & species with less than 200 catch records over the duration of the survey and that have been consistently identified since the onset of the survey\\
-\midrule
-SR & short rare & species with less than 200 catch records and that were consistently sampled only since 1999\\
+SF & short frequent & species with more than 200 catch records \\
+
+SR & short rare & species with less than 200 catch records\\
 \bottomrule
 \end{tabular}
 \caption{Taxonomic levels}
@@ -267,12 +271,12 @@ The list of taxa covered in this document is presented in phylogenetic order (Ne
 \begin{longtable}[t]{ccc>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{}c>{}ccc}
 \caption{\label{tab:tabspecies}List of species included in the Atlas. The species reported here are listed in phylogenetic order as per Page L. M. et al. (\protect\hyperlink{ref-page:etal:7thedition}{2013}). For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section~\ref{taxo}.}\\
 \toprule
- &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Ticket class\\
+ &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Category\\
 \midrule
 \endfirsthead
 \caption*{}\\
 \toprule
- &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Ticket class\\
+ &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Category\\
 \midrule
 \endhead
 
@@ -581,7 +585,7 @@ The list of taxa covered in this document is presented in phylogenetic order (Ne
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ''valid'' (i.e.~a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software (R Core Team \protect\hyperlink{ref-R:2020}{2020}) using packages gstat (Pebesma \protect\hyperlink{ref-R:package:gstat}{2004}), PBSmapping (Schnute et al. \protect\hyperlink{ref-R:package:PBSmapping}{2019}), RODBC (Ripley and Lapsley \protect\hyperlink{ref-R:package:RODBC}{2019}), spatstat (Baddeley \protect\hyperlink{ref-R:package:spatstat}{2015}), maptools (Bivand and Lewin-Koh \protect\hyperlink{ref-R:package:maptools}{2020}), rgeos (Bivand and Rundel \protect\hyperlink{ref-R:package:rgeos}{2020}), classInt(Bivand \protect\hyperlink{ref-R:package:classInt}{2020}), RColorBrewer(Neuwirth \protect\hyperlink{ref-R:package:RColorBrewer}{2014}), MASS (Ripley et al. \protect\hyperlink{ref-R:package:MASS}{2020}), worms (Holstein \protect\hyperlink{ref-R:package:worms}{2018}), and tidyverse (Wickham \protect\hyperlink{ref-R:Tidyverse}{2019}).
+All data processing and analyses were conducted using the R software (R Core Team \protect\hyperlink{ref-R:2020}{2020}) using packages gstat (Pebesma \protect\hyperlink{ref-R:package:gstat}{2004}), PBSmapping (Schnute et al. \protect\hyperlink{ref-R:package:PBSmapping}{2019}), RODBC (Ripley and Lapsley \protect\hyperlink{ref-R:package:RODBC}{2019}), spatstat (Baddeley \protect\hyperlink{ref-R:package:spatstat}{2015}), maptools (Bivand and Lewin-Koh \protect\hyperlink{ref-R:package:maptools}{2020}), rgeos (Bivand and Rundel \protect\hyperlink{ref-R:package:rgeos}{2020}), classInt(Bivand \protect\hyperlink{ref-R:package:classInt}{2020}), RColorBrewer(Neuwirth \protect\hyperlink{ref-R:package:RColorBrewer}{2014}), MASS (Ripley et al. \protect\hyperlink{ref-R:package:MASS}{2020}), worms (Holstein \protect\hyperlink{ref-R:package:worms}{2018}), and tidyverse (Wickham \protect\hyperlink{ref-R:Tidyverse}{2019}). The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists (Anderson et al. \protect\hyperlink{ref-R:csasdown}{In press}).
 
 \hypertarget{geographic-distribution-of-catches}{%
 \subsubsection{Geographic distribution of catches}\label{geographic-distribution-of-catches}}
@@ -591,7 +595,7 @@ Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was do
 \hypertarget{abundance-and-biomass-indices}{%
 \subsubsection{Abundance and biomass indices}\label{abundance-and-biomass-indices}}
 
-For each species, stratified random estimates of catch abundance and biomass (Smith \protect\hyperlink{ref-Smith:1996}{1996}) are computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch abundance and biomass (Smith \protect\hyperlink{ref-Smith:1996}{1996}) were computed for each year. Yearly estimates of the standard error were also computed.
 
 \hypertarget{distribution-indices}{%
 \subsubsection{Distribution indices}\label{distribution-indices}}
@@ -613,7 +617,7 @@ W = \alpha L ^\beta
 \end{eqnarray*}
 where W is the total weight (g), L is the length (cm), and, \(\alpha\) and \(\beta\) are the parameters to be estimated.
 
-Average fish condition (C) is computed as:
+Average fish condition (C) was computed as:
 \begin{eqnarray*}\label{eqCondition}
 C = \frac{W}{\alpha L ^\beta}  
 \\
@@ -626,7 +630,7 @@ For each category L species, We followed the methods developed by (Perry and Smi
 \hypertarget{density-dependent-habitat-selection}{%
 \subsubsection{Density-dependent habitat selection}\label{density-dependent-habitat-selection}}
 
-We follow the methods of (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}) to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
+We followed the methods of (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}) to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
 
 For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
 \begin{eqnarray*}\label{eqHabitat Selection}
@@ -637,7 +641,17 @@ where, \(y_{h,i}\) is the average abundance of stratum \(h\) in year \(i\), and 
 
 To estimate the suitability of each stratum, the median abundance observed during the years that are in the top 25\% of yearly estimates is used. We combine the slope parameter estimates from the above model with the median abundance to identify strata that have consistently high abundance and whose local density is weakly related to fluctuation in population abundance (\(\beta_{h,i} \approx 0\)). Preferred strata are identified for each category L species.
 
+\clearpage
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\noindent \vspace{-2em} \setlength{\parindent}{-0.2in} \setlength{\leftskip}{0.2in} \setlength{\parskip}{8pt}
+
 \hypertarget{refs}{}
+\leavevmode\hypertarget{ref-R:csasdown}{}%
+Anderson, S.C., Grandin, C., Edwards, A.M., Grinnell, M.H., Ricard, D., and Haigh, R. (In press). Csasdown: Reproducible CSAS Reports with Bookdown.
+
 \leavevmode\hypertarget{ref-WoRMS}{}%
 Appeltans, W., Bouchet, P., Boxshall, G.A., De Broyer, C., Voogd, N.J. de, Gordon, D.P., Hoeksema, B.W., Horton, T., Kennedy, M., J., M., Poore, G.C.B., Read, G., Stöhr, S., Walter, T.C., and Costello, M.J. (\emph{Editors}). 2012. World register of marine species. Accessed at \url{http://www.marinespecies.org} on 2020-12-1.
 
@@ -702,7 +716,7 @@ Perry, R.I., and Smith, S.J. 1994. Identifying habitat associations of marine fi
 R Core Team. 2020. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
 
 \leavevmode\hypertarget{ref-Ricard-Gomez-2021}{}%
-Ricard, D., and Gomez, C. 2021. Population Status and Important Habitat of Fish and Invertebrates in the Scotian Shelf Bioregion. \url{https://github.com/gomezcatalina/FishInverAtlas_Ricard}; GitHub.
+Ricard, D., and Gomez, C. 2021. Maritimes-summer-atlas. \url{https://github.com/dfo-gulf-science/Maritimes-SUMMER-Atlas}; GitHub.
 
 \leavevmode\hypertarget{ref-Ricard:MARatlas:2013}{}%
 Ricard, D., and Shackell, N.L. 2013. \href{http://publications.gc.ca/site/eng/9.589947/publication.html}{Population status (abundance/biomass, geographic extent, body size and condition), important habitat, depth, temperature and salinity of marine fish and invertebrates on the Scotian Shelf and Bay of Fundy (1970-2012)}. Can. Tech. Rep. Fish. Aquat. Sci. 3012: viii + 180 p.

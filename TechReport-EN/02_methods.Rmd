@@ -46,22 +46,26 @@ Fish species caught during the surveys are identified by trained scientific pers
 
 By its nature as a bottom trawl, the fishing gear used in the survey catches certain species better than others. To ensure that meaningful ecological information can be extracted from catch samples, we report the catch records for the subset of species that are caught reliably by the gear. To appear in this atlas, a species must have had a minimum of 10 observations over the duration of the survey activities. While both catch abundance and weight are recorded, the weight of species that appear at low abundances is often recorded as zero in the earlier parts of the survey when scales of appropriate precision were not available.
 
-We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table \@ref(tab:taxocat)). Category ”L”, for ”long”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”S”, for ”short”, was assigned to invertebrate species that were consistently sampled only since 1999 [@Tremblayetal:2007]. Category ”I”, for ”intermediate”, was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”, and category ”SR”, for ”short rare”).
+We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table \@ref(tab:taxocat)). Category ”LF”, for ”long frequent”, was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ”LI”, for ”long intermediate”, was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ”LR”, for ”long rare”). Category ”SF”, for ”short frequent”, was assigned to invertebrate species that were consistently sampled only since 1999 [@Tremblayetal:2007]. And category ”SR”, for ”short rare” for invertebrate species consistently sampled only since 1999 and with less than 200 catch records
 
 \begin{table}
-\begin{tabular}{p{0.1\textwidth}|p{0.2\textwidth}|p{0.7\textwidth}}
+\begin{tabular}{p{0.1\textwidth}p{0.2\textwidth}p{0.7\textwidth}}
 \toprule
 \bfseries{Category} & \bfseries{Name} & \bfseries{Description} \\
 \midrule
-L & long & species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey \\
+L & \multicolumn{2}{l}{long - consistently identified since the onset of the survey in 1970}\\
 \midrule
-S & short & invertebrate species that were consistently sampled only since 1999 \\
+LF & long frequent & species that have more than 1000 catch records \\
+
+LI & long intermediate & species that had between 1000 and 200 catch records\\
+
+LR & long rare & species with less than 200 catch records\\
 \midrule
-I & intermediate & species that had between 1000 and 200 catch records \\
+S & \multicolumn{2}{l}{short - invertebrate species that were consistently sampled only since 1999}\\
 \midrule
-LR & long rare & species with less than 200 catch records over the duration of the survey and that have been consistently identified since the onset of the survey\\
-\midrule
-SR & short rare & species with less than 200 catch records and that were consistently sampled only since 1999\\
+SF & short frequent & species with more than 200 catch records \\
+
+SR & short rare & species with less than 200 catch records\\
 \bottomrule
 \end{tabular}
 \caption{Taxonomic levels}
@@ -80,7 +84,7 @@ sections <- paste0("#sec:",spec.tab$spec)
 
 vars <- c("class","order","family","scientificname","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec", "AphiaID", "nrecords","type")
 
-knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Ticket class"), caption = "(ref:spec-fig-cap)") %>%
+knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), caption = "(ref:spec-fig-cap)") %>%
   kableExtra::landscape() %>%
   kableExtra::collapse_rows(1:3, row_group_label_position = 'stack') %>% 
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
@@ -99,7 +103,7 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt[@R:package:classInt], RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. 
+All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt[@R:package:classInt], RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
 
 ### Geographic distribution of catches
 
@@ -107,7 +111,7 @@ Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was do
 
 ### Abundance and biomass indices
 
-For each species, stratified random estimates of catch abundance and biomass [@Smith:1996] are computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch abundance and biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed.
 
 ### Distribution indices
 
@@ -116,6 +120,7 @@ For each Category L, I and S fish species, the minimum area required to account 
 ### Length frequencies
 
 The length frequency distribution of catch is tabulated for each seven-year period (1970-2009), and last ten-year period (2010-2020).
+
 
 ### Length-weight relationship and condition factor
 
@@ -128,7 +133,7 @@ W = \alpha L ^\beta
 
 where W is the total weight (g), L is the length (cm), and, $\alpha$ and $\beta$ are the parameters to be estimated. 
 
-Average fish condition (C) is computed as:
+Average fish condition (C) was computed as:
 
 \begin{eqnarray*}\label{eqCondition}
 C = \frac{W}{\alpha L ^\beta}  
@@ -141,7 +146,7 @@ For each category L species, We followed the methods developed by [@Perry:Smith:
 
 ### Density-dependent habitat selection
 
-We follow the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
+We followed the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
 
 For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
 
