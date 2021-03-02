@@ -5,7 +5,8 @@
 necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                "foreign","fields","spam","rgeos", "RODBC", 
                "xtable", "MASS", "xlsx", "raster", "rgdal",
-               "here","worms")
+               "here","worms",
+               "raster","ncdf4")
 installed <- necessary %in% installed.packages()[, 'Package']
 if (length(necessary[!installed]) >=1) install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
 
@@ -26,14 +27,16 @@ mapping.path <- file.path(main.path, "Mapping") ## mapping folder, maps of strat
 #####################################################################################################################################################  
 ## STEP 1 - GENERATE MAPS
 source(file.path(mapping.path, "annotated-NAFO-maps.R")) ## map of the region with annotations, map of NAFO areas, ...
-source(file.path(mapping.path, "SUMMER-strata-map.R")) ## map of the SUMMER strata
+source(file.path(main.path, "chan.R"))
+# chan.R edit to reflect database credentials, or alternatively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
+source(file.path(mapping.path, "SUMMER-strata-maps.R")) ## map of the SUMMER strata and map of the location of survey tows
+RODBC::odbcClose(chan)
 #####################################################################################################################################################  
 
 
 #####################################################################################################################################################  
 ## STEP 2 - DATA EXTRACTIONS
 ## open ODBC connection to Oracle database
-require(RODBC, quietly=TRUE, warn.conflicts = FALSE)
 source(file.path(main.path, "chan.R"))
 # chan.R edit to reflect database credentials, or alternatively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
 

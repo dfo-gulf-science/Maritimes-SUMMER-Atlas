@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.24)  1 MAR 2021 15:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.24)  2 MAR 2021 08:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1280,8 +1280,8 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.207 
-       [2 <./figures/annotated-map-NAFO.png>]
-<./figures/SUMMER-strata-map.png, id=202, 903.375pt x 903.375pt>
+       [2 <./figures/annotated-map-NAFO.png (PNG copy)>]
+<./figures/SUMMER-strata-map.png, id=201, 903.375pt x 903.375pt>
 File: ./figures/SUMMER-strata-map.png Graphic file (type png)
 <use ./figures/SUMMER-strata-map.png>
 Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
@@ -1308,7 +1308,7 @@ been already used, duplicate ignored
                    \relax 
 l.222 
        [3 <./figures/SUMMER-strata-map.png>]
-<./figures/SUMMER-tows-map.png, id=212, 903.375pt x 903.375pt>
+<./figures/SUMMER-tows-map.png, id=211, 903.375pt x 903.375pt>
 File: ./figures/SUMMER-tows-map.png Graphic file (type png)
 <use ./figures/SUMMER-tows-map.png>
 Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
@@ -1432,7 +1432,7 @@ Package rerunfilecheck Info: File `techreport.out' has not changed.
 Here is how much of TeX's memory you used:
  21852 strings out of 480971
  372269 string characters out of 5906082
- 790595 words of memory out of 5000000
+ 790904 words of memory out of 5000000
  38259 multiletter control sequences out of 15000+600000
  463516 words of font info for 172 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -1765,9 +1765,9 @@ AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/User
 s/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb>
-Output written on techreport.pdf (24 pages, 271664 bytes).
+Output written on techreport.pdf (24 pages, 373833 bytes).
 PDF statistics:
- 768 PDF objects out of 1000 (max. 8388607)
+ 767 PDF objects out of 1000 (max. 8388607)
  706 compressed objects within 8 object streams
  193 named destinations out of 1000 (max. 500000)
  62144 words of extra memory for PDF output out of 74296 (max. 10000000)

@@ -1,5 +1,5 @@
 ---
-title: "Marine Fish and Invertebrate Atlas: Summarizing Geographic Distribution and Population Indices in the Scotian Shelf and Bay of Fundy (1970-2020)"
+title: "Marine Fish and Invertebrate Atlas: Summarizing Geographic Distribution, Population Indices and Environmental Preferences in the Scotian Shelf and Bay of Fundy (1970-2020)"
 year: 2021
 report_number: nnn
 author: |
