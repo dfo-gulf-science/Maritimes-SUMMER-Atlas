@@ -95,4 +95,4 @@ csas_table(tows.strata.year.3,
 
 ```
 
-A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[5],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`.
+A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`.

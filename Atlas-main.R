@@ -1,6 +1,8 @@
 #--------------------------------------------------------------------------#
 ## main R script to generate the figures required in the DFO Maritimes groundfish survey atlas
 
+# load required libraries
+
 # list required libraries, and install if necessary
 necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                "foreign","fields","spam","rgeos", "RODBC", 
@@ -49,10 +51,24 @@ source(file.path(main.path, "chan.R"))
 # source the code that defines the data extraction functions
 source(file.path(main.path, "data-and-stats.R"))
 
+spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=TRUE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
+
+## test for cod
+## data.extract(4, 10)
+## figures(fig=6, spec.num=10)
+
+species.LF <- spec.list[spec.list$type=='LF',]$spec # long timeseries
+species.SF <- spec.list[spec.list$type=='SF',]$spec # short timeseries
+species.LR <- spec.list[spec.list$type=='LR',]$spec # long timeseries rare
+species.SR <- spec.list[spec.list$type=='SR',]$spec # short timeseries rare
+species.LI <- spec.list[spec.list$type=='LI',]$spec # intermediate species
+
 ## L species
-l.species.extracts <- c("")
+species.numbers <- species.LF
+l.species.extracts <- c("catch","stratified","envpref","dist","ddhs","lf","lw")
 print(paste("Starting data extracts, L species: ", Sys.time()))
-sapply(species.numbers, function(i){data.extract(extract.name=l.species.extracts, spec.num=i)})
+lapply(species.numbers, function(ss){lapply(l.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
+
 print(paste("End data extract, L species: ", Sys.time()))
 
 ## R species
