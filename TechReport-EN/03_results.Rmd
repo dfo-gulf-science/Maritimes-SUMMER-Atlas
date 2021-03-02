@@ -16,7 +16,7 @@ Location of tows with catch over the period 1970-2012 (Type LR) or the period 19
 ### Type B
 For Category L, S and I species:
 
-Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coeffcient between D75% and biomass, and its statistical significance, are also reported in the right panel.
+Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coefficient between D75% and biomass, and its statistical significance, are also reported in the right panel.
 
 ### Type C.
 Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods covered by the surveys.
@@ -36,18 +36,8 @@ There is something weird going on here, there are 2 tows with NAs for stratum, (
 
 <!-- Number of tows by stratum-year -->
 ```{r tabtowstratumyear1, results="asis"}
-## set working directories
-  main.path <- "../" ##here::here()
-  
-  report.path <- file.path(main.path, "Report-generation")
-  
-  figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
-  figcode.path <- file.path(main.path, "Figures-code") ## where to find code for figures
-  fig.path <- file.path(main.path, "Figures-actual") ## where to store figures
-  mapping.path <- file.path(main.path, "Mapping")## mapping folder for maps that won't change over time
 
-
-tows.strata.year <- read.csv(file.path(report.path, "Atlas-summary-table-tows-by-year-stratum.csv"))
+tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
 
 yrs <- 1970:1991
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
@@ -58,7 +48,7 @@ tows.strata.year.1[49,1:2] <- ""
 
 csas_table(tows.strata.year.1,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
-  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
   kableExtra::landscape() %>%
@@ -75,7 +65,7 @@ tows.strata.year.2[49,1:2] <- ""
 
 csas_table(tows.strata.year.2,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
-  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
   kableExtra::landscape() %>%
@@ -90,9 +80,12 @@ nr <- nrow(tows.strata.year.3)
 ## blank the first two columns of the last row
 tows.strata.year.3[49,1:2] <- ""
 
+## totals in the last column
+tows.strata.year.3[,ncol(tows.strata.year.3)+1] <- tows.strata.year[,ncol(tows.strata.year)]
+
 csas_table(tows.strata.year.3,
-  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
-  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)]),
+  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs),"Total"),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)], " and for the whole 1970 to 2020 period."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
   kableExtra::landscape() %>%
