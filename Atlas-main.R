@@ -54,7 +54,7 @@ source(file.path(main.path, "data-and-stats.R"))
 spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=TRUE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
 
 ## test for cod
-## data.extract(4, 10)
+## data.extract(extract.name="envpref", spec.num=10)
 ## figures(fig=6, spec.num=10)
 
 species.LF <- spec.list[spec.list$type=='LF',]$spec # long timeseries
@@ -63,13 +63,12 @@ species.LR <- spec.list[spec.list$type=='LR',]$spec # long timeseries rare
 species.SR <- spec.list[spec.list$type=='SR',]$spec # short timeseries rare
 species.LI <- spec.list[spec.list$type=='LI',]$spec # intermediate species
 
-## L species
+## LF species
 species.numbers <- species.LF
 l.species.extracts <- c("catch","stratified","envpref","dist","ddhs","lf","lw")
-print(paste("Starting data extracts, L species: ", Sys.time()))
+print(paste("Starting data extracts, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(l.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
-
-print(paste("End data extract, L species: ", Sys.time()))
+print(paste("End data extract, LF species: ", Sys.time()))
 
 ## R species
 r.species.extracts <- c("")

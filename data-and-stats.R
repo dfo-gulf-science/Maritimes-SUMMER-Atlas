@@ -20,103 +20,89 @@ data.extract <- function(extract.name, spec.num) {
   mes <- paste("Data extraction request for species code ", spec.num, " and for data ID: ", extract.name, sep="")
   print(mes)
   
-  # base path
-  path.Base1=main.path
-  path.Base2=main.path
-  # R functions path
-  path.R=file.path(path.Base1, "Data-extract")
-  # data path
-  path.Data=file.path(path.Base2,"Figures-data")
-  
-  if(!file.exists(path.Base1)) stop(paste(path.Base1, "doesn't exist!\n"))
-  if(!file.exists(path.Base2)) stop(paste(path.Base2, "doesn't exist!\n"))
-  if(!file.exists(path.R)) stop(paste(path.R, "doesn't exist!\n"))
-  if(!file.exists(path.Data)) stop(paste(path.Data, "doesn't exist!\n"))
-  
   ## switch statement to handle the different types of data extractions and statistics 
     switch(extract.name, 
            "catch" = { 	# catch abundance and biomass data
-             source(file.path(path.R, "data-extract-catch.R")) # extract the tow-level data
+             source(file.path(dataextract.path, "data-extract-catch.R")) # extract the tow-level data
              
              ## catch abundance and biomass data
              catch.df <- extract.catch.fct(spec.num)
              fn <- paste("SS",spec.num,"_catch.csv",sep="")
-             write.csv(catch.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(catch.df, file.path(figdata.path, fn), row.names=FALSE)
            },
            "envpref" = { 	#
-             source(file.path(path.R, "generate-cumul-dist.R")) # uses the tow-level data to generate the cumulative distribution of catches and environmental variables
+             source(file.path(dataextract.path, "generate-cumul-dist.R")) # uses the tow-level data to generate the cumulative distribution of catches and environmental variables
              
              ## depth distribution
              dat.fn <- paste("SS",spec.num,"_catch.csv",sep="")
-             #depth.dist.list <- generate.cumul.dist(extract.catch.fct(spec.num), "depth")
-             depth.dist.list <- generate.cumul.dist(read.csv(file.path(path.Data, dat.fn)), "depth")
+             depth.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "depth")
              depth.dist.df <- depth.dist.list[[1]]
              depth.dist.xt <- depth.dist.list[[2]]
              fn <- paste("SS",spec.num,"_depthdist.csv",sep="")
              fn.xt <- paste("SS",spec.num,"_depthdist.tex",sep="")
-             write.csv(depth.dist.df, file.path(path.Data, fn), row.names=FALSE)
-             print.xtable(xtable(depth.dist.xt), type='latex', file=file.path(path.Data, fn.xt),floating=FALSE)
+             write.csv(depth.dist.df, file.path(figdata.path, fn), row.names=FALSE)
+             print.xtable(xtable(depth.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
              ## temperature distribution
              #temperature.dist.list <- generate.cumul.dist(extract.catch.fct(spec.num), "temperature")
-             temperature.dist.list <- generate.cumul.dist(read.csv(file.path(path.Data, dat.fn)), "temperature")
+             temperature.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "temperature")
              temperature.dist.df <- temperature.dist.list[[1]]
              temperature.dist.xt <- temperature.dist.list[[2]]
              fn <- paste("SS",spec.num,"_temperaturedist.csv",sep="")
              fn.xt <- paste("SS",spec.num,"_temperaturedist.tex",sep="")
-             write.csv(temperature.dist.df, file.path(path.Data, fn), row.names=FALSE)
-             print.xtable(xtable(temperature.dist.xt), type='latex', file=file.path(path.Data, fn.xt),floating=FALSE)
+             write.csv(temperature.dist.df, file.path(figdata.path, fn), row.names=FALSE)
+             print.xtable(xtable(temperature.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
              ## salinity distribution
              #salinity.dist.list <- generate.cumul.dist(extract.catch.fct(spec.num), "salinity")
-             salinity.dist.list <- generate.cumul.dist(read.csv(file.path(path.Data, dat.fn)), "salinity")
+             salinity.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "salinity")
              salinity.dist.df <- salinity.dist.list[[1]]
              salinity.dist.xt <- salinity.dist.list[[2]]
              fn <- paste("SS",spec.num,"_salinitydist.csv",sep="")
              fn.xt <- paste("SS",spec.num,"_salinitydist.tex",sep="")
-             write.csv(salinity.dist.df, file.path(path.Data, fn), row.names=FALSE)
-             print.xtable(xtable(salinity.dist.xt), type='latex', file=file.path(path.Data, fn.xt),floating=FALSE)
+             write.csv(salinity.dist.df, file.path(figdata.path, fn), row.names=FALSE)
+             print.xtable(xtable(salinity.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
              # single xtable with all three
              fn.xt <- paste("SS",spec.num,"_alldist.tex",sep="")
              my.df<-data.frame(Freq=depth.dist.xt[,1],Depth=depth.dist.xt[,2], Temp=temperature.dist.xt[,2], Sal=salinity.dist.xt[,2])
-             print.xtable(xtable(my.df,digits=c(0,0,0,1,2)), type='latex', file=file.path(path.Data, fn.xt), include.rownames=FALSE, floating=FALSE)
+             print.xtable(xtable(my.df,digits=c(0,0,0,1,2)), type='latex', file=file.path(figdata.path, fn.xt), include.rownames=FALSE, floating=FALSE)
            },
            "dist" = { 	#
              ## distribution indices
-             source(file.path(path.R, "compute-distribution.R")) # uses the abundance tow-level data to generate yearly distribution indices
-             source(file.path(path.R, "compute-distribution-usingbiomass.R")) # uses the biomass tow-level data to generate yearly distribution indices
+             source(file.path(dataextract.path, "compute-distribution.R")) # uses the abundance tow-level data to generate yearly distribution indices
+             source(file.path(dataextract.path, "compute-distribution-usingbiomass.R")) # uses the biomass tow-level data to generate yearly distribution indices
              
              distribution.df <- distribution.fct(extract.catch.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution.csv",sep="")
-             write.csv(distribution.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
              ## distribution indices using biomass
              distribution.df <- distribution.usingbiomass.fct(extract.catch.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution-usingbiomass.csv",sep="")
-             write.csv(distribution.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "stratified" = { 	#
              ## yearly stratified random estimates of abundance and weight
-             source(file.path(path.R, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
+             source(file.path(dataextract.path, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
              
              strat.list <- stratified.fct(extract.catch.fct(spec.num), DDHS=FALSE)
              stratified.df <- strat.list[[1]]
              fn <- paste("SS",spec.num,"_stratified.csv",sep="")
-             write.csv(stratified.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(stratified.df, file.path(figdata.path, fn), row.names=FALSE)
            },
            "ddhs" = { 	#
              ## yearly stratified random estimates of abundance and weight and DDHS
              strat.list <- stratified.fct(extract.catch.fct(spec.num), DDHS=TRUE)
              stratified.df <- strat.list[[1]]
              fn <- paste("SS",spec.num,"_stratified.csv",sep="")
-             write.csv(stratified.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(stratified.df, file.path(figdata.path, fn), row.names=FALSE)
              # DDHS
              DDHS.list <- strat.list[[2]]
              DDHS.df <- data.frame(par.name=names(coef(DDHS.list[[1]])), lm1.est = as.numeric(coef(DDHS.list[[1]])), glm.poisson.est = as.numeric(coef(DDHS.list[[2]])), glm.nb.est = as.numeric(coef(DDHS.list[[3]])) )
              fn <- paste("SS",spec.num,"_DDHS.csv",sep="")
-             write.csv(DDHS.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(DDHS.df, file.path(figdata.path, fn), row.names=FALSE)
              
              
              # slope estimates and average stratum abundance
@@ -126,71 +112,71 @@ data.extract <- function(extract.name, spec.num) {
              slopes.df <- data.frame(stratum=names(DDHS.list[[4]]), mean.n=as.numeric(DDHS.list[[4]]), slope.glm.poisson = (coef(DDHS.list[[2]])[ii]), slope.glm.poisson.stderr = (summary(DDHS.list[[2]])$coefficients[,2][ii]), slope.glm.nb = (coef(DDHS.list[[3]])[ii]), strat.quan95=DDHS.list[[7]], strat.quan75=DDHS.list[[6]], strat.median.top25=DDHS.list[[8]])
              
              fn <- paste("SS",spec.num,"_DDHSslopes.csv",sep="")
-             write.csv(slopes.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(slopes.df, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "lf" = { 	#
              ## length frequencies
-             source(file.path(path.R, "length-frequency.R")) # extract length frequency information
+             source(file.path(dataextract.path, "length-frequency.R")) # extract length frequency information
              
              lf.list <- lf.fct(spec.num)
              lf.df.all <- lf.list[[1]]
              fn <- paste("SS",spec.num,"_lf.csv",sep="")
-             write.csv(lf.df.all, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lf.df.all, file.path(figdata.path, fn), row.names=FALSE)
              lf.df.4vw <- lf.list[[2]]
              fn <- paste("SS",spec.num,"_lf4vw.csv",sep="")
-             write.csv(lf.df.4vw, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lf.df.4vw, file.path(figdata.path, fn), row.names=FALSE)
              lf.df.4x <- lf.list[[3]]
              fn <- paste("SS",spec.num,"_lf4x.csv",sep="")
-             write.csv(lf.df.4x, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lf.df.4x, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "lw" = { 	#
              ## length-weight relationship
-             source(file.path(path.R, "length-weight.R")) # extract length-weight information
+             source(file.path(dataextract.path, "length-weight.R")) # extract length-weight information
              
              lw.list <- lw.fct(spec.num)
              lw.df <- lw.list[[1]]
              fn <- paste("SS",spec.num,"_lw.csv",sep="")
-             write.csv(lw.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lw.df, file.path(figdata.path, fn), row.names=FALSE)
              
              lw.df.nafo4x <- lw.list[[2]]
              fn <- paste("SS",spec.num,"_lw4x.csv",sep="")
-             write.csv(lw.df.nafo4x, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lw.df.nafo4x, file.path(figdata.path, fn), row.names=FALSE)
              
              lw.df.nafo4vw <- lw.list[[3]]
              fn <- paste("SS",spec.num,"_lw4vw.csv",sep="")
-             write.csv(lw.df.nafo4vw, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(lw.df.nafo4vw, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "catchshort" = { 	#
              ## catch abundance and biomass data from 1999 onwards, for inverts
-             source(file.path(path.R, "data-extract-catch-short.R")) # extract the tow-level data, 1999 onwards
+             source(file.path(dataextract.path, "data-extract-catch-short.R")) # extract the tow-level data, 1999 onwards
              
              catch.df <- extract.catch.short.fct(spec.num)
              fn <- paste("SS",spec.num,"_catch.csv",sep="")
-             write.csv(catch.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(catch.df, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "stratifiedshort" = { 	#
              ## yearly stratified random estimates of abundance and weight
-             source(file.path(path.R, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
+             source(file.path(dataextract.path, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
              
              strat.list <- stratified.fct(extract.catch.short.fct(spec.num), DDHS=FALSE)
              stratified.df <- strat.list[[1]]
              fn <- paste("SS",spec.num,"_stratified.csv",sep="")
-             write.csv(stratified.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(stratified.df, file.path(figdata.path, fn), row.names=FALSE)
            },
            "distshort" = { 	#
              ## distribution indices
              distribution.df <- distribution.fct(extract.catch.short.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution.csv",sep="")
-             write.csv(distribution.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
              ## distribution indices using biomass
              distribution.df <- distribution.usingbiomass.fct(extract.catch.short.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution-usingbiomass.csv",sep="")
-             write.csv(distribution.df, file.path(path.Data, fn), row.names=FALSE)
+             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            ## case not defined

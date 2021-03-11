@@ -2,7 +2,7 @@
 ## currently supports depth, bottom temperature and bottom salinity
 ##
 generate.cumul.dist <- function(catch.in, env.var) {
-# fn <- file.path(path.ATLAS, "/Data/SS10_catch.csv")
+# fn <- file.path(figdata.path, paste("SS",10,"_catch.csv",sep=""))
 # catch.in <- read.csv(fn, header=TRUE)
 
 # strata statistics
@@ -16,8 +16,7 @@ generate.cumul.dist <- function(catch.in, env.var) {
 
 # strata.stats.df <- sqlQuery(chan, qu)
 
-# write.csv(strata.stats.df, file=file.path(main.path, "Figures-Data/DFO-strata-statistics.csv"), row.names=FALSE)
-strata.stats.df <-read.csv(file=file.path(main.path, "Figures-Data/DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
+strata.stats.df <-read.csv(file=file.path(main.path, "Figures-data/DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
 
 summer.strata.stats.df <- subset(
 strata.stats.df, 
