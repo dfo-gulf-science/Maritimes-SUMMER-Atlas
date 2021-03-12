@@ -15,6 +15,6 @@ The contents of this repository are as follows:
 * folder Report-generation: R scripts to generate the files required by the Technical Report
 * TechReport-EN: a folder for the Technical Report using [csasdown](https://github.com/pbs-assess/csasdown)
 
-The repository does not included the actual data files and figures, it contains the tools necessary to replicate the Technical Report. 
+The repository does not include the actual data files and figures, it contains the tools necessary to replicate the Technical Report.
 
 You will need appropriate credentials to access the RV survey database in order to perform the data extractions.
