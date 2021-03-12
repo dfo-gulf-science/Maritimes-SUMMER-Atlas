@@ -168,6 +168,11 @@ Dartmouth, Nova Scotia, B2Y 4A2, Canada\\}
 %Defines cslreferences environment
 %Required by pandoc 2.8
 %Copied from https://github.com/rstudio/rmarkdown/issues/1649
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {}%
+  {\par}
 
 %%%%% Main document %%%%%
 \hypertarget{sec:introduction}{%
@@ -175,11 +180,11 @@ Dartmouth, Nova Scotia, B2Y 4A2, Canada\\}
 
 The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The groundfish survey database storing the information collected during the annual survey provides the main source of fisheries-independent information for marine species in the region. This information is routinely used to support stock assessments, to produce species status reports and has been previously used to publish atlases of species distribution.
 
-The current document is an update of an earlier report (Ricard and Shackell \protect\hyperlink{ref-Ricard:MARatlas:2013}{2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (DFO \protect\hyperlink{ref-DFO:2016}{2016}) and (FGP link TBA). The present atlas follows on the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (Bourdages and Ouellet \protect\hyperlink{ref-Bourdages:NGatlas:2012}{2012}), southern Gulf of St.~Lawrence (Benoît et al. \protect\hyperlink{ref-Benoit:etal:2003:techreport}{2003}) and on earlier work in the Scotian Shelf (Simon and Comeau \protect\hyperlink{ref-Simon:Comeau:1994}{1994}; Horsman and Shackell \protect\hyperlink{ref-Horsman:atlas:2009}{2009}).
+The current document is an update of an earlier report (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (\protect\hyperlink{ref-DFO:2016}{DFO 2016}) and (FGP link TBA). The present atlas follows on the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (\protect\hyperlink{ref-Bourdages:NGatlas:2012}{Bourdages and Ouellet 2012}), southern Gulf of St.~Lawrence (\protect\hyperlink{ref-Benoit:etal:2003:techreport}{Benoît et al. 2003}) and on earlier work in the Scotian Shelf (\protect\hyperlink{ref-Simon:Comeau:1994}{Simon and Comeau 1994}; \protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}).
 
-To facilitate updates and foster collaboration on the analyses of the survey data, the computer code necessary to extract the data, to perform the analyses presented herein, and to reproduce and update the current document is made available in a git repository (Ricard and Gomez \protect\hyperlink{ref-Ricard-Gomez-2021}{2021}).
+To facilitate updates and foster collaboration on the analyses of the survey data, the computer code necessary to extract the data, to perform the analyses presented herein, and to reproduce and update the current document is made available in a git repository (\protect\hyperlink{ref-Ricard-Gomez-2021}{Ricard and Gomez 2021}).
 
-The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). Temporal trends are plotted by NAFO regions for several species. For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}). These slopes were then plotted against a habitat suitability index to identify important strata for each species. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (Perry and Smith \protect\hyperlink{ref-Perry:Smith:1994:cjfas}{1994}). A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example Clark and Emberley (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
+The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). Temporal trends are plotted by NAFO regions for several species. For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (\protect\hyperlink{ref-Myers:Stokes:1989}{Myers and Stokes 1989}). These slopes were then plotted against a habitat suitability index to identify important strata for each species. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (\protect\hyperlink{ref-Perry:Smith:1994:cjfas}{Perry and Smith 1994}). A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example \protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley} (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
@@ -189,7 +194,7 @@ The survey area covers three major Northwest Atlantic Fisheries Organization (NA
 
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure~\ref{fig:map1}). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities (Clark and Emberley \protect\hyperlink{ref-ClarkEmberley2011}{2011}).
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities (\protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley 2011}).
 
 
 \begin{figure}[htb]
@@ -205,7 +210,7 @@ A number of changes in fishing gear type and vessels used occurred since the ons
 
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure~\ref{fig:map1}).
 
-The survey follows a stratified random design (Doubleday and Rivard \protect\hyperlink{ref-DoubledayRivard1981}{1981}; Lohr \protect\hyperlink{ref-Lohr1999}{1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to its surface area.
+The survey follows a stratified random design (\protect\hyperlink{ref-DoubledayRivard1981}{Doubleday and Rivard 1981}; \protect\hyperlink{ref-Lohr1999}{Lohr 1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to its surface area.
 
 
 \begin{figure}[htb]
@@ -234,11 +239,11 @@ The location of representative tows appears in Figure~\ref{fig:map3}.
 \hypertarget{taxo}{%
 \subsection{Taxonomic Levels}\label{taxo}}
 
-Fish species caught during the surveys are identified by trained scientific personnel and their scientific name is determined. An internal species code used in the relational database is reported for each species (Losier and Waite \protect\hyperlink{ref-LosierWaite1989}{1989}).
+Fish species caught during the surveys are identified by trained scientific personnel and their scientific name is determined. An internal species code used in the relational database is reported for each species (\protect\hyperlink{ref-LosierWaite1989}{Losier and Waite 1989}).
 
 By its nature as a bottom trawl, the fishing gear used in the survey catches certain species better than others. To ensure that meaningful ecological information can be extracted from catch samples, we report the catch records for the subset of species that are caught reliably by the gear. To appear in this atlas, a species must have had a minimum of 10 observations over the duration of the survey activities. While both catch abundance and weight are recorded, the weight of species that appear at low abundances is often recorded as zero in the earlier parts of the survey when scales of appropriate precision were not available.
 
-We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table~\ref{tab:taxocat}). Category ''LF'', for ''long frequent'', was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ''LI'', for ''long intermediate'', was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ''LR'', for ''long rare''). Category ''SF'', for ''short frequent'', was assigned to invertebrate species that were consistently sampled only since 1999 (Tremblay M. J. \protect\hyperlink{ref-Tremblayetal:2007}{2007}). And category ''SR'', for ''short rare'' for invertebrate species consistently sampled only since 1999 and with less than 200 catch records.
+We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table~\ref{tab:taxocat}). Category ''LF'', for ''long frequent'', was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ''LI'', for ''long intermediate'', was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ''LR'', for ''long rare''). Category ''SF'', for ''short frequent'', was assigned to invertebrate species that were consistently sampled only since 1999 (\protect\hyperlink{ref-Tremblayetal:2007}{Tremblay M. J. 2007}). And category ''SR'', for ''short rare'' for invertebrate species consistently sampled only since 1999 and with less than 200 catch records.
 \begin{table}
 \begin{tabular}{p{0.1\textwidth}p{0.2\textwidth}p{0.7\textwidth}}
 \toprule
@@ -262,14 +267,14 @@ SR & short rare & species with less than 200 catch records\\
 \caption{Taxonomic levels}
 \label{tab:taxocat}
 \end{table}
-The list of taxa covered in this document is presented in phylogenetic order (Nelson J. S. et al. \protect\hyperlink{ref-Nelsonetal:2004}{2004}) in Table~\ref{tab:tabspecies}. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table~\ref{tab:tabspecies} (Appeltans et al. \protect\hyperlink{ref-WoRMS}{2012}).
+The list of taxa covered in this document is presented in phylogenetic order (\protect\hyperlink{ref-Nelsonetal:2004}{Nelson J. S. et al. 2004}) in Table~\ref{tab:tabspecies}. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table~\ref{tab:tabspecies} (\protect\hyperlink{ref-WoRMS}{Appeltans et al. 2012}).
 
 
 
 \begingroup\fontsize{9}{11}\selectfont
 \begin{landscape}
 \begin{longtable}[t]{ccc>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{}c>{}ccc}
-\caption{\label{tab:tabspecies}List of species included in the Atlas. The species reported here are listed in phylogenetic order as per Page L. M. et al. (\protect\hyperlink{ref-page:etal:7thedition}{2013}). For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section~\ref{taxo}.}\\
+\caption{\label{tab:tabspecies}List of species included in the Atlas. The species reported here are listed in phylogenetic order as per \protect\hyperlink{ref-page:etal:7thedition}{Page L. M. et al.} (\protect\hyperlink{ref-page:etal:7thedition}{2013}). For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section~\ref{taxo}.}\\
 \toprule
  &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Category\\
 \midrule
@@ -585,22 +590,22 @@ The list of taxa covered in this document is presented in phylogenetic order (Ne
 
 The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ''valid'' (i.e.~a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
 
-All data processing and analyses were conducted using the R software (R Core Team \protect\hyperlink{ref-R:2020}{2020}) using packages gstat (Pebesma \protect\hyperlink{ref-R:package:gstat}{2004}), PBSmapping (Schnute et al. \protect\hyperlink{ref-R:package:PBSmapping}{2019}), RODBC (Ripley and Lapsley \protect\hyperlink{ref-R:package:RODBC}{2019}), spatstat (Baddeley \protect\hyperlink{ref-R:package:spatstat}{2015}), maptools (Bivand and Lewin-Koh \protect\hyperlink{ref-R:package:maptools}{2020}), rgeos (Bivand and Rundel \protect\hyperlink{ref-R:package:rgeos}{2020}), classInt(Bivand \protect\hyperlink{ref-R:package:classInt}{2020}), RColorBrewer(Neuwirth \protect\hyperlink{ref-R:package:RColorBrewer}{2014}), MASS (Ripley et al. \protect\hyperlink{ref-R:package:MASS}{2020}), worms (Holstein \protect\hyperlink{ref-R:package:worms}{2018}), and tidyverse (Wickham \protect\hyperlink{ref-R:Tidyverse}{2019}). The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists (Anderson et al. \protect\hyperlink{ref-R:csasdown}{In press}).
+All data processing and analyses were conducted using the R software (\protect\hyperlink{ref-R:2020}{R Core Team 2020}) using packages gstat (\protect\hyperlink{ref-R:package:gstat}{Pebesma 2004}), PBSmapping (\protect\hyperlink{ref-R:package:PBSmapping}{Schnute et al. 2019}), RODBC (\protect\hyperlink{ref-R:package:RODBC}{Ripley and Lapsley 2019}), spatstat (\protect\hyperlink{ref-R:package:spatstat}{Baddeley 2015}), maptools (\protect\hyperlink{ref-R:package:maptools}{Bivand and Lewin-Koh 2020}), rgeos (\protect\hyperlink{ref-R:package:rgeos}{Bivand and Rundel 2020}), classInt(\protect\hyperlink{ref-R:package:classInt}{Bivand 2020}), RColorBrewer(\protect\hyperlink{ref-R:package:RColorBrewer}{Neuwirth 2014}), MASS (\protect\hyperlink{ref-R:package:MASS}{Ripley et al. 2020}), worms (\protect\hyperlink{ref-R:package:worms}{Holstein 2018}), and tidyverse (\protect\hyperlink{ref-R:Tidyverse}{Wickham 2019}). The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists (\protect\hyperlink{ref-R:csasdown}{Anderson et al. In press}).
 
 \hypertarget{geographic-distribution-of-catches}{%
 \subsubsection{Geographic distribution of catches}\label{geographic-distribution-of-catches}}
 
-Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance, using function ''idw'' of the spatstat R package (Baddeley \protect\hyperlink{ref-R:package:spatstat}{2015}).
+Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance, using function ''idw'' of the spatstat R package (\protect\hyperlink{ref-R:package:spatstat}{Baddeley 2015}).
 
 \hypertarget{abundance-and-biomass-indices}{%
 \subsubsection{Abundance and biomass indices}\label{abundance-and-biomass-indices}}
 
-For each species, stratified random estimates of catch abundance and biomass (Smith \protect\hyperlink{ref-Smith:1996}{1996}) were computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch abundance and biomass (\protect\hyperlink{ref-Smith:1996}{Smith 1996}) were computed for each year. Yearly estimates of the standard error were also computed.
 
 \hypertarget{distribution-indices}{%
 \subsubsection{Distribution indices}\label{distribution-indices}}
 
-For each Category L, I and S fish species, the minimum area required to account for 75\% and 95\% of the total biomass or abundance were computed (D75\% and D95\%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata (Swain and Sinclair \protect\hyperlink{ref-Swain:Sinclair:1994:cjfas}{1994}; Swain and Morin \protect\hyperlink{ref-Swain:Morin:1996:cjfas}{1996}).
+For each Category L, I and S fish species, the minimum area required to account for 75\% and 95\% of the total biomass or abundance were computed (D75\% and D95\%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata (\protect\hyperlink{ref-Swain:Sinclair:1994:cjfas}{Swain and Sinclair 1994}; \protect\hyperlink{ref-Swain:Morin:1996:cjfas}{Swain and Morin 1996}).
 
 \hypertarget{length-frequencies}{%
 \subsubsection{Length frequencies}\label{length-frequencies}}
@@ -625,12 +630,12 @@ C = \frac{W}{\alpha L ^\beta}
 \hypertarget{depth-temperature-and-salinity-distribution-of-catches}{%
 \subsubsection{Depth, temperature and salinity distribution of catches}\label{depth-temperature-and-salinity-distribution-of-catches}}
 
-For each category L species, We followed the methods developed by (Perry and Smith \protect\hyperlink{ref-Perry:Smith:1994:cjfas}{1994}) and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
+For each category L species, We followed the methods developed by (\protect\hyperlink{ref-Perry:Smith:1994:cjfas}{Perry and Smith 1994}) and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
 
 \hypertarget{density-dependent-habitat-selection}{%
 \subsubsection{Density-dependent habitat selection}\label{density-dependent-habitat-selection}}
 
-We followed the methods of (Myers and Stokes \protect\hyperlink{ref-Myers:Stokes:1989}{1989}) to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
+We followed the methods of (\protect\hyperlink{ref-Myers:Stokes:1989}{Myers and Stokes 1989}) to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
 
 For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
 \begin{eqnarray*}\label{eqHabitat Selection}
@@ -700,12 +705,13 @@ There is something weird going on here, there are 2 tows with NAs for stratum, (
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{1970} & \textbf{1971} & \textbf{1972} & \textbf{1973} & \textbf{1974} & \textbf{1975} & \textbf{1976} & \textbf{1977} & \textbf{1978} & \textbf{1979} & \textbf{1980} & \textbf{1981} & \textbf{1982} & \textbf{1983} & \textbf{1984} & \textbf{1985} & \textbf{1986} & \textbf{1987} & \textbf{1988} & \textbf{1989} & \textbf{1990} & \textbf{1991}\\
 \midrule
 \endfirsthead
-\caption*{}\\
+\caption[]{\textit{Continued from previous page ...}}\\
 \toprule
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{1970} & \textbf{1971} & \textbf{1972} & \textbf{1973} & \textbf{1974} & \textbf{1975} & \textbf{1976} & \textbf{1977} & \textbf{1978} & \textbf{1979} & \textbf{1980} & \textbf{1981} & \textbf{1982} & \textbf{1983} & \textbf{1984} & \textbf{1985} & \textbf{1986} & \textbf{1987} & \textbf{1988} & \textbf{1989} & \textbf{1990} & \textbf{1991}\\
 \midrule
 \endhead
-
+\midrule
+\multicolumn{25}{r@{}}{\textit{Continued on Next Page ...}}\
 \endfoot
 \bottomrule
 \endlastfoot
@@ -770,12 +776,13 @@ There is something weird going on here, there are 2 tows with NAs for stratum, (
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{1992} & \textbf{1993} & \textbf{1994} & \textbf{1995} & \textbf{1996} & \textbf{1997} & \textbf{1998} & \textbf{1999} & \textbf{2000} & \textbf{2001} & \textbf{2002} & \textbf{2003} & \textbf{2004} & \textbf{2005} & \textbf{2006} & \textbf{2007} & \textbf{2008} & \textbf{2009} & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013}\\
 \midrule
 \endfirsthead
-\caption*{}\\
+\caption[]{\textit{Continued from previous page ...}}\\
 \toprule
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{1992} & \textbf{1993} & \textbf{1994} & \textbf{1995} & \textbf{1996} & \textbf{1997} & \textbf{1998} & \textbf{1999} & \textbf{2000} & \textbf{2001} & \textbf{2002} & \textbf{2003} & \textbf{2004} & \textbf{2005} & \textbf{2006} & \textbf{2007} & \textbf{2008} & \textbf{2009} & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013}\\
 \midrule
 \endhead
-
+\midrule
+\multicolumn{25}{r@{}}{\textit{Continued on Next Page ...}}\
 \endfoot
 \bottomrule
 \endlastfoot
@@ -840,12 +847,13 @@ There is something weird going on here, there are 2 tows with NAs for stratum, (
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{Total}\\
 \midrule
 \endfirsthead
-\caption*{}\\
+\caption[]{\textit{Continued from previous page ...}}\\
 \toprule
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{Total}\\
 \midrule
 \endhead
-
+\midrule
+\multicolumn{11}{r@{}}{\textit{Continued on Next Page ...}}\
 \endfoot
 \bottomrule
 \endlastfoot
@@ -902,7 +910,19 @@ There is something weird going on here, there are 2 tows with NAs for stratum, (
 \end{landscape}
 \endgroup{}
 
-A total of 9080 representative tows were conducted for the period spanning from 1971 to 2020.
+A total of 9080 representative tows were conducted for the period spanning from 1970 to 2020.
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+The current document is not meant to replace stock assessments, species-specific analyses of abundance, biomass and distribution, or any targeted attempts to integrate information about species or group of species from the wide and disparate sources of data about marine organisms in the area covered by the DFO Maritimes summer trawl survey. It is rather meant to provide a reproducible set of tools to extract and visualise the information collected in the DFO Maritimes summer trawl survey.
+
+It is hoped that this document can provide a stepping stone to conduct other ecological analyses using the trawl survey data.
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region.
 
 \clearpage
 
@@ -912,35 +932,36 @@ A total of 9080 representative tows were conducted for the period spanning from 
 \noindent \vspace{-2em} \setlength{\parindent}{-0.2in} \setlength{\leftskip}{0.2in} \setlength{\parskip}{8pt}
 
 \hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
 \leavevmode\hypertarget{ref-R:csasdown}{}%
-Anderson, S.C., Grandin, C., Edwards, A.M., Grinnell, M.H., Ricard, D., and Haigh, R. (In press). Csasdown: Reproducible CSAS Reports with Bookdown.
+Anderson, S.C., Grandin, C., Edwards, A.M., Grinnell, M.H., Ricard, D., and Haigh, R. (In press). Csasdown: {R}eproducible {CSAS} {R}eports with {B}ookdown.
 
 \leavevmode\hypertarget{ref-WoRMS}{}%
 Appeltans, W., Bouchet, P., Boxshall, G.A., De Broyer, C., Voogd, N.J. de, Gordon, D.P., Hoeksema, B.W., Horton, T., Kennedy, M., J., M., Poore, G.C.B., Read, G., Stöhr, S., Walter, T.C., and Costello, M.J. (\emph{Editors}). 2012. World register of marine species. Accessed at \url{http://www.marinespecies.org} on 2020-12-1.
 
 \leavevmode\hypertarget{ref-R:package:spatstat}{}%
-Baddeley, R., A. 2015. Spatial point patterns: Methodology and applications with R. Chapman; Hall/CRC Press, London \url{http://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200/}.
+Baddeley, R., A. 2015. Spatial point patterns: Methodology and applications with {R}. Chapman; Hall/CRC Press, London \url{http://www.crcpress.com/Spatial-Point-Patterns-Methodology-and-Applications-with-R/Baddeley-Rubak-Turner/9781482210200/}.
 
 \leavevmode\hypertarget{ref-Benoit:etal:2003:techreport}{}%
-Benoît, H.P., Abgrall, M.-J., and Swain, D.P. 2003. \href{http://publications.gc.ca/site/eng/428386/publication.html}{An assessment of the general status of marine and diadromous fish species in the southern Gulf of St. Lawrence based on annual bottom trawl surveys (1971-2002)}. Can. Tech. Rep. Fish. Aquat. Sci. 2472: iv + 183 p.
+Benoît, H.P., Abgrall, M.-J., and Swain, D.P. 2003. \href{http://publications.gc.ca/site/eng/428386/publication.html}{An assessment of the general status of marine and diadromous fish species in the southern {G}ulf of {S}t. {L}awrence based on annual bottom trawl surveys (1971-2002)}. Can. Tech. Rep. Fish. Aquat. Sci. 2472: iv + 183~p.
 
 \leavevmode\hypertarget{ref-R:package:classInt}{}%
-Bivand, R. 2020. ClassInt: Choose univariate class intervals. R package version 0.4-3 \url{https://CRAN.R-project.org/package=classInt}.
+Bivand, R. 2020. classInt: Choose univariate class intervals. R package version 0.4-3 \url{https://CRAN.R-project.org/package=classInt}.
 
 \leavevmode\hypertarget{ref-R:package:maptools}{}%
 Bivand, R., and Lewin-Koh, N. 2020. Maptools: Tools for handling spatial objects. R package version 1.0-2 \url{https://CRAN.R-project.org/package=maptools}.
 
 \leavevmode\hypertarget{ref-R:package:rgeos}{}%
-Bivand, R., and Rundel, C. 2020. Rgeos: Interface to geometry engine - open source ('geos'). R package version 0.5-5 \url{http://CRAN.R-project.org/package=rgeos}.
+Bivand, R., and Rundel, C. 2020. Rgeos: Interface to geometry engine - open source ('GEOS'). R package version 0.5-5 \url{http://CRAN.R-project.org/package=rgeos}.
 
 \leavevmode\hypertarget{ref-Bourdages:NGatlas:2012}{}%
-Bourdages, H., and Ouellet, J.-F. 2012. \href{http://publications.gc.ca/site/eng/425663/publication.html}{Geographic distribution and abundance indices of marine fish in the northern Gulf of St. Lawrence (1990-2009)}. Can. Tech. Rep. Fish. Aquat. Sci. 2963: vi + 171 p.
+Bourdages, H., and Ouellet, J.-F. 2012. \href{http://publications.gc.ca/site/eng/425663/publication.html}{Geographic distribution and abundance indices of marine fish in the northern {G}ulf of {S}t. {L}awrence (1990-2009)}. Can. Tech. Rep. Fish. Aquat. Sci. 2963: vi + 171~p.
 
 \leavevmode\hypertarget{ref-ClarkEmberley2011}{}%
 Clark, D.W., and Emberley, J. 2011. Update of the 2010 summer scotian shelf and bay of fundy research vessel survey. Can. Tech. Rep. Fish. Aquat. Sci.: 1238: ix + 98 p.
 
 \leavevmode\hypertarget{ref-DFO:2016}{}%
-DFO. 2016. DFO maritimes research vessel trawl surveys invertebrate observations. Version 7 in obis canada digital collections. Bedford Institute of Oceanography, Dartmouth, NS, Canada, Published by OBIS, Digital 2016.
+DFO. 2016. DFO maritimes research vessel trawl surveys invertebrate observations. Version 7 in OBIS canada digital collections. Bedford Institute of Oceanography, Dartmouth, NS, Canada, Published by OBIS, Digital 2016.
 
 \leavevmode\hypertarget{ref-DoubledayRivard1981}{}%
 Doubleday, W.G., and Rivard, D. 1981. Bottom trawl surveys. Can. Spec. Publ. Fish. Aquat. Sci: 58: 237 pp.
@@ -949,13 +970,13 @@ Doubleday, W.G., and Rivard, D. 1981. Bottom trawl surveys. Can. Spec. Publ. Fis
 Holstein, J. 2018. Worms: Retriving aphia information from world register of marine species. R package version 0.2.2 \url{https://CRAN.R-project.org/package=worms}.
 
 \leavevmode\hypertarget{ref-Horsman:atlas:2009}{}%
-Horsman, T.L., and Shackell, N.L. 2009. \href{http://publications.gc.ca/site/eng/353896/publication.html}{Atlas of important habitat for key fish species of the Scotian Shelf, Canada}. Can. Tech. Rep. Fish. Aquat. Sci. 2835: viii + 82 p.
+Horsman, T.L., and Shackell, N.L. 2009. \href{http://publications.gc.ca/site/eng/353896/publication.html}{Atlas of important habitat for key fish species of the {S}cotian {S}helf, {C}anada}. Can. Tech. Rep. Fish. Aquat. Sci. 2835: viii + 82~p.
 
 \leavevmode\hypertarget{ref-Lohr1999}{}%
 Lohr, S. 1999. Sampling: Design and analysis. Pacific Grove, CA: Brooks/Cole Publishing Company.
 
 \leavevmode\hypertarget{ref-LosierWaite1989}{}%
-Losier, R.J., and Waite, L.E. 1989. Systematic listing of scientific and/or common names of inverterbrates and marine plants and their respective codes used by marine fish division, Fisheries and Oceans, Scotia-Fundy Region. Canadian Data Report of Fisheries and Aquatic Sciences (721).
+Losier, R.J., and Waite, L.E. 1989. Systematic listing of scientific and/or common names of inverterbrates and marine plants and their respective codes used by marine fish division, {F}isheries and {O}ceans, {S}cotia-{F}undy {R}egion. Canadian Data Report of Fisheries and Aquatic Sciences (721).
 
 \leavevmode\hypertarget{ref-Myers:Stokes:1989}{}%
 Myers, R.A., and Stokes, K. 1989. Density-dependent habitat utilization of groundfish and the improvement of research surveys. (D:15). International Council for the Exploration of the Sea Council Meeting.
@@ -967,10 +988,10 @@ Nelson J. S., Crossman E. J., Espinosa-Perez H., Findley L. T., Gilbert C. R., L
 Neuwirth, E. 2014. RColorBrewer:ColorBrewer palettes. R package version 1.1-2 \url{https://CRAN.R-project.org/package=RColorBrewer}.
 
 \leavevmode\hypertarget{ref-page:etal:7thedition}{}%
-Page L. M., Espinosa-Pérez H., Findley L. T., Gilbert C. R., Lea R. N., Mandrak N. E., and M.R.L., and S., N.J. 2013. Common and scientific names of fishes from the United States, Canada, and Mexico. American Fisheries Society.
+Page L. M., Espinosa-Pérez H., Findley L. T., Gilbert C. R., Lea R. N., Mandrak N. E., and M.R.L., and S., N.J. 2013. Common and scientific names of fishes from the {U}nited {S}tates, {C}anada, and {M}exico. American Fisheries Society.
 
 \leavevmode\hypertarget{ref-R:package:gstat}{}%
-Pebesma, E. 2004. Multivariable geostatistics in S: The gstat package. \emph{In} Computers and Geosciences.
+Pebesma, E. 2004. Multivariable geostatistics in {S}: The gstat package. \emph{In} Computers and Geosciences.
 
 \leavevmode\hypertarget{ref-Perry:Smith:1994:cjfas}{}%
 Perry, R.I., and Smith, S.J. 1994. Identifying habitat associations of marine fishes using survey data: An application to the northwest atlantic. Canadian Journal of Fisheries and Aquatic Sciences (51(3)): 589--602.
@@ -979,10 +1000,10 @@ Perry, R.I., and Smith, S.J. 1994. Identifying habitat associations of marine fi
 R Core Team. 2020. R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna, Austria.
 
 \leavevmode\hypertarget{ref-Ricard-Gomez-2021}{}%
-Ricard, D., and Gomez, C. 2021. Maritimes-summer-atlas. \url{https://github.com/dfo-gulf-science/Maritimes-SUMMER-Atlas}; GitHub.
+Ricard, D., and Gomez, C. 2021. Maritimes-SUMMER-atlas. \url{https://github.com/dfo-gulf-science/Maritimes-SUMMER-Atlas}; GitHub.
 
 \leavevmode\hypertarget{ref-Ricard:MARatlas:2013}{}%
-Ricard, D., and Shackell, N.L. 2013. \href{http://publications.gc.ca/site/eng/9.589947/publication.html}{Population status (abundance/biomass, geographic extent, body size and condition), important habitat, depth, temperature and salinity of marine fish and invertebrates on the Scotian Shelf and Bay of Fundy (1970-2012)}. Can. Tech. Rep. Fish. Aquat. Sci. 3012: viii + 180 p.
+Ricard, D., and Shackell, N.L. 2013. \href{http://publications.gc.ca/site/eng/9.589947/publication.html}{Population status (abundance/biomass, geographic extent, body size and condition), important habitat, depth, temperature and salinity of marine fish and invertebrates on the {S}cotian {S}helf and {B}ay of {F}undy (1970-2012)}. Can. Tech. Rep. Fish. Aquat. Sci. 3012: viii + 180~p.
 
 \leavevmode\hypertarget{ref-R:package:RODBC}{}%
 Ripley, B., and Lapsley, M. 2019. RODBC: ODBC database access. R package version 1.3-16 \url{http://CRAN.R-project.org/package=RODBC}.
@@ -994,20 +1015,1110 @@ Ripley, B., Venables, B., Bates, D., Hornik, K., Gebhardt, A., and Firth, D. 202
 Schnute, J.T., Boers, N., and Haigh, R. 2019. PBSmapping: Mapping fisheries data and spatial analysis tools. R package version 2.72.1 \url{https://cran.r-project.org/web/packages/PBSmapping/index.html}.
 
 \leavevmode\hypertarget{ref-Simon:Comeau:1994}{}%
-Simon, J.E., and Comeau, P.A. 1994. \href{http://publications.gc.ca/site/eng/46517/publication.html}{Summer distribution and abundance trends of species caught on the Scotian Shelf from 1970-92, by the research vessel groundfish survey}. Can. Tech. Rep. Fish. Aquat. Sci. 1953.
+Simon, J.E., and Comeau, P.A. 1994. \href{http://publications.gc.ca/site/eng/46517/publication.html}{Summer distribution and abundance trends of species caught on the {S}cotian {S}helf from 1970-92, by the research vessel groundfish survey}. Can. Tech. Rep. Fish. Aquat. Sci. 1953.
 
 \leavevmode\hypertarget{ref-Smith:1996}{}%
-Smith, S.J. 1996. Assessment of groundfish stocks based on bottom trawl survey results. NAFO Scientific Council Studies 28: 25--53.
+Smith, S.J. 1996. Assessment of groundfish stocks based on bottom trawl survey results. {NAFO} Scientific Council Studies 28: 25--53.
 
 \leavevmode\hypertarget{ref-Swain:Morin:1996:cjfas}{}%
-Swain, D.P., and Morin, R. 1996. Relationships between geographic distribution and abundance of American plaice (\emph{Hippoglossoides platessoides}) in the southern Gulf of St. Lawrence. Canadian Journal of Fisheries and Aquatic Sciences 53(1): 106--119.
+Swain, D.P., and Morin, R. 1996. Relationships between geographic distribution and abundance of {A}merican plaice (\emph{{H}ippoglossoides platessoides}) in the southern {G}ulf of {S}t. {L}awrence. Canadian Journal of Fisheries and Aquatic Sciences 53(1): 106--119.
 
 \leavevmode\hypertarget{ref-Swain:Sinclair:1994:cjfas}{}%
-Swain, D.P., and Sinclair, A.F. 1994. Fish distribution and catchability: What is the appropriate measure of distribution? Canadian Journal of Fisheries and Aquatic Sciences 51(5): 1046--1054.
+Swain, D.P., and Sinclair, A.F. 1994. Fish distribution and catchability: {W}hat is the appropriate measure of distribution? Canadian Journal of Fisheries and Aquatic Sciences 51(5): 1046--1054.
 
 \leavevmode\hypertarget{ref-Tremblayetal:2007}{}%
 Tremblay M. J., B.R., Black G. A. P. 2007. The distribution of common decapod crustaceans and other invertebrates recorded in annual ecosystem surveys of the scotian shelf 1999-2006, by the research vessel groundfish survey. Can. Tech. Rep. Fish. Aquat. Sci. 74.
 
 \leavevmode\hypertarget{ref-R:Tidyverse}{}%
 Wickham, H. 2019. Tidyverse: Easily install and load the 'tidyverse'. R package version 1.3.0 \url{https://cran.r-project.org/web/packages/tidyverse/index.html}.
+
+\end{CSLReferences}
+\pagebreak
+
+\hypertarget{appendix}{%
+\section{Appendix}\label{appendix}}
+
+\pagebreak 
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2211}{%
+\subsection{Northern prawn (Crevette nordique) - species code 2211 (category SF)}\label{sec:2211}}
+
+\index{Crevette nordique} \index{Northern prawn} \index{Pandalus borealis}
+
+\index{Pandalidae!Pandalus borealis}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107649}{Pandalus borealis} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2211-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Northern prawn.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2511}{%
+\subsection{Jonah crab (Tourteau jona) - species code 2511 (category SF)}\label{sec:2511}}
+
+\index{Tourteau jona} \index{Jonah crab} \index{Cancer borealis}
+
+\index{Cancridae!Cancer borealis}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158056}{Cancer borealis} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2511-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Jonah crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2513}{%
+\subsection{Atlantic rock crab (Tourteau poïnclos) - species code 2513 (category SF)}\label{sec:2513}}
+
+\index{Tourteau poïnclos} \index{Atlantic rock crab} \index{Cancer irroratus}
+
+\index{Cancridae!Cancer irroratus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158057}{Cancer irroratus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2513-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic rock crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2521}{%
+\subsection{Arctic lyre crab (Crabe Hyas coarctatus) - species code 2521 (category SF)}\label{sec:2521}}
+
+\index{Crabe Hyas coarctatus} \index{Arctic lyre crab} \index{Hyas coarctatus}
+
+\index{Oregoniidae!Hyas coarctatus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107323}{Hyas coarctatus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2521-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Arctic lyre crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2523}{%
+\subsection{Atlantic king crab (Crabe épineux du nord) - species code 2523 (category SF)}\label{sec:2523}}
+
+\index{Crabe épineux du nord} \index{Atlantic king crab} \index{Lithodes maja}
+
+\index{Lithodidae!Lithodes maja}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107205}{Lithodes maja} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2523-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic king crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2526}{%
+\subsection{Queen crab (Crabe des neiges) - species code 2526 (category SF)}\label{sec:2526}}
+
+\index{Crabe des neiges} \index{Queen crab} \index{Chionoecetes opilio}
+
+\index{Oregoniidae!Chionoecetes opilio}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107315}{Chionoecetes opilio} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2526-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Queen crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2527}{%
+\subsection{Great spider crab (Crabe lyre araignée) - species code 2527 (category SF)}\label{sec:2527}}
+
+\index{Crabe lyre araignée} \index{Great spider crab} \index{Hyas araneus}
+
+\index{Oregoniidae!Hyas araneus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107322}{Hyas araneus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2527-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Great spider crab.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2550}{%
+\subsection{American lobster (Homard américain) - species code 2550 (category SF)}\label{sec:2550}}
+
+\index{Homard américain} \index{American lobster} \index{Homarus americanus}
+
+\index{Nephropidae!Homarus americanus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=156134}{Homarus americanus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=5.5in]{../Figures-Actual/RV-4VWX-2550-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for American lobster.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:240}{%
+\subsection{Sea lamprey (Lamproie marine) - species code 240 (category LR)}\label{sec:240}}
+
+\index{Lamproie marine} \index{Sea lamprey} \index{Petromyzon marinus}
+
+\index{Petromyzontidae!Petromyzon marinus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=101174}{Petromyzon marinus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-240-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Sea lamprey.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:17}{%
+\subsection{Atlantic tomcod (Poulamon atlantique) - species code 17 (category LR)}\label{sec:17}}
+
+\index{Poulamon atlantique} \index{Atlantic tomcod} \index{Microgadus tomcod}
+
+\index{Gadidae!Microgadus tomcod}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158928}{Microgadus tomcod} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-17-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic tomcod.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:19}{%
+\subsection{Offshore silver hake (Merlu argenté du large) - species code 19 (category LR)}\label{sec:19}}
+
+\index{Merlu argenté du large} \index{Offshore silver hake} \index{Merluccius albidus}
+
+\index{Merlucciidae!Merluccius albidus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158748}{Merluccius albidus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-19-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Offshore silver hake.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:51}{%
+\subsection{Spotted wolffish (Loup tacheté) - species code 51 (category LR)}\label{sec:51}}
+
+\index{Loup tacheté} \index{Spotted wolffish} \index{Anarhichas minor}
+
+\index{Anarhichadidae!Anarhichas minor}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126759}{Anarhichas minor} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-51-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spotted wolffish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:52}{%
+\subsection{Northern wolffish (Loup à tête large) - species code 52 (category LR)}\label{sec:52}}
+
+\index{Loup à tête large} \index{Northern wolffish} \index{Anarhichas denticulatus}
+
+\index{Anarhichadidae!Anarhichas denticulatus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126757}{Anarhichas denticulatus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-52-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Northern wolffish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:63}{%
+\subsection{Rainbow smelt (Éperlan arc-en-ciel) - species code 63 (category LR)}\label{sec:63}}
+
+\index{Éperlan arc-en-ciel} \index{Rainbow smelt} \index{Osmerus mordax}
+
+\index{Osmeridae!Osmerus mordax}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126737}{Osmerus mordax} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-63-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Rainbow smelt.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:122}{%
+\subsection{Cunner (Tanche-tautogue) - species code 122 (category LR)}\label{sec:122}}
+
+\index{Tanche-tautogue} \index{Cunner} \index{Tautogolabrus adspersus}
+
+\index{Labridae!Tautogolabrus adspersus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159785}{Tautogolabrus adspersus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-122-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Cunner.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:142}{%
+\subsection{Fourspot flounder (Cardeau à quatre ocelles) - species code 142 (category LR)}\label{sec:142}}
+
+\index{Cardeau à quatre ocelles} \index{Fourspot flounder} \index{Hippoglossina oblonga}
+
+\index{Paralichthyidae!Hippoglossina oblonga}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158833}{Hippoglossina oblonga} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-142-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Fourspot flounder.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:143}{%
+\subsection{Windowpane flounder (Turbot de sable) - species code 143 (category LR)}\label{sec:143}}
+
+\index{Turbot de sable} \index{Windowpane flounder} \index{Scophthalmus aquosus}
+
+\index{Scophthalmidae!Scophthalmus aquosus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158907}{Scophthalmus aquosus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-143-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Windowpane flounder.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:149}{%
+\subsection{Longnose greeneye (Oeil-vert à long nez) - species code 149 (category LR)}\label{sec:149}}
+
+\index{Oeil-vert à long nez} \index{Longnose greeneye} \index{Parasudis truculenta}
+
+\index{Chlorophthalmidae!Parasudis truculenta}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158868}{Parasudis truculenta} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-149-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Longnose greeneye.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:150}{%
+\subsection{Lanternfishes (Poissons-lanternes) - species code 150 (category LR)}\label{sec:150}}
+
+\index{Poissons-lanternes} \index{Lanternfishes} \index{Myctophidae}
+
+\index{Myctophidae!Myctophidae}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=125498}{Myctophidae} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-150-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Lanternfishes.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:156}{%
+\subsection{Shortnose greeneye (Éperlan du large) - species code 156 (category LR)}\label{sec:156}}
+
+\index{Éperlan du large} \index{Shortnose greeneye} \index{Chlorophthalmus agassizi}
+
+\index{Chlorophthalmidae!Chlorophthalmus agassizi}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126336}{Chlorophthalmus agassizi} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-156-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Shortnose greeneye.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:158}{%
+\subsection{Silvery lightfish (Brossé améthyste) - species code 158 (category LR)}\label{sec:158}}
+
+\index{Brossé améthyste} \index{Silvery lightfish} \index{Maurolicus muelleri}
+
+\index{Sternoptychidae!Maurolicus muelleri}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127312}{Maurolicus muelleri} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-158-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Silvery lightfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:159}{%
+\subsection{Boa dragonfish (Dragon-boa) - species code 159 (category LR)}\label{sec:159}}
+
+\index{Dragon-boa} \index{Boa dragonfish} \index{Stomias boa}
+
+\index{Stomiidae!Stomias boa}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127374}{Stomias boa} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-159-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Boa dragonfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:301}{%
+\subsection{Shorthorn sculpin (Chaboisseau à épines courtes) - species code 301 (category LR)}\label{sec:301}}
+
+\index{Chaboisseau à épines courtes} \index{Shorthorn sculpin} \index{Myoxocephalus scorpius}
+
+\index{Cottidae!Myoxocephalus scorpius}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127203}{Myoxocephalus scorpius} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-301-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Shorthorn sculpin.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:303}{%
+\subsection{Grubby (Chaboisseau bronzé) - species code 303 (category LR)}\label{sec:303}}
+
+\index{Chaboisseau bronzé} \index{Grubby} \index{Myoxocephalus aenaeus}
+
+\index{Cottidae!Myoxocephalus aenaeus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159519}{Myoxocephalus aenaeus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-303-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Grubby.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:307}{%
+\subsection{Polar sculpin (Cotte polaire) - species code 307 (category LR)}\label{sec:307}}
+
+\index{Cotte polaire} \index{Polar sculpin} \index{Cottunculus microps}
+
+\index{Psychrolutidae!Cottunculus microps}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127235}{Cottunculus microps} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-307-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Polar sculpin.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:314}{%
+\subsection{Spatulate sculpin (Icèle spatulée) - species code 314 (category LR)}\label{sec:314}}
+
+\index{Icèle spatulée} \index{Spatulate sculpin} \index{Icelus spatula}
+
+\index{Cottidae!Icelus spatula}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127200}{Icelus spatula} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-314-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spatulate sculpin.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:341}{%
+\subsection{Arctic alligatorfish (Poisson-alligator arctique) - species code 341 (category LR)}\label{sec:341}}
+
+\index{Poisson-alligator arctique} \index{Arctic alligatorfish} \index{Ulcina olrikii}
+
+\index{Agonidae!Ulcina olrikii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=274356}{Ulcina olrikii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-341-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Arctic alligatorfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:351}{%
+\subsection{Alligatorfishes (Poissons-alligator) - species code 351 (category LR)}\label{sec:351}}
+
+\index{Poissons-alligator} \index{Alligatorfishes} \index{Agonidae}
+
+\index{Agonidae!Agonidae}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=125588}{Agonidae} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-351-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Alligatorfishes.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:412}{%
+\subsection{Roughnose grenadier (Grenadier-scie) - species code 412 (category LR)}\label{sec:412}}
+
+\index{Grenadier-scie} \index{Roughnose grenadier} \index{Trachyrincus murrayi}
+
+\index{Macrouridae!Trachyrincus murrayi}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126481}{Trachyrincus murrayi} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-412-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Roughnose grenadier.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:414}{%
+\subsection{Roundnose grenadier (Grenadier de roche) - species code 414 (category LR)}\label{sec:414}}
+
+\index{Grenadier de roche} \index{Roundnose grenadier} \index{Coryphaenoides rupestris}
+
+\index{Macrouridae!Coryphaenoides rupestris}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158960}{Coryphaenoides rupestris} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-414-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Roundnose grenadier.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:503}{%
+\subsection{Atlantic seasnail (Limace atlantique) - species code 503 (category LR)}\label{sec:503}}
+
+\index{Limace atlantique} \index{Atlantic seasnail} \index{Liparis atlanticus}
+
+\index{Liparidae!Liparis atlanticus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159524}{Liparis atlanticus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-503-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic seasnail.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:505}{%
+\subsection{Gelatinous snailfish (Limace gélatineuse) - species code 505 (category LR)}\label{sec:505}}
+
+\index{Limace gélatineuse} \index{Gelatinous snailfish} \index{Liparis fabricii}
+
+\index{Liparidae!Liparis fabricii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127218}{Liparis fabricii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-505-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Gelatinous snailfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:512}{%
+\subsection{Variegated snailfish (Limace marbée) - species code 512 (category LR)}\label{sec:512}}
+
+\index{Limace marbée} \index{Variegated snailfish} \index{Liparis gibbus}
+
+\index{Liparidae!Liparis gibbus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159526}{Liparis gibbus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-512-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Variegated snailfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:520}{%
+\subsection{Sea tadpole (Petite limace de mer) - species code 520 (category LR)}\label{sec:520}}
+
+\index{Petite limace de mer} \index{Sea tadpole} \index{Careproctus reinhardti}
+
+\index{Liparidae!Careproctus reinhardti}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127212}{Careproctus reinhardti} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-520-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Sea tadpole.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:603}{%
+\subsection{Wolf eelpout (Lycode à tête longue) - species code 603 (category LR)}\label{sec:603}}
+
+\index{Lycode à tête longue} \index{Wolf eelpout} \index{Lycenchelys verrillii}
+
+\index{Zoarcidae!Lycenchelys verrillii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159258}{Lycenchelys verrillii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-603-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Wolf eelpout.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:604}{%
+\subsection{Slender snipe eel (Avocette ruban) - species code 604 (category LR)}\label{sec:604}}
+
+\index{Avocette ruban} \index{Slender snipe eel} \index{Nemichthys scolopaceus}
+
+\index{Nemichthyidae!Nemichthys scolopaceus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126306}{Nemichthys scolopaceus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-604-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Slender snipe eel.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:619}{%
+\subsection{Newfoundland eelpout (Lycode du Labrador) - species code 619 (category LR)}\label{sec:619}}
+
+\index{Lycode du Labrador} \index{Newfoundland eelpout} \index{Lycodes terraenovae}
+
+\index{Zoarcidae!Lycodes terraenovae}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127117}{Lycodes terraenovae} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-619-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Newfoundland eelpout.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:620}{%
+\subsection{Newfoundland eelpout (Lycode du Labrador) - species code 620 (category LR)}\label{sec:620}}
+
+\index{Lycode du Labrador} \index{Newfoundland eelpout} \index{Lycodes lavalaei}
+
+\index{Zoarcidae!Lycodes lavalaei}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127107}{Lycodes lavalaei} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-620-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Newfoundland eelpout.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:621}{%
+\subsection{Rock gunnel (Sigouine de roche) - species code 621 (category LR)}\label{sec:621}}
+
+\index{Sigouine de roche} \index{Rock gunnel} \index{Pholis gunnellus}
+
+\index{Pholidae!Pholis gunnellus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126996}{Pholis gunnellus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-621-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Rock gunnel.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:625}{%
+\subsection{Radiated shanny (Ulvaire deux-lignes) - species code 625 (category LR)}\label{sec:625}}
+
+\index{Ulvaire deux-lignes} \index{Radiated shanny} \index{Ulvaria subbifurcata}
+
+\index{Stichaeidae!Ulvaria subbifurcata}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159821}{Ulvaria subbifurcata} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-625-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Radiated shanny.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:626}{%
+\subsection{Fourline snakeblenny (Quatre-lignes atlantique) - species code 626 (category LR)}\label{sec:626}}
+
+\index{Quatre-lignes atlantique} \index{Fourline snakeblenny} \index{Eumesogrammus praecisus}
+
+\index{Stichaeidae!Eumesogrammus praecisus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159817}{Eumesogrammus praecisus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-626-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Fourline snakeblenny.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:630}{%
+\subsection{Wrymouth (Terrassier tacheté) - species code 630 (category LR)}\label{sec:630}}
+
+\index{Terrassier tacheté} \index{Wrymouth} \index{Cryptacanthodes maculatus}
+
+\index{Cryptacanthodidae!Cryptacanthodes maculatus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159675}{Cryptacanthodes maculatus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-630-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Wrymouth.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:637}{%
+\subsection{Spotfin dragonet (Dragonnet tacheté) - species code 637 (category LR)}\label{sec:637}}
+
+\index{Dragonnet tacheté} \index{Spotfin dragonet} \index{Foetorepus agassizii}
+
+\index{Callionymidae!Foetorepus agassizii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=276339}{Foetorepus agassizii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-637-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spotfin dragonet.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:641}{%
+\subsection{Arctic eelpout (Lycode arctique) - species code 641 (category LR)}\label{sec:641}}
+
+\index{Lycode arctique} \index{Arctic eelpout} \index{Lycodes reticulatus}
+
+\index{Zoarcidae!Lycodes reticulatus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127112}{Lycodes reticulatus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-641-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Arctic eelpout.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:646}{%
+\subsection{Atlantic soft pout (Molasse atlantique) - species code 646 (category LR)}\label{sec:646}}
+
+\index{Molasse atlantique} \index{Atlantic soft pout} \index{Melanostigma atlanticum}
+
+\index{Zoarcidae!Melanostigma atlanticum}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127120}{Melanostigma atlanticum} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-646-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic soft pout.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:704}{%
+\subsection{Silvery John dory (Saint Pierre argenté) - species code 704 (category LR)}\label{sec:704}}
+
+\index{Saint Pierre argenté} \index{Silvery John dory} \index{Zenopsis conchifer}
+
+\index{Zeidae!Zenopsis conchifer}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127426}{Zenopsis conchifer} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-704-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Silvery John dory.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:712}{%
+\subsection{White barracudina (Lussion blanc) - species code 712 (category LR)}\label{sec:712}}
+
+\index{Lussion blanc} \index{White barracudina} \index{Arctozenus risso}
+
+\index{Paralepididae!Arctozenus risso}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126352}{Arctozenus risso} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-712-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for White barracudina.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:720}{%
+\subsection{Atlantic saury (Balaou atlantique) - species code 720 (category LR)}\label{sec:720}}
+
+\index{Balaou atlantique} \index{Atlantic saury} \index{Scomberesox saurus}
+
+\index{Scomberesocidae!Scomberesox saurus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126392}{Scomberesox saurus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-720-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic saury.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:741}{%
+\subsection{Hatchetfishes (Haches d'argent) - species code 741 (category LR)}\label{sec:741}}
+
+\index{Haches d'argent} \index{Hatchetfishes} \index{Sternoptychidae}
+
+\index{Sternoptychidae!Sternoptychidae}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=125603}{Sternoptychidae} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-741-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Hatchetfishes.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:742}{%
+\subsection{Atlantic batfish (Malthe atlantique) - species code 742 (category LR)}\label{sec:742}}
+
+\index{Malthe atlantique} \index{Atlantic batfish} \index{Dibranchus atlanticus}
+
+\index{Ogcocephalidae!Dibranchus atlanticus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126558}{Dibranchus atlanticus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-742-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Atlantic batfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:816}{%
+\subsection{Spottedfin tonguefish (Langue fil noir) - species code 816 (category LR)}\label{sec:816}}
+
+\index{Langue fil noir} \index{Spottedfin tonguefish} \index{Symphurus diomedeanus}
+
+\index{Cynoglossidae!Symphurus diomedeanus}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159358}{Symphurus diomedeanus} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-816-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Spottedfin tonguefish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:221}{%
+\subsection{Black dogfish (Aiguillat noir) - species code 221 (category LR)}\label{sec:221}}
+
+\index{Aiguillat noir} \index{Black dogfish} \index{Centroscyllium fabricii}
+
+\index{Etmopteridae!Centroscyllium fabricii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=105906}{Centroscyllium fabricii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-221-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Black dogfish.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:4512}{%
+\subsection{Longfin inshore squid (Calmar totam) - species code 4512 (category LR)}\label{sec:4512}}
+
+\index{Calmar totam} \index{Longfin inshore squid} \index{Doryteuthis pealeii}
+
+\index{Loliginidae!Doryteuthis pealeii}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=574541}{Doryteuthis pealeii} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-4512-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Longfin inshore squid.}
+\end{minipage}
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}}
+
+\setcounter{figure}{0}
+
+\hypertarget{sec:2532}{%
+\subsection{Red deepsea crab (Crabe rouge) - species code 2532 (category SR)}\label{sec:2532}}
+
+\index{Crabe rouge} \index{Red deepsea crab} \index{Chaceon quinquedens}
+
+\index{Geryonidae!Chaceon quinquedens}
+
+Scientific name: \href{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158407}{Chaceon quinquedens} \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-2532-presence.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution for Red deepsea crab.}
+\end{minipage}
+\clearpage
+
+\printindex
 \end{document}

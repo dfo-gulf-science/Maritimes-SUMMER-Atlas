@@ -18,6 +18,7 @@ lapply(necessary, require, character.only=TRUE)
 ## since we are working from a git repository, use the "here" library to set the paths relative to the root path of the git repo
 main.path <- here::here()
 
+dataextract.path <- file.path(main.path, "Data-extract") ## data extraction scripts
 report.path <- file.path(main.path, "Report-generation")
 actualreport.path <- file.path(main.path, "TechReport-EN")
 figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
@@ -70,13 +71,27 @@ print(paste("Starting data extracts, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(l.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, LF species: ", Sys.time()))
 
+## SF species
+species.numbers <- species.SF
+s.species.extracts <- c("catchshort","stratifiedshort","distshort")
+print(paste("Starting data extracts, SF species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(s.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
+print(paste("End data extract, SF species: ", Sys.time()))
+
+
 ## R species
-r.species.extracts <- c("")
+species.numbers <- c(species.LR, species.SR)
+r.species.extracts <- c("catch")
 print(paste("Starting data extracts, R species: ", Sys.time()))
-sapply(species.numbers, function(i){data.extract(extract.name=r.species.extracts, spec.num=i)})
+lapply(species.numbers, function(ss){lapply(r.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, R species: ", Sys.time()))
 
-
+## LI species
+species.numbers <- species.LI
+i.species.extracts <- c("catch","stratified","dist")
+print(paste("Starting data extracts, I species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
+print(paste("End data extract, I species: ", Sys.time()))
 
 #####################################################################################################################################################  
 
@@ -84,6 +99,35 @@ print(paste("End data extract, R species: ", Sys.time()))
 #####################################################################################################################################################  
 ## STEP 3 - GENERATE FIGURES
 source(file.path(main.path, "figures.R"))
+
+## LF species
+species.numbers <- c(species.LF)
+lf.figures <- c("IDWbiomass")
+print(paste("Starting figures, LF species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(lf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, LF species: ", Sys.time()))
+
+## SF species
+species.numbers <- c(species.SF)
+sf.figures <- c("presence")
+print(paste("Starting figures, SF species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(sf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, SF species: ", Sys.time()))
+
+## R species
+species.numbers <- c(species.LR, species.SR)
+r.figures <- c("presence")
+print(paste("Starting figures, R species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(r.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, R species: ", Sys.time()))
+
+## LI species
+species.numbers <- c(species.LI)
+li.figures <- c("presence")
+print(paste("Starting figures, LI species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, LI species: ", Sys.time()))
+
 #####################################################################################################################################################  
 
 #####################################################################################################################################################  

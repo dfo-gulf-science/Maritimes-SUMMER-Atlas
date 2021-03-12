@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.2.24)  2 MAR 2021 10:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.12)  12 MAR 2021 15:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -428,7 +428,7 @@ LaTeX Info: Redefining \cite on input line 694.
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperre
 f.sty
-Package: hyperref 2021-02-10 v7.00j Hypertext links for LaTeX
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmd
 s.sty
@@ -485,13 +485,13 @@ Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.
 def
-File: pd1enc.def 2021-02-10 v7.00j Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperre
 f-langpatches.def
-File: hyperref-langpatches.def 2021-02-10 v7.00j Hyperref: patches for babel la
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel la
 nguages
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcal
@@ -506,7 +506,7 @@ Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.d
 ef
-File: puenc.def 2021-02-10 v7.00j Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
@@ -557,7 +557,7 @@ Package hyperref Info: Driver (autodetected): hpdftex.
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex
 .def
-File: hpdftex.def 2021-02-10 v7.00j Hyperref driver for pdfTeX
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-l
 tx.sty
@@ -583,7 +583,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pdfpage
 s.sty
-Package: pdfpages 2021/02/05 v0.5s Insert pages of external PDF documents (AM)
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/eso-pic/eso-pic.
 sty
@@ -597,7 +597,7 @@ Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdfpages/pppdfte
 x.def
-File: pppdftex.def 2021/02/05 v0.5s Pdfpages driver for pdfTeX (AM)
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
 )
 \pdfpages@includegraphics@status=\count306
 \AM@pagebox=\box54
@@ -785,9 +785,34 @@ y
 Package: ulem 2019/11/18
 \ULdepth=\dimen260
 )
+(c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/everypage/everyp
+age.sty
+Package: everypage 2020/10/17 R2.0b Hooks to run on every page
+
+Package everypage Warning: Functionality similar to this package has recently
+(everypage)                been implemented in LaTeX. This package is now in
+(everypage)                legacy status.
+(everypage)                Please, don't use it in new documents and packages.
+
+
+Package everypage Warning: You appear to be running a version of LaTeX
+(everypage)                providing the new functionality.
+(everypage)                Doing the best to deliver the original `everypage`
+(everypage)                interface on top of it. Strict equivalence is
+(everypage)                not possible, breakage may occur.
+(everypage)                If truly needed, Use `everypage-1x` to force the
+(everypage)                loading of an older code base.
+
+)
+(c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsc
+ape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.
 sty
 Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/textpos/textpos.
 sty
@@ -807,8 +832,8 @@ Grid set 16 x 16 = 38.39343pt x 49.68562pt
 \TP@tbargs=\toks32
 TextBlockOrigin set to 0pt x 0pt
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 118.
-Package hyperref Info: Option `plainpages' set `true' on input line 118.
+Package hyperref Info: Option `colorlinks' set `true' on input line 106.
+Package hyperref Info: Option `plainpages' set `true' on input line 106.
 \c@savesection=\count327
 \c@apdxsection=\count328
 
@@ -910,7 +935,7 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3back
 end-pdftex.def
-File: l3backend-pdftex.def 2021-02-18 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box68
 ) (./techreport.aux
@@ -1029,12 +1054,6 @@ LaTeX Info: Redefining \nameref on input line 150.
 \@outlinefile=\write6
 \openout6 = `techreport.out'.
 
-
-(c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflsc
-ape.sty
-Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
-Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
-)
 Package soulpos Info: Loading soulutf8 on input line 150.
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/soulutf8/soulu
@@ -1088,7 +1107,7 @@ LaTeX Info: Redefining \selectfont on input line 150.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package hyperref Info: Option `pageanchor' set `false' on input line 155.
-<tech-report-cover.pdf, id=108, 614.295pt x 794.97pt>
+<tech-report-cover.pdf, id=341, 614.295pt x 794.97pt>
 File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf>
 Package pdftex.def Info: tech-report-cover.pdf  used on input line 155.
@@ -1097,7 +1116,7 @@ File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf>
 Package pdftex.def Info: tech-report-cover.pdf  used on input line 155.
 (pdftex.def)             Requested size: 614.29349pt x 794.96806pt.
-<tech-report-cover.pdf, id=111, page=1, 614.295pt x 794.97pt>
+<tech-report-cover.pdf, id=344, page=1, 614.295pt x 794.97pt>
 File: tech-report-cover.pdf Graphic file (type pdf)
 <use tech-report-cover.pdf, page 1>
 Package pdftex.def Info: tech-report-cover.pdf , page1 used on input line 155.
@@ -1126,7 +1145,7 @@ Package pdftex.def Info: tech-report-cover.pdf , page1 used on input line 155.
 
 pdfTeX warning: pdflatex.exe (file ./csas-style/pages/AquatTechInsCover.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<csas-style/pages/AquatTechInsCover.pdf, id=129, 614.295pt x 794.97pt>
+<csas-style/pages/AquatTechInsCover.pdf, id=362, 614.295pt x 794.97pt>
 File: csas-style/pages/AquatTechInsCover.pdf Graphic file (type pdf)
 <use csas-style/pages/AquatTechInsCover.pdf>
 Package pdftex.def Info: csas-style/pages/AquatTechInsCover.pdf  used on input 
@@ -1149,7 +1168,7 @@ DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
 
 pdfTeX warning: pdflatex.exe (file ./csas-style/pages/AquatTechInsCover.pdf): P
 DF inclusion: found PDF version <1.7>, but at most version <1.5> allowed
-<csas-style/pages/AquatTechInsCover.pdf, id=132, page=1, 614.295pt x 794.97pt>
+<csas-style/pages/AquatTechInsCover.pdf, id=365, page=1, 614.295pt x 794.97pt>
 File: csas-style/pages/AquatTechInsCover.pdf Graphic file (type pdf)
 <use csas-style/pages/AquatTechInsCover.pdf, page 1>
 Package pdftex.def Info: csas-style/pages/AquatTechInsCover.pdf , page1 used on
@@ -1241,114 +1260,116 @@ Package microtype Info: Loading generic protrusion settings for font family
 [1{c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/p
 dftex.map}] [2
 
-] (./techreport.toc)
+] (./techreport.toc [3
+
+] [4] [5])
 \tf@toc=\write7
 \openout7 = `techreport.toc'.
 
-[3
+[6] [7
 
-] [4] [5
+] [8
 
-] [6
-
-]pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
- been already used, duplicate ignored
+]
+\cslhangindent=\skip109
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
+been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.188 ...y Description}\label{survey-description}}
+l.193 ...y Description}\label{survey-description}}
                                                    [1
 
 ]
-<./figures/annotated-map-NAFO.png, id=238, 903.375pt x 903.375pt>
+<./figures/annotated-map-NAFO.png, id=540, 903.375pt x 903.375pt>
 File: ./figures/annotated-map-NAFO.png Graphic file (type png)
 <use ./figures/annotated-map-NAFO.png>
-Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
-97.
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 2
+02.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/annotated-map-NAFO.png Graphic file (type png)
 <use ./figures/annotated-map-NAFO.png>
-Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
-97.
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 2
+02.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/annotated-map-NAFO.png Graphic file (type png)
 <use ./figures/annotated-map-NAFO.png>
-Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
-97.
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 2
+02.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/annotated-map-NAFO.png Graphic file (type png)
 <use ./figures/annotated-map-NAFO.png>
-Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 1
-97.
+Package pdftex.def Info: ./figures/annotated-map-NAFO.png  used on input line 2
+02.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.207 
+l.212 
        [2 <./figures/annotated-map-NAFO.png (PNG copy)>]
-<./figures/SUMMER-strata-map.png, id=250, 903.375pt x 903.375pt>
+<./figures/SUMMER-strata-map.png, id=552, 903.375pt x 903.375pt>
 File: ./figures/SUMMER-strata-map.png Graphic file (type png)
 <use ./figures/SUMMER-strata-map.png>
 Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
-3.
+8.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-strata-map.png Graphic file (type png)
 <use ./figures/SUMMER-strata-map.png>
 Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
-3.
+8.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-strata-map.png Graphic file (type png)
 <use ./figures/SUMMER-strata-map.png>
 Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
-3.
+8.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-strata-map.png Graphic file (type png)
 <use ./figures/SUMMER-strata-map.png>
 Package pdftex.def Info: ./figures/SUMMER-strata-map.png  used on input line 21
-3.
+8.
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.222 
+l.227 
        [3 <./figures/SUMMER-strata-map.png>]
-<./figures/SUMMER-tows-map.png, id=260, 903.375pt x 903.375pt>
+<./figures/SUMMER-tows-map.png, id=563, 903.375pt x 903.375pt>
 File: ./figures/SUMMER-tows-map.png Graphic file (type png)
 <use ./figures/SUMMER-tows-map.png>
-Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 233.
 
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-tows-map.png Graphic file (type png)
 <use ./figures/SUMMER-tows-map.png>
-Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 233.
 
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-tows-map.png Graphic file (type png)
 <use ./figures/SUMMER-tows-map.png>
-Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 233.
 
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 File: ./figures/SUMMER-tows-map.png Graphic file (type png)
 <use ./figures/SUMMER-tows-map.png>
-Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 228.
+Package pdftex.def Info: ./figures/SUMMER-tows-map.png  used on input line 233.
 
 (pdftex.def)             Requested size: 433.62pt x 433.62886pt.
 pdfTeX warning (ext4): destination with the same identifier (name{page.4}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.240 
+l.245 
        [4 <./figures/SUMMER-tows-map.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 243.
+(Font)              <12> on input line 248.
 
-Overfull \hbox (4.109pt too wide) in paragraph at lines 245--245
+Overfull \hbox (4.109pt too wide) in paragraph at lines 250--250
 []|\T1/phv/b/n/12 (-20) Category| 
  []
 
 
-Overfull \hbox (35.99998pt too wide) in paragraph at lines 243--262
+Overfull \hbox (35.99998pt too wide) in paragraph at lines 248--267
 [][] 
  []
 
@@ -1356,115 +1377,129 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.5}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.270 \begin{landscape}
+l.275 \begin{landscape}
                         [5]
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 []\T1/phv/m/n/10.95 (+20) Table 2. |[]List of species in-cluded in the At-las. 
-The species re-ported here are listed in phy-lo-ge-netic or-der as per Page L. 
-M. et al.
+The species re-ported here are listed in phy-lo-ge-netic or-der as per [][]Page
+ L. M. et al.[][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 \T1/phv/m/n/10.95 (+20) ([][]2013[][]). For each tax-o-nomic or-der and class, 
 each species is listed in the ta-ble, its tax-o-nomic fam-ily and sci-en-tific 
 name is pro-vided,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 \T1/phv/m/n/10.95 (+20) along with its French and En-glish com-mon names, the s
 pecies code used in the sur-vey database, its Aphi-aID and a link to the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 272--272
+Underfull \hbox (badness 10000) in paragraph at lines 277--277
 \T1/phv/m/n/10.95 (+20) World Reg-istry of Ma-rine Species, its num-ber of catc
 h records in the sur-vey database and its clas-si-fi-ca-tion cat-e-gory as de-f
 ined in
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 289.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 294.
 pdfTeX warning (ext4): destination with the same identifier (name{page.6}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.406 \hspace
+l.411 \hspace
              {1em}\hspace{1em} &  & Argentinidae & \em{Argentina silus} & Gr...
 [6
 
-] [7] [8] [9] [10] [11] [12] [13
+]pdfTeX warning (ext4): destination with the same identifier (name{page.7}) has
+ been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.450 \cmidrule
+               {2-10}\nopagebreak [7]pdfTeX warning (ext4): destination with th
+e same identifier (name{page.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.490 \cmidrule
+               {3-10}\nopagebreak [8] [9] [10] [11] [12] [13
 
 ] [14] [15] [16]
-Overfull \hbox (26.68307pt too wide) in alignment at lines 697--702
- [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
- []
-
-
 Overfull \hbox (26.68307pt too wide) in alignment at lines 702--707
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 708.
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 707--709
+Overfull \hbox (26.68307pt too wide) in alignment at lines 707--712
+ [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
+ []
+
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <6> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 714.
+
+Overfull \hbox (26.68307pt too wide) in alignment at lines 712--715
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 709--711
+Overfull \hbox (26.68307pt too wide) in alignment at lines 715--717
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 711--732
+Overfull \hbox (26.68307pt too wide) in alignment at lines 717--738
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 732--752
+Overfull \hbox (26.68307pt too wide) in alignment at lines 738--758
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 752--761
+Overfull \hbox (26.68307pt too wide) in alignment at lines 758--767
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 [17
 
 ]
-Overfull \hbox (26.68307pt too wide) in alignment at lines 767--772
+Overfull \hbox (26.68307pt too wide) in alignment at lines 773--778
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 772--777
+Overfull \hbox (26.68307pt too wide) in alignment at lines 778--783
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 777--779
+Overfull \hbox (26.68307pt too wide) in alignment at lines 783--786
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 779--781
+Overfull \hbox (26.68307pt too wide) in alignment at lines 786--788
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 781--802
+Overfull \hbox (26.68307pt too wide) in alignment at lines 788--809
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 802--822
+Overfull \hbox (26.68307pt too wide) in alignment at lines 809--829
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
 
-Overfull \hbox (26.68307pt too wide) in alignment at lines 822--831
+Overfull \hbox (26.68307pt too wide) in alignment at lines 829--838
  [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] [] 
  []
 
@@ -1472,7 +1507,7 @@ Overfull \hbox (26.68307pt too wide) in alignment at lines 822--831
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 838--838
+Underfull \hbox (badness 10000) in paragraph at lines 845--845
 []\T1/phv/m/n/10.95 (+20) Table 5. |[]Num-ber of rep-re-sen-ta-tive tows con-du
 cted in each stra-tum dur-ing the pe-riod 2014 to 2020 and for the whole 1970 t
 o 2020
@@ -1484,10 +1519,8 @@ o 2020
 ] [20
 
 ]
-LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 919.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 9
-19.
+40.
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1496,83 +1529,1076 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 6842) in paragraph at lines 921--923
+Underfull \hbox (badness 4193) in paragraph at lines 942--944
  [][]\T1/phv/m/n/10.95 (+20) Baddeley, R., A. 2015. Spa-tial point pat-terns: M
 ethod-ol-ogy and ap-pli-ca-tions 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 921--923
+Underfull \hbox (badness 4954) in paragraph at lines 942--944
  \T1/phv/m/n/10.95 (+20) with R. Chap-man; Hall/CRC Press, Lon-don [][]$\T1/lmt
 t/m/n/10.95 http : / / www . crcpress . com / 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 921--923
+Underfull \hbox (badness 7099) in paragraph at lines 942--944
  \T1/lmtt/m/n/10.95 Spatial-[]Point-[]Patterns-[]Methodology-[]and-[]Applicatio
 ns-[]with-[]R / 
  []
 
 [21
 
-]
-Underfull \hbox (badness 2717) in paragraph at lines 981--983
- [][]\T1/phv/m/n/10.95 (+20) Ricard, D., and Gomez, C. 2021. Maritimes-summer-a
-tlas. [][]$\T1/lmtt/m/n/10.95 https : / / github . com / 
- []
+] [22] [23] [24]
+<../Figures-Actual/RV-4VWX-2211-presence.pdf, id=1089, 549.05125pt x 397.485pt>
 
-[22] 
+File: ../Figures-Actual/RV-4VWX-2211-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2211-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2211-presence.pdf  used on i
+nput line 1057.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1059.
+See the caption package documentation for explanation.
+
+[25 <../Figures-actual/RV-4VWX-2211-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2511-presence.pdf, id=1101, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2511-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2511-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2511-presence.pdf  used on i
+nput line 1077.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1079.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1079 ...ure}{Catch distribution for Jonah crab.}
+                                                   [26
+
+ <../Figures-actual/RV-4VWX-2511-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2513-presence.pdf, id=1112, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2513-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2513-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2513-presence.pdf  used on i
+nput line 1097.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1099.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1099 ...ch distribution for Atlantic rock crab.}
+                                                   [27
+
+ <../Figures-actual/RV-4VWX-2513-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2521-presence.pdf, id=1124, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2521-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2521-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2521-presence.pdf  used on i
+nput line 1117.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1119.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1119 ...atch distribution for Arctic lyre crab.}
+                                                   [28
+
+ <../Figures-actual/RV-4VWX-2521-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2523-presence.pdf, id=1136, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2523-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2523-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2523-presence.pdf  used on i
+nput line 1137.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1139.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1139 ...ch distribution for Atlantic king crab.}
+                                                   [29
+
+ <../Figures-actual/RV-4VWX-2523-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2526-presence.pdf, id=1147, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2526-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2526-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2526-presence.pdf  used on i
+nput line 1157.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1159.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1159 ...ure}{Catch distribution for Queen crab.}
+                                                   [30
+
+ <../Figures-actual/RV-4VWX-2526-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2527-presence.pdf, id=1158, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2527-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2527-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2527-presence.pdf  used on i
+nput line 1177.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1179.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1179 ...tch distribution for Great spider crab.}
+                                                   [31
+
+ <../Figures-actual/RV-4VWX-2527-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2550-presence.pdf, id=1169, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2550-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2550-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2550-presence.pdf  used on i
+nput line 1197.
+(pdftex.def)             Requested size: 397.48499pt x 287.76591pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1199.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1199 ...atch distribution for American lobster.}
+                                                   [32
+
+ <../Figures-actual/RV-4VWX-2550-presence.pdf>]
+<../Figures-Actual/RV-4VWX-240-presence.pdf, id=1180, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-240-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-240-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-240-presence.pdf  used on in
+put line 1217.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1219.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1219 ...re}{Catch distribution for Sea lamprey.}
+                                                   [33
+
+ <../Figures-actual/RV-4VWX-240-presence.pdf>]
+<../Figures-Actual/RV-4VWX-17-presence.pdf, id=1192, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-17-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-17-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-17-presence.pdf  used on inp
+ut line 1237.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1239.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1239 ...Catch distribution for Atlantic tomcod.}
+                                                   [34
+
+ <../Figures-actual/RV-4VWX-17-presence.pdf>]
+<../Figures-Actual/RV-4VWX-19-presence.pdf, id=1203, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-19-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-19-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-19-presence.pdf  used on inp
+ut line 1257.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1259.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1259 ... distribution for Offshore silver hake.}
+                                                   [35
+
+ <../Figures-actual/RV-4VWX-19-presence.pdf>]
+<../Figures-Actual/RV-4VWX-51-presence.pdf, id=1214, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-51-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-51-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-51-presence.pdf  used on inp
+ut line 1277.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1279.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1279 ...atch distribution for Spotted wolffish.}
+                                                   [36
+
+ <../Figures-actual/RV-4VWX-51-presence.pdf>]
+<../Figures-Actual/RV-4VWX-52-presence.pdf, id=1225, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-52-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-52-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-52-presence.pdf  used on inp
+ut line 1297.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1299.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1299 ...tch distribution for Northern wolffish.}
+                                                   [37
+
+ <../Figures-actual/RV-4VWX-52-presence.pdf>]
+<../Figures-Actual/RV-4VWX-63-presence.pdf, id=1236, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-63-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-63-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-63-presence.pdf  used on inp
+ut line 1317.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1319.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1319 ...}{Catch distribution for Rainbow smelt.}
+                                                   [38
+
+ <../Figures-actual/RV-4VWX-63-presence.pdf>]
+<../Figures-Actual/RV-4VWX-122-presence.pdf, id=1248, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-122-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-122-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-122-presence.pdf  used on in
+put line 1337.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1339.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1339 ...{figure}{Catch distribution for Cunner.}
+                                                   [39
+
+ <../Figures-actual/RV-4VWX-122-presence.pdf>]
+<../Figures-Actual/RV-4VWX-142-presence.pdf, id=1260, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-142-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-142-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-142-presence.pdf  used on in
+put line 1357.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1359.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1359 ...tch distribution for Fourspot flounder.}
+                                                   [40
+
+ <../Figures-actual/RV-4VWX-142-presence.pdf>]
+<../Figures-Actual/RV-4VWX-143-presence.pdf, id=1271, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-143-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-143-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-143-presence.pdf  used on in
+put line 1377.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1379.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1379 ...h distribution for Windowpane flounder.}
+                                                   [41
+
+ <../Figures-actual/RV-4VWX-143-presence.pdf>]
+<../Figures-Actual/RV-4VWX-149-presence.pdf, id=1282, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-149-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-149-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-149-presence.pdf  used on in
+put line 1397.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1399.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1399 ...tch distribution for Longnose greeneye.}
+                                                   [42
+
+ <../Figures-actual/RV-4VWX-149-presence.pdf>]
+<../Figures-Actual/RV-4VWX-150-presence.pdf, id=1293, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-150-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-150-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-150-presence.pdf  used on in
+put line 1417.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1419.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1419 ...}{Catch distribution for Lanternfishes.}
+                                                   [43
+
+ <../Figures-actual/RV-4VWX-150-presence.pdf>]
+<../Figures-Actual/RV-4VWX-156-presence.pdf, id=1304, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-156-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-156-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-156-presence.pdf  used on in
+put line 1437.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1439.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1439 ...ch distribution for Shortnose greeneye.}
+                                                   [44
+
+ <../Figures-actual/RV-4VWX-156-presence.pdf>]
+<../Figures-Actual/RV-4VWX-158-presence.pdf, id=1315, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-158-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-158-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-158-presence.pdf  used on in
+put line 1457.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1459.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1459 ...tch distribution for Silvery lightfish.}
+                                                   [45
+
+ <../Figures-actual/RV-4VWX-158-presence.pdf>]
+<../Figures-Actual/RV-4VWX-159-presence.pdf, id=1327, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-159-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-159-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-159-presence.pdf  used on in
+put line 1477.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1479.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1479 ...{Catch distribution for Boa dragonfish.}
+                                                   [46
+
+ <../Figures-actual/RV-4VWX-159-presence.pdf>]
+<../Figures-Actual/RV-4VWX-301-presence.pdf, id=1338, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-301-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-301-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-301-presence.pdf  used on in
+put line 1497.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1499.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1499 ...tch distribution for Shorthorn sculpin.}
+                                                   [47
+
+ <../Figures-actual/RV-4VWX-301-presence.pdf>]
+<../Figures-Actual/RV-4VWX-303-presence.pdf, id=1349, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-303-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-303-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-303-presence.pdf  used on in
+put line 1517.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1519.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1519 ...{figure}{Catch distribution for Grubby.}
+                                                   [48
+
+ <../Figures-actual/RV-4VWX-303-presence.pdf>]
+<../Figures-Actual/RV-4VWX-307-presence.pdf, id=1361, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-307-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-307-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-307-presence.pdf  used on in
+put line 1537.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1539.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1539 ...}{Catch distribution for Polar sculpin.}
+                                                   [49
+
+ <../Figures-actual/RV-4VWX-307-presence.pdf>]
+<../Figures-Actual/RV-4VWX-314-presence.pdf, id=1372, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-314-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-314-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-314-presence.pdf  used on in
+put line 1557.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1559.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1559 ...tch distribution for Spatulate sculpin.}
+                                                   [50
+
+ <../Figures-actual/RV-4VWX-314-presence.pdf>]
+<../Figures-Actual/RV-4VWX-341-presence.pdf, id=1383, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-341-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-341-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-341-presence.pdf  used on in
+put line 1577.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1579.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1579 ... distribution for Arctic alligatorfish.}
+                                                   [51
+
+ <../Figures-actual/RV-4VWX-341-presence.pdf>]
+<../Figures-Actual/RV-4VWX-351-presence.pdf, id=1395, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-351-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-351-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-351-presence.pdf  used on in
+put line 1597.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1599.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1599 ...Catch distribution for Alligatorfishes.}
+                                                   [52
+
+ <../Figures-actual/RV-4VWX-351-presence.pdf>]
+<../Figures-Actual/RV-4VWX-412-presence.pdf, id=1406, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-412-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-412-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-412-presence.pdf  used on in
+put line 1617.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1619.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1619 ...h distribution for Roughnose grenadier.}
+                                                   [53
+
+ <../Figures-actual/RV-4VWX-412-presence.pdf>]
+<../Figures-Actual/RV-4VWX-414-presence.pdf, id=1417, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-414-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-414-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-414-presence.pdf  used on in
+put line 1637.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1639.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1639 ...h distribution for Roundnose grenadier.}
+                                                   [54
+
+ <../Figures-actual/RV-4VWX-414-presence.pdf>]
+<../Figures-Actual/RV-4VWX-503-presence.pdf, id=1428, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-503-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-503-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-503-presence.pdf  used on in
+put line 1657.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1659.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1659 ...tch distribution for Atlantic seasnail.}
+                                                   [55
+
+ <../Figures-actual/RV-4VWX-503-presence.pdf>]
+<../Figures-Actual/RV-4VWX-505-presence.pdf, id=1439, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-505-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-505-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-505-presence.pdf  used on in
+put line 1677.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1679.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1679 ... distribution for Gelatinous snailfish.}
+                                                   [56
+
+ <../Figures-actual/RV-4VWX-505-presence.pdf>]
+<../Figures-Actual/RV-4VWX-512-presence.pdf, id=1450, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-512-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-512-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-512-presence.pdf  used on in
+put line 1697.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1699.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1699 ... distribution for Variegated snailfish.}
+                                                   [57
+
+ <../Figures-actual/RV-4VWX-512-presence.pdf>]
+<../Figures-Actual/RV-4VWX-520-presence.pdf, id=1462, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-520-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-520-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-520-presence.pdf  used on in
+put line 1717.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1719.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1719 ...re}{Catch distribution for Sea tadpole.}
+                                                   [58
+
+ <../Figures-actual/RV-4VWX-520-presence.pdf>]
+<../Figures-Actual/RV-4VWX-603-presence.pdf, id=1474, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-603-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-603-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-603-presence.pdf  used on in
+put line 1737.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1739.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1739 ...e}{Catch distribution for Wolf eelpout.}
+                                                   [59
+
+ <../Figures-actual/RV-4VWX-603-presence.pdf>]
+<../Figures-Actual/RV-4VWX-604-presence.pdf, id=1485, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-604-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-604-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-604-presence.pdf  used on in
+put line 1757.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1759.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1759 ...tch distribution for Slender snipe eel.}
+                                                   [60
+
+ <../Figures-actual/RV-4VWX-604-presence.pdf>]
+<../Figures-Actual/RV-4VWX-619-presence.pdf, id=1496, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-619-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-619-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-619-presence.pdf  used on in
+put line 1777.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1779.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1779 ... distribution for Newfoundland eelpout.}
+                                                   [61
+
+ <../Figures-actual/RV-4VWX-619-presence.pdf>]
+<../Figures-Actual/RV-4VWX-620-presence.pdf, id=1507, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-620-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-620-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-620-presence.pdf  used on in
+put line 1797.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1799.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1799 ... distribution for Newfoundland eelpout.}
+                                                   [62
+
+ <../Figures-actual/RV-4VWX-620-presence.pdf>]
+<../Figures-Actual/RV-4VWX-621-presence.pdf, id=1518, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-621-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-621-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-621-presence.pdf  used on in
+put line 1817.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1819.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1819 ...re}{Catch distribution for Rock gunnel.}
+                                                   [63
+
+ <../Figures-actual/RV-4VWX-621-presence.pdf>]
+<../Figures-Actual/RV-4VWX-625-presence.pdf, id=1530, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-625-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-625-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-625-presence.pdf  used on in
+put line 1837.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1839.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1839 ...Catch distribution for Radiated shanny.}
+                                                   [64
+
+ <../Figures-actual/RV-4VWX-625-presence.pdf>]
+<../Figures-Actual/RV-4VWX-626-presence.pdf, id=1541, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-626-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-626-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-626-presence.pdf  used on in
+put line 1857.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1859.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1859 ... distribution for Fourline snakeblenny.}
+                                                   [65
+
+ <../Figures-actual/RV-4VWX-626-presence.pdf>]
+<../Figures-Actual/RV-4VWX-630-presence.pdf, id=1552, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-630-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-630-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-630-presence.pdf  used on in
+put line 1877.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1879.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1879 ...igure}{Catch distribution for Wrymouth.}
+                                                   [66
+
+ <../Figures-actual/RV-4VWX-630-presence.pdf>]
+<../Figures-Actual/RV-4VWX-637-presence.pdf, id=1563, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-637-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-637-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-637-presence.pdf  used on in
+put line 1897.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1899.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1899 ...atch distribution for Spotfin dragonet.}
+                                                   [67
+
+ <../Figures-actual/RV-4VWX-637-presence.pdf>]
+<../Figures-Actual/RV-4VWX-641-presence.pdf, id=1574, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-641-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-641-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-641-presence.pdf  used on in
+put line 1917.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1919.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1919 ...{Catch distribution for Arctic eelpout.}
+                                                   [68
+
+ <../Figures-actual/RV-4VWX-641-presence.pdf>]
+<../Figures-Actual/RV-4VWX-646-presence.pdf, id=1586, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-646-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-646-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-646-presence.pdf  used on in
+put line 1937.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1939.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1939 ...ch distribution for Atlantic soft pout.}
+                                                   [69
+
+ <../Figures-actual/RV-4VWX-646-presence.pdf>]
+<../Figures-Actual/RV-4VWX-704-presence.pdf, id=1598, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-704-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-704-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-704-presence.pdf  used on in
+put line 1957.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1959.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1959 ...tch distribution for Silvery John dory.}
+                                                   [70
+
+ <../Figures-actual/RV-4VWX-704-presence.pdf>]
+<../Figures-Actual/RV-4VWX-712-presence.pdf, id=1609, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-712-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-712-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-712-presence.pdf  used on in
+put line 1977.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1979.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1979 ...tch distribution for White barracudina.}
+                                                   [71
+
+ <../Figures-actual/RV-4VWX-712-presence.pdf>]
+<../Figures-Actual/RV-4VWX-720-presence.pdf, id=1620, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-720-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-720-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-720-presence.pdf  used on in
+put line 1997.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 1999.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1999 ...{Catch distribution for Atlantic saury.}
+                                                   [72
+
+ <../Figures-actual/RV-4VWX-720-presence.pdf>]
+<../Figures-Actual/RV-4VWX-741-presence.pdf, id=1631, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-741-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-741-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-741-presence.pdf  used on in
+put line 2017.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2019.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2019 ...}{Catch distribution for Hatchetfishes.}
+                                                   [73
+
+ <../Figures-actual/RV-4VWX-741-presence.pdf>]
+<../Figures-Actual/RV-4VWX-742-presence.pdf, id=1642, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-742-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-742-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-742-presence.pdf  used on in
+put line 2037.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2039.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2039 ...atch distribution for Atlantic batfish.}
+                                                   [74
+
+ <../Figures-actual/RV-4VWX-742-presence.pdf>]
+<../Figures-Actual/RV-4VWX-816-presence.pdf, id=1653, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-816-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-816-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-816-presence.pdf  used on in
+put line 2057.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2059.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2059 ...distribution for Spottedfin tonguefish.}
+                                                   [75
+
+ <../Figures-actual/RV-4VWX-816-presence.pdf>]
+<../Figures-Actual/RV-4VWX-221-presence.pdf, id=1665, 549.05125pt x 397.485pt>
+File: ../Figures-Actual/RV-4VWX-221-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-221-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-221-presence.pdf  used on in
+put line 2077.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2079.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2079 ...}{Catch distribution for Black dogfish.}
+                                                   [76
+
+ <../Figures-actual/RV-4VWX-221-presence.pdf>]
+<../Figures-Actual/RV-4VWX-4512-presence.pdf, id=1676, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-4512-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-4512-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-4512-presence.pdf  used on i
+nput line 2097.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2099.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2099 ...distribution for Longfin inshore squid.}
+                                                   [77
+
+ <../Figures-actual/RV-4VWX-4512-presence.pdf>]
+<../Figures-Actual/RV-4VWX-2532-presence.pdf, id=1687, 549.05125pt x 397.485pt>
+
+File: ../Figures-Actual/RV-4VWX-2532-presence.pdf Graphic file (type pdf)
+<use ../Figures-Actual/RV-4VWX-2532-presence.pdf>
+Package pdftex.def Info: ../Figures-Actual/RV-4VWX-2532-presence.pdf  used on i
+nput line 2117.
+(pdftex.def)             Requested size: 433.62pt x 313.92479pt.
+
+Package caption Warning: The option `hypcap=true' will be ignored for this
+(caption)                particular \caption on input line 2119.
+See the caption package documentation for explanation.
+
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
+s been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2119 ...atch distribution for Red deepsea crab.}
+                                                   [78
+
+ <../Figures-actual/RV-4VWX-2532-presence.pdf>] (./techreport.ind [79
+
+
+] [80] [81]) 
 AED: lastpage setting LastPage
-[23] (./techreport.aux)
+(./techreport.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `techreport.out' has not changed.
-(rerunfilecheck)             Checksum: 6E19CA892222BD1402D85A5ECDFCA9ED;3954.
+(rerunfilecheck)             Checksum: CEF92AC6376E41A7A730135D5EA58CCE;28370.
  ) 
 Here is how much of TeX's memory you used:
- 21923 strings out of 480971
- 373162 string characters out of 5906082
- 828455 words of memory out of 5000000
- 38285 multiletter control sequences out of 15000+600000
- 469580 words of font info for 184 fonts, out of 8000000 for 9000
+ 22513 strings out of 480971
+ 391533 string characters out of 5906082
+ 835837 words of memory out of 5000000
+ 38686 multiletter control sequences out of 15000+600000
+ 471754 words of font info for 189 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,17n,91p,1942b,553s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{sec:2550} has been referenced but does not exist,
+ 86i,17n,91p,1985b,589s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{sec:4511} has been referenced but does not exist,
  replaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2532} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2527} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2526} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2523} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2521} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2513} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2511} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:2211} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:4512} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:4511} has been referenced but does not exist, r
-eplaced by a fixed one
-
-pdfTeX warning (dest): name{sec:221} has been referenced but does not exist, re
-placed by a fixed one
 
 pdfTeX warning (dest): name{sec:220} has been referenced but does not exist, re
 placed by a fixed one
@@ -1595,49 +2621,13 @@ placed by a fixed one
 pdfTeX warning (dest): name{sec:880} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:816} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:742} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:741} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:720} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:712} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:704} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:701} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:647} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:646} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:641} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:640} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:637} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:630} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:626} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:625} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:623} has been referenced but does not exist, re
@@ -1646,34 +2636,7 @@ placed by a fixed one
 pdfTeX warning (dest): name{sec:622} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:621} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:620} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:619} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:610} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:604} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:603} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:520} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:512} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:505} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:503} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:502} has been referenced but does not exist, re
@@ -1682,25 +2645,13 @@ placed by a fixed one
 pdfTeX warning (dest): name{sec:501} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:414} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:412} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:410} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:400} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:351} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:350} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:341} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:340} has been referenced but does not exist, re
@@ -1709,22 +2660,10 @@ placed by a fixed one
 pdfTeX warning (dest): name{sec:320} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:314} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:307} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:306} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:304} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:303} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:301} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:300} has been referenced but does not exist, re
@@ -1733,31 +2672,7 @@ placed by a fixed one
 pdfTeX warning (dest): name{sec:160} has been referenced but does not exist, re
 placed by a fixed one
 
-pdfTeX warning (dest): name{sec:159} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:158} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:156} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:150} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:149} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:143} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:142} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:123} has been referenced but does not exist, re
-placed by a fixed one
-
-pdfTeX warning (dest): name{sec:122} has been referenced but does not exist, re
 placed by a fixed one
 
 pdfTeX warning (dest): name{sec:114} has been referenced but does not exist, re
@@ -1772,9 +2687,6 @@ laced by a fixed one
 pdfTeX warning (dest): name{sec:64} has been referenced but does not exist, rep
 laced by a fixed one
 
-pdfTeX warning (dest): name{sec:63} has been referenced but does not exist, rep
-laced by a fixed one
-
 pdfTeX warning (dest): name{sec:62} has been referenced but does not exist, rep
 laced by a fixed one
 
@@ -1782,12 +2694,6 @@ pdfTeX warning (dest): name{sec:61} has been referenced but does not exist, rep
 laced by a fixed one
 
 pdfTeX warning (dest): name{sec:60} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{sec:52} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{sec:51} has been referenced but does not exist, rep
 laced by a fixed one
 
 pdfTeX warning (dest): name{sec:50} has been referenced but does not exist, rep
@@ -1817,12 +2723,6 @@ laced by a fixed one
 pdfTeX warning (dest): name{sec:23} has been referenced but does not exist, rep
 laced by a fixed one
 
-pdfTeX warning (dest): name{sec:19} has been referenced but does not exist, rep
-laced by a fixed one
-
-pdfTeX warning (dest): name{sec:17} has been referenced but does not exist, rep
-laced by a fixed one
-
 pdfTeX warning (dest): name{sec:16} has been referenced but does not exist, rep
 laced by a fixed one
 
@@ -1844,9 +2744,6 @@ laced by a fixed one
 pdfTeX warning (dest): name{sec:10} has been referenced but does not exist, rep
 laced by a fixed one
 
-pdfTeX warning (dest): name{sec:240} has been referenced but does not exist, re
-placed by a fixed one
-
 pdfTeX warning (dest): name{sec:241} has been referenced but does not exist, re
 placed by a fixed one
 
@@ -1866,10 +2763,10 @@ AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/User
 s/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pf
 b><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic
 /uhvro8a.pfb>
-Output written on techreport.pdf (31 pages, 405680 bytes).
+Output written on techreport.pdf (91 pages, 1527189 bytes).
 PDF statistics:
- 860 PDF objects out of 1000 (max. 8388607)
- 792 compressed objects within 8 object streams
- 220 named destinations out of 1000 (max. 500000)
- 70408 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 2040 PDF objects out of 2073 (max. 8388607)
+ 1793 compressed objects within 18 object streams
+ 340 named destinations out of 1000 (max. 500000)
+ 73190 words of extra memory for PDF output out of 74296 (max. 10000000)
 
