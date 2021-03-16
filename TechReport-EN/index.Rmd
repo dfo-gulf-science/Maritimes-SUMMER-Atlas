@@ -5,6 +5,7 @@ report_number: nnn
 author: |
   Daniel Ricard ^1^ 
   Catalina Gomez ^2^ 
+  Catriona Regnier-McKellar ^2^ 
 author_list: "Ricard, D. and Gomez, C."
 region: Maritimes Region
 isbn: ""

@@ -102,7 +102,7 @@ source(file.path(main.path, "figures.R"))
 
 ## LF species
 species.numbers <- c(species.LF)
-lf.figures <- c("IDWbiomass")
+lf.figures <- c("IDWbiomass","stratifiedB","distribution-indices-usingB","BvsD75corr","lengthfreqNAFO","conditionNAFO","depthpref","bottomtemppref","salinitypref","DDHS")
 print(paste("Starting figures, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(lf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LF species: ", Sys.time()))

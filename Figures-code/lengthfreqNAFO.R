@@ -1,9 +1,12 @@
 ## length frequency plot, separately for 4X and 4VW
 
-figure15.fct <- function(list.in, cex.in, pos.ylabel=c(0,0)) {
-
-# list.in <- list(df.1=read.csv("C:/Users/RicardD/Documents/GitHub/FishInverAtlas_Ricard/Figures-Data/SS12_lf4x.csv", header=TRUE), df.2=read.csv("C:/Users/RicardD/Documents/GitHub/FishInverAtlas_Ricard/Figures-Data/SS12_lf4vw.csv", header=TRUE))
-
+lengthfreqNAFO.fct <- function(spec.code) {
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_lf4x.csv"))
+  lf.4x <- read.csv(fn, header=TRUE)
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_lf4vw.csv"))
+  lf.4vw <- read.csv(fn, header=TRUE)
+  list.in <- list(df.1=lf.4x, df.2=lf.4vw)
+  
 xx <- rbind(list.in[[1]][,1],list.in[[2]][,1])
 yy <- rbind(list.in[[1]][,2:7],list.in[[2]][,2:7])
 
@@ -34,9 +37,7 @@ dat.in <- list.in[[1]]
 	# y.range <- c(0,max(dat.in[,2:7]))
 
 	xlabel = "Length (cm) / Longueur (cm)"
-	ylabel2 = "Frequ\u{E9}nce par trait"	
 	ylabel1 = "Frequency per tow"
-	#leg.label = c("1970 - 1974", "1975 - 1979", "1980 - 1984", "1985 - 1989", "1990 - 1994", "1995 - 1999", "2000 - 2004", "2005 - 2009", "2010 - 2014")
 	leg.label = c("1970 - 1977", "1978 - 1985", "1986 - 1993", "1994 - 2001", "2002 - 2009", "2010 - 2020")
 	
 	#my.cols <- c("#000000","#FFEDA0","#FED976","#FEB24C","#FD8D3C","#FC4E2A","#E31A1C","#BD0026","#800026") # obtained from color brewer
@@ -57,19 +58,18 @@ dat.in <- list.in[[1]]
 	pretty.x <- pretty(x.range)
 	pretty.y  <- pretty(y.range)
 	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.45,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.45,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.3,0))
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.3,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.5+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 2.3+pos.ylabel[2], cex=cex.in$labels)
-	
-
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
+	mtext(ylabel1, side = 2, line = 2.5, cex=1)
 	# legend
 	legend("top", bty="n", "4X")	
+	
+	box()
 
 ## NAFO 4VW
 dat.in <- list.in[[2]]
@@ -109,19 +109,18 @@ dat.in <- list.in[[2]]
 	pretty.x <- pretty(x.range)
 	pretty.y  <- pretty(y.range)
 	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.45,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.45,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.3,0))
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.3,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-#	mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
-#	mtext(ylabel2, side = 2, line = 1+pos.ylabel[2], cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
 	
-
 	# legend
 	legend("topright", bty="n", leg.label, col = my.cols, lwd=2, text.col = "Black", lty=1)	
 	legend("top", bty="n", "4VW")
+	
+	box()
 	
 } # end function

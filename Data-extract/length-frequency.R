@@ -224,7 +224,7 @@ all.df <- all.df[order(all.df$Var1),]
 all.df$realfreq <- all.df$Freq+all.df$freq
 rel.freq5 <- all.df$realfreq /sum(all.df$realfreq)
 
-## 2010 to 2013
+## 2010 to 2020
 time6.fsh.df <- subset(det.summer.df, STRAT %in% nafo.4vw.strat & YEAR >= 2010 & YEAR < 2021 & !is.na(FSHNO)) # individual fish measurements
 time6.clen.df <- subset(det.summer.df, STRAT %in% nafo.4vw.strat & YEAR >= 2010 & YEAR < 2021 & is.na(FSHNO)) # counts per length classes
 fsh.df <- data.frame(table(cut(time6.fsh.df$FLEN, length.breaks, right=TRUE)))

@@ -1,8 +1,9 @@
 ## density-dependent habitat selection plots, beta values vs. local density
 
-figure12.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0), stratum.measure="mean") {
-#dat.in <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_DDHSslopes.csv")
-
+DDHS.fct <- function(spec.code, stratum.measure="mean") {
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_DDHSslopes.csv"))
+  dat.in <- read.csv(fn, header=TRUE)
+  
 	cut.50 <- quantile(dat.in$mean.n)[3]
 	dat.in$abundance.high <- ifelse(dat.in$mean.n>=cut.50,1,0)
 
@@ -29,14 +30,13 @@ my.df.mediantop25 <- data.frame(x=dat.in$strat.median.top25, y=predict(my.loess.
 oo.mediantop25<-order(my.df.mediantop25$x)
 
 # axes and labels
-	ylabel2 = "Pente SDDH Poisson"
 	ylabel1 = "DDHS Poisson slope"
 	
 	
 #plot(slope.glm.nb~mean.n, data=dat.in, type='n', axes=FALSE, ann=FALSE, xlim=x.range, ylim=y.range)
 #text(x=dat.in$mean.n, y=dat.in$slope.glm.nb, labels=dat.in$stratum)
 if(stratum.measure=="mean") {
-	xlabel = "Mean stratum abundance / Abondance moyenne par strate"
+	xlabel = "Mean stratum abundance"
 	# labels and such
 	x.range <- c(0,range(dat.in$mean.n)[2])
 	pretty.x <- pretty(x.range)
@@ -63,19 +63,18 @@ lines(xx, rep(2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(xx, rep(-2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(c(cut.50,cut.50), c(2*avg.stderr,-2*avg.stderr), lty=2, lwd=0.75, col='red')
 
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 
 		# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.5+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 2.3+pos.ylabel[2], cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
+	mtext(ylabel1, side = 2, line = 2.5, cex=1)
 	}
 
 if(stratum.measure=="mediantop25") {
-	xlabel = "Median stratum abundance / Abondance m\u{E9}diane par strate"
+	xlabel = "Median stratum abundance"
 	# labels and such
 	x.range <- c(0,range(dat.in$strat.median.top25)[2])
 	pretty.x <- pretty(x.range)
@@ -99,15 +98,14 @@ lines(xx, rep(2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(xx, rep(-2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(c(cut.50,cut.50), c(2*avg.stderr,-2*avg.stderr), lty=2, lwd=0.75, col='red')
 
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 
 		# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.5+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 2.3+pos.ylabel[2], cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
+	mtext(ylabel1, side = 2, line = 2.5, cex=1)
 	}
 	
 

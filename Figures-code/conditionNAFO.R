@@ -1,12 +1,13 @@
 ## average fish condition plot, separately for NAFO 4X and 4VW
 
-figure20.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-#nafo4x <- read.csv("C:\\Documents and Settings\\RicardD\\My Documents\\Dropbox\\ATLAS_poissons_SS\\Data\\SS60_lw4x.csv", header=TRUE)
-#nafo4vw <- read.csv("C:\\ATLAS_poissons_SS\\Data\\SS60_lw4vw.csv", header=TRUE)
-#nafo4x <- read.csv("D:\\Dropbox\\ATLAS_poissons_SS\\Data\\SS10_lw4x.csv", header=TRUE)
-#nafo4vw <- read.csv("D:\\Dropbox\\ATLAS_poissons_SS\\Data\\SS10_lw4vw.csv", header=TRUE)
-
-	
+conditionNAFO.fct <- function(spec.code) {
+  
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_lw4x.csv"))
+  lw.4x <- read.csv(fn, header=TRUE)
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_lw4vw.csv"))
+  lw.4vw <- read.csv(fn, header=TRUE)
+  dat.in <- list(df.1=lw.4x, df.2=lw.4vw)
+  
 # remove entries where weight is null
 ## also, remove crazy conditions that exceed 2.0
 nafo4x <- subset(dat.in[[1]], !is.na(FWT) & condition<=2.0)
@@ -108,15 +109,14 @@ yearly.cond.upper50 <- tapply(subset(tt.dat, FLEN>=l.50)$condition, subset(tt.da
 	#text(x.range[1],y.range[2], bty="n", (bquote(y == .(aa4x)*x^.(bb4x))),  col = "Black", cex=1.25*cex.in$title, adj=c(0,2))
 	}
 
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0), line=1)
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0), line=1)
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01, line=1)
 	
 	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 4.7+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 3.5+pos.ylabel[2], cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
+	mtext(ylabel1, side = 2, line = 3.5, cex=1)
 
 ## NAFO 4VW
 dat.in <- nafo4vw
@@ -127,8 +127,7 @@ yearly.cond.lower50 <- tapply(subset(dat.in, FLEN<l.50)$condition, subset(dat.in
 yearly.cond.upper50 <- tapply(subset(dat.in, FLEN>=l.50)$condition, subset(dat.in, FLEN>=l.50)$YEAR, mean)
 
 # axes and labels
-	xlabel = "Year / Ann\u{E9}e"
-	ylabel2 = "Condition moyenne"	
+	xlabel = "Year"
 	ylabel1 = "Mean condition"
 	
 	# labels and such
@@ -182,13 +181,13 @@ yearly.cond.upper50 <- tapply(subset(dat.in, FLEN>=l.50)$condition, subset(dat.i
 
 	}
 
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0), line=1)
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0), line=1)
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01, line=1)
 	
 	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
+	mtext(xlabel, side = 1, line = 1.5, cex=1)
 #	mtext(ylabel1, side = 2, line = 3.5+pos.ylabel[2], cex=cex.in$labels)
 #	mtext(ylabel2, side = 2, line = 2.3+pos.ylabel[2], cex=cex.in$labels)
 

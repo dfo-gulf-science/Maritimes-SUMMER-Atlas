@@ -7,6 +7,1731 @@
 
 \setcounter{figure}{0} 
 
+## Atlantic cod (Morue franche) - species code 10 (category LF) {#sec:10} 
+
+\index{Morue franche} \index{Atlantic cod} \index{Gadus morhua} 
+
+\index{Gadidae!Gadus morhua} 
+
+Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-10-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-10-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-10-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic cod.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-10-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic cod.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic cod.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic cod.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Haddock (Aiglefin) - species code 11 (category LF) {#sec:11} 
+
+\index{Aiglefin} \index{Haddock} \index{Melanogrammus aeglefinus} 
+
+\index{Gadidae!Melanogrammus aeglefinus} 
+
+Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-11-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-11-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-11-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Haddock.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-11-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Haddock.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-11-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-11-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-11-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-11-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Haddock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Haddock.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## White hake (Merluche blanche) - species code 12 (category LF) {#sec:12} 
+
+\index{Merluche blanche} \index{White hake} \index{Urophycis tenuis} 
+
+\index{Phycidae!Urophycis tenuis} 
+
+Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-12-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-12-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-12-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of White hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-12-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for White hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-12-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-12-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-12-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-12-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of White hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for White hake.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Red hake (Merluche écureuil) - species code 13 (category LF) {#sec:13} 
+
+\index{Merluche écureuil} \index{Red hake} \index{Urophycis chuss} 
+
+\index{Phycidae!Urophycis chuss} 
+
+Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-13-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-13-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-13-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Red hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-13-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Red hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-13-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-13-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-13-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-13-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Red hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Red hake.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Silver hake (Merlu argenté) - species code 14 (category LF) {#sec:14} 
+
+\index{Merlu argenté} \index{Silver hake} \index{Merluccius bilinearis} 
+
+\index{Merlucciidae!Merluccius bilinearis} 
+
+Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-14-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-14-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-14-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Silver hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-14-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Silver hake.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-14-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-14-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-14-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-14-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Silver hake.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Silver hake.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Pollock (Goberge) - species code 16 (category LF) {#sec:16} 
+
+\index{Goberge} \index{Pollock} \index{Pollachius virens} 
+
+\index{Gadidae!Pollachius virens} 
+
+Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-16-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-16-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-16-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Pollock.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-16-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Pollock.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-16-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-16-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-16-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-16-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Pollock.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Pollock.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Atlantic redfishes (Sébastes de l'Atlantique) - species code 23 (category LF) {#sec:23} 
+
+\index{Sébastes de l'Atlantique} \index{Atlantic redfishes} \index{Sebastes} 
+
+\index{Sebastidae!Sebastes} 
+
+Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-23-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-23-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-23-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic redfishes.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-23-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic redfishes.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-23-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-23-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-23-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-23-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic redfishes.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic redfishes.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Atlantic halibut (Flétan de l'Atlantique) - species code 30 (category LF) {#sec:30} 
+
+\index{Flétan de l'Atlantique} \index{Atlantic halibut} \index{Hippoglossus hippoglossus} 
+
+\index{Pleuronectidae!Hippoglossus hippoglossus} 
+
+Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-30-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-30-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-30-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic halibut.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-30-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic halibut.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-30-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-30-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-30-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-30-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic halibut.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic halibut.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## American plaice (Plie canadienne) - species code 40 (category LF) {#sec:40} 
+
+\index{Plie canadienne} \index{American plaice} \index{Hippoglossoides platessoides} 
+
+\index{Pleuronectidae!Hippoglossoides platessoides} 
+
+Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-40-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-40-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-40-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of American plaice.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-40-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for American plaice.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-40-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-40-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-40-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-40-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of American plaice.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for American plaice.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Witch flounder (Plie grise) - species code 41 (category LF) {#sec:41} 
+
+\index{Plie grise} \index{Witch flounder} \index{Glyptocephalus cynoglossus} 
+
+\index{Pleuronectidae!Glyptocephalus cynoglossus} 
+
+Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-41-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-41-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-41-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Witch flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-41-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Witch flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-41-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-41-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-41-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-41-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Witch flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Witch flounder.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Yellowtail flounder (Limande à queue jaune) - species code 42 (category LF) {#sec:42} 
+
+\index{Limande à queue jaune} \index{Yellowtail flounder} \index{Limanda ferruginea} 
+
+\index{Pleuronectidae!Limanda ferruginea} 
+
+Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-42-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-42-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-42-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Yellowtail flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-42-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Yellowtail flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-42-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-42-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-42-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-42-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Yellowtail flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Yellowtail flounder.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Winter flounder (Limande-plie rouge) - species code 43 (category LF) {#sec:43} 
+
+\index{Limande-plie rouge} \index{Winter flounder} \index{Pseudopleuronectes americanus} 
+
+\index{Pleuronectidae!Pseudopleuronectes americanus} 
+
+Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-43-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-43-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-43-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Winter flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-43-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter flounder.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-43-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-43-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-43-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-43-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Winter flounder.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Winter flounder.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Atlantic wolffish (Loup atlantique) - species code 50 (category LF) {#sec:50} 
+
+\index{Loup atlantique} \index{Atlantic wolffish} \index{Anarhichas lupus} 
+
+\index{Anarhichadidae!Anarhichas lupus} 
+
+Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-50-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-50-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-50-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic wolffish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-50-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic wolffish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-50-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-50-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-50-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-50-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic wolffish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic wolffish.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Atlantic herring (Hareng de l'Atlantique) - species code 60 (category LF) {#sec:60} 
+
+\index{Hareng de l'Atlantique} \index{Atlantic herring} \index{Clupea harengus} 
+
+\index{Clupeidae!Clupea harengus} 
+
+Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-60-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-60-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-60-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Atlantic herring.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-60-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic herring.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-60-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-60-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-60-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-60-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic herring.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Atlantic herring.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Longhorn sculpin (Chaboisseau à dix-huit épines) - species code 300 (category LF) {#sec:300} 
+
+\index{Chaboisseau à dix-huit épines} \index{Longhorn sculpin} \index{Myoxocephalus octodecemspinosus} 
+
+\index{Cottidae!Myoxocephalus octodecemspinosus} 
+
+Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-300-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-300-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-300-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Longhorn sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-300-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Longhorn sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-300-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-300-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-300-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-300-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Longhorn sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Longhorn sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Moustache sculpin (Faux-trigle armé) - species code 304 (category LF) {#sec:304} 
+
+\index{Faux-trigle armé} \index{Moustache sculpin} \index{Triglops murrayi} 
+
+\index{Cottidae!Triglops murrayi} 
+
+Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-304-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-304-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-304-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-304-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Moustache sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-304-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-304-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Moustache sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-304-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-304-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-304-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-304-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Moustache sculpin.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-304-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Moustache sculpin.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Sea raven (Hémitriptère atlantique) - species code 320 (category LF) {#sec:320} 
+
+\index{Hémitriptère atlantique} \index{Sea raven} \index{Hemitripterus americanus} 
+
+\index{Hemitripteridae!Hemitripterus americanus} 
+
+Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-320-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-320-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-320-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Sea raven.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-320-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Sea raven.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-320-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-320-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-320-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-320-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Sea raven.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Sea raven.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Alligatorfish (Poisson-alligator atlantique) - species code 340 (category LF) {#sec:340} 
+
+\index{Poisson-alligator atlantique} \index{Alligatorfish} \index{Aspidophoroides monopterygius} 
+
+\index{Agonidae!Aspidophoroides monopterygius} 
+
+Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-340-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-340-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-340-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-340-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Alligatorfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-340-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-340-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Alligatorfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-340-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-340-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-340-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-340-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Alligatorfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-340-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Alligatorfish.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Monkfish (Baudroie d'Amérique) - species code 400 (category LF) {#sec:400} 
+
+\index{Baudroie d'Amérique} \index{Monkfish} \index{Lophius americanus} 
+
+\index{Lophiidae!Lophius americanus} 
+
+Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-400-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-400-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-400-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Monkfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-400-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Monkfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-400-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-400-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-400-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-400-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Monkfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Monkfish.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Ocean pout (Loquette d'Amérique) - species code 640 (category LF) {#sec:640} 
+
+\index{Loquette d'Amérique} \index{Ocean pout} \index{Zoarces americanus} 
+
+\index{Zoarcidae!Zoarces americanus} 
+
+Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-640-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-640-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-640-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-640-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Ocean pout.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-640-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-640-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Ocean pout.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-640-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-640-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-640-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-640-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Ocean pout.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-640-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Ocean pout.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Thorny skate (Raie épineuse) - species code 201 (category LF) {#sec:201} 
+
+\index{Raie épineuse} \index{Thorny skate} \index{Amblyraja radiata} 
+
+\index{Rajidae!Amblyraja radiata} 
+
+Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-201-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-201-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-201-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Thorny skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-201-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Thorny skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-201-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-201-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-201-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-201-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Thorny skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Thorny skate.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Smooth skate (Raie lisse) - species code 202 (category LF) {#sec:202} 
+
+\index{Raie lisse} \index{Smooth skate} \index{Malacoraja senta} 
+
+\index{Rajidae!Malacoraja senta} 
+
+Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-202-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-202-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-202-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Smooth skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-202-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Smooth skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-202-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-202-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-202-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-202-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Smooth skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Smooth skate.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Winter skate (Raie tachetée) - species code 204 (category LF) {#sec:204} 
+
+\index{Raie tachetée} \index{Winter skate} \index{Leucoraja ocellata} 
+
+\index{Rajidae!Leucoraja ocellata} 
+
+Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-204-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-204-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-204-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-204-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Winter skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-204-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-204-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter skate.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-204-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-204-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-204-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-204-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Winter skate.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-204-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Winter skate.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Picked dogfish (Aiguillat commun) - species code 220 (category LF) {#sec:220} 
+
+\index{Aiguillat commun} \index{Picked dogfish} \index{Squalus acanthias} 
+
+\index{Squalidae!Squalus acanthias} 
+
+Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-220-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-220-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-220-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Picked dogfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-220-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Picked dogfish.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-220-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-220-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-220-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-220-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Picked dogfish.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Picked dogfish.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Northern shortfin squid (Encornet rouge nordique) - species code 4511 (category LF) {#sec:4511} 
+
+\index{Encornet rouge nordique} \index{Northern shortfin squid} \index{Illex illecebrosus} 
+
+\index{Ommastrephidae!Illex illecebrosus} 
+
+Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-IDWbiomass.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
+\end{minipage}  
+
+\vspace{10cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-4511-stratifiedB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-4511-distribution-indices-usingB.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-4511-BvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
+biomass of Northern shortfin squid.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-lengthfreqNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Length frequency distribution in NAFO units 4X and 4VW for Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-4511-conditionNAFO.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Northern shortfin squid.}
+\end{minipage} 
+
+\clearpage
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{cc}
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-4511-depthpref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-4511-bottomtemppref.pdf} \\ 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-4511-salinitypref.pdf} & 
+\includegraphics[width=3in]{../Figures-Actual/RV-4VWX-4511-salinitypref.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Catch distribution by depth, temperature and salinity of Northern shortfin squid.}
+\end{minipage} 
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-DDHS.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
+the figure for Northern shortfin squid.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
 ## Northern prawn (Crevette nordique) - species code 2211 (category SF) {#sec:2211} 
 
 \index{Crevette nordique} \index{Northern prawn} \index{Pandalus borealis} 

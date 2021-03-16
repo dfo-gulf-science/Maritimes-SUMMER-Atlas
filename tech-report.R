@@ -21,21 +21,21 @@ temp <- lapply(taxo.final$species.code, function(x) {
   
   out <- list()
   ## figure files 
-  spp_file1 <- paste0("RV-4VWX-",x,"_IDWMap-biomass.pdf")
+  spp_file1 <- paste0("RV-4VWX-",x,"-IDWbiomass.pdf")
   
-  spp_file2 <- paste0("RV-4VWX-",x,"_Stratified-biomass.pdf")
-  spp_file3 <- paste0("RV-4VWX-",x,"_Distribution-usingbiomass.pdf")
-  spp_file4 <- paste0("RV-4VWX-",x,"_BDcorrelations.pdf")
+  spp_file2 <- paste0("RV-4VWX-",x,"-stratifiedB.pdf")
+  spp_file3 <- paste0("RV-4VWX-",x,"-distribution-indices-usingB.pdf")
+  spp_file4 <- paste0("RV-4VWX-",x,"-BvsD75corr.pdf")
   
-  spp_file5 <- paste0("RV-4VWX-",x,"_LengthFreq-NAFO.pdf")
+  spp_file5 <- paste0("RV-4VWX-",x,"-lengthfreqNAFO.pdf")
   
-  spp_file6 <- paste0("RV-4VWX-",x,"_Condition4X4VW.pdf")
+  spp_file6 <- paste0("RV-4VWX-",x,"-conditionNAFO.pdf")
   
-  spp_file7 <- paste0("RV-4VWX-",x,"_DepthDist.pdf")
-  spp_file8 <- paste0("RV-4VWX-",x,"_TemperatureDist.pdf")
-  spp_file9 <- paste0("RV-4VWX-",x,"_SalinityDist.pdf")
+  spp_file7 <- paste0("RV-4VWX-",x,"-depthpref.pdf")
+  spp_file8 <- paste0("RV-4VWX-",x,"-bottomtemppref.pdf")
+  spp_file9 <- paste0("RV-4VWX-",x,"-salinitypref.pdf")
   
-  spp_file10 <- paste0("RV-4VWX-",x,"_DDHSslopes.pdf")
+  spp_file10 <- paste0("RV-4VWX-",x,"-DDHS.pdf")
   
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
@@ -64,7 +64,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5.5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.5in]{../Figures-Actual/",
                      spp_file1, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -74,19 +74,21 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\end{minipage}  \n"
   i <- i + 1
   #end of Figure 1
+  out[[i]] <- "\\vspace{10cm}  \n"
+  i <- i + 1
   
   #Figures 2,3 and 4
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{ccc}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
                      spp_file2, "} & ")
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
                      spp_file3, "} & ")
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
                      spp_file4, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -97,35 +99,14 @@ biomass of ", english_name,".}")
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 2, 3 and 4
-  
-  #Figures 7,8 and 9
-  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  out[[i]] <- "\\clearpage\n"
   i <- i + 1
-  out[[i]] <- " \\begin{tabular}{ccc}"
-  i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
-                     spp_file7, "} & ")
-  i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
-                     spp_file8, "} & ")
-  i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=1.8in]{../Figures-Actual/",
-                     spp_file9, "} \\\\ ")
-  i <- i + 1
-  out[[i]] <- "\\end{tabular} "
-  i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Catch distribution by depth, temperature and salinity of ", english_name,".}")
-  i <- i + 1
-  out[[i]] <- "\\end{minipage} \n"
-  i <- i + 1
-  #end of Figure 7,8 and 9
-  
   #Figure 5 
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.5in]{../Figures-Actual/",
                      spp_file5, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -141,7 +122,7 @@ biomass of ", english_name,".}")
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6in]{../Figures-Actual/",
                      spp_file6, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -151,13 +132,41 @@ biomass of ", english_name,".}")
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 6
+  out[[i]] <- "\\clearpage\n"
+  i <- i + 1
+  
+  #Figures 7,8 and 9
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  i <- i + 1
+  out[[i]] <- " \\begin{tabular}{cc}"
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
+                     spp_file7, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
+                     spp_file8, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
+                     spp_file9, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
+                     spp_file9, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- "\\end{tabular} "
+  i <- i + 1
+  out[[i]] <- paste0("\\captionof{figure}{Catch distribution by depth, temperature and salinity of ", english_name,".}")
+  i <- i + 1
+  out[[i]] <- "\\end{minipage} \n"
+  i <- i + 1
+  #end of Figure 7,8 and 9
+  
   
   #Figure 10
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.5in]{../Figures-Actual/",
                      spp_file10, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -387,7 +396,7 @@ tempR <- paste(tempR, collapse = "\n")
 temp <- c(
   "\\pagebreak \n # Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n \\pagebreak \n", 
   #  "\\renewcommand\\thefigure{\\thesection\\Alph{figure}} \n",
-  #temp, 
+  temp, 
   #tempI, 
   tempS, 
   tempR, 
