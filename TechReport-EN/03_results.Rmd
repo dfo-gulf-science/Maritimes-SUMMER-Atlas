@@ -33,7 +33,7 @@ Slopes estimates from the density-dependent habitat selection model (y axis) plo
 ## Summary of successful tows by year and stratum
 There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13).
 
-
+\begin{landscapepage}
 <!-- Number of tows by stratum-year -->
 ```{r tabtowstratumyear1, results="asis"}
 
@@ -51,7 +51,7 @@ csas_table(tows.strata.year.1,
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
-  kableExtra::landscape() %>%
+  #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
@@ -68,7 +68,7 @@ csas_table(tows.strata.year.2,
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
-  kableExtra::landscape() %>%
+  #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
@@ -88,11 +88,12 @@ csas_table(tows.strata.year.3,
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)], " and for the whole 1970 to 2020 period."),
   format = "latex", align=c("c",rep("r",15))
   ) %>%
-  kableExtra::landscape() %>%
+  #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
 ```
+\end{landscapepage}
 
 A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`.

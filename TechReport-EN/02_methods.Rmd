@@ -78,6 +78,7 @@ The list of taxa covered in this document is presented in phylogenetic order [@N
 
 (ref:spec-fig-cap) List of species included in the Atlas. The species reported here are listed in phylogenetic order as per @page:etal:7thedition. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
 
+\begin{landscapepage}
 ```{r tabspecies}
 library(tidyverse)
 spec.tab <- read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8")
@@ -87,7 +88,7 @@ sections <- paste0("#sec:",spec.tab$spec)
 vars <- c("class","order","family","scientificname","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec", "AphiaID", "nrecords","type")
 
 knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), caption = "(ref:spec-fig-cap)") %>%
-  kableExtra::landscape() %>%
+  # kableExtra::landscape() %>%
   kableExtra::collapse_rows(1:3, row_group_label_position = 'stack') %>% 
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
   kableExtra::column_spec(5, width="3cm") %>% 
@@ -99,7 +100,7 @@ knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
 ```
-
+\end{landscapepage}
 
 ## Analyses
 
