@@ -34,7 +34,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   spp_file7 <- paste0("RV-4VWX-",x,"-depthpref.pdf")
   spp_file8 <- paste0("RV-4VWX-",x,"-bottomtemppref.pdf")
   spp_file9 <- paste0("RV-4VWX-",x,"-salinitypref.pdf")
-  
+  spp_table <- paste0("SS",x,"_alldist.tex")
   spp_file10 <- paste0("RV-4VWX-",x,"-DDHS.pdf")
   
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
@@ -64,7 +64,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=6.5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.75in]{../Figures-Actual/",
                      spp_file1, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
@@ -74,7 +74,9 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\end{minipage}  \n"
   i <- i + 1
   #end of Figure 1
-  out[[i]] <- "\\vspace{10cm}  \n"
+  out[[i]] <- "\\newline  \n"
+  i <- i + 1
+  out[[i]] <- "\\vspace{1cm}  \n"
   i <- i + 1
   
   #Figures 2,3 and 4
@@ -93,8 +95,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
@@ -116,7 +117,10 @@ biomass of ", english_name,".}")
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 5 
-  out[[i]] <- "\n"
+  out[[i]] <- "\\newline  \n"
+  i <- i + 1
+  out[[i]] <- "\\vspace{1cm}  \n"
+  i <- i + 1
   #Figure 6 
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
@@ -138,7 +142,7 @@ biomass of ", english_name,".}")
   #Figures 7,8 and 9
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
-  out[[i]] <- " \\begin{tabular}{cc}"
+  out[[i]] <- " \\begin{tabular}[t]{m{3in}m{3in}}"
   i <- i + 1
   out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
                      spp_file7, "} & ")
@@ -149,8 +153,8 @@ biomass of ", english_name,".}")
   out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
                      spp_file9, "} & ")
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=3in]{../Figures-Actual/",
-                     spp_file9, "} \\\\ ")
+  out[[i]] <- paste0("\\input{../Figures-data/",
+                     spp_table, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
@@ -159,6 +163,10 @@ biomass of ", english_name,".}")
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 7,8 and 9
+  out[[i]] <- "\\newline  \n"
+  i <- i + 1
+  out[[i]] <- "\\vspace{1cm}  \n"
+  i <- i + 1
   
   
   #Figure 10
@@ -171,8 +179,7 @@ biomass of ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in
-the figure for ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
@@ -199,12 +206,12 @@ tempI <- lapply(taxo.final$species.code, function(x) {
   
   out <- list()
   ## figure files 
-  spp_file1 <- paste0("RV-4VWX-",x,"_IDWMap-biomass.pdf")
+  spp_file1 <- paste0("RV-4VWX-",x,"-IDWbiomass.pdf")
   
-  spp_file2 <- paste0("RV-4VWX-",x,"_Stratified-biomass.pdf")
-  spp_file3 <- paste0("RV-4VWX-",x,"_Distribution-usingbiomass.pdf")
-  spp_file4 <- paste0("RV-4VWX-",x,"_BDcorrelations.pdf")
-  
+  spp_file2 <- paste0("RV-4VWX-",x,"-stratifiedB.pdf")
+  spp_file3 <- paste0("RV-4VWX-",x,"-distribution-indices-usingB.pdf")
+  spp_file4 <- paste0("RV-4VWX-",x,"-BvsD75corr.pdf")
+
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
   french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
@@ -242,6 +249,10 @@ tempI <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 1
+  out[[i]] <- "\\newline  \n"
+  i <- i + 1
+  out[[i]] <- "\\vspace{1cm}  \n"
+  i <- i + 1
   
   #Figures 2,3 and 4
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
@@ -259,8 +270,7 @@ tempI <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and
-biomass of ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
@@ -284,7 +294,10 @@ tempS <- lapply(taxo.final$species.code, function(x) {
   
   out <- list()
   ## figure files 
-  spp_file1 <- paste0("RV-4VWX-",x,"-presence.pdf")
+  spp_file1 <- paste0("RV-4VWX-",x,"-IDWbiomassSspecies.pdf")
+  spp_file2 <- paste0("RV-4VWX-",x,"-stratifiedB.pdf")
+  spp_file3 <- paste0("RV-4VWX-",x,"-distribution-indices-usingB.pdf")
+  spp_file4 <- paste0("RV-4VWX-",x,"-BvsD75corr.pdf")
   
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
@@ -313,16 +326,43 @@ tempS <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=5.5in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.75in]{../Figures-Actual/",
                      spp_file1, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Catch distribution for ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
   #end of Figure 1
+  #end of Figure 1
+  out[[i]] <- "\\newline  \n"
+  i <- i + 1
+  out[[i]] <- "\\vspace{1cm}  \n"
+  i <- i + 1
+  
+  #Figures 2,3 and 4
+  out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
+  i <- i + 1
+  out[[i]] <- " \\begin{tabular}{ccc}"
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
+                     spp_file2, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
+                     spp_file3, "} & ")
+  i <- i + 1
+  out[[i]] <- paste0("\\includegraphics[width=2.0in]{../Figures-Actual/",
+                     spp_file4, "} \\\\ ")
+  i <- i + 1
+  out[[i]] <- "\\end{tabular} "
+  i <- i + 1
+  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of ", english_name,".}")
+  i <- i + 1
+  out[[i]] <- "\\end{minipage} \n"
+  i <- i + 1
+  #end of Figure 2, 3 and 4
   
   #End of Figures:
   out[[i]] <- "\\clearpage\n"
@@ -397,7 +437,7 @@ temp <- c(
   "\\pagebreak \n # Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n \\pagebreak \n", 
   #  "\\renewcommand\\thefigure{\\thesection\\Alph{figure}} \n",
   temp, 
-  #tempI, 
+  tempI, 
   tempS, 
   tempR, 
   "\\printindex \n")

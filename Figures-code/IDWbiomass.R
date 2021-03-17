@@ -12,8 +12,10 @@ IDWbiomass.fig.fct <- function(spec.code) {
 
 # logic to determine what scale to use
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
+logic.rare <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))<20
 
-my.levels <- if(logic.abundant) c(0,0.1,5,20,50,100,500) else c(0,0.05,0.1,0.5,1,5,10)
+my.levels <- if (logic.abundant) {c(0,0.1,5,20,50,100,500)} else { if (logic.rare) {c(0,0.001,0.01,0.05,0.1,1,2)} else {c(0,0.05,0.1,0.5,1,5,10)}}
+
 #my.levels <- if(max(dat.in$totno.corr)>=1000) c(0,0.1,5,20,50,100) else c(0,0.05,0.1,0.5,1,5)
 my.legend <- ifelse(logic.abundant, "abundant","rare")
 
@@ -30,7 +32,7 @@ mat.layout2 <- matrix(c(0,2,0,0,0,1,3,6,9,0,0,4,7,10,0,0,5,8,11,13,0,0,0,12,0),n
 
 ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,6.5,2), heights=3*c(2,4.8,4.8,4.8,2), respect=TRUE)
 #ll <- layout(mat.layout2, widths=rep(1/3,3), heights=rep(1/3,3), respect=TRUE)
-
+# layout.show(ll)
 
 #Version 1.0 2013
 #yrs.labels <- c("1970-1974","1975-1979","1980-1984","1985-1989","1990-1994","1995-1999","2000-2004","2005-2009","2010-2013")

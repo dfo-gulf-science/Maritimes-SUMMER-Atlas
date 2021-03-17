@@ -73,6 +73,8 @@ data.extract <- function(extract.name, spec.num) {
              source(file.path(dataextract.path, "compute-distribution.R")) # uses the abundance tow-level data to generate yearly distribution indices
              source(file.path(dataextract.path, "compute-distribution-usingbiomass.R")) # uses the biomass tow-level data to generate yearly distribution indices
              
+             source(file.path(dataextract.path, "data-extract-catch.R")) # extract the tow-level data
+             
              distribution.df <- distribution.fct(extract.catch.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution.csv",sep="")
              write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)

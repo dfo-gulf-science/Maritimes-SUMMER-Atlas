@@ -3,7 +3,7 @@
 BvsD75corr.fct <- function(spec.code) {
   fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
   abundance <- read.csv(fn, header=TRUE)
-  fn <- file.path(figdata.path, paste0("SS",spec.code,"_distribution.csv"))
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_distribution-usingbiomass.csv"))
   distribution <- read.csv(fn, header=TRUE)
   
 merged.df <- merge(abundance, distribution, "year")

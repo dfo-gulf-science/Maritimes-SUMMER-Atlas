@@ -1,8 +1,9 @@
 ## maps of IDW interpolated biomass
 
-figure22.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-# catch.dat <- read.csv("C:/ATLAS_poissons_SS/Data/SS2526_catch.csv", header=TRUE)
-
+IDWbiomassSspecies.fct <- function(spec.code) {
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_catch.csv"))
+  dat.in <- read.csv(fn, header=TRUE)
+  
 logic.abundant <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95))>50
 
 my.levels <- if(logic.abundant) c(0,0.1,5,20,50,100,500) else c(0,0.05,0.1,0.5,1,5,10)

@@ -34,7 +34,7 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "IDWbiomass.R"))
            ## PDF
            fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=7.5, height=5.0)
+           pdf(file.path(fig.path, fig.name), width=8.5, height=6.0)
            IDWbiomass.fig.fct(spec.num)
            dev.off()
            
@@ -145,6 +145,16 @@ make.figure <- function(fig.name, spec.num) {
          "lengthfreqNAFO" = {
            source(file.path(figcode.path, "lengthfreqNAFO.R"))
          },
+         "IDWbiomassSspecies" = {
+           source(file.path(figcode.path, "IDWbiomassSspecies.R"))
+           
+           ## PDF
+           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, fig.name), width=7.5, height=7.5)
+           IDWbiomassSspecies.fct(spec.num)
+           dev.off()
+           
+         },
          "presence" = {
            source(file.path(figcode.path, "presence.R"))
            
@@ -164,9 +174,6 @@ make.figure <- function(fig.name, spec.num) {
          },
          "IDWabundanceSspecies" = {
            source(file.path(figcode.path, "IDWabundanceSspecies.R"))
-         },
-         "IDWbiomassSspecies" = {
-           source(file.path(figcode.path, "IDWbiomassSspecies.R"))
          },
          ## case not defined
          {

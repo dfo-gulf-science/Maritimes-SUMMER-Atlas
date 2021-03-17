@@ -4,6 +4,7 @@ year: 2021
 report_number: nnn
 author: |
   Daniel Ricard ^1^ 
+  Jamie Emberley ^2^ 
   Catalina Gomez ^2^ 
   Catriona Regnier-McKellar ^2^ 
 author_list: "Ricard, D. and Gomez, C."

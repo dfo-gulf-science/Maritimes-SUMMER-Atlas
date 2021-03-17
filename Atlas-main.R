@@ -56,7 +56,6 @@ spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header
 
 ## test for cod
 ## data.extract(extract.name="envpref", spec.num=10)
-## figures(fig=6, spec.num=10)
 
 species.LF <- spec.list[spec.list$type=='LF',]$spec # long timeseries
 species.SF <- spec.list[spec.list$type=='SF',]$spec # short timeseries
@@ -109,7 +108,7 @@ print(paste("End figures, LF species: ", Sys.time()))
 
 ## SF species
 species.numbers <- c(species.SF)
-sf.figures <- c("presence")
+sf.figures <- c("IDWbiomassSspecies","stratifiedB","distribution-indices-usingB","BvsD75corr")
 print(paste("Starting figures, SF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(sf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, SF species: ", Sys.time()))
@@ -123,7 +122,7 @@ print(paste("End figures, R species: ", Sys.time()))
 
 ## LI species
 species.numbers <- c(species.LI)
-li.figures <- c("presence")
+li.figures <- c("IDWbiomass","stratifiedB","distribution-indices-usingB","BvsD75corr")
 print(paste("Starting figures, LI species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LI species: ", Sys.time()))

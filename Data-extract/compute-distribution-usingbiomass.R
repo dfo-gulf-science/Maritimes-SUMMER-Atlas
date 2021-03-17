@@ -86,14 +86,14 @@ stratified.mat2 <- lapply(yrs, function(i){tapply(subset(merged.catch, YEAR==i)$
 
 ll <- seq(1,length(stratified.mat))
 
-stratified.weighted.mat <- sapply(ll, function(i){
+stratified.weighted.mat <- lapply(ll, function(i){
 	# identify the strata for year i
 	ss.tt <- subset(summer.strat, Strata %in% names(stratified.mat[[i]]))
 	## now compute the yearly totals
 	stratified.mat[[i]] * (ss.tt$area/sum(ss.tt$area))
 	})
 
-stratified.yearly <- sapply(ll, function(i){
+stratified.yearly <- lapply(ll, function(i){
 	# identify the strata for year i
 	ss.tt <- subset(summer.strat, Strata %in% names(stratified.mat[[i]]))
 	## now compute the yearly totals
