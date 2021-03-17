@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.15)  17 MAR 2021 08:02
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.15)  17 MAR 2021 09:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -9087,11 +9087,11 @@ Package rerunfilecheck Info: File `techreport.out' has not changed.
 (rerunfilecheck)             Checksum: E9A19BFAC4C01F960E1C45B11B4F051B;49946.
  ) 
 Here is how much of TeX's memory you used:
- 25127 strings out of 480970
- 512227 string characters out of 5906071
- 905761 words of memory out of 5000000
+ 25130 strings out of 480970
+ 512254 string characters out of 5906071
+ 904797 words of memory out of 5000000
  40690 multiletter control sequences out of 15000+600000
- 471879 words of font info for 191 fonts, out of 8000000 for 9000
+ 472004 words of font info for 193 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,17n,91p,1985b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec
@@ -9110,7 +9110,7 @@ D/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/Us
 ers/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
 pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvet
 ic/uhvro8a.pfb>
-Output written on techreport.pdf (196 pages, 26539513 bytes).
+Output written on techreport.pdf (196 pages, 26539650 bytes).
 PDF statistics:
  5305 PDF objects out of 6186 (max. 8388607)
  4181 compressed objects within 42 object streams
