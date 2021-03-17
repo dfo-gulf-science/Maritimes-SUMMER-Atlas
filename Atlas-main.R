@@ -1,6 +1,7 @@
 #--------------------------------------------------------------------------#
 ## main R script to generate the figures required in the DFO Maritimes groundfish survey atlas
 
+
 # load required libraries
 
 # list required libraries, and install if necessary
@@ -18,13 +19,14 @@ lapply(necessary, require, character.only=TRUE)
 ## since we are working from a git repository, use the "here" library to set the paths relative to the root path of the git repo
 main.path <- here::here()
 
+
 dataextract.path <- file.path(main.path, "Data-extract") ## data extraction scripts
+figdata.path <- file.path(main.path, "Figures-data"); if(!dir.exists(figdata.path)) dir.create(figdata.path) ## where to store data for figures
+figcode.path <- file.path(main.path, "Figures-code") ## where to find code for figures
+fig.path <- file.path(main.path, "Figures-actual") ; if(!dir.exists(fig.path)) dir.create(fig.path) ## where to store figures (for report)
+mapping.path <- file.path(main.path, "Mapping") ## mapping folder, maps of strata, etc.
 report.path <- file.path(main.path, "Report-generation")
 actualreport.path <- file.path(main.path, "TechReport-EN")
-figdata.path <- file.path(main.path, "Figures-data") ## where to store data for figures
-figcode.path <- file.path(main.path, "Figures-code") ## where to find code for figures
-fig.path <- file.path(main.path, "Figures-actual") ## where to store figures (for report)
-mapping.path <- file.path(main.path, "Mapping") ## mapping folder, maps of strata, etc.
 
 
 #####################################################################################################################################################  
