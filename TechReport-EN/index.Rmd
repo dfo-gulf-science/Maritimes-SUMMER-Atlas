@@ -7,7 +7,7 @@ author: |
   Jamie Emberley ^2^ 
   Catalina Gomez ^2^ 
   Catriona Regnier-McKellar ^2^ 
-author_list: "Ricard, D. and Gomez, C."
+author_list: "Ricard, D., Emberley, J., Gomez, C. and Regnier-McKellar, C."
 region: Maritimes Region
 isbn: ""
 address: |
