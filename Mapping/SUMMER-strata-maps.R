@@ -18,6 +18,7 @@ strata.list <- lapply(my.pids, function(i){subset(SS.strata.LL, PID == i)})
 
 
 png(file=f2.n, width=900, height=900)
+data(worldLLhigh)
 plotMap(worldLLhigh, xlim=c(291.5,303.5), ylim=c(41.5,48), col=grey(0.8), plt=c(0.1,0.9,0.1,0.9),border='black',axes=TRUE,tckLab=FALSE,xlab="",ylab="")
 addPolys(SS.strata.LL2)
 dev.off()
