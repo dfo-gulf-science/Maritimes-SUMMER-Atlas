@@ -3,7 +3,7 @@ path.ATLAS=file.path("D:/Dropbox/ATLAS_poissons_SS") ## on my Acer notebook
 fn <- file.path(path.ATLAS, "/Data/SS10_catch.csv")
 catch.in <- read.csv(fn, header=TRUE)
 
-strata.stats.df <-read.csv(file=file.path(path.ATLAS, "Data/DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
+strata.stats.df <-read.csv(file=file.path(path.ATLAS, "DFO-strata-statistics.csv")) ## static file, to do this outside of BIO
 
 summer.strata.stats.df <- subset(
 strata.stats.df, 
