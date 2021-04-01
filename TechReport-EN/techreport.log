@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.15)  17 MAR 2021 09:22
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020/W32TeX) (preloaded format=pdflatex 2021.3.24)  29 MAR 2021 15:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -219,17 +219,17 @@ LaTeX Info: Redefining \] on input line 2924.
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microt
 ype.sty
-Package: microtype 2021/02/25 v2.8b Micro-typographical refinements (RS)
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
 \MT@toks=\toks23
 \MT@count=\count281
-LaTeX Info: Redefining \textls on input line 788.
+LaTeX Info: Redefining \textls on input line 790.
 \MT@outer@kern=\dimen173
-LaTeX Info: Redefining \textmicrotypecontext on input line 1358.
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
 \MT@listname@count=\count282
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microt
 ype-pdftex.def
-File: microtype-pdftex.def 2021/02/25 v2.8b Definitions specific to pdftex (RS)
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
 
 LaTeX Info: Redefining \lsstyle on input line 915.
 LaTeX Info: Redefining \lslig on input line 915.
@@ -239,7 +239,7 @@ Package microtype Info: Loading configuration file microtype.cfg.
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/microtype/microt
 ype.cfg
-File: microtype.cfg 2021/02/25 v2.8b microtype main configuration file (RS)
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
 )) (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
@@ -672,7 +672,7 @@ Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/datetime2/dateti
 me2.sty
-Package: datetime2 2020/03/02 v1.5.6 (NLCT) date and time formats
+Package: datetime2 2021/03/21 v1.5.7 (NLCT) date and time formats
 
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tracklang/trackl
 ang.sty
@@ -935,7 +935,7 @@ File: t1phv.fd 2020/03/25 scalable font definitions for T1/phv.
 )
 (c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3back
 end-pdftex.def
-File: l3backend-pdftex.def 2021-03-02 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count336
 \l__pdf_internal_box=\box68
 ) (./techreport.aux
@@ -9087,10 +9087,10 @@ Package rerunfilecheck Info: File `techreport.out' has not changed.
 (rerunfilecheck)             Checksum: E9A19BFAC4C01F960E1C45B11B4F051B;49946.
  ) 
 Here is how much of TeX's memory you used:
- 25130 strings out of 480970
- 512254 string characters out of 5906071
- 904797 words of memory out of 5000000
- 40690 multiletter control sequences out of 15000+600000
+ 25138 strings out of 480962
+ 512508 string characters out of 5905818
+ 904980 words of memory out of 5000000
+ 40706 multiletter control sequences out of 15000+600000
  472004 words of font info for 193 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  86i,17n,91p,1985b,715s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -9110,7 +9110,7 @@ D/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/Us
 ers/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.
 pfb><c:/Users/RicardD/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/urw/helvet
 ic/uhvro8a.pfb>
-Output written on techreport.pdf (196 pages, 26539650 bytes).
+Output written on techreport.pdf (196 pages, 26539674 bytes).
 PDF statistics:
  5305 PDF objects out of 6186 (max. 8388607)
  4181 compressed objects within 42 object streams
