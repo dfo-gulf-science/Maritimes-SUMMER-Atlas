@@ -87,6 +87,7 @@ data.extract <- function(extract.name, spec.num) {
            },
            "stratified" = { 	#
              ## yearly stratified random estimates of abundance and weight
+             source(file.path(dataextract.path, "data-extract-catch.R")) # extract the tow-level data
              source(file.path(dataextract.path, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
              
              strat.list <- stratified.fct(extract.catch.fct(spec.num), DDHS=FALSE)

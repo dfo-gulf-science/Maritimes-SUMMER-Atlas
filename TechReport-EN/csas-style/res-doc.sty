@@ -92,6 +92,9 @@
 \setlength{\cftbeforesubsubsecskip}{5pt}
 %% Remove space between the Table of contents title and it's content.
 \setlength\cftaftertoctitleskip{6pt}
+\makeatletter
+\renewcommand{\@tocrmarg}{5em}
+
 %% ------------------------------------------------------------------------------
 
 %% ------------------------------------------------------------------------------
@@ -168,7 +171,7 @@
 
 \renewcommand{\subsection}{\@startsection
 {subsection}{2}{0mm}
-{-3.25ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
+{-2.1ex plus -1ex minus  -.2ex}{1.5ex plus .2ex}
 %% {1ex}{0.1ex plus -2ex}
 {\normalfont\bf\MakeUppercase}}
 
@@ -643,10 +646,11 @@ Ottawa ON K1A 0E6\\
 
 \vspace{-1mm}
 \textcopyright\ Her Majesty the Queen in Right of Canada, \rdYear{}\\
-ISSN 1919-5044
+ISSN 1919-5044\\
+ISBN~\rdISBN{} \hspace{5mm} Cat~No.~\rdCatNo
 \end{center}
 
-\vspace{-0.2mm}
+\vspace{-0.1mm}
 
 \textbf{Correct citation for this publication:}\\
 \vspace{2mm}

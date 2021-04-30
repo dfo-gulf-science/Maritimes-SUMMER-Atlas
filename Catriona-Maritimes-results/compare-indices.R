@@ -1,8 +1,11 @@
 ##
 ##
-cat.in <- read.csv("DanTable.csv")
+cat.in <- read.csv(file.path(here::here(), "Catriona-Maritimes-results/DanTable.csv"))
 
-strata.stats <- read.csv("../DFO-strata-statistics.csv")
+species <- unique(cat.in$SPEC)
+
+
+strata.stats <- read.csv(file.path(here::here(),"DFO-strata-statistics.csv"))
 strata.stats <- strata.stats[strata.stats$STRAT %in% unique(cat.in$STRAT),]
 strata.stats$total.area <- sum(strata.stats$AREA)
 strata.stats$prop.area <- strata.stats$AREA/strata.stats$total.area
@@ -11,14 +14,13 @@ merged.df <- merge(cat.in, strata.stats[,c("STRAT","prop.area")], by="STRAT")
 
 stratified.estimates <- aggregate(meanWGT*prop.area~year+SPEC, data=merged.df, sum)
 
-ss.10 <- read.csv("../Figures-data/SS10_stratified.csv")
 
-plot(ss.10$year, ss.10$b, type='b', lwd=2, pch=19, col="red", cex=2)
-lines(stratified.estimates[stratified.estimates$SPEC==10, "year"], stratified.estimates[stratified.estimates$SPEC==10, 3], type='b', col="black", pch=19)
+## for all the species supplied by Catriona, generate a correlation plot for the computed biomass indices
+for(s in species){
+  DR.in <- read.csv(file.path(here::here(),paste0("Figures-data/SS", s, "_stratified.csv")))
+  CAT.in <- stratified.estimates[stratified.estimates$SPEC==s, ]
+  if(s==2550){CAT.in <- CAT.in[CAT.in$year>=1999,]}
+  this.cor <- cor(DR.in$b, CAT.in$`meanWGT * prop.area`)
+  print(paste0("Species code ", s, " correlation is ", this.cor))
+}
 
-cor(ss.10$b, stratified.estimates[stratified.estimates$SPEC==10, 3])
-
-ss.11 <- read.csv("../Figures-data/SS11_stratified.csv")
-
-plot(ss.11$year, ss.11$b, type='b', lwd=2, pch=19, col="red", cex=2)
-lines(stratified.estimates[stratified.estimates$SPEC==11, "year"], stratified.estimates[stratified.estimates$SPEC==11, 3], type='b', col="black", pch=19)

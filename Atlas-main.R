@@ -56,6 +56,9 @@ source(file.path(main.path, "data-and-stats.R"))
 
 spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header=TRUE) # this list is itself generated from the above "summaries.R", which requires database connection and connection to WORMS to get AphiaID
 
+## test for John Dory
+## data.extract(extract.name="stratified", spec.num=704)
+
 ## test for cod
 ## data.extract(extract.name="envpref", spec.num=10)
 
