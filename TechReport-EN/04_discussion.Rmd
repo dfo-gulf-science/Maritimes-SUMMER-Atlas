@@ -20,6 +20,7 @@ This diverse portfolio of approaches and applications is not unique to the Marit
  
 Recognizing the diversity of approaches for mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice related to spatial outputs can lead to more comparable work and consistent science advice to support processes such as marine spatial planning. At the international level, guidelines and standards related to appropriate variables and methods for mapping and modeling species and communities of deep-sea habitats were proposed to encourage the production of publications that will lead to more comparable work [@Kenchington2019]. Similar general guidance for group practice approach mapping would be a worthwhile product in Maritimes Region. Until then, we proposed the use of the Open Data record [@OpenData_MAR_RV] for the version 1.0 of the public web-based atlas.
 
+
 # Acknowledgements  
 
-We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region. We thank the numerous colleagues in Maritimes Region that have shared information and advice in support of this report. 
+We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region and the numerous colleagues in Maritimes Region that have shared information and advice in support of this report. The efforts of the Gulf Region secondary publications coordinators Alicia Cassidy and Jeff Clements in getting this report published are well appreciated.

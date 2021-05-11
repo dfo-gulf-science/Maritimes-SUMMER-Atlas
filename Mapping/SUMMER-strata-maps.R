@@ -12,16 +12,56 @@ SS.strata.LL$X <- SS.strata.LL$X
 
 SS.strata.LL2 <- SS.strata.LL
 SS.strata.LL2$X <- SS.strata.LL2$X + 360
-
+  
 my.pids <- unique(SS.strata.LL$PID)
 strata.list <- lapply(my.pids, function(i){subset(SS.strata.LL, PID == i)})
 
 
-png(file=f2.n, width=900, height=900)
+png(file=f2.n, width=900, height=668)
 data(worldLLhigh)
-plotMap(worldLLhigh, xlim=c(291.5,303.5), ylim=c(41.5,48), col=grey(0.8), plt=c(0.1,0.9,0.1,0.9),border='black',axes=TRUE,tckLab=FALSE,xlab="",ylab="")
+plotMap(worldLLhigh, xlim=c(291.5,303.5), ylim=c(41.5,48), col=grey(0.8), plt=c(0.1,0.98,0.1,0.98),border='black',axes=TRUE,tckLab=FALSE,xlab="",ylab="")
 addPolys(SS.strata.LL2)
+## annotate with strata numbers
+
+
 dev.off()
+
+
+## use Mike McMahon's Maritimes.data package and ggplot instead
+library(Mar.data)
+library(sf)
+library(ggplot2)
+library(tidyverse)
+
+data(Strata_Mar_sf)
+
+boundaries <- read_sf(file.path(main.path, "AC/AC_1M_BoundaryPolygons_shp/AC_1M_BoundaryPolygons.shp"))
+
+boundaries_simple <- boundaries %>%
+  filter(
+    POL_DIV %in% c(
+      "Quebec", "Newfoundland and Labrador" ,
+      #"New York", "New Hampshire", "Vermont",
+      "Maine",
+      "New Brunswick", "Nova Scotia",
+      "Prince Edward Island"
+    ),
+    SELECTION == "sparse" #"dense"
+  ) %>%
+  st_transform(4326)
+
+strata.labels <- data.frame(x=c(-58.5),y=c(46.5),text=c("440"))
+
+g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
+  geom_sf(fill=grey(0.9)) +  
+  geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
+  #geom_sf_label(aes(label = StrataID)) + 
+  geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) +
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white")) +
+  xlim(-68,-57) + ylim(41.9,47) 
+
+f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
+ggsave(f4.n, g)
 
 
 ## map of the tow locations
@@ -64,6 +104,6 @@ dev.off()
 
 
 ## copy the files to the Technical Report folder
-file.copy(c(f2.n,f3.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
+file.copy(c(f2.n,f3.n,f4.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
 
 rm(list= ls()[!(ls() %in% before)]) ## clean up after ourselves

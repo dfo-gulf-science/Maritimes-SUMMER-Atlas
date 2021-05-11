@@ -51,6 +51,9 @@ source(file.path(main.path, "chan.R"))
 #source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch, which is stored in "Report-generation/species-list-for-report.csv" 
 #source(file.path(main.path, "summaries-taxonomy.R")) ## summary of records with taxonomic details, which is stored in "Report-generation/species-list-for-report-APHIA.csv"
 
+# this creates a CSV file with the strata statistics that is used for a table in the Tech Report
+#source(file.path(dataextract.path, "strata-statistics.R"))
+
 # source the code that defines the data extraction functions
 source(file.path(main.path, "data-and-stats.R"))
 

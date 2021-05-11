@@ -12,16 +12,21 @@ TO_CHAR(i.sdate,'mm') MONTH,
 TO_CHAR(i.sdate,'dd') DAY,
 s.SPEC SCIEN,
 d.fshno,
+c.length_units,
 d.flen,
 d.clen
 FROM
 groundfish.gsinf i,
+groundfish.gscat c,
 groundfish.gsdet d,
 groundfish.GSSPECIES s
 WHERE
+i.mission = c.mission AND
+i.setno = c.setno AND
 i.mission = d.mission AND
 i.setno = d.setno AND
 d.spec=s.CODE AND
+d.spec=c.spec AND
 s.CODE = '", spec.num, "'
 order by year, month, day, setno,fshno
 ", sep="")
@@ -38,6 +43,18 @@ STRAT == '470' | STRAT == '471' | STRAT == '472' | STRAT == '473' | STRAT == '47
 STRAT == '480' | STRAT == '481' | STRAT == '482' | STRAT == '483' | STRAT == '484' | STRAT == '485' | 
 STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' )  & (MONTH == 6 | MONTH == 7 | MONTH == 8)
 )
+
+## turn mms into cms
+logic1 <- is.na(det.summer.df$LENGTH_UNITS)
+det.summer.df[logic1, "LENGTH_UNITS"] <- "Centimeters" ## if no units are present, assume it is in cms
+
+logic2 <- det.summer.df$LENGTH_UNITS == "Millimeters" 
+det.summer.df[logic2, "FLEN"] <- det.summer.df[logic2, "FLEN"]/10 ## divide millimeters by 10 and reassign units to centimeters
+det.summer.df[logic2, "LENGTH_UNITS"] <- "Centimeters"
+
+## remove records with no length
+det.summer.df <- det.summer.df[!is.na(det.summer.df$FLEN),]
+det.summer.df$FLEN <- as.numeric(det.summer.df$FLEN)
 
 #length.breaks <- seq(0,max(det.summer.df$FLEN))
 length.breaks <- seq(1,max(det.summer.df$FLEN),by=3) # the length bins used are 3cm bins

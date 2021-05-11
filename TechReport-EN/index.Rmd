@@ -47,6 +47,9 @@ header-includes:
  - \usepackage{float}
  - \usepackage{makeidx}
  - \makeindex
+ - \usepackage{tocloft}
+ - \cftsetindents{section}{1em}{1em}
+ - \cftsetindents{subsection}{1em}{2.5em}
 ---
 
 ```{r setup, echo=FALSE, cache=FALSE, message=FALSE, results='hide', warning=FALSE}

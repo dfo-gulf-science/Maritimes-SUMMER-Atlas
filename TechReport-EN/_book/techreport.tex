@@ -63,6 +63,9 @@
 \usepackage{float}
 \usepackage{makeidx}
 \makeindex
+\usepackage{tocloft}
+\cftsetindents{section}{1em}{1em}
+\cftsetindents{subsection}{1em}{2.5em}
 
 %%%%% Variables %%%%%
 
@@ -203,27 +206,145 @@ A number of changes in fishing gear type and vessels used occurred since the ons
 
 }
 
-\caption{Map of the Scotian Shelf and Bay of Fundy.}\label{fig:map1}
+\caption{Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes Summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans (\href{https://www.gebco.net/data_and_products/gridded_bathymetry_data/}{GEBCO}). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.}\label{fig:map1}
 \end{figure}
 \hypertarget{sampling-design}{%
 \subsection{Sampling Design}\label{sampling-design}}
 
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure~\ref{fig:map1}).
 
-The survey follows a stratified random design (\protect\hyperlink{ref-DoubledayRivard1981}{Doubleday and Rivard 1981}; \protect\hyperlink{ref-Lohr1999}{Lohr 1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to its surface area.
+The survey follows a stratified random design (\protect\hyperlink{ref-DoubledayRivard1981}{Doubleday and Rivard 1981}; \protect\hyperlink{ref-Lohr1999}{Lohr 1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to its surface area. The area covered during the survey has remained constant since its onset, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is not conducted every year, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure~\ref{fig:map2} and Table~\ref{tab:tabstrata}).
+
+The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
 
 \begin{figure}[htb]
 
-{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-strata-map}}{Figure \ref{fig:map2}} 
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-strata-map-sf}}{Figure \ref{fig:map2}} 
 
 }
 
 \caption{Map of the Summer survey strata.}\label{fig:map2}
 \end{figure}
-The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
-After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for diﬀerent length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
+\begin{longtable}[t]{cccc}
+\caption{\label{tab:tabstrata}Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range in fathoms and the surface area in square kilometers are reported.}\\
+\toprule
+ & Stratum & Depth range (fathom) & Area (km \textsuperscript{2})\\
+\midrule
+\endfirsthead
+\caption*{}\\
+\toprule
+\textbf{NAFO Div.} & \textbf{Stratum} & \textbf{Depth range (fathom)} & \textbf{Area (km \textsuperscript{2})}\\
+\midrule
+\endhead
+
+\endfoot
+\bottomrule
+\endlastfoot
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{4Vn}}\\
+\hspace{1em} & 440 & 101-200 & 924\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 441 & 51-100 & 1000\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 442 & 0-49 & 1437\\
+\cmidrule{1-4}\pagebreak[0]
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{4VsW}}\\
+\hspace{1em} & 443 & 0-49 & 1318\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 444 & 51-100 & 3925\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 445 & 101-200 & 1023\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 446 & 101-200 & 491\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 447 & 0-49 & 1616\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 448 & 0-49 & 1449\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 449 & 51-100 & 144\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 450 & 51-100 & 383\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 451 & 101-200 & 147\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 452 & 101-200 & 345\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 453 & 101-200 & 259\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 454 & 51-100 & 499\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 455 & 0-49 & 2122\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 456 & 0-49 & 955\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 457 & 51-100 & 811\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 458 & 0-49 & 658\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 459 & 0-200 & 3148\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 460 & 51-100 & 1344\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 461 & 101-200 & 1154\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 462 & 51-100 & 2116\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 463 & 0-49 & 302\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 464 & 0-50 & 1297\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 465 & 51-100 & 2383\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 466 & 101-200 & 226\\
+\cmidrule{1-4}\pagebreak[0]
+\addlinespace[0.3em]
+\multicolumn{4}{l}{\textbf{4X}}\\
+\hspace{1em} & 470 & 51-100 & 920\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 471 & 101-200 & 1004\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 472 & 51-100 & 1249\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 473 & 0-49 & 265\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 474 & 0-49 & 161\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 475 & 0-49 & 156\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 476 & 51-100 & 1478\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 477 & 51-100 & 1232\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 478 & 101-200 & 233\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 480 & 0-49 & 655\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 481 & 51-100 & 1875\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 482 & 101-200 & 1042\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 483 & 101-200 & 532\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 484 & 101-200 & 2264\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 485 & 51-100 & 1582\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 490 & 0-49 & 601\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 491 & 51-100 & 687\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 492 & 51-100 & 1086\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 493 & 0-49 & 533\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 494 & 0-49 & 417\\
+\cmidrule{2-4}\nopagebreak
+\hspace{1em} & 495 & 0-49 & 584\\*
+\end{longtable}
+After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for different length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
 
 The location of representative tows appears in Figure~\ref{fig:map3}.
 
@@ -245,6 +366,7 @@ By its nature as a bottom trawl, the fishing gear used in the survey catches cer
 
 We divided the species caught into five categories based on 1) their taxonomic classification, 2) the number of recorded observations, and 3) their period of valid identification (Table~\ref{tab:taxocat}). Category ''LF'', for ''long frequent'', was assigned to species that have more than 1000 records since 1970 and have been consistently identified since the onset of the survey. Category ''LI'', for ''long intermediate'', was assigned to species that had between 1000 and 200 catch records. Rare and elusive species (those with less than 200 catch records over the duration of the survey) are also reported but to a lower level of analytical details (Category ''LR'', for ''long rare''). Category ''SF'', for ''short frequent'', was assigned to invertebrate species that were consistently sampled only since 1999 (\protect\hyperlink{ref-Tremblayetal:2007}{Tremblay M. J. 2007}). And category ''SR'', for ''short rare'' for invertebrate species consistently sampled only since 1999 and with less than 200 catch records.
 \begin{table}
+\caption{Taxonomic levels used to determine the analytical treatment for each species.}
 \begin{tabular}{p{0.1\textwidth}p{0.2\textwidth}p{0.7\textwidth}}
 \toprule
 \bfseries{Category} & \bfseries{Name} & \bfseries{Description} \\
@@ -264,7 +386,6 @@ SF & short frequent & species with more than 200 catch records \\
 SR & short rare & species with less than 200 catch records\\
 \bottomrule
 \end{tabular}
-\caption{Taxonomic levels}
 \label{tab:taxocat}
 \end{table}
 The list of taxa covered in this document is presented in phylogenetic order (\protect\hyperlink{ref-Nelsonetal:2004}{Nelson J. S. et al. 2004}) in Table~\ref{tab:tabspecies}. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table~\ref{tab:tabspecies} (\protect\hyperlink{ref-WoRMS}{Appeltans et al. 2012}).
@@ -280,7 +401,7 @@ The list of taxa covered in this document is presented in phylogenetic order (\p
 \endfirsthead
 \caption*{}\\
 \toprule
- &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Category\\
+\textbf{Class} & \textbf{Order} & \textbf{Family} & \textbf{Scientific name} & \textbf{English name} & \textbf{French name} & \textbf{Species code} & \textbf{AphiaID} & \textbf{Num. records} & \textbf{Category}\\
 \midrule
 \endhead
 
@@ -930,7 +1051,7 @@ Recognizing the diversity of approaches for mapping fish and invertebrates in th
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
 
-We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region. We thank the numerous colleagues in Maritimes Region that have shared information and advice in support of this report.
+We thank all the dedicated personnel involved in running trawl surveys in the Maritimes Region and the numerous colleagues in Maritimes Region that have shared information and advice in support of this report. The efforts of the Gulf Region secondary publications coordinators Alicia Cassidy and Jeff Clements in getting this report published are well appreciated.
 
 \clearpage
 
