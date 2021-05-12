@@ -2,7 +2,7 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011].
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place.
 
 (ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes Summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
 
@@ -14,7 +14,7 @@ knitr::include_graphics("./figures/annotated-map-NAFO.png")
 ## Sampling Design
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
 
-The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to its surface area. The area covered during the survey has remained constant since its onset, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is not conducted every year, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)).
+The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The area covered during the survey has remained constant since its onset, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)).
 
 The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
@@ -136,13 +136,13 @@ csasdown::csas_table(
 
 ## Analyses
 
-The Oracle relational database where all data are stored was accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Structured Query Language (SQL) is used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed.
+The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch number and weight for each species was standardized for the distance towed. 
 
 All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt[@R:package:classInt], RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
 
 ### Geographic distribution of catches
 
-Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance, using function ”idw” of the spatstat R package [@R:package:spatstat].
+Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. The IDW method was used with a power parameter value of 10.
 
 ### Abundance and biomass indices
 
@@ -154,7 +154,7 @@ For each Category L, I and S fish species, the minimum area required to account 
 
 ### Length frequencies
 
-The length frequency distribution of catch is tabulated for each seven-year period (1970-2009), and last ten-year period (2010-2020).
+The length frequency distribution of catch (the stratified numbers-at-length) is tabulated for each seven-year period (1970-2009), and last ten-year period (2010-2020).
 
 
 ### Length-weight relationship and condition factor

@@ -92,7 +92,9 @@ dev.off()
 library(ggplot2)
 g <- ggplot(data=as.data.frame(gebco,xy = TRUE)) + 
         geom_raster(aes(x=x,y=y,fill = Elevation.relative.to.sea.level)) +
-        scale_fill_viridis_c()
+        scale_fill_gradientn(colours = topo.colors(10))
+
+
 
 ## copy the files to the Technical Report folder
 file.copy(c(f1.n), file.path(actualreport.path, "figures"), overwrite=TRUE)

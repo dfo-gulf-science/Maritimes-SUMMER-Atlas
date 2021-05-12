@@ -31,15 +31,19 @@ Cumulative frequency distributions of depth, temperature and salinity at all sam
 Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
 
 ## Summary of successful tows by year and stratum
-There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13).
+
+<!-- There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13). -->
+
 
 \begin{landscapepage}
-<!-- Number of tows by stratum-year -->
+
+
 ```{r tabtowstratumyear1, results="asis"}
+#  Number of tows by stratum-year
 
 tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
 
-yrs <- 1970:1991
+yrs <- 1970:1989
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.1)
@@ -56,7 +60,7 @@ csas_table(tows.strata.year.1,
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
-yrs <- 1992:2013
+yrs <- 1990:2009
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.2)
@@ -73,7 +77,7 @@ csas_table(tows.strata.year.2,
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
-yrs <- 2014:2020
+yrs <- 2010:2020
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.3 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.3)

@@ -50,20 +50,43 @@ boundaries_simple <- boundaries %>%
   ) %>%
   st_transform(4326)
 
-strata.labels <- data.frame(x=c(-58.5),y=c(46.5),text=c("440"))
+strata.labels <- rbind(
+  data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
+)
+  
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
   geom_sf(fill=grey(0.9)) +  
   geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
-  #geom_sf_label(aes(label = StrataID)) + 
+  geom_sf_label(aes(label = StrataID)) + 
   geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white")) +
-  xlim(-68,-57) + ylim(41.9,47) 
+  xlim(-68,-57) + ylim(41.9,47) +
+  xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
-ggsave(f4.n, g)
+ggsave(f4.n, g, width=6, height=5, units="in")
+
+## try a map with depth
+gebco <- raster(file.path(mapping.path, "GEBCO-Scotia-Fundy.nc"))
+## keep only the region to plot
+y <- extent(291.5,303.5,41.5,48)
+gebco <- crop(gebco, y)
+
+my.df <- as.data.frame(gebco,xy = TRUE)
+my.df$z <- log(my.df$Elevation.relative.to.sea.level)
+
+g <- ggplot(data=my.df) + 
+  geom_raster(aes(x=-1*(360-x),y=y,fill = z)) + 
+  geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill=grey(0.9)) +
+  geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) + 
+  xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)") + xlim(-68,-57) + ylim(41.9,47)
 
 
+## how do the strata boundaries match the corresponding isobaths from the GEBCO grid?
+
+
+  
 ## map of the tow locations
 f3.n <- file.path(mapping.path,"SUMMER-tows-map.png")
 
