@@ -1,5 +1,13 @@
 # Results
 
+The depth, bottom temperature and bottom salinity cumulative frequency distribution for the survey are presented in Figure \@ref(fig:setsdist).
+
+(ref:setsdistcap) Cumulative frequencey distribution of depth, bottom temperature and bottom salinity of representative sets from the summer survey. 
+
+```{r setsdist, fig.cap="(ref:setsdistcap)"}
+knitr::include_graphics("./figures/temp.png")
+```
+
 The plots generated for each species are presented in the Appendix.
 
 ## Description of Figures
@@ -11,7 +19,7 @@ Spatial distribution of catch-per unit of effort, (CPUE, kilograms per tow) in J
 
 For Category LR and SR:
 
-Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR). Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR).
+Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR). Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
 
 ### Type B
 For Category L, S and I species:
@@ -31,8 +39,22 @@ Cumulative frequency distributions of depth, temperature and salinity at all sam
 Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
 
 ## Summary of successful tows by year and stratum
-
 <!-- There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13). -->
+```{r}
+tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
+```
+
+A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)` (Figure \@ref(fig:map3)).
+
+Tables \@ref(tab:tabtowstratumyear1), \@ref(tab:tabtowstratumyear2) and \@ref(tab:tabtowstratumyear3) present the number of tows conducted in each stratum and year.
+
+
+(ref:caption-map3) Map of the Summer survey tows. 
+
+```{r map3, fig.cap="(ref:caption-map3)"}
+knitr::include_graphics("./figures/SUMMER-tows-map.png")
+```
+
 
 
 \begin{landscapepage}
@@ -59,7 +81,9 @@ csas_table(tows.strata.year.1,
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
 
+```{r tabtowstratumyear2, results="asis"}
 yrs <- 1990:2009
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
@@ -76,7 +100,9 @@ csas_table(tows.strata.year.2,
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
 
+```{r tabtowstratumyear3, results="asis"}
 yrs <- 2010:2020
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.3 <- tows.strata.year[,c(1,2,3,ii)]
@@ -100,4 +126,3 @@ csas_table(tows.strata.year.3,
 ```
 \end{landscapepage}
 
-A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`.

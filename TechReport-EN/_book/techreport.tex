@@ -60,6 +60,7 @@
 \usepackage{\locRepo/tech-report}
 
 % header-includes from R markdown entry
+\usepackage{multirow}
 \usepackage{float}
 \usepackage{makeidx}
 \makeindex
@@ -76,8 +77,8 @@
 \newcommand{\trReportNum}{nnn}
 % Optional
 \newcommand{\trAuthFootA}{Email: \href{mailto:Daniel.Ricard@dfo-mpo.gc.ca}{\nolinkurl{Daniel.Ricard@dfo-mpo.gc.ca}} \textbar{} telephone: (506) 851-6216}
-\newcommand{\trAuthsLong}{Daniel Ricard \textsuperscript{1} Jamie Emberley \textsuperscript{2} Catalina Gomez \textsuperscript{2} Catriona Regnier-McKellar \textsuperscript{2}}
-\newcommand{\trAuthsBack}{Ricard, D., Emberley, J., Gomez, C. and Regnier-McKellar, C.}
+\newcommand{\trAuthsLong}{Daniel Ricard \textsuperscript{1} Catalina Gomez \textsuperscript{2} Jamie Emberley \textsuperscript{2} Catriona Regnier-McKellar \textsuperscript{2}}
+\newcommand{\trAuthsBack}{Ricard, D., Gomez, C., Emberley, J. and Regnier-McKellar, C.}
 
 % New definition: Address
 \newcommand{\trAddy}{\textsuperscript{1}Science Branch\\
@@ -183,11 +184,11 @@ Dartmouth, Nova Scotia, B2Y 4A2, Canada\\}
 
 The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The groundfish survey database storing the information collected during the annual survey provides the main source of fisheries-independent information for marine species in the region. This information is routinely used to support stock assessments, to produce species status reports and has been previously used to publish atlases of species distribution.
 
-The current document is an update of an earlier report (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (\protect\hyperlink{ref-DFO:2016}{DFO 2016}) and from the Open data portal supported by the federal government (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}). The present atlas builds upon the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (\protect\hyperlink{ref-Bourdages:NGatlas:2012}{Bourdages and Ouellet 2012}), southern Gulf of St.~Lawrence (\protect\hyperlink{ref-Benoit:etal:2003:techreport}{Benoît et al. 2003}) and on earlier work in the Scotian Shelf (\protect\hyperlink{ref-Simon:Comeau:1994}{Simon and Comeau 1994}; \protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}).
+The current document is an update of an earlier report (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}) that built on former atlases by updating a comprehensive suite of derived indices for 104 species to assess population status and, when feasible, environmental preferences. The information collected during the survey is stored in a relational database management system archived at Fisheries and Oceans Canada Maritimes Region which contains detailed information about the sampling locations and the associated catch. Tow-level survey data is also publicly available from the Ocean Biogeographic Information System (\protect\hyperlink{ref-DFO:2016}{DFO 2016}) and from the Open data portal supported by the federal government (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}). The present atlas builds upon the work done by Fisheries and Oceans colleagues from the northern Gulf of St.~Lawrence (\protect\hyperlink{ref-Bourdages:NGatlas:2012}{Bourdages and Ouellet 2012}), southern Gulf of St.~Lawrence (\protect\hyperlink{ref-Benoit:etal:2003:techreport}{Benoît et al. 2003}) and on earlier work in the Scotian Shelf (\protect\hyperlink{ref-Simon:Comeau:1994}{Simon and Comeau 1994}; \protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}).
 
 To facilitate updates and foster collaboration on the analyses of the survey data, the computer code necessary to extract the data, to perform the analyses presented herein, and to reproduce and update the current document is made available in a git repository (\protect\hyperlink{ref-Ricard-Gomez-2021}{Ricard and Gomez 2021}).
 
-The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the Scotian Shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). For each species, trends in geographic distribution and biomass or abundance are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. The spatial extent of distribution is plotted over time to gauge how the area occupied has changed. The relationship between biomass and spatial extent reflects whether the species distribution expands when biomass increases. For each strata, the slope describing how local density varies with regional abundance was estimated (\protect\hyperlink{ref-Myers:Stokes:1989}{Myers and Stokes 1989}). These slopes were then plotted against a habitat suitability index to identify important strata for each species. Then, length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Finally, depth, temperature and salinity preferences were estimated to gauge the range of environmental parameters (\protect\hyperlink{ref-Perry:Smith:1994:cjfas}{Perry and Smith 1994}). A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example \protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley} (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
+The survey area covers three major Northwest Atlantic Fisheries Organization (NAFO) zones that divide the Scotian Shelf into the colder east 4V and 4W (strata 440-466) and warmer west 4X (strata 470-495). For each species, temporal trends in geographic distribution and, when possible, biomass are plotted. Some caution is required in interpreting the results obtained for several taxa due to low sample size as explained later in the text. A full ecological interpretation of trends is beyond the scope of this report. Other documents stemming from peer-reviewed scientific processes under the auspices of the \href{https://www.dfo-mpo.gc.ca/csas-sccs/}{Canadian Science Advisory Secretariat} (CSAS) provide further descriptions of spatio-temporal trends in different indicators and put the information collected during the summer groundfish research vessel survey in a more focused context (see for example \protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley} (\protect\hyperlink{ref-ClarkEmberley2011}{2011})).
 
 \hypertarget{methods}{%
 \section{Methods}\label{methods}}
@@ -197,8 +198,17 @@ The survey area covers three major Northwest Atlantic Fisheries Organization (NA
 
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure~\ref{fig:map1}). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities (\protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley 2011}). Comparative fishing experiments were conducted when those changes in survey platforms took place.
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities (\protect\hyperlink{ref-ClarkEmberley2011}{Clark and Emberley 2011}). Comparative fishing experiments were conducted when those changes in survey platforms took place. A timeline of the survey platforms can be found in Figure~\ref{fig:timeline}.
 
+
+\begin{figure}[htb]
+
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/Maritimes-SUMMER-survey-timeline-2020}}{Figure \ref{fig:timeline}} 
+
+}
+
+\caption{Timeline of vessels and gears used in the Maritimes Region summer survey. Comparative fishing experiments are indicated by gray bars linking two fishing platforms.}\label{fig:timeline}
+\end{figure}
 
 \begin{figure}[htb]
 
@@ -206,14 +216,14 @@ A number of changes in fishing gear type and vessels used occurred since the ons
 
 }
 
-\caption{Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes Summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans (\href{https://www.gebco.net/data_and_products/gridded_bathymetry_data/}{GEBCO}). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.}\label{fig:map1}
+\caption{Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans (\href{https://www.gebco.net/data_and_products/gridded_bathymetry_data/}{GEBCO}). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.}\label{fig:map1}
 \end{figure}
 \hypertarget{sampling-design}{%
 \subsection{Sampling Design}\label{sampling-design}}
 
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure~\ref{fig:map1}).
 
-The survey follows a stratified random design (\protect\hyperlink{ref-DoubledayRivard1981}{Doubleday and Rivard 1981}; \protect\hyperlink{ref-Lohr1999}{Lohr 1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The area covered during the survey has remained constant since its onset, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure~\ref{fig:map2} and Table~\ref{tab:tabstrata}).
+The survey follows a stratified random design (\protect\hyperlink{ref-DoubledayRivard1981}{Doubleday and Rivard 1981}; \protect\hyperlink{ref-Lohr1999}{Lohr 1999}) (Figure~\ref{fig:map2}). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure~\ref{fig:map2} and Table~\ref{tab:tabstrata}).
 
 The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
@@ -224,13 +234,15 @@ The basic sampling unit of the survey is a 30-minute fishing tow conducted at a 
 
 }
 
-\caption{Map of the Summer survey strata.}\label{fig:map2}
+\caption{Map of the summer survey strata 440 to 495.}\label{fig:map2}
 \end{figure}
+\newpage
+
 
 \begin{longtable}[t]{cccc}
 \caption{\label{tab:tabstrata}Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range in fathoms and the surface area in square kilometers are reported.}\\
 \toprule
- & Stratum & Depth range (fathom) & Area (km \textsuperscript{2})\\
+\textbf{NAFO Div.} & \textbf{Stratum} & \textbf{Depth range (fathom)} & \textbf{Area (km \textsuperscript{2})}\\
 \midrule
 \endfirsthead
 \caption*{}\\
@@ -242,121 +254,104 @@ The basic sampling unit of the survey is a 30-minute fishing tow conducted at a 
 \endfoot
 \bottomrule
 \endlastfoot
-\addlinespace[0.3em]
-\multicolumn{4}{l}{\textbf{4Vn}}\\
-\hspace{1em} & 440 & 101-200 & 924\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 441 & 51-100 & 1000\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 442 & 0-49 & 1437\\
+ & 440 & 101-200 & 924\\
+\nopagebreak
+ & 441 & 51-100 & 1000\\
+\nopagebreak
+\multirow{-3}{*}{\centering\arraybackslash 4Vn} & 442 & 11-49 & 1437\\
 \cmidrule{1-4}\pagebreak[0]
-\addlinespace[0.3em]
-\multicolumn{4}{l}{\textbf{4VsW}}\\
-\hspace{1em} & 443 & 0-49 & 1318\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 444 & 51-100 & 3925\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 445 & 101-200 & 1023\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 446 & 101-200 & 491\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 447 & 0-49 & 1616\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 448 & 0-49 & 1449\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 449 & 51-100 & 144\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 450 & 51-100 & 383\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 451 & 101-200 & 147\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 452 & 101-200 & 345\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 453 & 101-200 & 259\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 454 & 51-100 & 499\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 455 & 0-49 & 2122\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 456 & 0-49 & 955\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 457 & 51-100 & 811\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 458 & 0-49 & 658\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 459 & 0-200 & 3148\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 460 & 51-100 & 1344\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 461 & 101-200 & 1154\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 462 & 51-100 & 2116\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 463 & 0-49 & 302\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 464 & 0-50 & 1297\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 465 & 51-100 & 2383\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 466 & 101-200 & 226\\
+ & 443 & 11-49 & 1318\\
+\nopagebreak
+ & 444 & 51-100 & 3925\\
+\nopagebreak
+ & 445 & 101-200 & 1023\\
+\nopagebreak
+ & 446 & 101-200 & 491\\
+\nopagebreak
+ & 447 & 11-49 & 1616\\
+\nopagebreak
+ & 448 & 11-49 & 1449\\
+\nopagebreak
+ & 449 & 51-100 & 144\\
+\nopagebreak
+ & 450 & 51-100 & 383\\
+\nopagebreak
+ & 451 & 101-200 & 147\\
+\nopagebreak
+ & 452 & 101-200 & 345\\
+\nopagebreak
+ & 453 & 101-200 & 259\\
+\nopagebreak
+ & 454 & 51-100 & 499\\
+\nopagebreak
+ & 455 & 11-49 & 2122\\
+\nopagebreak
+ & 456 & 11-49 & 955\\
+\nopagebreak
+ & 457 & 51-100 & 811\\
+\nopagebreak
+ & 458 & 11-49 & 658\\
+\nopagebreak
+ & 459 & 11-200 & 3148\\
+\nopagebreak
+ & 460 & 51-100 & 1344\\
+\nopagebreak
+ & 461 & 101-200 & 1154\\
+\nopagebreak
+ & 462 & 51-100 & 2116\\
+\nopagebreak
+ & 463 & 11-49 & 302\\
+\nopagebreak
+ & 464 & 11-50 & 1297\\
+\nopagebreak
+ & 465 & 51-100 & 2383\\
+\nopagebreak
+\multirow{-24}{*}{\centering\arraybackslash 4VsW} & 466 & 101-200 & 226\\
 \cmidrule{1-4}\pagebreak[0]
-\addlinespace[0.3em]
-\multicolumn{4}{l}{\textbf{4X}}\\
-\hspace{1em} & 470 & 51-100 & 920\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 471 & 101-200 & 1004\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 472 & 51-100 & 1249\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 473 & 0-49 & 265\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 474 & 0-49 & 161\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 475 & 0-49 & 156\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 476 & 51-100 & 1478\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 477 & 51-100 & 1232\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 478 & 101-200 & 233\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 480 & 0-49 & 655\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 481 & 51-100 & 1875\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 482 & 101-200 & 1042\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 483 & 101-200 & 532\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 484 & 101-200 & 2264\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 485 & 51-100 & 1582\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 490 & 0-49 & 601\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 491 & 51-100 & 687\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 492 & 51-100 & 1086\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 493 & 0-49 & 533\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 494 & 0-49 & 417\\
-\cmidrule{2-4}\nopagebreak
-\hspace{1em} & 495 & 0-49 & 584\\*
+ & 470 & 51-100 & 920\\
+\nopagebreak
+ & 471 & 101-200 & 1004\\
+\nopagebreak
+ & 472 & 51-100 & 1249\\
+\nopagebreak
+ & 473 & 11-49 & 265\\
+\nopagebreak
+ & 474 & 11-49 & 161\\
+\nopagebreak
+ & 475 & 11-49 & 156\\
+\nopagebreak
+ & 476 & 51-100 & 1478\\
+\nopagebreak
+ & 477 & 51-100 & 1232\\
+\nopagebreak
+ & 478 & 101-200 & 233\\
+\nopagebreak
+ & 480 & 11-49 & 655\\
+\nopagebreak
+ & 481 & 51-100 & 1875\\
+\nopagebreak
+ & 482 & 101-200 & 1042\\
+\nopagebreak
+ & 483 & 101-200 & 532\\
+\nopagebreak
+ & 484 & 101-200 & 2264\\
+\nopagebreak
+ & 485 & 51-100 & 1582\\
+\nopagebreak
+ & 490 & 11-49 & 601\\
+\nopagebreak
+ & 491 & 51-100 & 687\\
+\nopagebreak
+ & 492 & 51-100 & 1086\\
+\nopagebreak
+ & 493 & 11-49 & 533\\
+\nopagebreak
+ & 494 & 11-49 & 417\\
+\nopagebreak
+\multirow{-21}{*}{\centering\arraybackslash 4X} & 495 & 11-49 & 584\\*
 \end{longtable}
 After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for different length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
 
-The location of representative tows appears in Figure~\ref{fig:map3}.
-
-
-\begin{figure}[htb]
-
-{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-tows-map}}{Figure \ref{fig:map3}} 
-
-}
-
-\caption{Map of the Summer survey tows.}\label{fig:map3}
-\end{figure}
 \hypertarget{taxo}{%
 \subsection{Taxonomic Levels}\label{taxo}}
 
@@ -388,13 +383,13 @@ SR & short rare & species with less than 200 catch records\\
 \end{tabular}
 \label{tab:taxocat}
 \end{table}
-The list of taxa covered in this document is presented in phylogenetic order (\protect\hyperlink{ref-Nelsonetal:2004}{Nelson J. S. et al. 2004}) in Table~\ref{tab:tabspecies}. To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table~\ref{tab:tabspecies} (\protect\hyperlink{ref-WoRMS}{Appeltans et al. 2012}).
+To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species (\protect\hyperlink{ref-WoRMS}{Appeltans et al. 2012}) is included for the different species presented in this document (Table~\ref{tab:tabspecies}) .
 
 
 \begin{landscapepage}
 \begingroup\fontsize{9}{11}\selectfont
 \begin{longtable}[t]{ccc>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{\centering\arraybackslash}p{3cm}>{}c>{}ccc}
-\caption{\label{tab:tabspecies}List of species included in the Atlas. The species reported here are listed in phylogenetic order as per \protect\hyperlink{ref-page:etal:7thedition}{Page L. M. et al.} (\protect\hyperlink{ref-page:etal:7thedition}{2013}). For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section~\ref{taxo}.}\\
+\caption{\label{tab:tabspecies}List of species included in the Atlas. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID with a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section~\ref{taxo}.}\\
 \toprule
  &  & Family & Scientific name & English name & French name & Species code & AphiaID & Num. records & Category\\
 \midrule
@@ -409,298 +404,266 @@ The list of taxa covered in this document is presented in phylogenetic order (\p
 \bottomrule
 \endlastfoot
 \addlinespace[0.3em]
-\multicolumn{10}{l}{\textbf{Myxini}}\\
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Myxiniformes}}\\
-\hspace{1em}\hspace{1em} &  & Myxinidae & \em{Myxine glutinosa} & Atlantic hagfish & Myxine du nord & \href{#sec:241}{241} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=101170}{101170} & 804 & LI\\
-\cmidrule{1-10}\pagebreak[0]
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textbf{Petromyzonti}}\\
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Petromyzontiformes}}\\
-\hspace{1em}\hspace{1em} &  & Petromyzontidae & \em{Petromyzon marinus} & Sea lamprey & Lamproie marine & \href{#sec:240}{240} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=101174}{101174} & 16 & LR\\
-\cmidrule{1-10}\pagebreak[0]
-\addlinespace[0.3em]
 \multicolumn{10}{l}{\textbf{Actinopterygii}}\\
 \addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Gadiformes}}\\
-\hspace{1em}\hspace{1em} &  & Gadidae & \em{Gadus morhua} & Atlantic cod & Morue franche & \href{#sec:10}{10} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436}{126436} & 5451 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Melanogrammus aeglefinus} & Haddock & Aiglefin & \href{#sec:11}{11} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437}{126437} & 5827 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Phycidae & \em{Urophycis tenuis} & White hake & Merluche blanche & \href{#sec:12}{12} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504}{126504} & 3524 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Urophycis chuss} & Red hake & Merluche écureuil & \href{#sec:13}{13} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503}{126503} & 2195 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Merlucciidae & \em{Merluccius bilinearis} & Silver hake & Merlu argenté & \href{#sec:14}{14} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962}{158962} & 4936 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Lotidae & \em{Brosme brosme} & Cusk & Brosme & \href{#sec:15}{15} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126447}{126447} & 688 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Gadidae & \em{Pollachius virens} & Pollock & Goberge & \href{#sec:16}{16} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441}{126441} & 2787 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Microgadus tomcod} & Atlantic tomcod & Poulamon atlantique & \href{#sec:17}{17} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158928}{158928} & 44 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Merlucciidae & \em{Merluccius albidus} & Offshore silver hake & Merlu argenté du large & \href{#sec:19}{19} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158748}{158748} & 161 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Scorpaeniformes}}\\
-\hspace{1em}\hspace{1em} &  & Sebastidae & \em{Sebastes} & Atlantic redfishes & Sébastes de l'Atlantique & \href{#sec:23}{23} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175}{126175} & 4152 & LF\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Pleuronectiformes}}\\
-\hspace{1em}\hspace{1em} &  & Pleuronectidae & \em{Hippoglossus hippoglossus} & Atlantic halibut & Flétan de l'Atlantique & \href{#sec:30}{30} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138}{127138} & 1634 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Reinhardtius hippoglossoides} & Greenland halibut & Flétan noir & \href{#sec:31}{31} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127144}{127144} & 736 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Hippoglossoides platessoides} & American plaice & Plie canadienne & \href{#sec:40}{40} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137}{127137} & 6023 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Glyptocephalus cynoglossus} & Witch flounder & Plie grise & \href{#sec:41}{41} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136}{127136} & 4301 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Limanda ferruginea} & Yellowtail flounder & Limande à queue jaune & \href{#sec:42}{42} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879}{158879} & 3233 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Pseudopleuronectes americanus} & Winter flounder & Limande-plie rouge & \href{#sec:43}{43} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885}{158885} & 1632 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Paralichthyidae & \em{Citharichthys arctifrons} & Gulf Stream flounder & Plie du Gulf Stream & \href{#sec:44}{44} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158791}{158791} & 382 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Anarhichadidae & \em{Anarhichas lupus} & Atlantic wolffish & Loup atlantique & \href{#sec:50}{50} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758}{126758} & 1572 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Anarhichas minor} & Spotted wolffish & Loup tacheté & \href{#sec:51}{51} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126759}{126759} & 20 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Anarhichas denticulatus} & Northern wolffish & Loup à tête large & \href{#sec:52}{52} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126757}{126757} & 17 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Clupeiformes}}\\
-\hspace{1em}\hspace{1em} &  & Clupeidae & \em{Clupea harengus} & Atlantic herring & Hareng de l'Atlantique & \href{#sec:60}{60} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417}{126417} & 3487 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Alosa sapidissima} & American shad & Alose savoureuse & \href{#sec:61}{61} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158670}{158670} & 468 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Alosa pseudoharengus} & Alewife & Gaspareau & \href{#sec:62}{62} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158669}{158669} & 977 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Osmeriformes}}\\
-\hspace{1em}\hspace{1em} &  & Osmeridae & \em{Osmerus mordax} & Rainbow smelt & Éperlan arc-en-ciel & \href{#sec:63}{63} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126737}{126737} & 59 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Mallotus villosus} & Capelin & Capelan & \href{#sec:64}{64} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126735}{126735} & 540 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Scombridae & \em{Scomber scombrus} & Atlantic mackerel & Maquereau commun & \href{#sec:70}{70} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127023}{127023} & 696 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Gadiformes}}\\
-\hspace{1em}\hspace{1em} &  & Phycidae & \em{Phycis chesteri} & Longfin hake & Merluche à longues nageoires & \href{#sec:112}{112} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158988}{158988} & 784 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Lotidae & \em{Enchelyopus cimbrius} & Fourbeard rockling & Motelle à quatre barbillons & \href{#sec:114}{114} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126450}{126450} & 693 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Labridae & \em{Tautogolabrus adspersus} & Cunner & Tanche-tautogue & \href{#sec:122}{122} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159785}{159785} & 82 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Scorpaeniformes}}\\
-\hspace{1em}\hspace{1em} &  & Sebastidae & \em{Helicolenus dactylopterus} & Blackbelly rosefish & Sébaste chèvre & \href{#sec:123}{123} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127251}{127251} & 610 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Pleuronectiformes}}\\
-\hspace{1em}\hspace{1em} &  & Paralichthyidae & \em{Hippoglossina oblonga} & Fourspot flounder & Cardeau à quatre ocelles & \href{#sec:142}{142} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158833}{158833} & 76 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Scophthalmidae & \em{Scophthalmus aquosus} & Windowpane flounder & Turbot de sable & \href{#sec:143}{143} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158907}{158907} & 115 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Aulopiformes}}\\
-\hspace{1em}\hspace{1em} &  & Chlorophthalmidae & \em{Parasudis truculenta} & Longnose greeneye & Oeil-vert à long nez & \href{#sec:149}{149} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158868}{158868} & 45 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Myctophiformes}}\\
-\hspace{1em}\hspace{1em} &  & Myctophidae & \em{Myctophidae} & Lanternfishes & Poissons-lanternes & \href{#sec:150}{150} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125498}{125498} & 160 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Aulopiformes}}\\
-\hspace{1em}\hspace{1em} &  & Chlorophthalmidae & \em{Chlorophthalmus agassizi} & Shortnose greeneye & Éperlan du large & \href{#sec:156}{156} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126336}{126336} & 78 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Stomiiformes}}\\
-\hspace{1em}\hspace{1em} &  & Sternoptychidae & \em{Maurolicus muelleri} & Silvery lightfish & Brossé améthyste & \href{#sec:158}{158} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127312}{127312} & 52 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Stomiidae & \em{Stomias boa} & Boa dragonfish & Dragon-boa & \href{#sec:159}{159} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127374}{127374} & 20 & LR\\
-\cmidrule{2-10}\nopagebreak
+\multicolumn{10}{l}{\textit{Anguilliformes}}\\
+\hspace{1em}\hspace{1em} &  & Nemichthyidae & \em{Nemichthys scolopaceus} & Slender snipe eel & Avocette ruban & \href{#sec:241}{604} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=101170}{126306} & 28 & LR\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Argentiniformes}}\\
-\hspace{1em}\hspace{1em} &  & Argentinidae & \em{Argentina silus} & Greater argentine & Grande argentine & \href{#sec:160}{160} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126715}{126715} & 963 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Scorpaeniformes}}\\
-\hspace{1em}\hspace{1em} &  & Cottidae & \em{Myoxocephalus octodecemspinosus} & Longhorn sculpin & Chaboisseau à dix-huit épines & \href{#sec:300}{300} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520}{159520} & 3292 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Myoxocephalus scorpius} & Shorthorn sculpin & Chaboisseau à épines courtes & \href{#sec:301}{301} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127203}{127203} & 131 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Myoxocephalus aenaeus} & Grubby & Chaboisseau bronzé & \href{#sec:303}{303} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159519}{159519} & 40 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Triglops murrayi} & Moustache sculpin & Faux-trigle armé & \href{#sec:304}{304} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205}{127205} & 1182 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Artediellus uncinatus} & Arctic hookear sculpin & Hameçon neigeux & \href{#sec:306}{306} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127195}{127195} & 306 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Psychrolutidae & \em{Cottunculus microps} & Polar sculpin & Cotte polaire & \href{#sec:307}{307} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127235}{127235} & 29 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Cottidae & \em{Icelus spatula} & Spatulate sculpin & Icèle spatulée & \href{#sec:314}{314} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127200}{127200} & 40 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Hemitripteridae & \em{Hemitripterus americanus} & Sea raven & Hémitriptère atlantique & \href{#sec:320}{320} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518}{159518} & 2126 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Agonidae & \em{Aspidophoroides monopterygius} & Alligatorfish & Poisson-alligator atlantique & \href{#sec:340}{340} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459}{159459} & 1029 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Ulcina olrikii} & Arctic alligatorfish & Poisson-alligator arctique & \href{#sec:341}{341} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=274356}{274356} & 13 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Leptagonus decagonus} & Atlantic poacher & Agone atlantique & \href{#sec:350}{350} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127191}{127191} & 266 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Agonidae} & Alligatorfishes & Poissons-alligator & \href{#sec:351}{351} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125588}{125588} & 43 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Lophiiformes}}\\
-\hspace{1em}\hspace{1em} &  & Lophiidae & \em{Lophius americanus} & Monkfish & Baudroie d'Amérique & \href{#sec:400}{400} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184}{159184} & 1970 & LF\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Gadiformes}}\\
-\hspace{1em}\hspace{1em} &  & Macrouridae & \em{Nezumia bairdii} & Marlin-spike grenadier & Grenadier du Grand Banc & \href{#sec:410}{410} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=183289}{183289} & 529 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Trachyrincus murrayi} & Roughnose grenadier & Grenadier-scie & \href{#sec:412}{412} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126481}{126481} & 18 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Coryphaenoides rupestris} & Roundnose grenadier & Grenadier de roche & \href{#sec:414}{414} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158960}{158960} & 17 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Scorpaeniformes}}\\
-\hspace{1em}\hspace{1em} &  & Cyclopteridae & \em{Cyclopterus lumpus} & Lumpfish & Lompe & \href{#sec:501}{501} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127214}{127214} & 216 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Eumicrotremus spinosus} & Atlantic spiny lumpsucker & Petite poule de mer atlantique & \href{#sec:502}{502} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127217}{127217} & 226 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Liparidae & \em{Liparis atlanticus} & Atlantic seasnail & Limace atlantique & \href{#sec:503}{503} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159524}{159524} & 34 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Liparis fabricii} & Gelatinous snailfish & Limace gélatineuse & \href{#sec:505}{505} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127218}{127218} & 27 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Liparis gibbus} & Variegated snailfish & Limace marbée & \href{#sec:512}{512} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159526}{159526} & 41 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Careproctus reinhardti} & Sea tadpole & Petite limace de mer & \href{#sec:520}{520} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127212}{127212} & 18 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Zoarcidae & \em{Lycenchelys verrillii} & Wolf eelpout & Lycode à tête longue & \href{#sec:603}{603} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159258}{159258} & 40 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Anguilliformes}}\\
-\hspace{1em}\hspace{1em} &  & Nemichthyidae & \em{Nemichthys scolopaceus} & Slender snipe eel & Avocette ruban & \href{#sec:604}{604} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126306}{126306} & 28 & LR\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Ammodytidae & \em{Ammodytes dubius} & Sand lance & Lançon & \href{#sec:610}{610} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=151520}{151520} & 1283 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Zoarcidae & \em{Lycodes terraenovae} & Newfoundland eelpout & Lycode du Labrador & \href{#sec:619}{619} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127117}{127117} & 64 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Lycodes lavalaei} & Newfoundland eelpout & Lycode du Labrador & \href{#sec:620}{620} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127107}{127107} & 72 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Pholidae & \em{Pholis gunnellus} & Rock gunnel & Sigouine de roche & \href{#sec:621}{621} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126996}{126996} & 21 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Stichaeidae & \em{Lumpenus lampretaeformis} & Snakeblenny & Lompénie-serpent & \href{#sec:622}{622} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=154675}{154675} & 423 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Leptoclinus maculatus} & Daubed shanny & Lompénie tachetée & \href{#sec:623}{623} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127072}{127072} & 443 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Ulvaria subbifurcata} & Radiated shanny & Ulvaire deux-lignes & \href{#sec:625}{625} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159821}{159821} & 145 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Eumesogrammus praecisus} & Fourline snakeblenny & Quatre-lignes atlantique & \href{#sec:626}{626} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159817}{159817} & 40 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Cryptacanthodidae & \em{Cryptacanthodes maculatus} & Wrymouth & Terrassier tacheté & \href{#sec:630}{630} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159675}{159675} & 120 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Callionymidae & \em{Foetorepus agassizii} & Spotfin dragonet & Dragonnet tacheté & \href{#sec:637}{637} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=276339}{276339} & 20 & LR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Zoarcidae & \em{Zoarces americanus} & Ocean pout & Loquette d'Amérique & \href{#sec:640}{640} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267}{159267} & 1478 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Lycodes reticulatus} & Arctic eelpout & Lycode arctique & \href{#sec:641}{641} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127112}{127112} & 70 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Melanostigma atlanticum} & Atlantic soft pout & Molasse atlantique & \href{#sec:646}{646} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127120}{127120} & 43 & LR\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Lycodes vahlii} & Vahl's eelpout & Lycode à carreaux & \href{#sec:647}{647} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127118}{127118} & 565 & LI\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Stromateidae & \em{Peprilus triacanthus} & Atlantic butterfish & Stromaté fossette & \href{#sec:701}{701} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159828}{159828} & 487 & LI\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Zeiformes}}\\
-\hspace{1em}\hspace{1em} &  & Zeidae & \em{Zenopsis conchifer} & Silvery John dory & Saint Pierre argenté & \href{#sec:704}{704} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127426}{127426} & 39 & LR\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Argentinidae & \em{Argentina silus} & Greater argentine & Grande argentine & \href{#sec:240}{160} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=101174}{126715} & 963 & LI\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Aulopiformes}}\\
-\hspace{1em}\hspace{1em} &  & Paralepididae & \em{Arctozenus risso} & White barracudina & Lussion blanc & \href{#sec:712}{712} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126352}{126352} & 196 & LR\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Chlorophthalmidae & \em{Chlorophthalmus agassizi} & Shortnose greeneye & Éperlan du large & \href{#sec:10}{156} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126436}{126336} & 78 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Parasudis truculenta} & Longnose greeneye & Oeil-vert à long nez & \href{#sec:11}{149} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126437}{158868} & 45 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Paralepididae & \em{Arctozenus risso} & White barracudina & Lussion blanc & \href{#sec:12}{712} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126504}{126352} & 196 & LR\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Beloniformes}}\\
-\hspace{1em}\hspace{1em} &  & Scomberesocidae & \em{Scomberesox saurus} & Atlantic saury & Balaou atlantique & \href{#sec:720}{720} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126392}{126392} & 37 & LR\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Scomberesocidae & \em{Scomberesox saurus} & Atlantic saury & Balaou atlantique & \href{#sec:13}{720} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126503}{126392} & 37 & LR\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Stomiiformes}}\\
-\hspace{1em}\hspace{1em} &  & Sternoptychidae & \em{Sternoptychidae} & Hatchetfishes & Haches d'argent & \href{#sec:741}{741} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125603}{125603} & 21 & LR\\
-\cmidrule{2-10}\nopagebreak
+\multicolumn{10}{l}{\textit{Clupeiformes}}\\
+\hspace{1em}\hspace{1em} &  & Clupeidae & \em{Alosa pseudoharengus} & Alewife & Gaspareau & \href{#sec:14}{62} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158962}{158669} & 977 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Alosa sapidissima} & American shad & Alose savoureuse & \href{#sec:15}{61} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126447}{158670} & 468 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Clupea harengus} & Atlantic herring & Hareng de l'Atlantique & \href{#sec:16}{60} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126441}{126417} & 3487 & LF\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Gadiformes}}\\
+\hspace{1em}\hspace{1em} &  & Gadidae & \em{Gadus morhua} & Atlantic cod & Morue franche & \href{#sec:17}{10} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158928}{126436} & 5451 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Melanogrammus aeglefinus} & Haddock & Aiglefin & \href{#sec:19}{11} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158748}{126437} & 5827 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Microgadus tomcod} & Atlantic tomcod & Poulamon atlantique & \href{#sec:112}{17} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158988}{158928} & 44 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Pollachius virens} & Pollock & Goberge & \href{#sec:114}{16} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126450}{126441} & 2787 & LF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Lotidae & \em{Brosme brosme} & Cusk & Brosme & \href{#sec:410}{15} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=183289}{126447} & 688 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Enchelyopus cimbrius} & Fourbeard rockling & Motelle à quatre barbillons & \href{#sec:412}{114} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126481}{126450} & 693 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Macrouridae & \em{Coryphaenoides rupestris} & Roundnose grenadier & Grenadier de roche & \href{#sec:414}{414} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158960}{158960} & 17 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Nezumia bairdii} & Marlin-spike grenadier & Grenadier du Grand Banc & \href{#sec:23}{410} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126175}{183289} & 529 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Trachyrincus murrayi} & Roughnose grenadier & Grenadier-scie & \href{#sec:123}{412} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127251}{126481} & 18 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Merlucciidae & \em{Merluccius albidus} & Offshore silver hake & Merlu argenté du large & \href{#sec:300}{19} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159520}{158748} & 161 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Merluccius bilinearis} & Silver hake & Merlu argenté & \href{#sec:301}{14} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127203}{158962} & 4936 & LF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Phycidae & \em{Phycis chesteri} & Longfin hake & Merluche à longues nageoires & \href{#sec:303}{112} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159519}{158988} & 784 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Urophycis chuss} & Red hake & Merluche écureuil & \href{#sec:304}{13} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127205}{126503} & 2195 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Urophycis tenuis} & White hake & Merluche blanche & \href{#sec:306}{12} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127195}{126504} & 3524 & LF\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Lophiiformes}}\\
-\hspace{1em}\hspace{1em} &  & Ogcocephalidae & \em{Dibranchus atlanticus} & Atlantic batfish & Malthe atlantique & \href{#sec:742}{742} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126558}{126558} & 18 & LR\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Lophiidae & \em{Lophius americanus} & Monkfish & Baudroie d'Amérique & \href{#sec:307}{400} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127235}{159184} & 1970 & LF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Ogcocephalidae & \em{Dibranchus atlanticus} & Atlantic batfish & Malthe atlantique & \href{#sec:314}{742} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127200}{126558} & 18 & LR\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Myctophiformes}}\\
+\hspace{1em}\hspace{1em} &  & Myctophidae & \em{Myctophidae} & Lanternfishes & Poissons-lanternes & \href{#sec:320}{150} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159518}{125498} & 160 & LR\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Osmeriformes}}\\
+\hspace{1em}\hspace{1em} &  & Osmeridae & \em{Mallotus villosus} & Capelin & Capelan & \href{#sec:340}{64} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159459}{126735} & 540 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Osmerus mordax} & Rainbow smelt & Éperlan arc-en-ciel & \href{#sec:341}{63} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=274356}{126737} & 59 & LR\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Perciformes}}\\
+\hspace{1em}\hspace{1em} &  & Ammodytidae & \em{Ammodytes dubius} & Sand lance & Lançon & \href{#sec:350}{610} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127191}{151520} & 1283 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Anarhichadidae & \em{Anarhichas denticulatus} & Northern wolffish & Loup à tête large & \href{#sec:351}{52} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125588}{126757} & 17 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Anarhichas lupus} & Atlantic wolffish & Loup atlantique & \href{#sec:501}{50} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127214}{126758} & 1572 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Anarhichas minor} & Spotted wolffish & Loup tacheté & \href{#sec:502}{51} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127217}{126759} & 20 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Callionymidae & \em{Foetorepus agassizii} & Spotfin dragonet & Dragonnet tacheté & \href{#sec:503}{637} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159524}{276339} & 20 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Cryptacanthodidae & \em{Cryptacanthodes maculatus} & Wrymouth & Terrassier tacheté & \href{#sec:505}{630} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127218}{159675} & 120 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Labridae & \em{Tautogolabrus adspersus} & Cunner & Tanche-tautogue & \href{#sec:512}{122} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159526}{159785} & 82 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Pholidae & \em{Pholis gunnellus} & Rock gunnel & Sigouine de roche & \href{#sec:520}{621} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127212}{126996} & 21 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Scombridae & \em{Scomber scombrus} & Atlantic mackerel & Maquereau commun & \href{#sec:880}{70} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127193}{127023} & 696 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Stichaeidae & \em{Eumesogrammus praecisus} & Fourline snakeblenny & Quatre-lignes atlantique & \href{#sec:30}{626} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127138}{159817} & 40 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Leptoclinus maculatus} & Daubed shanny & Lompénie tachetée & \href{#sec:31}{623} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127144}{127072} & 443 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Lumpenus lampretaeformis} & Snakeblenny & Lompénie-serpent & \href{#sec:40}{622} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127137}{154675} & 423 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Ulvaria subbifurcata} & Radiated shanny & Ulvaire deux-lignes & \href{#sec:41}{625} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127136}{159821} & 145 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Stromateidae & \em{Peprilus triacanthus} & Atlantic butterfish & Stromaté fossette & \href{#sec:42}{701} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158879}{159828} & 487 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Zoarcidae & \em{Lycenchelys verrillii} & Wolf eelpout & Lycode à tête longue & \href{#sec:43}{603} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158885}{159258} & 40 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Lycodes lavalaei} & Newfoundland eelpout & Lycode du Labrador & \href{#sec:44}{620} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158791}{127107} & 72 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Lycodes reticulatus} & Arctic eelpout & Lycode arctique & \href{#sec:142}{641} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158833}{127112} & 70 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Lycodes terraenovae} & Newfoundland eelpout & Lycode du Labrador & \href{#sec:143}{619} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158907}{127117} & 64 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Lycodes vahlii} & Vahl's eelpout & Lycode à carreaux & \href{#sec:816}{647} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159358}{127118} & 565 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Melanostigma atlanticum} & Atlantic soft pout & Molasse atlantique & \href{#sec:50}{646} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126758}{127120} & 43 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Zoarces americanus} & Ocean pout & Loquette d'Amérique & \href{#sec:51}{640} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126759}{159267} & 1478 & LF\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Pleuronectiformes}}\\
-\hspace{1em}\hspace{1em} &  & Cynoglossidae & \em{Symphurus diomedeanus} & Spottedfin tonguefish & Langue fil noir & \href{#sec:816}{816} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159358}{159358} & 24 & LR\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Cynoglossidae & \em{Symphurus diomedeanus} & Spottedfin tonguefish & Langue fil noir & \href{#sec:52}{816} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126757}{159358} & 24 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Paralichthyidae & \em{Citharichthys arctifrons} & Gulf Stream flounder & Plie du Gulf Stream & \href{#sec:70}{44} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127023}{158791} & 382 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Hippoglossina oblonga} & Fourspot flounder & Cardeau à quatre ocelles & \href{#sec:122}{142} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159785}{158833} & 76 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Pleuronectidae & \em{Glyptocephalus cynoglossus} & Witch flounder & Plie grise & \href{#sec:603}{41} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159258}{127136} & 4301 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Hippoglossoides platessoides} & American plaice & Plie canadienne & \href{#sec:610}{40} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=151520}{127137} & 6023 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Hippoglossus hippoglossus} & Atlantic halibut & Flétan de l'Atlantique & \href{#sec:619}{30} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127117}{127138} & 1634 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Limanda ferruginea} & Yellowtail flounder & Limande à queue jaune & \href{#sec:620}{42} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127107}{158879} & 3233 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Pseudopleuronectes americanus} & Winter flounder & Limande-plie rouge & \href{#sec:621}{43} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126996}{158885} & 1632 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Reinhardtius hippoglossoides} & Greenland halibut & Flétan noir & \href{#sec:622}{31} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=154675}{127144} & 736 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Scophthalmidae & \em{Scophthalmus aquosus} & Windowpane flounder & Turbot de sable & \href{#sec:623}{143} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127072}{158907} & 115 & LR\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Scorpaeniformes}}\\
-\hspace{1em}\hspace{1em} &  & Cottidae & \em{Artediellus atlanticus} & Atlantic hookear sculpin & Hameçon atlantique & \href{#sec:880}{880} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127193}{127193} & 258 & LI\\
-\cmidrule{1-10}\pagebreak[0]
+\hspace{1em}\hspace{1em} &  & Agonidae & \em{Agonidae} & Alligatorfishes & Poissons-alligator & \href{#sec:625}{351} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159821}{125588} & 43 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Aspidophoroides monopterygius} & Alligatorfish & Poisson-alligator atlantique & \href{#sec:626}{340} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159817}{159459} & 1029 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Leptagonus decagonus} & Atlantic poacher & Agone atlantique & \href{#sec:630}{350} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159675}{127191} & 266 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Ulcina olrikii} & Arctic alligatorfish & Poisson-alligator arctique & \href{#sec:637}{341} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=276339}{274356} & 13 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Cottidae & \em{Artediellus atlanticus} & Atlantic hookear sculpin & Hameçon atlantique & \href{#sec:640}{880} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159267}{127193} & 258 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Artediellus uncinatus} & Arctic hookear sculpin & Hameçon neigeux & \href{#sec:641}{306} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127112}{127195} & 306 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Icelus spatula} & Spatulate sculpin & Icèle spatulée & \href{#sec:646}{314} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127120}{127200} & 40 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Myoxocephalus aenaeus} & Grubby & Chaboisseau bronzé & \href{#sec:647}{303} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127118}{159519} & 40 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Myoxocephalus octodecemspinosus} & Longhorn sculpin & Chaboisseau à dix-huit épines & \href{#sec:701}{300} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159828}{159520} & 3292 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Myoxocephalus scorpius} & Shorthorn sculpin & Chaboisseau à épines courtes & \href{#sec:60}{301} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126417}{127203} & 131 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Triglops murrayi} & Moustache sculpin & Faux-trigle armé & \href{#sec:61}{304} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158670}{127205} & 1182 & LF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Cyclopteridae & \em{Cyclopterus lumpus} & Lumpfish & Lompe & \href{#sec:62}{501} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158669}{127214} & 216 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Eumicrotremus spinosus} & Atlantic spiny lumpsucker & Petite poule de mer atlantique & \href{#sec:63}{502} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126737}{127217} & 226 & LI\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Hemitripteridae & \em{Hemitripterus americanus} & Sea raven & Hémitriptère atlantique & \href{#sec:64}{320} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126735}{159518} & 2126 & LF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Liparidae & \em{Careproctus reinhardti} & Sea tadpole & Petite limace de mer & \href{#sec:149}{520} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158868}{127212} & 18 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Liparis atlanticus} & Atlantic seasnail & Limace atlantique & \href{#sec:156}{503} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126336}{159524} & 34 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Liparis fabricii} & Gelatinous snailfish & Limace gélatineuse & \href{#sec:712}{505} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126352}{127218} & 27 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Liparis gibbus} & Variegated snailfish & Limace marbée & \href{#sec:150}{512} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125498}{159526} & 41 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Psychrolutidae & \em{Cottunculus microps} & Polar sculpin & Cotte polaire & \href{#sec:158}{307} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127312}{127235} & 29 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Sebastidae & \em{Helicolenus dactylopterus} & Blackbelly rosefish & Sébaste chèvre & \href{#sec:159}{123} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127374}{127251} & 610 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Sebastes} & Atlantic redfishes & Sébastes de l'Atlantique & \href{#sec:741}{23} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=125603}{126175} & 4152 & LF\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Stomiiformes}}\\
+\hspace{1em}\hspace{1em} &  & Sternoptychidae & \em{Maurolicus muelleri} & Silvery lightfish & Brossé améthyste & \href{#sec:160}{158} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126715}{127312} & 52 & LR\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Sternoptychidae} & Hatchetfishes & Haches d'argent & \href{#sec:400}{741} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=159184}{125603} & 21 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Stomiidae & \em{Stomias boa} & Boa dragonfish & Dragon-boa & \href{#sec:742}{159} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126558}{127374} & 20 & LR\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Zeiformes}}\\
+\hspace{1em}\hspace{1em} &  & Zeidae & \em{Zenopsis conchifer} & Silvery John dory & Saint Pierre argenté & \href{#sec:604}{704} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126306}{127426} & 39 & LR\\
+\cmidrule{1-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Cephalopoda}}\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Myopsida}}\\
+\hspace{1em}\hspace{1em} &  & Loliginidae & \em{Doryteuthis pealeii} & Longfin inshore squid & Calmar totam & \href{#sec:704}{4512} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=127426}{574541} & 96 & LR\\
+\cmidrule{2-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Oegopsida}}\\
+\hspace{1em}\hspace{1em} &  & Ommastrephidae & \em{Illex illecebrosus} & Northern shortfin squid & Encornet rouge nordique & \href{#sec:720}{4511} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=126392}{153087} & 4836 & LF\\
+\cmidrule{1-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textbf{Elasmobranchii}}\\
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Rajiformes}}\\
-\hspace{1em}\hspace{1em} &  & Rajidae & \em{Dipturus laevis} & Barndoor skate & Grande raie & \href{#sec:200}{200} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158548}{158548} & 246 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Amblyraja radiata} & Thorny skate & Raie épineuse & \href{#sec:201}{201} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865}{105865} & 3937 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Malacoraja senta} & Smooth skate & Raie lisse & \href{#sec:202}{202} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554}{158554} & 1773 & LF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Leucoraja erinacea} & Little skate & Raie hérisson & \href{#sec:203}{203} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158551}{158551} & 712 & LI\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Leucoraja ocellata} & Winter skate & Raie tachetée & \href{#sec:204}{204} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553}{158553} & 1180 & LF\\
-\cmidrule{2-10}\nopagebreak
+\hspace{1em}\hspace{1em} &  & Rajidae & \em{Amblyraja radiata} & Thorny skate & Raie épineuse & \href{#sec:200}{201} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158548}{105865} & 3937 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Dipturus laevis} & Barndoor skate & Grande raie & \href{#sec:201}{200} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105865}{158548} & 246 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Leucoraja erinacea} & Little skate & Raie hérisson & \href{#sec:202}{203} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158554}{158551} & 712 & LI\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Leucoraja ocellata} & Winter skate & Raie tachetée & \href{#sec:203}{204} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158551}{158553} & 1180 & LF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Malacoraja senta} & Smooth skate & Raie lisse & \href{#sec:204}{202} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158553}{158554} & 1773 & LF\\
+\cmidrule{2-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Squaliformes}}\\
-\hspace{1em}\hspace{1em} &  & Squalidae & \em{Squalus acanthias} & Picked dogfish & Aiguillat commun & \href{#sec:220}{220} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923}{105923} & 1985 & LF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Etmopteridae & \em{Centroscyllium fabricii} & Black dogfish & Aiguillat noir & \href{#sec:221}{221} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105906}{105906} & 31 & LR\\
-\cmidrule{1-10}\pagebreak[0]
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textbf{Cephalopoda}}\\
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Oegopsida}}\\
-\hspace{1em}\hspace{1em} &  & Ommastrephidae & \em{Illex illecebrosus} & Northern shortfin squid & Encornet rouge nordique & \href{#sec:4511}{4511} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087}{153087} & 4836 & LF\\
-\cmidrule{2-10}\nopagebreak
-\addlinespace[0.3em]
-\multicolumn{10}{l}{\textit{Myopsida}}\\
-\hspace{1em}\hspace{1em} &  & Loliginidae & \em{Doryteuthis pealeii} & Longfin inshore squid & Calmar totam & \href{#sec:4512}{4512} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=574541}{574541} & 96 & LR\\
-\cmidrule{1-10}\pagebreak[0]
+\hspace{1em}\hspace{1em} &  & Etmopteridae & \em{Centroscyllium fabricii} & Black dogfish & Aiguillat noir & \href{#sec:220}{221} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105923}{105906} & 31 & LR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Squalidae & \em{Squalus acanthias} & Picked dogfish & Aiguillat commun & \href{#sec:221}{220} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=105906}{105923} & 1985 & LF\\
+\cmidrule{1-10}
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textbf{Malacostraca}}\\
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Decapoda}}\\
-\hspace{1em}\hspace{1em} &  & Pandalidae & \em{Pandalus borealis} & Northern prawn & Crevette nordique & \href{#sec:2211}{2211} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107649}{107649} & 718 & SF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Cancridae & \em{Cancer borealis} & Jonah crab & Tourteau jona & \href{#sec:2511}{2511} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158056}{158056} & 1387 & SF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Cancer irroratus} & Atlantic rock crab & Tourteau poïnclos & \href{#sec:2513}{2513} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158057}{158057} & 788 & SF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Oregoniidae & \em{Hyas coarctatus} & Arctic lyre crab & Crabe Hyas coarctatus & \href{#sec:2521}{2521} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107323}{107323} & 711 & SF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Lithodidae & \em{Lithodes maja} & Atlantic king crab & Crabe épineux du nord & \href{#sec:2523}{2523} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107205}{107205} & 531 & SF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Oregoniidae & \em{Chionoecetes opilio} & Queen crab & Crabe des neiges & \href{#sec:2526}{2526} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107315}{107315} & 1546 & SF\\
-\cmidrule{4-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  &  & \em{Hyas araneus} & Great spider crab & Crabe lyre araignée & \href{#sec:2527}{2527} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107322}{107322} & 625 & SF\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Geryonidae & \em{Chaceon quinquedens} & Red deepsea crab & Crabe rouge & \href{#sec:2532}{2532} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158407}{158407} & 33 & SR\\
-\cmidrule{3-10}\nopagebreak
-\hspace{1em}\hspace{1em} &  & Nephropidae & \em{Homarus americanus} & American lobster & Homard américain & \href{#sec:2550}{2550} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134}{156134} & 1623 & SF\\*
+\hspace{1em}\hspace{1em} &  & Cancridae & \em{Cancer borealis} & Jonah crab & Tourteau jona & \href{#sec:4511}{2511} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=153087}{158056} & 1387 & SF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Cancer irroratus} & Atlantic rock crab & Tourteau poïnclos & \href{#sec:4512}{2513} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=574541}{158057} & 788 & SF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Geryonidae & \em{Chaceon quinquedens} & Red deepsea crab & Crabe rouge & \href{#sec:2211}{2532} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107649}{158407} & 33 & SR\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Lithodidae & \em{Lithodes maja} & Atlantic king crab & Crabe épineux du nord & \href{#sec:2511}{2523} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158056}{107205} & 531 & SF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Nephropidae & \em{Homarus americanus} & American lobster & Homard américain & \href{#sec:2513}{2550} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158057}{156134} & 1623 & SF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Oregoniidae & \em{Chionoecetes opilio} & Queen crab & Crabe des neiges & \href{#sec:2521}{2526} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107323}{107315} & 1546 & SF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Hyas araneus} & Great spider crab & Crabe lyre araignée & \href{#sec:2523}{2527} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107205}{107322} & 625 & SF\\
+\cmidrule{4-10}
+\hspace{1em}\hspace{1em} &  &  & \em{Hyas coarctatus} & Arctic lyre crab & Crabe Hyas coarctatus & \href{#sec:2526}{2521} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107315}{107323} & 711 & SF\\
+\cmidrule{3-10}
+\hspace{1em}\hspace{1em} &  & Pandalidae & \em{Pandalus borealis} & Northern prawn & Crevette nordique & \href{#sec:2527}{2211} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=107322}{107649} & 718 & SF\\
+\cmidrule{1-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Myxini}}\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Myxiniformes}}\\
+\hspace{1em}\hspace{1em} &  & Myxinidae & \em{Myxine glutinosa} & Atlantic hagfish & Myxine du nord & \href{#sec:2532}{241} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=158407}{101170} & 804 & LI\\
+\cmidrule{1-10}
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textbf{Petromyzonti}}\\
+\addlinespace[0.3em]
+\multicolumn{10}{l}{\textit{Petromyzontiformes}}\\
+\hspace{1em}\hspace{1em} &  & Petromyzontidae & \em{Petromyzon marinus} & Sea lamprey & Lamproie marine & \href{#sec:2550}{240} & \href{http://www.marinespecies.org/aphia.php?p=taxdetails&id=156134}{101174} & 16 & LR\\*
 \end{longtable}
 \endgroup{}
 \end{landscapepage}
@@ -768,6 +731,17 @@ To estimate the suitability of each stratum, the median abundance observed durin
 \hypertarget{results}{%
 \section{Results}\label{results}}
 
+The depth, bottom temperature and bottom salinity cumulative frequency distribution for the survey are presented in Figure~\ref{fig:setsdist}.
+
+
+\begin{figure}[htb]
+
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/temp}}{Figure \ref{fig:setsdist}} 
+
+}
+
+\caption{Cumulative frequencey distribution of depth, bottom temperature and bottom salinity of representative sets from the summer survey.}\label{fig:setsdist}
+\end{figure}
 The plots generated for each species are presented in the Appendix.
 
 \hypertarget{description-of-figures}{%
@@ -782,7 +756,7 @@ Spatial distribution of catch-per unit of effort, (CPUE, kilograms per tow) in J
 
 For Category LR and SR:
 
-Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR). Location of tows with catch over the period 1970-2012 (Type LR) or the period 1999-2012 (Type SR).
+Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR). Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
 
 \hypertarget{type-b}{%
 \subsubsection{Type B}\label{type-b}}
@@ -813,10 +787,24 @@ Slopes estimates from the density-dependent habitat selection model (y axis) plo
 
 \hypertarget{summary-of-successful-tows-by-year-and-stratum}{%
 \subsection{Summary of successful tows by year and stratum}\label{summary-of-successful-tows-by-year-and-stratum}}
+
+A total of 9080 representative tows were conducted for the period spanning from 1970 to 2020 (Figure~\ref{fig:map3}).
+
+Tables~\ref{tab:tabtowstratumyear1},~\ref{tab:tabtowstratumyear2} and~\ref{tab:tabtowstratumyear3} present the number of tows conducted in each stratum and year.
+
+
+\begin{figure}[htb]
+
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-tows-map}}{Figure \ref{fig:map3}} 
+
+}
+
+\caption{Map of the Summer survey tows.}\label{fig:map3}
+\end{figure}
 \begin{landscapepage}
 
 
-\begingroup\fontsize{7}{9}\selectfont
+\begingroup\fontsize{6}{8}\selectfont
 \begin{longtable}[t]{crrrrrrrrrrrrrrrcrrrrrr}
 \caption{\label{tab:tabtowstratumyear1}Number of representative tows conducted in each stratum during the period 1970 to 1989.}\\
 \toprule
@@ -884,9 +872,9 @@ Slopes estimates from the density-dependent habitat selection model (y axis) plo
 \end{longtable}
 \endgroup{}
 
-\begingroup\fontsize{7}{9}\selectfont
+\begingroup\fontsize{6}{8}\selectfont
 \begin{longtable}[t]{crrrrrrrrrrrrrrrcrrrrrr}
-\caption{\label{tab:tabtowstratumyear1}Number of representative tows conducted in each stratum during the period 1990 to 2009.}\\
+\caption{\label{tab:tabtowstratumyear2}Number of representative tows conducted in each stratum during the period 1990 to 2009.}\\
 \toprule
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{1990} & \textbf{1991} & \textbf{1992} & \textbf{1993} & \textbf{1994} & \textbf{1995} & \textbf{1996} & \textbf{1997} & \textbf{1998} & \textbf{1999} & \textbf{2000} & \textbf{2001} & \textbf{2002} & \textbf{2003} & \textbf{2004} & \textbf{2005} & \textbf{2006} & \textbf{2007} & \textbf{2008} & \textbf{2009}\\
 \midrule
@@ -952,9 +940,9 @@ Slopes estimates from the density-dependent habitat selection model (y axis) plo
 \end{longtable}
 \endgroup{}
 
-\begingroup\fontsize{7}{9}\selectfont
+\begingroup\fontsize{6}{8}\selectfont
 \begin{longtable}[t]{crrrrrrrrrrrrrr}
-\caption{\label{tab:tabtowstratumyear1}Number of representative tows conducted in each stratum during the period 2010 to 2020 and for the whole 1970 to 2020 period.}\\
+\caption{\label{tab:tabtowstratumyear3}Number of representative tows conducted in each stratum during the period 2010 to 2020 and for the whole 1970 to 2020 period.}\\
 \toprule
 \textbf{Stratum} & \textbf{NAFO Div.} & \textbf{Area (km2)} & \textbf{2010} & \textbf{2011} & \textbf{2012} & \textbf{2013} & \textbf{2014} & \textbf{2015} & \textbf{2016} & \textbf{2017} & \textbf{2018} & \textbf{2019} & \textbf{2020} & \textbf{Total}\\
 \midrule
@@ -1020,8 +1008,6 @@ Slopes estimates from the density-dependent habitat selection model (y axis) plo
 \end{longtable}
 \endgroup{}
 \end{landscapepage}
-A total of 9080 representative tows were conducted for the period spanning from 1970 to 2020.
-
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
@@ -1030,22 +1016,22 @@ This report builds on previous work and former atlases by updating a comprehensi
 \hypertarget{diversity-of-approaches-used-for-mapping-fish-and-invertebrates-in-the-scotian-shelf-bioregion}{%
 \subsection{Diversity of approaches used for mapping fish and invertebrates in the Scotian Shelf bioregion}\label{diversity-of-approaches-used-for-mapping-fish-and-invertebrates-in-the-scotian-shelf-bioregion}}
 
-Different methods have been applied in the Northwest Atlantic, and specifically on the Scotian Shelf bioregion, to map fish and invertebrate species distribution. The present report, for example, builds upon the atlas of important habitat developed to map the persistence of relatively high biomass for key fish species using the summer groundfish research vessel survey (\protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}). Important habitat was obtained by interpolating observed weight per each species using the IDW, and calculating areas with relatively persistent high biomass for periods representing different fishery management eras. To compliment information from this atlas, including additional representations of biomass and diversity, a similar IDW interpolation mapping procedure was followed by \protect\hyperlink{ref-Smith2015}{Smith et al.} (\protect\hyperlink{ref-Smith2015}{2015}), \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy} (\protect\hyperlink{ref-WardPaige2016}{2015}), and \protect\hyperlink{ref-Bundyetal2017}{Bundy et al.} (\protect\hyperlink{ref-Bundyetal2017}{2017}). The summer groundfish research vessel survey is typically conducted during the month of July. However, from the fall of 1978 through to the spring of 1985, DFO also conducted spring and fall surveys using the same sampling design. This unique seasonal data was used to map the seasonal spatial distribution of key demersal and other fish species using IDW interpolation on the Scotian Shelf from the spring, summer and fall between 1978 and 1985 (\protect\hyperlink{ref-Smith2015}{Smith et al. 2015}). Following recommendations provided by \protect\hyperlink{ref-Kenchingtons2013}{Kenchington and Kenchington} (\protect\hyperlink{ref-Kenchingtons2013}{2017}), the spatial distribution of three indicators of biodiversity for fish and invertebrates were mapped using IDW interpolation to identify areas with persistently high values across fishery management eras, and compared with areas of persistently high abundance for selected species (\protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}). This analysis revealed a lack of consistent relationships between areas of persist high diversity and persistent high biomass, suggesting that both can be used as independent and important spatial indicators of the system (\protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}). Groupings of fishes and invertebrates based on size, habitat and feeding guild, were also mapped using IDW interpolations to identify hotspots of functional group diversity (\protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}). This analysis revealed a spatially and temporally variable distribution of functional diversity across the Scotian Shelf with notable areas of high and low diversity (\protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}). Top quintiles of each functional group using the IDW approach were used as representative layers for fish and invertebrates in the MPA Network design in the Scotian Shelf Bioregion (Serdynska et al.~In press). IDW interpolation methods have also been used to map the distribution of individual species such as sea cucumbers (\emph{Cucumaria frondosa}) in the Scotian Shelf bioregion (\protect\hyperlink{ref-Shackell2013}{Shackell et al. 2013}), and sea scallop (\emph{Placopecten magellanicus}) in Georges and Browns Bank (\protect\hyperlink{ref-Hubley2013}{Hubley et al. 2014}).
+Different methods have been applied in the Northwest Atlantic, and specifically on the Scotian Shelf bioregion, to map fish and invertebrate species distribution. The present report, for example, builds upon the atlas of important habitat developed to map the persistence of relatively high biomass for key fish species using the summer groundfish research vessel survey (\protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}). Important habitat was obtained by interpolating observed weight per each species using an inverse-distance weighted (IDW) methodology, and calculating areas with relatively persistent high biomass for periods representing different fishery management eras. To compliment information from this atlas, including additional representations of biomass and diversity, a similar IDW interpolation mapping procedure was followed by \protect\hyperlink{ref-Smith2015}{Smith et al.} (\protect\hyperlink{ref-Smith2015}{2015}), \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy} (\protect\hyperlink{ref-WardPaige2016}{2015}), and \protect\hyperlink{ref-Bundyetal2017}{Bundy et al.} (\protect\hyperlink{ref-Bundyetal2017}{2017}). The summer groundfish research vessel survey is typically conducted during the month of July. However, from the fall of 1978 through to the spring of 1985, DFO also conducted spring and fall surveys using the same sampling design. This unique seasonal data was used to map the seasonal spatial distribution of key demersal and other fish species using IDW interpolation on the Scotian Shelf from the spring, summer and fall between 1978 and 1985 (\protect\hyperlink{ref-Smith2015}{Smith et al. 2015}). Following recommendations provided by \protect\hyperlink{ref-Kenchingtons2013}{Kenchington and Kenchington} (\protect\hyperlink{ref-Kenchingtons2013}{2017}), the spatial distribution of three indicators of biodiversity for fish and invertebrates were mapped using IDW interpolation to identify areas with persistently high values across fishery management eras, and compared with areas of persistently high abundance for selected species (\protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}). This analysis revealed a lack of consistent relationships between areas of persistent high diversity and persistent high biomass, suggesting that both can be used as independent and important spatial indicators of the system (\protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}). Groupings of fishes and invertebrates based on size, habitat and feeding guild, were also mapped using IDW interpolations to identify hotspots of functional group diversity (\protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}). This analysis revealed a spatially and temporally variable distribution of functional diversity across the Scotian Shelf with notable areas of high and low diversity (\protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}). Top quintiles of each functional group using the IDW approach were used as representative layers for fish and invertebrates in the MPA Network design in the Scotian Shelf Bioregion (Serdynska et al.~In press). IDW interpolation methods have also been used to map the distribution of individual species such as sea cucumbers (\emph{Cucumaria frondosa}) in the Scotian Shelf bioregion (\protect\hyperlink{ref-Shackell2013}{Shackell et al. 2013}), and sea scallop (\emph{Placopecten magellanicus}) in Georges and Browns Bank (\protect\hyperlink{ref-Hubley2013}{Hubley et al. 2014}).
 
-Species Distribution Modelling (SDM), instead of IDW, can also be used to evaluate spatio-temporal dynamics by predicting and understanding past, present and future distribution of species using environmental predictors (\protect\hyperlink{ref-Robinson:2017}{Robinson et al. 2017}). A variety of modelling approaches are being implemented in Maritimes Region to map and predict fish and invertebrate species distribution by incorporating environmental predictors to account for seasonal and temporal variability. For example, a stock assessment of snow crab (\emph{Chionoecetes opilio}) on the Scotian Shelf used data from the snow crab survey from 2005 to 2018 to map spatial data products for this stock, including annual predicted interpolations of potential habitat using Generalized Additive Models (GAM) and several environmental covariates including depth, curvature, slope, species composition, and annual temperature (\protect\hyperlink{ref-Zisserson2019}{Zisserson et al. 2019}). Sea scallop predicted habitat using Maximum Entropy (MaxEnt) models were computed in the German Bank using data compiled via benthic habitat mapping and seafloor geotechnical surveys in 2006, 2009, and 2010 (\protect\hyperlink{ref-Brown:2012}{Brown et al. 2012}). Predictions in the Scotian Shelf bioregion and the Northeast United States using datasets from DFO and the National Oceanic and Atmospheric Administration from 1993 to 2012 also predicted sea scallop habitat at a wider scale based on three scenarios of seasonal temperature and salinity climatologies (NOAA) (\protect\hyperlink{ref-Lowen:2019}{Lowen et al. 2019}). Offshore American lobster stock assessments (\emph{Homarus americanus}) used data from the RV, DFO Georges Bank, and National Marine Fisheries Service (NMFS) Northeast Fisheries Science Center (NEFSC) bottom trawl surveys (1970 to 2015) to predict species distribution using boosted regression trees and several environmental predictors (bathymetry, slope, curvature, and annual temperature interpolations) (\protect\hyperlink{ref-Cook:2017}{Cook et al. 2017}). Information on the potential for recovery of cusk (\emph{Brosme brosme}) used data from the bottom longline Halibut industry survey and Cusk absences in the Summer groundfish research vessel survey from 1998-2013 to predict suitable habitat using GAM, MaxEnt, and random forest models and several physical environmental variables (e.g.~complexity, benthic current stress and complexity, temperature, salinity, primary production, chlorophyll, suspended matter) (\protect\hyperlink{ref-Harris:2018}{Harris et al. 2018}). Atlantic halibut (\emph{Hippoglossus hippoglossus}) assessments using Summer groundfish research vessel survey and NOAA survey data from 2001 to 2013 predicted juvenile habitat using MaxEnt model and environmental predictors (bathymetry, slope, bottom temperature) (\protect\hyperlink{ref-French:2018}{French et al. 2018}). Persistent areas of high Atlantic halibut juvenile abundance were predicted using data from 27 bottom trawl surveys combined (NMFS and DFO) from 1978 to 2013 and applying Bayesian hierarchical spatiotemporal models with two environmental predictors (depth and temperature) (\protect\hyperlink{ref-Boudreau:2017}{Boudreau et al. 2017}).
+Species Distribution Modelling (SDM), instead of IDW, can also be used to evaluate spatio-temporal dynamics by predicting and understanding past, present and future distribution of species using environmental predictors (\protect\hyperlink{ref-Robinson:2017}{Robinson et al. 2017}). A variety of modelling approaches are being implemented in Maritimes Region to map and predict fish and invertebrate species distribution by incorporating environmental predictors to account for seasonal and temporal variability. For example, a stock assessment of snow crab (\emph{Chionoecetes opilio}) on the Scotian Shelf used data from the snow crab survey from 2005 to 2018 to map spatial data products for this stock, including annual predicted interpolations of potential habitat using Generalized Additive Models (GAM) and several environmental covariates including depth, curvature, slope, species composition, and annual temperature (\protect\hyperlink{ref-Zisserson2019}{Zisserson et al. 2019}). Sea scallop predicted habitat using Maximum Entropy (MaxEnt) models were computed for German Bank using data compiled via benthic habitat mapping and seafloor geotechnical surveys in 2006, 2009, and 2010 (\protect\hyperlink{ref-Brown:2012}{Brown et al. 2012}). Predictions in the Scotian Shelf bioregion and the Northeast United States using datasets from DFO and the National Oceanic and Atmospheric Administration from 1993 to 2012 also predicted sea scallop habitat at a wider scale based on three scenarios of seasonal temperature and salinity climatologies (NOAA) (\protect\hyperlink{ref-Lowen:2019}{Lowen et al. 2019}). Offshore American lobster stock assessments (\emph{Homarus americanus}) used data from the RV, DFO Georges Bank, and National Marine Fisheries Service (NMFS) Northeast Fisheries Science Center (NEFSC) bottom trawl surveys (1970 to 2015) to predict species distribution using boosted regression trees and several environmental predictors (bathymetry, slope, curvature, and annual temperature interpolations) (\protect\hyperlink{ref-Cook:2017}{Cook et al. 2017}). Information on the potential for recovery of cusk (\emph{Brosme brosme}) used data from the bottom longline Halibut industry survey and Cusk absences in the Summer groundfish research vessel survey from 1998-2013 to predict suitable habitat using GAM, MaxEnt, and random forest models and several physical environmental variables (e.g.~complexity, benthic current stress and complexity, temperature, salinity, primary production, chlorophyll, suspended matter) (\protect\hyperlink{ref-Harris:2018}{Harris et al. 2018}). Atlantic halibut (\emph{Hippoglossus hippoglossus}) assessments using Summer groundfish research vessel survey and NOAA survey data from 2001 to 2013 predicted juvenile habitat using MaxEnt model and environmental predictors (bathymetry, slope, bottom temperature) (\protect\hyperlink{ref-French:2018}{French et al. 2018}). Persistent areas of high Atlantic halibut juvenile abundance were predicted using data from 27 bottom trawl surveys combined (NMFS and DFO) from 1978 to 2013 and applying Bayesian hierarchical spatiotemporal models with two environmental predictors (depth and temperature) (\protect\hyperlink{ref-Boudreau:2017}{Boudreau et al. 2017}).
 
 These examples of mapping efforts in Maritimes Region showcase the diversity of approaches relevant to a variety of important research questions and management applications. Approaches, methods, datasets, and environmental predictors are selected based on individual project research questions, and considerations for each species, communities or stock. This allows research groups to maintain innovation and keep up with emerging methods and technologies to improve assessments, predictions, and ultimately, science advice. The diversity of approaches also leads to complexity when looking across studies as each data compilation and predictive method carries its own independent assumptions and can lead to different spatial outputs.
 
 \hypertarget{interpreting-spatial-results-for-marine-spatial-planning-purposes}{%
 \subsection{Interpreting spatial results for marine spatial planning purposes}\label{interpreting-spatial-results-for-marine-spatial-planning-purposes}}
 
-Fisheries and Oceans Canada is leading a marine spatial planning process that brings together relevant authorities and stakeholders to better coordinate how we use and manage marine spaces to achieve ecological, economic and social objectives. Operationalizing marine spatial planning includes a series of steps, including the process of analyzing existing conditions by collecting and mapping information about ecological, environmental and oceanographic conditions (\protect\hyperlink{ref-Ehler:2009}{Ehler and Douvere 2009}; \protect\hyperlink{ref-Agardy:2011}{Agardy et al. 2011}). Mapping the distribution of species is critical for the implementation of spatial management and as a first step in marine spatial planning processes. Species distribution have supported the identification of important sites for a given species or areas of high richness and diversity, which in turn can be used to inform siting decisions of new activities such as Marine Protected Areas (MPA), aquaculture sites or wind turbines. In the Scotian Shelf bioregion, mapping species distributions has been used to highlight areas of high biological diversity to support the identification of Ecologically or Biologically Significant Areas {[}\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell} (\protect\hyperlink{ref-Ricard:MARatlas:2013}{2013}); \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy} (\protect\hyperlink{ref-WardPaige2016}{2015})), to distinguish important and persistent habitat of significant species and functional groups to support MPA and conservation planning (\protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}; \protect\hyperlink{ref-Smith2015}{Smith et al. 2015}; \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}; \protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}), to identify important habitat for Species at Risk (\protect\hyperlink{ref-Harris:2018}{Harris et al. 2018}) and to highlight reserves for data-poor invertebrate fisheries (\protect\hyperlink{ref-Shackell2013}{Shackell et al. 2013}). Mapping species distribution has also been used to illustrate multi-decadal scale projections of changes in species distribution in the context of climate change and adaption (\protect\hyperlink{ref-Stanley:2018}{Stanley et al. 2018}; \protect\hyperlink{ref-Greenan:2019}{W. et al. 2019}).
+Fisheries and Oceans Canada is leading a marine spatial planning process that brings together relevant authorities and stakeholders to better coordinate how we use and manage marine spaces to achieve ecological, economic and social objectives. Operationalizing marine spatial planning includes a series of steps, including the process of analyzing existing conditions by collecting and mapping information about ecological, environmental and oceanographic conditions (\protect\hyperlink{ref-Ehler:2009}{Ehler and Douvere 2009}; \protect\hyperlink{ref-Agardy:2011}{Agardy et al. 2011}). Mapping the distribution of species is critical for the implementation of spatial management and as a first step in marine spatial planning processes. Species distribution have supported the identification of important sites for a given species or areas of high richness and diversity, which in turn can be used to inform siting decisions of new activities such as Marine Protected Areas (MPA), aquaculture sites or wind turbines. In the Scotian Shelf bioregion, mapping species distributions has been used to highlight areas of high biological diversity to support the identification of Ecologically or Biologically Significant Areas (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}; \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}), to distinguish important and persistent habitat of significant species and functional groups to support MPA and conservation planning (\protect\hyperlink{ref-Horsman:atlas:2009}{Horsman and Shackell 2009}; \protect\hyperlink{ref-Smith2015}{Smith et al. 2015}; \protect\hyperlink{ref-WardPaige2016}{Ward-Paige and Bundy 2015}; \protect\hyperlink{ref-Bundyetal2017}{Bundy et al. 2017}), to identify important habitat for Species at Risk (\protect\hyperlink{ref-Harris:2018}{Harris et al. 2018}) and to highlight reserves for data-poor invertebrate fisheries (\protect\hyperlink{ref-Shackell2013}{Shackell et al. 2013}). Mapping species distribution has also been used to illustrate multi-decadal scale projections of changes in species distribution in the context of climate change and adaption (\protect\hyperlink{ref-Stanley:2018}{Stanley et al. 2018}; \protect\hyperlink{ref-Greenan:2019}{Greenan et al. 2019}).
 
 In support of the marine spatial planning process, a public web-based atlas with relevant geospatial information is being developed to support decision-making. This Atlantic Canada-wide compilation of data and information will be a web-based, public platform with interactive maps of ocean ecosystems, human uses and management areas. This atlas cannot host the vast diversity of products and mapping approaches available in Maritimes Region. Consequently, we recommend that data products presented in this report should not be used for the atlas until an evaluation of the spatial information available and used in the past, is conducted.
 
-This diverse portfolio of approaches and applications is not unique to the Maritimes Region. A recent review of global distribution modelling efforts recommended the adoption of a consistent framework that integrates multi-model approaches and a clear expression of errors and uncertainties (\protect\hyperlink{ref-Robinson:2017}{Robinson et al. 2017}). In this context, Pacific Region has developed two initiatives to enable consistency and frequent publication, reproducibility, and transparency. One initiative developed a fully automated reproducible report to give a synthesis of data availability, population trends, fishing trends, growth and maturity patterns for 113 groundfish species in British Columbia to support stock assessment (\protect\hyperlink{ref-Anderson:2019}{Anderson et al. 2019}). The second initiative developed a SDM framework that was applied to twelve species on Canada's Pacific coast as part of the Regional Response Plan (\protect\hyperlink{ref-Nephin:2019}{Nephin et al. 2019}). The Maritimes and Gulf region, through this and past reports, are also using similar reproducible approaches to facilitate annual updates and transparency (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}; \protect\hyperlink{ref-Ricard-Gomez-2021}{Ricard and Gomez 2021}).
+This diverse portfolio of approaches and applications is not unique to the Maritimes Region. A recent review of global distribution modelling efforts recommended the adoption of a consistent framework that integrates multi-model approaches and a clear expression of errors and uncertainties (\protect\hyperlink{ref-Robinson:2017}{Robinson et al. 2017}). In this context, Pacific Region has developed two initiatives to enable consistency and frequent publication, reproducibility, and transparency. One initiative developed a reproducible report to give a synthesis of data availability, population trends, fishing trends, growth and maturity patterns for 113 groundfish species in British Columbia to support stock assessment (\protect\hyperlink{ref-Anderson:2019}{Anderson et al. 2019}). The second initiative developed a SDM framework that was applied to twelve species on Canada's Pacific coast as part of the Regional Response Plan (\protect\hyperlink{ref-Nephin:2019}{Nephin et al. 2019}). The Maritimes and Gulf region, through this and past reports, are also using similar reproducible approaches to facilitate annual updates and transparency (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}; \protect\hyperlink{ref-Ricard:GULFatlas:2021}{Ricard et al. 2021}).
 
-Recognizing the diversity of approaches for mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice related to spatial outputs can lead to more comparable work and consistent science advice to support processes such as marine spatial planning. At the international level, guidelines and standards related to appropriate variables and methods for mapping and modeling species and communities of deep-sea habitats were proposed to encourage the production of publications that will lead to more comparable work (\protect\hyperlink{ref-Kenchington2019}{Kenchington et al. 2019}). Similar general guidance for group practice approach mapping would be a worthwhile product in Maritimes Region. Until then, we proposed the use of the Open Data record (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}) for the version 1.0 of the public web-based atlas.
+Recognizing the diversity of approaches for mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice related to spatial outputs can lead to more comparable work and consistent science advice to support processes such as marine spatial planning. At the international level, guidelines and standards related to appropriate variables and methods for mapping and modeling species and communities of deep-sea habitats were proposed to encourage the production of publications that will lead to more comparable work (\protect\hyperlink{ref-Kenchington2019}{Kenchington et al. 2019}). Similar general guidance for how groups approach mapping activities would be a worthwhile product in Maritimes Region. Until then, we propose the use of the Open Data record for the Maritimes RV surveys (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}) as a precursor to the public web-based atlas.
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}
@@ -1121,6 +1107,9 @@ Ehler, C., and Douvere, F. 2009. Marine spatial planning: A step-by-step approac
 \leavevmode\hypertarget{ref-French:2018}{}%
 French, K., Shackell, N., and Heyer, N. den. 2018. \link{https://www.st.nmfs.noaa.gov/spo/FishBull/1162/french.pdf}{. Information on the Potential for Recovery of Cusk in Canadian Waters.}. Fish. Bull. 116: 107--121.
 
+\leavevmode\hypertarget{ref-Greenan:2019}{}%
+Greenan, B.J.W., Shackell, N.L., Ferguson, K., Greyson, P., Cogswell, A., Brickman, D., Wang, Z., Cook, A., Brennan, C.E., and Saba, V.S. 2019. Climate change vulnerability of {A}merican lobster fishing communities in {A}tlantic {C}anada. Frontiers in Marine Science 6: 579.
+
 \leavevmode\hypertarget{ref-Harris:2018}{}%
 Harris, L.E., Greenlaw, M., McCurdy, D., and MacDonald, D. 2018. \link{http://publications.gc.ca/collections/collection_2018/mpo-dfo/fs70-5/Fs70-5-2018-002-eng.pdf}{. Information on the Potential for Recovery of Cusk in Canadian Waters.}. DFO Can. Sci. Advis. Sec.Res. Doc. 2018/002. vi + 62 p.
 
@@ -1151,17 +1140,11 @@ Lowen, B., Hart, D., Stanley, R., Lehnert, S., Bradbury, I., and C., D. 2019. \l
 \leavevmode\hypertarget{ref-Myers:Stokes:1989}{}%
 Myers, R.A., and Stokes, K. 1989. Density-dependent habitat utilization of groundfish and the improvement of research surveys. (D:15). International Council for the Exploration of the Sea Council Meeting.
 
-\leavevmode\hypertarget{ref-Nelsonetal:2004}{}%
-Nelson J. S., Crossman E. J., Espinosa-Perez H., Findley L. T., Gilbert C. R., Lea R. N., and D., W.J. 2004. Common and scientific names of fishes from the united states canada and mexico. Number 29 in Special Publication. American Fisheries Society, Bethesda, Maryland, sixth edition.
-
 \leavevmode\hypertarget{ref-Nephin:2019}{}%
 Nephin, J., Gregr, E.J., St. Germain, C., Fields, C., and Finney, J.L. and. 2019. \link{http://publications.gc.ca/collections/collection_2020/mpo-dfo/fs70-5/Fs70-5-2020-004-eng.pdf}{Development of a {S}pecies {D}istribution {M}odelling Framework and its Application to Twelve Species on {C}anada’s {P}acific Coast}. DFO Can. Sci. Advis. Sec. Res. Doc. 2020/004. xii + 107 p.
 
 \leavevmode\hypertarget{ref-R:package:RColorBrewer}{}%
 Neuwirth, E. 2014. RColorBrewer:ColorBrewer palettes. R package version 1.1-2 \url{https://CRAN.R-project.org/package=RColorBrewer}.
-
-\leavevmode\hypertarget{ref-page:etal:7thedition}{}%
-Page L. M., Espinosa-Pérez H., Findley L. T., Gilbert C. R., Lea R. N., Mandrak N. E., and M.R.L., and S., N.J. 2013. Common and scientific names of fishes from the {U}nited {S}tates, {C}anada, and {M}exico. American Fisheries Society.
 
 \leavevmode\hypertarget{ref-R:package:gstat}{}%
 Pebesma, E. 2004. Multivariable geostatistics in {S}: The gstat package. \emph{In} Computers and Geosciences.
@@ -1174,6 +1157,9 @@ R Core Team. 2020. R: A language and environment for statistical computing. R Fo
 
 \leavevmode\hypertarget{ref-Ricard-Gomez-2021}{}%
 Ricard, D., and Gomez, C. 2021. Maritimes-SUMMER-atlas. \url{https://github.com/dfo-gulf-science/Maritimes-SUMMER-Atlas}; GitHub.
+
+\leavevmode\hypertarget{ref-Ricard:GULFatlas:2021}{}%
+Ricard, D., Rolland, N., and Swain, D. 2021. Occurrence, geographic distribution and abundance indices of marine organisms caught in the september research vessel trawl survey in the southern {G}ulf of {S}t. {L}awrence (1971-2020). Can. Tech. Rep. Fish. Aquat. Sci. xxxx: viii + 180~p.
 
 \leavevmode\hypertarget{ref-Ricard:MARatlas:2013}{}%
 Ricard, D., and Shackell, N.L. 2013. \link{http://publications.gc.ca/site/eng/9.589947/publication.html}{Population status (abundance/biomass, geographic extent, body size and condition), important habitat, depth, temperature and salinity of marine fish and invertebrates on the {S}cotian {S}helf and {B}ay of {F}undy (1970-2012)}. Can. Tech. Rep. Fish. Aquat. Sci. 3012: viii + 180~p.
@@ -1213,9 +1199,6 @@ Swain, D.P., and Sinclair, A.F. 1994. Fish distribution and catchability: {W}hat
 
 \leavevmode\hypertarget{ref-Tremblayetal:2007}{}%
 Tremblay M. J., B.R., Black G. A. P. 2007. The distribution of common decapod crustaceans and other invertebrates recorded in annual ecosystem surveys of the scotian shelf 1999-2006, by the research vessel groundfish survey. Can. Tech. Rep. Fish. Aquat. Sci. 74.
-
-\leavevmode\hypertarget{ref-Greenan:2019}{}%
-W., G.B.J., Shackell, N.L., Ferguson, K., P., G., Cogswell, A., Brickman, D., Wang, Z., Cook, A., Brennan, C.E., and Saba, V.S. 2019. Climate change vulnerability of {A}merican lobster fishing communities in {A}tlantic {C}anada. Frontiers in Marine Science 6: 579.
 
 \leavevmode\hypertarget{ref-WardPaige2016}{}%
 Ward-Paige, C.A., and Bundy, A. 2015. \link{https://waves-vagues.dfo-mpo.gc.ca/Library/363944.pdf}{Mapping Biodiversity on the {S}cotian {S}helf and in the

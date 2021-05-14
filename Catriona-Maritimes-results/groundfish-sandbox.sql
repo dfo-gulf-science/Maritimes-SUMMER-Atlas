@@ -56,3 +56,37 @@ extract(YEAR FROM i.SDATE), i.strat
 ORDER BY
 extract(YEAR FROM i.SDATE) DESC, i.strat
 ;
+
+SELECT 
+m.YEAR,
+m.VESEL,
+m.PURPOSE, 
+count(*)
+FROM
+groundfish.GSMISSION_LIST m
+WHERE 
+m.FK_SERIES_ID = 'SUMMER'
+GROUP BY 
+m.YEAR,
+m.VESEL,
+m.PURPOSE 
+ORDER BY 
+m.YEAR
+;
+
+SELECT 
+i.mission,
+extract(YEAR FROM i.sdate),
+i.gear,
+g.geardesc,
+count(*)
+FROM 
+groundfish.GSMISSION_LIST m,
+GROUNDFISH.GSINF i,
+GROUNDFISH.GSGEAR g 
+WHERE m.PK_MISSION = i.mission AND i.gear=g.gear AND m.FK_SERIES_ID = 'SUMMER'
+GROUP BY
+i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
+ORDER BY
+extract(YEAR FROM i.sdate)
+;

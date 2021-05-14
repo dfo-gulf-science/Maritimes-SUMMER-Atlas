@@ -4,10 +4,10 @@ year: 2021
 report_number: nnn
 author: |
   Daniel Ricard ^1^ 
-  Jamie Emberley ^2^ 
   Catalina Gomez ^2^ 
+  Jamie Emberley ^2^ 
   Catriona Regnier-McKellar ^2^ 
-author_list: "Ricard, D., Emberley, J., Gomez, C. and Regnier-McKellar, C."
+author_list: "Ricard, D., Gomez, C., Emberley, J. and Regnier-McKellar, C."
 region: Maritimes Region
 isbn: ""
 address: |
@@ -44,6 +44,7 @@ lot: true
 lof: true
 # Any extra LaTeX code for the header:
 header-includes:
+ - \usepackage{multirow}
  - \usepackage{float}
  - \usepackage{makeidx}
  - \makeindex

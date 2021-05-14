@@ -36,6 +36,8 @@ source(file.path(main.path, "chan.R"))
 # chan.R edit to reflect database credentials, or alternatively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
 source(file.path(mapping.path, "SUMMER-strata-maps.R")) ## map of the SUMMER strata and map of the location of survey tows
 RODBC::odbcClose(chan)
+
+source(file.path(mapping.path, "Summer-timeline.R")) ## survey timeline inspired by Wikipedia graphic of music band members
 #####################################################################################################################################################  
 
 

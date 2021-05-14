@@ -53,7 +53,8 @@ boundaries_simple <- boundaries %>%
 strata.labels <- rbind(
   data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
 )
-  
+
+
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
   geom_sf(fill=grey(0.9)) +  
@@ -65,7 +66,7 @@ g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
-ggsave(f4.n, g, width=6, height=5, units="in")
+ggsave(f4.n, g)
 
 ## try a map with depth
 gebco <- raster(file.path(mapping.path, "GEBCO-Scotia-Fundy.nc"))
@@ -74,14 +75,23 @@ y <- extent(291.5,303.5,41.5,48)
 gebco <- crop(gebco, y)
 
 my.df <- as.data.frame(gebco,xy = TRUE)
-my.df$z <- log(my.df$Elevation.relative.to.sea.level)
+my.df$z <- (my.df$Elevation.relative.to.sea.level)
+
+# Colour scheme
+blue.col <- colorRampPalette(c("darkblue", "lightblue"))
+yellow.col <- colorRampPalette(c("lightyellow", "orange"))
 
 g <- ggplot(data=my.df) + 
-  geom_raster(aes(x=-1*(360-x),y=y,fill = z)) + 
-  geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill=grey(0.9)) +
-  geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) + 
-  xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)") + xlim(-68,-57) + ylim(41.9,47)
+  geom_raster(aes(x=-1*(360-x),y=y, fill=z)) + 
+  scale_fill_gradient2(low="darkblue", mid="lightblue", high="orange",midpoint=0) 
 
+# 
+# +
+#   geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill=grey(0.9)) +
+#   geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) + 
+#   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)") + xlim(-68,-57) + ylim(41.9,47)
+# 
+# g +  coord_sf(expand = FALSE)
 
 ## how do the strata boundaries match the corresponding isobaths from the GEBCO grid?
 

@@ -2,27 +2,36 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place.
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
-(ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes Summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
+(ref:caption-timeline) Timeline of vessels and gears used in the Maritimes Region summer survey. Comparative fishing experiments are indicated by gray bars linking two fishing platforms.
+
+```{r timeline, fig.cap="(ref:caption-timeline)"}
+knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
+```
+
+
+(ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
 
 ```{r map1, fig.cap="(ref:caption-map1)"}
 knitr::include_graphics("./figures/annotated-map-NAFO.png")
 ```
 
-
 ## Sampling Design
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
 
-The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The area covered during the survey has remained constant since its onset, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)).
+The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)).
 
-The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
+The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles. 
 
-(ref:caption-map2) Map of the Summer survey strata. 
+(ref:caption-map2) Map of the summer survey strata 440 to 495. 
 
 ```{r map2, fig.cap="(ref:caption-map2)"}
 knitr::include_graphics("./figures/SUMMER-strata-map-sf.png")
 ```
+
+
+\newpage
 
 (ref:strata-tab-cap) Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range in fathoms and the surface area in square kilometers are reported.
 
@@ -32,7 +41,11 @@ strata.tab <- read.csv("strata-statistics.csv", encoding = "UTF-8")
 strata.tab[strata.tab$NAME=="4VSW","NAME"] <- "4VsW"
 strata.tab[strata.tab$NAME=="4VN","NAME"] <- "4Vn"
 
+strata.tab[strata.tab$DMIN==0,"DMIN"] <- 11
+strata.tab[strata.tab$DMIN==49,"DMIN"] <- 50
+
 strata.tab$DRANGE <- paste0(strata.tab$DMIN, "-", strata.tab$DMAX)
+
 
 oo <- order(strata.tab$STRAT)
 
@@ -40,29 +53,22 @@ vars <- c("NAME","STRAT","DRANGE","AREA")
 
 csasdown::csas_table(
   strata.tab[oo,vars], 
-  "latex", 
-  align = "c", 
+  format="latex", 
+  align = rep("c",4), 
   col.names = c("NAFO Div.", "Stratum", "Depth range (fathom)","Area (km \\textsuperscript{2})"), 
   caption = "(ref:strata-tab-cap)",
   row.names=FALSE,
   booktabs=TRUE,
-  longtable=TRUE
+  longtable=TRUE,
+  repeat_header=TRUE
   )  %>% 
-  kableExtra::collapse_rows(1:2, row_group_label_position = 'stack')
+  kableExtra::collapse_rows(1:2, latex_hline = "major", valign = "middle") #, row_group_label_position = 'stack')
 
 ```
 
 
 
 After each tow the catch is sorted by species and weighed. Each fish caught is then measured, and further sampling of individual fish weight, maturity status and age are performed for different length classes. When catches exceed 300 individuals, a random sub-sample is used to obtain the length and weight measurements.
-
-The location of representative tows appears in Figure \@ref(fig:map3).
-
-(ref:caption-map3) Map of the Summer survey tows. 
-
-```{r map3, fig.cap="(ref:caption-map3)"}
-knitr::include_graphics("./figures/SUMMER-tows-map.png")
-```
 
 
 ## Taxonomic Levels {#taxo}
@@ -99,9 +105,9 @@ SR & short rare & species with less than 200 catch records\\
 \end{table}
 
 
-The list of taxa covered in this document is presented in phylogenetic order [@Nelsonetal:2004] in Table \@ref(tab:tabspecies). To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species is also provided in Table \@ref(tab:tabspecies) [@WoRMS].
+To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species [@WoRMS] is included for the different species presented in this document (Table \@ref(tab:tabspecies)) .
 
-(ref:spec-fig-cap) List of species included in the Atlas. The species reported here are listed in phylogenetic order as per @page:etal:7thedition. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID and a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
+(ref:spec-fig-cap) List of species included in the Atlas. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID with a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
 
 \begin{landscapepage}
 ```{r tabspecies}
@@ -112,16 +118,18 @@ sections <- paste0("#sec:",spec.tab$spec)
 
 vars <- c("class","order","family","scientificname","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec", "AphiaID", "nrecords","type")
 
+oo <- order(spec.tab$class, spec.tab$order, spec.tab$family, spec.tab$scientificname)
 #knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), caption = "(ref:spec-fig-cap)") %>%
 csasdown::csas_table(
-  spec.tab[,vars], 
+  spec.tab[oo,vars], 
   "latex", 
 #  booktabs = TRUE, 
 #  longtable = TRUE, 
   align = "c", 
   col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), 
-  caption = "(ref:spec-fig-cap)") %>%
-  kableExtra::collapse_rows(1:3, row_group_label_position = 'stack') %>% 
+  caption = "(ref:spec-fig-cap)",
+  row.names=FALSE) %>%
+  kableExtra::collapse_rows(1:3, row_group_label_position = 'stack', row_group_label_fonts=list(bold = T), longtable_clean_cut=FALSE) %>% # latex_hline = "major"
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
   kableExtra::column_spec(5, width="3cm") %>% 
   kableExtra::column_spec(6, width="3cm") %>% 

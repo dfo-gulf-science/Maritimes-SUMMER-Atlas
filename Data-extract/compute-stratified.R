@@ -1,6 +1,6 @@
 ##
 ##
-stratified.fct <- function(catch.df, DDHS=FALSE) {
+stratified.fct <- function(catch.df, DDHS=FALSE, bynafo=FALSE) {
 # catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv", header=TRUE)
 
 #yrs<- seq(min(catch.df$YEAR),max(catch.df$YEAR))
@@ -82,6 +82,13 @@ lapply(1:n.yrs, function(i){
 							})
 )
 )
+
+if(bynafo){
+  ## now compute the same indices separately for 4X and 4VW
+  
+}
+
+
 
 
 if(DDHS){

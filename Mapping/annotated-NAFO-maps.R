@@ -95,7 +95,6 @@ g <- ggplot(data=as.data.frame(gebco,xy = TRUE)) +
         scale_fill_gradientn(colours = topo.colors(10))
 
 
-
 ## copy the files to the Technical Report folder
 file.copy(c(f1.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
 

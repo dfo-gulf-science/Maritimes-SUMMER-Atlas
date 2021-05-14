@@ -23,10 +23,16 @@ taxo.df.out <- merge(spec.tab[,vars], taxo.t, by.x="spec", by.y="spec.code")
 taxo.final <- taxo.df.out
 taxo.final$phylum <- factor(taxo.final$phylum, levels=c("Chordata","Mollusca","Arthropoda"), ordered=TRUE) ## this is used to order the table of species
 taxo.final$class <- factor(taxo.final$class, levels=c("Myxini","Petromyzonti","Actinopterygii","Elasmobranchii","Cephalopoda","Malacostraca"), ordered=TRUE) ## this is used to order the table of species
+taxo.final$order <-  factor(taxo.final$order, levels=c("Myxiniformes","Petromyzontiformes","Gadiformes","Scorpaeniformes","Pleuronectiformes","Perciformes","Clupeiformes","Osmeriformes","Aulopiformes","Myctophiformes","Stomiiformes","Argentiniformes","Lophiiformes","Anguilliformes","Zeiformes","Beloniformes","Rajiformes","Squaliformes","Oegopsida","Myopsida","Decapoda"), ordered=TRUE) ## this is used to order the table of species
+  
 oo1 <- order(taxo.final$phylum)
 taxo.final <- taxo.final[oo1,]
+
 oo2 <- order(taxo.final$class)
 taxo.final <- taxo.final[oo2,]
+
+oo3 <- order(taxo.final$order)
+taxo.final <- taxo.final[oo3,]
 
 ## write to a file
 csv.fn <- file.path(main.path, "species-list-for-report-APHIA.csv")
