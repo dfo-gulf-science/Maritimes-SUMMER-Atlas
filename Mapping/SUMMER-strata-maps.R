@@ -50,18 +50,19 @@ boundaries_simple <- boundaries %>%
   ) %>%
   st_transform(4326)
 
-strata.labels <- rbind(
-  data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
-)
+#strata.labels <- rbind(
+#  data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
+#)
 
 
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
-  geom_sf(fill=grey(0.9)) +  
-  geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
-  geom_sf_label(aes(label = StrataID)) + 
-  geom_sf(data=boundaries_simple, fill=grey(0.8), color=grey(0.3)) +
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white")) +
+  geom_sf(data=boundaries_simple, fill="cornsilk", color=grey(0.8)) +
+  geom_sf(fill="salmon") +  
+  # geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
+  #geom_sf_label(aes(label = StrataID), size=2, alpha=0.5) +
+  geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "powderblue")) + #, panel.border=element_rect(linetype="solid")
   xlim(-68,-57) + ylim(41.9,47) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 
@@ -98,8 +99,6 @@ g <- ggplot(data=my.df) +
 
   
 ## map of the tow locations
-f3.n <- file.path(mapping.path,"SUMMER-tows-map.png")
-
 qu <- paste("
 SELECT 
 mission,
@@ -129,14 +128,28 @@ summer.tows.df <- subset(
      STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' ) & (MONTH == 6 | MONTH == 7 | MONTH == 8)
 )
 
+f3.n <- file.path(mapping.path,"SUMMER-tows-map.png")
+
 
 png(file=f3.n, width=900, height=900)
 plotMap(worldLLhigh, xlim=c(291.5,303.5), ylim=c(41.5,48), col=grey(0.8), plt=c(0.1,0.9,0.1,0.9),border='black',axes=TRUE,tckLab=FALSE,xlab="",ylab="")
 points(360+summer.tows.df$SLO, summer.tows.df$SLA, pch=19, cex=0.5)
 dev.off()
 
+## tow locations using ggplot
+g <- ggplot(boundaries_simple) +
+  geom_sf(fill="cornsilk", color=grey(0.8)) +
+  geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill="salmon",alpha=0.1) +
+  geom_point(data=summer.tows.df, aes(SLO,SLA), pch=19, cex=0.2) +
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "powderblue")) +
+  xlim(-68,-57) + ylim(41.9,47) +
+  xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
+
+f5.n <- file.path(mapping.path, "SUMMER-tows-map-sf.png")
+ggsave(f5.n, g)
+
 
 ## copy the files to the Technical Report folder
-file.copy(c(f2.n,f3.n,f4.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
+file.copy(c(f2.n,f3.n,f4.n,f5.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
 
 rm(list= ls()[!(ls() %in% before)]) ## clean up after ourselves

@@ -91,7 +91,7 @@ Fisheries and Oceans Canada\\
 Dartmouth, Nova Scotia, B2Y 4A2, Canada\\}
 
 % Abstract
-\newcommand{\trAbstract}{The summer groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy started in 1970 and was designed to measure the distribution and abundance of major commercial fish species. Over time, additional information on non-commercial species was collected, and allowed considerable insight into ecosystem function and structure, as documented in many primary publications whose analyses used the survey data. The same groundfish survey database has also been used to produce species status reports, atlases of species distribution and remains an essential source of information for stock assessments in the Maritimes Region of Fisheries and Oceans Canada. This report builds on previous work and former atlases by updating a comprehensive suite of indices to assess population status and environmental preferences of 104 species. For each species, trends in geographic distribution and biomass or abundance were plotted. The spatial extent of distribution was plotted over time to gauge how the area occupied has changed. The relationship between abundance or biomass and spatial extent reflected whether the species distribution expands when abundance or biomass increases. Length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Depth, temperature and salinity preferences were estimated to gauge the range of suitable environmental parameters for each species. Finally, for each stratum, the slope describing how local density varies with regional abundance was estimated.}
+\newcommand{\trAbstract}{The summer groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy started in 1970 and was designed to measure the distribution and abundance of major commercial fish species. Over time, additional information on non-commercial species was collected, and allowed considerable insight into ecosystem function and structure, as documented in many primary publications whose analyses used the survey data. The same groundfish survey database has also been used to produce species status reports, atlases of species distribution and remains an essential source of information for stock assessments in the Maritimes Region of Fisheries and Oceans Canada. This report builds on previous work and former atlases by updating a comprehensive suite of indices to assess population status and environmental preferences of 104 species. For each species, trends in geographic distribution and biomass or abundance were plotted. The spatial extent of distribution was plotted over time to gauge how the area occupied has changed. The relationship between abundance or biomass and spatial extent reflected whether the species distribution expands when abundance or biomass increases. Length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Depth, temperature and salinity preferences were estimated to gauge the range of suitable environmental parameters for each species. Finally, for each stratum, the slope describing how local density varies with regional abundance was estimated. The reproducible set of tools provided in this report constitutes a stepping stone to conduct other ecological analyses using the summer groundfish research vessel survey data by fostering reproducibility and transparency of ecological information collected and reported annually. Recognizing the diversity of approaches for visualizing and mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice can lead to more comparable work and consistent science advice to support processes such as marine spatial planning.}
 
 % Resume (i.e., French abstract)
 \newcommand{\trResume}{Le relevé estival par navires de recherche sur le poisson de fond sur le plateau néo-écossais et dans la baie de Fundy a débuté en 1970 et visait à mesurer la répartition et l'abondance des principales espèces de poissons commerciales. Au fil du temps, des informations supplémentaires sur les espèces non commerciales ont été recueillies et ont permis de mieux comprendre la fonction et la structure de l'écosystème, comme le montrent de nombreuses publications primaires dont les analyses ont utilisé les données des relevés. La même base de données sur les relevés du poisson de fond a également été utilisée pour produire des rapports sur la situation des espèces, des atlas de la répartition des espèces et demeure une source essentielle d'information pour les évaluations des stocks dans la région des Maritimes de Pêches et Océans Canada. Ce rapport s'appuie sur des travaux antérieurs et d'anciens atlas en mettant à jour une série complète d'indices pour évaluer l'état de la population et les préférences environnementales de 104 espèces. Pour chaque espèce, les tendances de la répartition géographique et de la biomasse ou de l'abondance ont été tracées. L'étendue spatiale de la distribution a été tracée au fil du temps pour évaluer comment la zone occupée a changé. La relation entre l'abondance ou la biomasse et l'étendue spatiale indique si la répartition des espèces augmente lorsque l'abondance ou la biomasse augmente. Les fréquences de longueur au fil du temps représentaient tout changement dans la taille moyenne. Les graphiques de l'état au fil du temps ont révélé si les poissons individuels sont plus gros ou plus minces que leur moyenne à long terme. Les préférences en matière de profondeur, de température et de salinité ont été estimées pour évaluer la gamme de paramètres environnementaux appropriés pour chaque espèce. Enfin, pour chaque strate, la pente décrivant comment la densité locale varie avec l'abondance régionale a été estimée.}
@@ -677,17 +677,17 @@ All data processing and analyses were conducted using the R software (\protect\h
 \hypertarget{geographic-distribution-of-catches}{%
 \subsubsection{Geographic distribution of catches}\label{geographic-distribution-of-catches}}
 
-Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ''idw'' of the spatstat R package (\protect\hyperlink{ref-R:package:spatstat}{Baddeley 2015}). The IDW method was used with a power parameter value of 10.
+Spatial interpolation of catch biomass (kg/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ''idw'' of the spatstat R package (\protect\hyperlink{ref-R:package:spatstat}{Baddeley 2015}). The IDW method was used with a power parameter value of 10.
 
-\hypertarget{abundance-and-biomass-indices}{%
-\subsubsection{Abundance and biomass indices}\label{abundance-and-biomass-indices}}
+\hypertarget{biomass-indices}{%
+\subsubsection{Biomass indices}\label{biomass-indices}}
 
-For each species, stratified random estimates of catch abundance and biomass (\protect\hyperlink{ref-Smith:1996}{Smith 1996}) were computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch biomass (\protect\hyperlink{ref-Smith:1996}{Smith 1996}) were computed for each year. Yearly estimates of the standard error were also computed.
 
 \hypertarget{distribution-indices}{%
 \subsubsection{Distribution indices}\label{distribution-indices}}
 
-For each Category L, I and S fish species, the minimum area required to account for 75\% and 95\% of the total biomass or abundance were computed (D75\% and D95\%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata (\protect\hyperlink{ref-Swain:Sinclair:1994:cjfas}{Swain and Sinclair 1994}; \protect\hyperlink{ref-Swain:Morin:1996:cjfas}{Swain and Morin 1996}).
+For each Category L, I and S fish species, the minimum area required to account for 75\% and 95\% of the total biomass were computed (D75\% and D95\%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata (\protect\hyperlink{ref-Swain:Sinclair:1994:cjfas}{Swain and Sinclair 1994}; \protect\hyperlink{ref-Swain:Morin:1996:cjfas}{Swain and Morin 1996}).
 
 \hypertarget{length-frequencies}{%
 \subsubsection{Length frequencies}\label{length-frequencies}}
@@ -727,22 +727,6 @@ Y_{h,i} = \alpha_{h} Y_{i}^{\beta_h}
 where, \(y_{h,i}\) is the average abundance of stratum \(h\) in year \(i\), and \(\alpha_{h,i}\) and \(\beta_{h,i}\) are the fitted parameters. The estimated parameter \(\beta_{h,i}\) is referred to as the ``slope parameter'' and indicates whether stratum-level density is positively (\(\beta_{h,i} <= 0\)), negatively (\(\beta_{h,i} >= 0\)) or negligibly (\(\beta_{h,i} \approx 0\)) related to population abundance.
 
 To estimate the suitability of each stratum, the median abundance observed during the years that are in the top 25\% of yearly estimates is used. We combine the slope parameter estimates from the above model with the median abundance to identify strata that have consistently high abundance and whose local density is weakly related to fluctuation in population abundance (\(\beta_{h,i} \approx 0\)). Preferred strata are identified for each category L species.
-
-\hypertarget{results}{%
-\section{Results}\label{results}}
-
-The depth, bottom temperature and bottom salinity cumulative frequency distribution for the survey are presented in Figure~\ref{fig:setsdist}.
-
-
-\begin{figure}[htb]
-
-{\centering \pdftooltip{\includegraphics[width=6in]{./figures/temp}}{Figure \ref{fig:setsdist}} 
-
-}
-
-\caption{Cumulative frequencey distribution of depth, bottom temperature and bottom salinity of representative sets from the summer survey.}\label{fig:setsdist}
-\end{figure}
-The plots generated for each species are presented in the Appendix.
 
 \hypertarget{description-of-figures}{%
 \subsection{Description of Figures}\label{description-of-figures}}
@@ -785,6 +769,11 @@ Cumulative frequency distributions of depth, temperature and salinity at all sam
 
 Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25\% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
 
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+The plots generated for each species are presented in the Appendix.
+
 \hypertarget{summary-of-successful-tows-by-year-and-stratum}{%
 \subsection{Summary of successful tows by year and stratum}\label{summary-of-successful-tows-by-year-and-stratum}}
 
@@ -795,11 +784,11 @@ Tables~\ref{tab:tabtowstratumyear1},~\ref{tab:tabtowstratumyear2} and~\ref{tab:t
 
 \begin{figure}[htb]
 
-{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-tows-map}}{Figure \ref{fig:map3}} 
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/SUMMER-tows-map-sf}}{Figure \ref{fig:map3}} 
 
 }
 
-\caption{Map of the Summer survey tows.}\label{fig:map3}
+\caption{Map of the 9080 representative tows in the Summer survey from 1970 to 2020.}\label{fig:map3}
 \end{figure}
 \begin{landscapepage}
 
@@ -1008,6 +997,20 @@ Tables~\ref{tab:tabtowstratumyear1},~\ref{tab:tabtowstratumyear2} and~\ref{tab:t
 \end{longtable}
 \endgroup{}
 \end{landscapepage}
+\hypertarget{distribution-of-depth-bottom-temperature-and-bottom-salinity-from-survey-tows}{%
+\subsection{Distribution of depth, bottom temperature and bottom salinity from survey tows}\label{distribution-of-depth-bottom-temperature-and-bottom-salinity-from-survey-tows}}
+
+The depth, bottom temperature and bottom salinity cumulative frequency distribution for the survey are presented in Figure~\ref{fig:setsdist}.
+
+
+\begin{figure}[htb]
+
+{\centering \pdftooltip{\includegraphics[width=6in]{./figures/temp}}{Figure \ref{fig:setsdist}} 
+
+}
+
+\caption{Cumulative frequency distribution of depth, bottom temperature and bottom salinity of representative sets from the summer survey.}\label{fig:setsdist}
+\end{figure}
 \hypertarget{discussion}{%
 \section{Discussion}\label{discussion}}
 
@@ -1031,7 +1034,7 @@ In support of the marine spatial planning process, a public web-based atlas with
 
 This diverse portfolio of approaches and applications is not unique to the Maritimes Region. A recent review of global distribution modelling efforts recommended the adoption of a consistent framework that integrates multi-model approaches and a clear expression of errors and uncertainties (\protect\hyperlink{ref-Robinson:2017}{Robinson et al. 2017}). In this context, Pacific Region has developed two initiatives to enable consistency and frequent publication, reproducibility, and transparency. One initiative developed a reproducible report to give a synthesis of data availability, population trends, fishing trends, growth and maturity patterns for 113 groundfish species in British Columbia to support stock assessment (\protect\hyperlink{ref-Anderson:2019}{Anderson et al. 2019}). The second initiative developed a SDM framework that was applied to twelve species on Canada's Pacific coast as part of the Regional Response Plan (\protect\hyperlink{ref-Nephin:2019}{Nephin et al. 2019}). The Maritimes and Gulf region, through this and past reports, are also using similar reproducible approaches to facilitate annual updates and transparency (\protect\hyperlink{ref-Ricard:MARatlas:2013}{Ricard and Shackell 2013}; \protect\hyperlink{ref-Ricard:GULFatlas:2021}{Ricard et al. 2021}).
 
-Recognizing the diversity of approaches for mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice related to spatial outputs can lead to more comparable work and consistent science advice to support processes such as marine spatial planning. At the international level, guidelines and standards related to appropriate variables and methods for mapping and modeling species and communities of deep-sea habitats were proposed to encourage the production of publications that will lead to more comparable work (\protect\hyperlink{ref-Kenchington2019}{Kenchington et al. 2019}). Similar general guidance for how groups approach mapping activities would be a worthwhile product in Maritimes Region. Until then, we propose the use of the Open Data record for the Maritimes RV surveys (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}) as a precursor to the public web-based atlas.
+Recognizing the diversity of approaches for mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice related to spatial outputs can lead to more comparable work and consistent science advice to support processes such as marine spatial planning. At the international level, guidelines and standards related to appropriate variables and methods for mapping and modeling species and communities of deep-sea habitats were proposed to encourage the production of publications that will lead to more comparable work (\protect\hyperlink{ref-Kenchington2019}{Kenchington et al. 2019}). Similar general guidance for how groups approach mapping activities would be a worthwhile product in Maritimes Region. Until then, we propose the use of the Open Data record for the Maritimes RV surveys (\protect\hyperlink{ref-OpenData_MAR_RV}{DFO 2021}) as a precursor to the public web-based marine spatial planning atlas.
 
 \hypertarget{acknowledgements}{%
 \section{Acknowledgements}\label{acknowledgements}}

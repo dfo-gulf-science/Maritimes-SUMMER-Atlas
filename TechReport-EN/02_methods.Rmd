@@ -150,15 +150,15 @@ All data processing and analyses were conducted using the R software [@R:2020] u
 
 ### Geographic distribution of catches
 
-Spatial interpolation of catch biomass (kg/tow) or abundance (number/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. The IDW method was used with a power parameter value of 10.
+Spatial interpolation of catch biomass (kg/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. The IDW method was used with a power parameter value of 10.
 
-### Abundance and biomass indices
+### Biomass indices
 
-For each species, stratified random estimates of catch abundance and biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed.
 
 ### Distribution indices
 
-For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass or abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
+For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
 
 ### Length frequencies
 
@@ -201,3 +201,32 @@ Y_{h,i} = \alpha_{h} Y_{i}^{\beta_h}
 where, $y_{h,i}$ is the average abundance of stratum $h$ in year $i$, and $\alpha_{h,i}$ and  $\beta_{h,i}$ are the fitted parameters. The estimated parameter $\beta_{h,i}$ is referred to as the "slope parameter" and indicates whether stratum-level density is positively ($\beta_{h,i} <= 0$), negatively ($\beta_{h,i} >= 0$) or negligibly ($\beta_{h,i} \approx 0$) related to population abundance.
 
 To estimate the suitability of each stratum, the median abundance observed during the years that are in the top 25% of yearly estimates is used. We combine the slope parameter estimates from the above model with the median abundance to identify strata that have consistently high abundance and whose local density is weakly related to fluctuation in population abundance ($\beta_{h,i} \approx 0$). Preferred strata are identified for each category L species.
+
+## Description of Figures
+
+### Type A
+For Category L and S species: 
+
+Spatial distribution of catch-per unit of effort, (CPUE, kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf in five-year periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence (proportion of tows with catch records for a given species) was also reported for each five-year period.
+
+For Category LR and SR:
+
+Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR). Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
+
+### Type B
+For Category L, S and I species:
+
+Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coefficient between D75% and biomass, and its statistical significance, are also reported in the right panel.
+
+### Type C.
+Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods covered by the surveys.
+
+### Type D.
+Average fish condition for all fish lengths (black dots and black line), large fish (thick gray line), and small fish (thin gray line). Fish condition is presented for NAFO divisions 4VW (right panel) and 4X (left panel).
+
+### Type E.
+Cumulative frequency distributions of depth, temperature and salinity at all sampled locations (thick solid line) and at fishing locations with catch records (thin dashed line). The depth, temperature and salinity associated with 5%, 25%, 50%, 75% and 95% of the cumulative catch is shown in tabular fashion on the bottom right panel.
+
+### Type F.
+Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
+

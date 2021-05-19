@@ -39,7 +39,7 @@ df2 <- data.frame(
   southern.vessel=c(rep("Lady Hammond WIIA", length(y2)))
 )
 
-y3 <- c(seq(1982.5,2006.5,0.5), seq(2009.5,2017.5,0.5), seq(2018.5,2020.5,0.5))
+y3 <- c(seq(1982.5,2006.5,0.5), seq(2008.5,2017.5,0.5), seq(2018.5,2020.5,0.5))
 df3 <- data.frame(
   year=y3,
   southern.vessel=c(rep("Alfred Needler WIIA", length(y3)))
@@ -71,6 +71,8 @@ summer.timeline.fig.fct <- function(){
   segments(1967,5,1969.5,5, col=grey(0.8), lwd=0.5)
   segments(1967,4,1981.5,4, col=grey(0.8), lwd=0.5)
   segments(1967,3,1982.5,3, col=grey(0.8), lwd=0.5)
+  segments(2005.5,3,2009,3, col=grey(0.8), lwd=0.5)
+  segments(2017.5,3,2018.5,3, col=grey(0.8), lwd=0.5)
   segments(1967,2,2007.5,2, col=grey(0.8), lwd=0.5)
   segments(1967,1,2017.5,1, col=grey(0.8), lwd=0.5)
   
@@ -78,8 +80,8 @@ summer.timeline.fig.fct <- function(){
   polygon(c(df2$year,rev(df2$year)), c(rep(3.6,nrow(df2)),rep(4.4,nrow(df2))), col=my.cols[2])#, border=my.cols[2])
   
   polygon(c(df3$year[1:49],rev(df3$year[1:49])), c(rep(2.6,length(1:49)),rep(3.4,length(1:49))), col=my.cols[3])#, border=my.cols[3])
-  polygon(c(df3$year[50:66],rev(df3$year[50:66])), c(rep(2.6,length(50:66)),rep(3.4,length(50:66))), col=my.cols[3])#, border=my.cols[3])
-  polygon(c(df3$year[67:71],rev(df3$year[67:71])), c(rep(2.6,length(67:71)),rep(3.4,length(67:71))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[50:68],rev(df3$year[50:68])), c(rep(2.6,length(50:68)),rep(3.4,length(50:68))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[69:73],rev(df3$year[69:73])), c(rep(2.6,length(69:73)),rep(3.4,length(69:73))), col=my.cols[3])#, border=my.cols[3])
   
   polygon(c(df4$year,rev(df4$year)), c(rep(1.6,nrow(df4)),rep(2.4,nrow(df4))), col=my.cols[4])#, border=my.cols[4])
   
@@ -92,6 +94,14 @@ summer.timeline.fig.fct <- function(){
   
   box()
   
+  text(1975, 5, "Yankee 36", cex=2)
+  text(1982, 4, "WIIA", cex=2)
+  text(1995, 3, "WIIA", cex=2)
+  text(2013, 3, "WIIA", cex=2)
+  text(2019.5, 3, "WIIA", cex=2)
+  text(2008, 2, "WIIA", cex=2)
+  text(2018, 1, "WIIA", cex=2)
+  
   
   mtext(side=1, "Year", cex=2.7, line=4.5, at=1992.7, padj = 0.3)
   
@@ -101,14 +111,14 @@ summer.timeline.fig.fct <- function(){
 tiff.fn <- file.path(fp, "Maritimes-SUMMER-survey-timeline-2020.tiff")
 
 tiff(tiff.fn, width=1600, height=900, compression="lzw")
-par(mar=c(6,22,1,1))
+par(mar=c(6,20,1,1))
 summer.timeline.fig.fct()
 dev.off()
 
 png.fn <- file.path(fp, "Maritimes-SUMMER-survey-timeline-2020.png")
 
 png(png.fn, width=1600, height=900)
-par(mar=c(6,22,1,1))
+par(mar=c(6,20,1,1))
 summer.timeline.fig.fct()
 dev.off()
 
