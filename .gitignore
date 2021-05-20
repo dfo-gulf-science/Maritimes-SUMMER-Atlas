@@ -23,7 +23,6 @@
 *.toc
 *.tex
 *.sty
-*.png
 
 # R Environment Variables
 .Renviron
