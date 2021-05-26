@@ -90,3 +90,29 @@ i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
 ORDER BY
 extract(YEAR FROM i.sdate)
 ;
+
+
+  SELECT 
+  MISSION,
+  EXTRACT(YEAR FROM sdate),
+  EXTRACT(MONTH FROM sdate),
+  count(*)
+  FROM
+  GROUNDFISH.GSINF
+  WHERE
+  EXTRACT(YEAR FROM sdate) = 2004
+  GROUP BY 
+  MISSION,
+    EXTRACT(YEAR FROM sdate),
+  EXTRACT(MONTH FROM sdate)
+  ;
+
+ 
+ SELECT 
+  *
+  FROM
+  GROUNDFISH.GSINF
+  WHERE
+  MISSION IN ('TEL2004529','TEL2004530')
+  ;
+  
