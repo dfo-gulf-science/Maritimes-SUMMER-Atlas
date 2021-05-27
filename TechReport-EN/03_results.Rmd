@@ -97,7 +97,7 @@ The depth, bottom temperature and bottom salinity cumulative frequency distribut
 (ref:setsdistcap) Cumulative frequency distribution of depth, bottom temperature and bottom salinity of representative sets from the summer survey. 
 
 ```{r setsdist, fig.cap="(ref:setsdistcap)"}
-knitr::include_graphics("./figures/summer-depth-CDF.png")
+knitr::include_graphics("./figures/summer-depth-temperature-salinity-CDF.png")
 ```
 
 
