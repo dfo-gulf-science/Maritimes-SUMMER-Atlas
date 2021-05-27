@@ -31,7 +31,7 @@ knitr::include_graphics("./figures/SUMMER-strata-map-sf.png")
 ```
 
 
-\newpage
+\clearpage
 
 (ref:strata-tab-cap) Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range in fathoms and the surface area in square kilometers are reported.
 

@@ -102,3 +102,14 @@ knitr::include_graphics("./figures/summer-depth-temperature-salinity-CDF.png")
 ```
 
 
+### Decadal distribution of surface and bottom temperatures
+
+The decadal cumulative frequency distribution of surface and bottom temperatures are presented in Figure \@ref(fig:setsdistdecadal).
+
+
+(ref:setsdistcapdecadal) Decadal cumulative frequency distribution of surface temperature (top panel) and bottom temperature (bottom panel) of representative sets from the DFO Maritimes summer survey.
+
+```{r setsdistdecadal, fig.cap="(ref:setsdistcapdecadal)"}
+knitr::include_graphics("./figures/summer-surface-temperatures-decadal-CDF.png")
+```
+

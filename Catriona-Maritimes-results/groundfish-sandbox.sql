@@ -91,6 +91,27 @@ ORDER BY
 extract(YEAR FROM i.sdate)
 ;
 
+SELECT 
+i.mission,
+extract(YEAR FROM i.sdate),
+i.gear,
+g.geardesc,
+count(*)
+FROM 
+groundfish.GSMISSIONS m,
+GROUNDFISH.GSINF i,
+GROUNDFISH.GSGEAR g 
+WHERE 
+m.mission = i.mission AND 
+i.gear=g.gear AND 
+m.SEASON = 'SUMMER'
+GROUP BY
+i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
+ORDER BY
+extract(YEAR FROM i.sdate)
+;
+
+
 
   SELECT 
   MISSION,
