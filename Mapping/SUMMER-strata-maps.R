@@ -54,6 +54,7 @@ boundaries_simple <- boundaries %>%
 #  data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
 #)
 
+Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
 
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 

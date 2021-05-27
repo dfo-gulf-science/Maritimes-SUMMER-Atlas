@@ -4,7 +4,7 @@ The survey is conducted annually in July-August and covers the Scotian Shelf and
 
 A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
-(ref:caption-timeline) Timeline of vessels and gears used in the Maritimes Region summer survey. Comparative fishing experiments are indicated by gray bars linking two fishing platforms.
+(ref:caption-timeline) Timeline of vessels and gears used in the Maritimes Region summer survey. The y axis identifies the vessel used and the gear used is overlaid on the polygon representing the time window where each vessel was used.
 
 ```{r timeline, fig.cap="(ref:caption-timeline)"}
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")

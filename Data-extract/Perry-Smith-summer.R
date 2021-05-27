@@ -109,7 +109,7 @@ for(t in depths){
 }## end loop over depths
 
 depth.cdf <- cdf.df
-depth.cdf$variable="Depth"
+depth.cdf$variable="Depth (m)"
 names(depth.cdf)[1] <- "variable.value"
 
 out.df <- cdf.df
@@ -269,8 +269,81 @@ for(t in temperatures){
 }## end loop over temperatures
 
 temp.cdf <- cdf.df
-temp.cdf$variable="Bottom temperature"
+temp.cdf$variable="Bottom temperature (\u{B0}C)"
 names(temp.cdf)[1] <- "variable.value"
+out.df <- cdf.df
+names(out.df) <- c("temperature","cdf.temperature")
+
+g <- ggplot(out.df, aes(x=temperature, y=cdf.temperature)) +
+  geom_line() +
+  theme_bw()
+g
+
+ggsave(g, file=file.path(actualreport.path, "figures/summer-temperature-CDF.png"))
+
+
+###########################################
+## SURFACE TEMPERATURE
+###########################################
+temperature.df <- summer.tows.df[which(!is.na(summer.tows.df$SURFACE_TEMPERATURE)),]
+
+st <- read.csv(file.path(actualreport.path, "strata-statistics.csv"))
+st <- st[which(st$STRAT %in% c(440:466, 470:478, 480:485, 490:495)),]
+
+x <- temperature.df
+x$unique.id <- paste0(x$MISSION, "-", x$SETNO)
+
+##
+## following Table 1 in Perry and Smith (1994)
+# nh = number of hauls or sets in stratum h (h = 1, . . ., L)
+nh <- aggregate(unique.id~STRAT, data=x, length)
+st <- merge(st, nh, by="STRAT")
+st$nh <- st$unique.id
+
+
+## n = total number of hauls
+n <- nrow(x)
+
+# Nh, = total number of possible sets in stratum h
+# a.k.a. number of trawlable units
+# swept area of a 30-minute WIIa set, 
+swept.area <- 4E-02 ## NOT THE REAL VALUE, check this
+st$Nh <- st$AREA / swept.area
+
+# N = total number of possible sets overall
+N <- sum(st$Nh)
+
+# Wh = proportion of the survey area in stratum h
+st$Wh <- st$AREA / sum(st$AREA)
+## in Perry and Smith, the proportion is computed as Nh/N 
+## (st$Wh - st$Nh / N) < 1E-12 ## the numbers numerically differ in R, but they are the same
+
+temperatures <- seq(min(x$SURFACE_TEMPERATURE), max(x$SURFACE_TEMPERATURE), length.out=200)
+
+cdf.df <- expand.grid(temperature=temperatures, cdf=NA) ## CDF for sets
+
+for(t in temperatures){
+  this.temperature.cdf <- 0
+  
+  ## loop over strata
+  for(h in unique(x$STRAT)){
+    ## number of unique tows in this stratum
+    t.df <- x[x$STRAT==h,]
+    ## loop over sets in each stratum
+    for(i in 1:nrow(t.df)){
+      this.set.cdf <- ifelse(t.df[i,"SURFACE_TEMPERATURE"]<=t,1,0) * (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"])
+      this.temperature.cdf <- this.temperature.cdf + this.set.cdf
+    }## end loop over sets
+  }## end loop over strata
+  
+  
+  cdf.df[cdf.df$temperature==t,"cdf"] <- this.temperature.cdf
+  
+}## end loop over temperatures
+
+stemp.cdf <- cdf.df
+stemp.cdf$variable="Surface temperature (\u{B0}C)"
+names(stemp.cdf)[1] <- "variable.value"
 out.df <- cdf.df
 names(out.df) <- c("temperature","cdf.temperature")
 
@@ -344,7 +417,7 @@ for(t in salinities){
 }## end loop over salinities
 
 sal.cdf <- cdf.df
-sal.cdf$variable="Bottom salinity"
+sal.cdf$variable="Bottom salinity (psu)"
 names(sal.cdf)[1] <- "variable.value"
 
 out.df <- cdf.df
@@ -364,9 +437,11 @@ all.df <- rbind(depth.cdf,temp.cdf,sal.cdf)
 g <- ggplot(all.df, aes(x=variable.value, y=cdf)) +
   geom_line(aes(x=variable.value, y=cdf)) + 
   facet_wrap(~variable, scales="free",ncol=1) +
-  theme_bw()
+  theme_bw() +
+  xlab("Variable value") + 
+  ylab("Cumulative frequency distribution")
 
 g
 
-ggsave(g, file=file.path(actualreport.path, "figures/summer-depth-temperature-salinity-CDF.png"))
+ggsave(g, file=file.path(actualreport.path, "figures/summer-depth-temperature-salinity-CDF.png"), height = 8, width = 6)
 

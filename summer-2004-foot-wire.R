@@ -18,3 +18,9 @@ sets <- sqlQuery(chan,qu)
 
 plot(sets$SDATE, as.factor(sets$TYPE), ylim=c(0,3), pch=19)
 
+## one leg had the wire and the other didn't, so let's compare the catches of things that
+## the net would catch by scrapping on the bottom
+
+## map showing the location of the tows in the 2 legs
+
+## 
