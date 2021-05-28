@@ -2,7 +2,7 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves two separate two-week trips on board an offshore fisheries vessel from the Canadian Coast Guard.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
+A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline). 
 
 In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled. 
 
@@ -159,7 +159,7 @@ Spatial interpolation of catch biomass (kg/tow) was done using a weighting inver
 
 ### Biomass indices
 
-For each species, stratified random estimates of catch biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed.
+For each species, stratified random estimates of catch biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed. In years where some strata were not sampled, the stratified estimate is calculated ignoring the missed strata. This implictly assumes that the captures in the missed strata were the same as the overall mean. If a species does not follow this assumption in the missed strata the estimate will be biased. As such, the values presented herein should be treated with further analytical detail to ascertain that the estimate is unbiased.
 
 ### Distribution indices
 

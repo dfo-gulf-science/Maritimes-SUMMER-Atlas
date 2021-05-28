@@ -24,6 +24,11 @@ a.occ <- dat.in[,c(1,2)]
 	y.range  <- c(range(a.occ$area.occupied)[1]*0.5, range(a.occ$area.occupied)[2]*1.5)
 	pretty.y  <- pretty(y.range)
 	
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	
 	loess.area <- loess(area.occupied~year, data=a.occ)
 	area.loess.df <- data.frame(year=a.occ$year, pred=predict(loess.area))
 	
@@ -57,6 +62,11 @@ if('D' %in% which.measure){
 	y.range <- c(0,range(d.perc$D95, na.rm=T)[2]*1.25)
 	pretty.y  <- pretty(y.range)
 
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	
 	loess.D75 <- loess(D75~year, data=d.perc)
 	yrs.loess <- d.perc[!is.na(d.perc$D75), "year"]
 	D75.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D75))
@@ -108,6 +118,11 @@ gini <- dat.in[,c(1,5)]
 	pretty.x <- pretty(x.range)
 	y.range <- c(range(gini$Gini)[1]*0.5, 1)
 	pretty.y  <- pretty(y.range)
+	
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
 
 	loess.Gini <- loess(Gini~year, data=gini)
 	Gini.loess.df <- data.frame(year=gini$year, pred=predict(loess.Gini))

@@ -67,6 +67,7 @@ df5 <- data.frame(
 my.cols <- c("#d73027","#fc8d59","#fee090","#e0f3f8","#91bfdb","#4575b4") # c("wheat1","#fdae61","tomato1","#abdda4","steelblue1") ##c("firebrick1","forestgreen","","dodgerblue","goldenrod")
 
 
+## comparative fishing experiments
 
 ## 
 
@@ -101,12 +102,13 @@ summer.timeline.fig.fct <- function(){
   
   axis(side=2, at=c(1:5), labels=rev(c("A.T. Cameron","Lady Hammond","Alfred Needler","Wilfred Templeman","Teleost")), las=1, cex.axis=2.5)
   
+  # grid()
   box()
   
   text(1975, 5, "Yankee 36", cex=2)
-  text(1981, 4, "WIIA", cex=2)
+  text(1980.5, 4, "WIIA", cex=2)
   text(1991, 4, "WIIA", cex=2)
-  text(1995, 3, "WIIA", cex=2)
+  text(1994, 3, "WIIA", cex=2)
   text(2005.5, 3, "WIIA", cex=2)
   text(2013, 3, "WIIA", cex=2)
   text(2019.5, 3, "WIIA", cex=2)

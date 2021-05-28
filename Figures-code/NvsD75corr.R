@@ -25,6 +25,11 @@ if('areaocc' %in% which.measure){
 	y.range  <- c(range(merged.df$area.occupied)[1]*0.5, range(merged.df$area.occupied)[2]*1.5)
 	pretty.y  <- pretty(y.range)
 
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	
 	# colour code the years to identify the beginning and end of the time-series
 	my.cols <- colorRampPalette(c('blue','red'))(dim(merged.df)[1])
 	yr.cols <- my.cols[merged.df$year-min(merged.df$year)+1]
@@ -66,6 +71,11 @@ if('D' %in% which.measure){
 	y.range  <- c(range(merged.df$D75)[1]*0.5, range(merged.df$D75)[2]*1.1)
 	pretty.y  <- pretty(y.range,n=4)
 
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	
 	# colour code the years to identify the beginning and end of the time-series
 	yy <- seq(min(merged.df$year),max(merged.df$year))
 	ll <- length(yy)
@@ -119,6 +129,12 @@ if('Gini' %in% which.measure){
 	pretty.x <- pretty(x.range)
 	y.range  <- c(range(merged.df$Gini)[1]*0.5, range(merged.df$Gini)[2]*1.5)
 	pretty.y  <- pretty(y.range)
+	
+	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+	b.dat.in <- read.csv(b.fn, header=TRUE)
+	
+	if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	
 
 		# colour code the years to identify the beginning and end of the time-series
 	my.cols <- colorRampPalette(c('blue','red'))(dim(merged.df)[1])
