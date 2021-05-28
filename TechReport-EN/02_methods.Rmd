@@ -4,7 +4,9 @@ The survey is conducted annually in July-August and covers the Scotian Shelf and
 
 A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
-(ref:caption-timeline) Timeline of vessels and gears used in the Maritimes Region summer survey. The y axis identifies the vessel used and the gear used is overlaid on the polygon representing the time window where each vessel was used.
+In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled. 
+
+(ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the polygon representing the time window when each vessel was used (WIIA is the Western IIA trawl).
 
 ```{r timeline, fig.cap="(ref:caption-timeline)"}
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
@@ -113,13 +115,16 @@ To ensure concordance with authoritative taxonomic information, the AphiaID from
 ```{r tabspecies}
 library(tidyverse)
 spec.tab <- read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8")
-urls <- spec.tab$url
-sections <- paste0("#sec:",spec.tab$spec)
 
 vars <- c("class","order","family","scientificname","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec", "AphiaID", "nrecords","type")
 
 oo <- order(spec.tab$class, spec.tab$order, spec.tab$family, spec.tab$scientificname)
 #knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), caption = "(ref:spec-fig-cap)") %>%
+
+urls <- spec.tab$url[oo]
+sections <- paste0("#sec:",spec.tab$spec[oo])
+
+
 csasdown::csas_table(
   spec.tab[oo,vars], 
   "latex", 

@@ -1,22 +1,29 @@
 
 qu <- paste0(
-  "SELECT
-m.YEAR,
-m.VESEL,
-m.PURPOSE,
+  "
+  SELECT
+  m.SEASON,
+i.mission,
+extract(YEAR FROM i.sdate),
+i.gear,
+g.geardesc,
 count(*)
-FROM
-groundfish.GSMISSION_LIST m
-WHERE
-m.FK_SERIES_ID = 'SUMMER'
+FROM 
+groundfish.GSMISSIONS m,
+GROUNDFISH.GSINF i,
+GROUNDFISH.GSGEAR g 
+WHERE 
+m.mission = i.mission AND 
+i.gear=g.gear AND 
+m.SEASON = 'SUMMER'
 GROUP BY
-m.YEAR,
-m.VESEL,
-m.PURPOSE
+m.SEASON, i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
 ORDER BY
-m.YEAR
+extract(YEAR FROM i.sdate)
   "
 )
+
+sqlQuery(chan,qu)
 
 ##
 ##
@@ -33,13 +40,13 @@ df1 <- data.frame(
   southern.vessel=c(rep("A.T. Cameron Y36", length(y1)))
 )
 
-y2 <- seq(1981.5,1982.5,0.5)
+y2 <- c(seq(1977.5,1983.5,0.5),seq(1990.5,1991.5,0.5))
 df2 <- data.frame(
   year=y2,
   southern.vessel=c(rep("Lady Hammond WIIA", length(y2)))
 )
 
-y3 <- c(seq(1982.5,2006.5,0.5), seq(2008.5,2017.5,0.5), seq(2018.5,2020.5,0.5))
+y3 <- c(seq(1982.5,2003.5,0.5), seq(2004.5,2006.5,0.5), seq(2008.5,2017.5,0.5), seq(2018.5,2020.5,0.5))
 df3 <- data.frame(
   year=y3,
   southern.vessel=c(rep("Alfred Needler WIIA", length(y3)))
@@ -51,7 +58,7 @@ df4 <- data.frame(
   southern.vessel=c(rep("Wilfred Templeman WIIA", 2))
 )
 
-y5 <- seq(2017.5,2018.5,0.5)
+y5 <- c(seq(2003.5,2005.5,0.5),seq(2006.5,2007.5,0.5),seq(2017.5,2018.5,0.5))
 df5 <- data.frame(
   year=y5,
   southern.vessel=c(rep("Teleost WIIA", length(y5)))
@@ -69,23 +76,25 @@ summer.timeline.fig.fct <- function(){
   
   #abline(h=c(1,2,3,4,6.5,7.5,8.5), col=grey(0.8), lwd=0.5)
   segments(1967,5,1969.5,5, col=grey(0.8), lwd=0.5)
-  segments(1967,4,1981.5,4, col=grey(0.8), lwd=0.5)
-  segments(1967,3,1982.5,3, col=grey(0.8), lwd=0.5)
-  segments(2005.5,3,2009,3, col=grey(0.8), lwd=0.5)
-  segments(2017.5,3,2018.5,3, col=grey(0.8), lwd=0.5)
+  segments(1967,4,1990.5,4, col=grey(0.8), lwd=0.5)
+  segments(1967,3,2018.5,3, col=grey(0.8), lwd=0.5)
   segments(1967,2,2007.5,2, col=grey(0.8), lwd=0.5)
   segments(1967,1,2017.5,1, col=grey(0.8), lwd=0.5)
   
   polygon(c(df1$year,rev(df1$year)), c(rep(4.6,nrow(df1)),rep(5.4,nrow(df1))), col=my.cols[1])#, border=my.cols[1])
-  polygon(c(df2$year,rev(df2$year)), c(rep(3.6,nrow(df2)),rep(4.4,nrow(df2))), col=my.cols[2])#, border=my.cols[2])
+  polygon(c(df2$year[1:13],rev(df2$year[1:13])), c(rep(3.6,length(1:13)),rep(4.4,length(1:13))), col=my.cols[2])#, border=my.cols[2])
+  polygon(c(df2$year[14:16],rev(df2$year[14:16])), c(rep(3.6,length(14:16)),rep(4.4,length(14:16))), col=my.cols[2])#, border=my.cols[2])
   
-  polygon(c(df3$year[1:49],rev(df3$year[1:49])), c(rep(2.6,length(1:49)),rep(3.4,length(1:49))), col=my.cols[3])#, border=my.cols[3])
-  polygon(c(df3$year[50:68],rev(df3$year[50:68])), c(rep(2.6,length(50:68)),rep(3.4,length(50:68))), col=my.cols[3])#, border=my.cols[3])
-  polygon(c(df3$year[69:73],rev(df3$year[69:73])), c(rep(2.6,length(69:73)),rep(3.4,length(69:73))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[1:43],rev(df3$year[1:43])), c(rep(2.6,length(1:43)),rep(3.4,length(1:43))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[44:48],rev(df3$year[44:48])), c(rep(2.6,length(44:48)),rep(3.4,length(44:48))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[49:67],rev(df3$year[49:67])), c(rep(2.6,length(49:67)),rep(3.4,length(49:67))), col=my.cols[3])#, border=my.cols[3])
+  polygon(c(df3$year[68:72],rev(df3$year[68:72])), c(rep(2.6,length(68:72)),rep(3.4,length(68:72))), col=my.cols[3])#, border=my.cols[3])
   
   polygon(c(df4$year,rev(df4$year)), c(rep(1.6,nrow(df4)),rep(2.4,nrow(df4))), col=my.cols[4])#, border=my.cols[4])
   
-  polygon(c(df5$year,rev(df5$year)), c(rep(0.6,nrow(df5)),rep(1.4,nrow(df5))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df5$year[1:5],rev(df5$year[1:5])), c(rep(0.6,length(1:5)),rep(1.4,length(1:5))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df5$year[6:8],rev(df5$year[6:8])), c(rep(0.6,length(6:8)),rep(1.4,length(6:8))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df5$year[9:11],rev(df5$year[9:11])), c(rep(0.6,length(9:11)),rep(1.4,length(9:11))), col=my.cols[5])#, border=my.cols[5])
   
   axis(side=1, at=seq(1970,2020,5), cex.axis=2.5, padj=1, tck=-0.02)
   axis(side=1, at=seq(1970,2020,1), labels=F, tck=-0.01)
@@ -95,11 +104,15 @@ summer.timeline.fig.fct <- function(){
   box()
   
   text(1975, 5, "Yankee 36", cex=2)
-  text(1982, 4, "WIIA", cex=2)
+  text(1981, 4, "WIIA", cex=2)
+  text(1991, 4, "WIIA", cex=2)
   text(1995, 3, "WIIA", cex=2)
+  text(2005.5, 3, "WIIA", cex=2)
   text(2013, 3, "WIIA", cex=2)
   text(2019.5, 3, "WIIA", cex=2)
   text(2008, 2, "WIIA", cex=2)
+  text(2004.5, 1, "WIIA", cex=2)
+  text(2007, 1, "WIIA", cex=2)
   text(2018, 1, "WIIA", cex=2)
   
   

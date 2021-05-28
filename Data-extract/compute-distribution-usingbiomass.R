@@ -167,6 +167,11 @@ df.to.fill[i,4] <- gini
 
 final.df <- data.frame(year=names(area.occ), area.occupied=area.occ/1000, D75=df.to.fill[,2], D95=df.to.fill[,3], Gini=df.to.fill[,4])
 
+## if there are years with no catch, add NAs
+all.years <- data.frame(year=1970:2020)
+
+final.df <- merge(final.df, all.years, all.y=TRUE, by="year")
+
 return(final.df)
 
 } # end function

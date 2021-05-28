@@ -12,6 +12,7 @@ stratifiedB.fct <- function(spec.code) {
 	y.range  <- c(0, range(dat.in$b+sqrt(dat.in$b.var))[2]*1.05)
 	pretty.y  <- pretty(y.range)
 
+	if(range(dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
 
 	# colour code the years to identify the beginning and end of the time-series
 	my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
@@ -56,8 +57,10 @@ lines(dat.in[,1], yy, lty=1, col=grey(0.7), lwd=1.5)
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
+	if(range(dat.in$b)[2]<10){ll<-3}else{ll<-2}
+	
 	mtext(xlabel, side = 1, line = 1.5, cex=1.5)
-	mtext(ylabel1, side = 2, line = 1.5, cex=1.5)
+	mtext(ylabel1, side = 2, line = ll, cex=1.5)
 	
 box()
 } # end function

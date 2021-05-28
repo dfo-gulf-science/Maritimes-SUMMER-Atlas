@@ -91,9 +91,12 @@ ORDER BY
 extract(YEAR FROM i.sdate)
 ;
 
-SELECT 
+
+  SELECT
+  m.SEASON,
 i.mission,
 extract(YEAR FROM i.sdate),
+extract(MONTH FROM i.sdate),
 i.gear,
 g.geardesc,
 count(*)
@@ -106,11 +109,10 @@ m.mission = i.mission AND
 i.gear=g.gear AND 
 m.SEASON = 'SUMMER'
 GROUP BY
-i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
+m.SEASON, i.mission, extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate), i.gear, g.geardesc
 ORDER BY
-extract(YEAR FROM i.sdate)
+extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate)
 ;
-
 
 
   SELECT 

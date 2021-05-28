@@ -47,20 +47,22 @@ if('D' %in% which.measure){
 ## D50, D75 and D95
 	ylabel1 = expression(paste("Geographic range (", 10^3, " ", km^2,")", sep=""))
 
-d.perc <- dat.in[,c(1,3,4)]
+	d.perc <- dat.in[,c(1,3,4)]
 
 	#if(min(d.perc$year)<1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+4)}
 	#if(min(d.perc$year)>=1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+2)}
-	x.range <- range(d.perc$year)
+	x.range <- range(d.perc$year, na.rm=T)
 	x.range[2] <- x.range[2]+2.5
 	pretty.x <- pretty(x.range)
-	y.range <- c(0,range(d.perc$D95)[2]*1.25)
+	y.range <- c(0,range(d.perc$D95, na.rm=T)[2]*1.25)
 	pretty.y  <- pretty(y.range)
 
 	loess.D75 <- loess(D75~year, data=d.perc)
-	D75.loess.df <- data.frame(year=d.perc$year, pred=predict(loess.D75))
+	yrs.loess <- d.perc[!is.na(d.perc$D75), "year"]
+	D75.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D75))
+	
 	loess.D95 <- loess(D95~year, data=d.perc)
-	D95.loess.df <- data.frame(year=d.perc$year, pred=predict(loess.D95))
+	D95.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D95))
 	
 	plot(D75~year, data=d.perc, type='n', axes=FALSE, ann=FALSE, pch=1, xlim=x.range, ylim=y.range)
 	ll <- dim(d.perc)[1]
@@ -81,7 +83,7 @@ d.perc <- dat.in[,c(1,3,4)]
 	mtext(xlabel, side = 1, line = 1.5, cex=1.5)
 	mtext(ylabel1, side = 2, line = 1.5, cex=1.5)
 	
-	ii <- length(d.perc$D75)
+	ii <- length(yrs.loess)
 	if(min(d.perc$year)<1985){ 
 		text(max(d.perc$year)+2.5, D75.loess.df$pred[ii], "D75%", cex=1, col='red')
 		text(max(d.perc$year)+2.5, D95.loess.df$pred[ii], "D95%", cex=1, col='red')
