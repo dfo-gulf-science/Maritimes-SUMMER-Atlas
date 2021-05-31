@@ -8,10 +8,7 @@ The plots generated for each species are presented in the Appendix.
 tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
 ```
 
-A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)` (Figure \@ref(fig:map3)).
-
-Tables \@ref(tab:tabtowstratumyear1), \@ref(tab:tabtowstratumyear2) and \@ref(tab:tabtowstratumyear3) present the number of tows conducted in each stratum and year.
-
+A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)` (Figure \@ref(fig:map3)). Tables \@ref(tab:tabtowstratumyear1), \@ref(tab:tabtowstratumyear2) and \@ref(tab:tabtowstratumyear3) present the number of tows conducted in each stratum and year.
 
 (ref:caption-map3) Map of the `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows in the Summer survey from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`. 
 
@@ -104,10 +101,10 @@ knitr::include_graphics("./figures/summer-depth-temperature-salinity-CDF.png")
 
 ### Decadal distribution of surface and bottom temperatures
 
-The decadal cumulative frequency distribution of surface and bottom temperatures are presented in Figure \@ref(fig:setsdistdecadal).
+The decadal cumulative frequency distribution of surface and bottom temperatures of representative sets from the DFO Maritimes summer survey showcase warmer values of both surface and bottom temperature in the last decade (Figure \@ref(fig:setsdistdecadal)). 
 
 
-(ref:setsdistcapdecadal) Decadal cumulative frequency distribution of surface temperature (top panel) and bottom temperature (bottom panel) of representative sets from the DFO Maritimes summer survey.
+(ref:setsdistcapdecadal) Decadal cumulative frequency distribution of surface temperature (top panel) and bottom temperature (bottom panel) of representative sets from the DFO Maritimes summer survey. Note warmer values of both surface and bottom temperature in the last decade. 
 
 ```{r setsdistdecadal, fig.cap="(ref:setsdistcapdecadal)"}
 knitr::include_graphics("./figures/summer-surface-temperatures-decadal-CDF.png")
