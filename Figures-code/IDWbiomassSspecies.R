@@ -1,4 +1,9 @@
 ## maps of IDW interpolated biomass
+fn<-file.path(mapping.path, "ScotianShelfStrataUTM83F_dissolve.shp")
+SS.strata.mask <- importShapefile(fn, readDBF=TRUE, projection="UTM", zone=19)
+SS.strata.mask.LL <- convUL(SS.strata.mask, km=FALSE)
+SS.strata.mask.LL$X <- SS.strata.mask.LL$X + 360
+
 
 IDWbiomassSspecies.fct <- function(spec.code) {
   fn <- file.path(figdata.path, paste0("SS",spec.code,"_catch.csv"))
