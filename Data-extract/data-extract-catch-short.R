@@ -25,6 +25,7 @@ ROUND(TRUNC(SLAT/100)+MOD(SLAT,100)/60,5) SLA
 FROM groundfish.gsinf
 where
 type=1 and
+gear in (3,9) and
 TO_CHAR(sdate,'yyyy') >= 1999
 order by YEAR, mission, setno
 ", sep="")
@@ -73,6 +74,7 @@ groundfish.gscat c,
 groundfish.GSSPECIES s
 where
 i.type=1 and
+i.gear in (3,9) and
 TO_CHAR(i.sdate,'yyyy') >= 1999 AND
 i.mission = c.mission AND
 i.setno = c.setno AND
