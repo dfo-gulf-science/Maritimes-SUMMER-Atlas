@@ -1,0 +1,161 @@
+# Mission tracks {#mission-tracks} 
+<!-- This page has been automatically generated: do not edit by hand -->
+ 
+## 4X survey {#sec:4x} 
+
+### TEM2008775 {#sec:TEM2008775} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-TEM2008775.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for TEM2008775.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2011002 {#sec:NED2011002} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2011002.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2011002.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2012002 {#sec:NED2012002} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2012002.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2012002.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2013002 {#sec:NED2013002} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2013002.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2013002.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2014101 {#sec:NED2014101} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2014101.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2014101.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2019102 {#sec:NED2019102} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2019102.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2019102.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### TEL2017002 {#sec:TEL2017002} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-TEL2017002.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for TEL2017002.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### TEL2016003 {#sec:TEL2016003} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-TEL2016003.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for TEL2016003.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2017002 {#sec:NED2017002} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2017002.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2017002.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### NED2017102 {#sec:NED2017102} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-NED2017102.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for NED2017102.}
+\end{minipage} 
+
+
+
+\clearpage
+
+### TEL2020102 {#sec:TEL2020102} 
+
+\begin{minipage}{0.9\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=6in]{C:/Users/RicardD/Documents/GitHub/Maritimes-SUMMER-Atlas/Mapping/4X-mission-track-TEL2020102.pdf} 
+
+\end{tabular} 
+\captionof{figure}{Cruise track for TEL2020102.}
+\end{minipage} 
+
+
+
+\clearpage
+
+ 
+

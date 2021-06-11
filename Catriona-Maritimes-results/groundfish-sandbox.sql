@@ -93,7 +93,7 @@ extract(YEAR FROM i.sdate)
 
 
   SELECT
-  m.SEASON,
+m.SEASON,
 i.mission,
 extract(YEAR FROM i.sdate),
 extract(MONTH FROM i.sdate),
@@ -104,7 +104,8 @@ FROM
 groundfish.GSMISSIONS m,
 GROUNDFISH.GSINF i,
 GROUNDFISH.GSGEAR g 
-WHERE 
+WHERE
+i.TYPE=1 AND
 m.mission = i.mission AND 
 i.gear=g.gear AND 
 m.SEASON = 'SUMMER'
@@ -160,4 +161,42 @@ extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate)
  SPEC = 10
  ;
  
- 
+SELECT
+i.mission,
+extract(YEAR FROM i.sdate),
+extract(MONTH FROM i.sdate),
+i.gear,
+count(*)
+FROM 
+GROUNDFISH.GSINF i 
+WHERE
+i.type=1 
+GROUP BY
+i.mission, extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate), i.gear
+ORDER BY
+extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate)
+;
+
+ SELECT  
+ * 
+ FROM 
+ GROUNDFISH.GSINFP70  
+ WHERE 
+SLON AND 
+SLAT > 45
+ ;
+
+SELECT 
+extract(YEAR FROM i.sdate) AS YEAR,
+count(*) 
+FROM 
+groundfish.GSINF i,
+groundfish.GSCAT c 
+WHERE 
+  I.MISSION=C.MISSION AND 
+  I.SETNO=C.SETNO AND
+c.SPEC = 123
+GROUP BY 
+extract(YEAR FROM i.sdate)
+ORDER BY extract(YEAR FROM i.sdate)
+;

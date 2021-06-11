@@ -1,0 +1,14 @@
+<!-- The following code should appear at the beginning of the first appendix.
+(if you have one)
+After that, all subsequent sections will be turned into appendices. -->
+
+`r if(knitr:::is_latex_output()) '% begin csasdown appendix'`
+`r if(!knitr:::is_latex_output()) '# (APPENDIX) Appendix {-}'`
+
+\clearpage
+
+# THE FIRST APPENDIX {#app:first-appendix}
+
+
+<!-- At the end of your appendices add: -->
+`r if(knitr:::is_latex_output()) '% end csasdown appendix'`
