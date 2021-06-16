@@ -200,3 +200,10 @@ GROUP BY
 extract(YEAR FROM i.sdate)
 ORDER BY extract(YEAR FROM i.sdate)
 ;
+
+
+SELECT 
+MIN(EXTRACT(YEAR FROM g.sdate))
+FROM
+GROUNDFISH.GSINFP70 g 
+;

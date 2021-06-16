@@ -102,6 +102,16 @@ print(paste("Starting data extracts, I species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, I species: ", Sys.time()))
 
+
+## bottom organisms that we shouldn't catch
+## 6500 - sand dollar
+data.extract(extract.name="catch", spec.num=6500)
+data.extract(extract.name="stratified", spec.num=6500)
+data.extract(extract.name="dist", spec.num=6500)
+# RODBC::odbcClose(chan)
+
+
+
 #####################################################################################################################################################  
 
 
@@ -136,6 +146,12 @@ li.figures <- c("IDWbiomass","stratifiedB","distribution-indices-usingB","BvsD75
 print(paste("Starting figures, LI species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LI species: ", Sys.time()))
+
+## bottom organisms that we shouldn't catch
+## 6500 - sand dollar
+make.figure(fig.name="IDWbiomass", spec.num=6500)
+make.figure(fig.name="stratifiedB", spec.num=6500)
+make.figure(fig.name="distribution-indices-usingB", spec.num=6500)
 
 #####################################################################################################################################################  
 

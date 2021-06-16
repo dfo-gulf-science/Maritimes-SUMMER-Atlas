@@ -145,3 +145,6 @@ ggsave(f2.n, g)
 ## do sand dollar for a number of years now, to see where sand dollars were caught
 
 
+## what sand dollars are caught in years after 2004?
+
+
