@@ -207,3 +207,30 @@ MIN(EXTRACT(YEAR FROM g.sdate))
 FROM
 GROUNDFISH.GSINFP70 g 
 ;
+
+SELECT *
+FROM 
+GROUNDFISH.GSCAT g 
+WHERE 
+g.SPEC = 11 AND 
+g.mission='NED2003002' AND 
+g.SETNO=2
+;
+
+
+SELECT
+extract(YEAR FROM i.sdate),
+extract(MONTH FROM i.sdate),
+i.gear,
+g.GEARDESC, 
+count(*)
+FROM 
+GROUNDFISH.GSINF i,
+GROUNDFISH.GSGEAR g
+WHERE 
+i.gear=g.gear
+GROUP BY
+i.mission, extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate), i.gear, g.GEARDESC
+ORDER BY
+extract(YEAR FROM i.sdate) DESC, extract(MONTH FROM i.sdate)
+;
