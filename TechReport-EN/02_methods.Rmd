@@ -6,6 +6,12 @@ A number of changes in fishing gear type and vessels used occurred since the ons
 
 In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled. 
 
+(ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
+
+```{r map1, fig.cap="(ref:caption-map1)"}
+knitr::include_graphics("./figures/annotated-map-NAFO.png")
+```
+
 
 (ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the polygon representing the time window when each vessel was used (WIIA is the Western IIA trawl).
 
@@ -14,14 +20,9 @@ knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 ```
 
 
-(ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
-
-```{r map1, fig.cap="(ref:caption-map1)"}
-knitr::include_graphics("./figures/annotated-map-NAFO.png")
-```
-
 ## Sampling Design
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
+
 
 The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)).
 
@@ -36,7 +37,7 @@ knitr::include_graphics("./figures/SUMMER-strata-map-sf.png")
 
 \clearpage
 
-(ref:strata-tab-cap) Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range in fathoms and the surface area in square kilometers are reported.
+(ref:strata-tab-cap) Summer survey strata details. The strata used in the analyses are presented separately for NAFO Divisions 4Vn, 4VsW and 4X. For each stratum, the depth range is reported in fathoms and in meters, and the surface area is reported in square nautical miles and in square kilometers.
 
 ```{r tabstrata}
 library(tidyverse)
@@ -44,21 +45,28 @@ strata.tab <- read.csv("strata-statistics.csv", encoding = "UTF-8")
 strata.tab[strata.tab$NAME=="4VSW","NAME"] <- "4VsW"
 strata.tab[strata.tab$NAME=="4VN","NAME"] <- "4Vn"
 
-strata.tab[strata.tab$DMIN==0,"DMIN"] <- 11
-strata.tab[strata.tab$DMIN==49,"DMIN"] <- 50
+strata.tab[strata.tab$DMIN==0,c("DMAX")] <- 50
+strata.tab[strata.tab$DMIN==0,c("DMIN")] <- 11
+
+#strata.tab[strata.tab$DMIN==51,c("DMIN","DMAX")] <- 51
+
+strata.tab$DMIN.METERS <- round(strata.tab$DMIN*1.8288)
+strata.tab$DMAX.METERS <- round(strata.tab$DMAX*1.8288)
 
 strata.tab$DRANGE <- paste0(strata.tab$DMIN, "-", strata.tab$DMAX)
 
+strata.tab$DRANGE.METERS <- paste0(strata.tab$DMIN.METERS, "-", strata.tab$DMAX.METERS)
+strata.tab$AREA.KM2 <- round(strata.tab$AREA * (1.852^2))
 
 oo <- order(strata.tab$STRAT)
 
-vars <- c("NAME","STRAT","DRANGE","AREA")
+vars <- c("NAME","STRAT","DRANGE","DRANGE.METERS","AREA","AREA.KM2")
 
 csasdown::csas_table(
   strata.tab[oo,vars], 
   format="latex", 
-  align = rep("c",4), 
-  col.names = c("NAFO Div.", "Stratum", "Depth range (fathom)","Area (km \\textsuperscript{2})"), 
+  align = rep("c",5), 
+  col.names = c("NAFO Div.", "Stratum", "Depth range (fathom)", "Depth range (meter)","Area (nm \\textsuperscript{2})","Area (km \\textsuperscript{2})"), 
   caption = "(ref:strata-tab-cap)",
   row.names=FALSE,
   booktabs=TRUE,
@@ -93,7 +101,7 @@ L & \multicolumn{2}{l}{long - consistently identified since the onset of the sur
 \midrule
 LF & long frequent & species that have more than 1000 catch records \\
 
-LI & long intermediate & species that had between 1000 and 200 catch records\\
+LI & long intermediate & species that had between 200 and 1000 catch records\\
 
 LR & long rare & species with less than 200 catch records\\
 \midrule
@@ -182,7 +190,7 @@ W = \alpha L ^\beta
 
 where W is the total weight (g), L is the length (cm), and, $\alpha$ and $\beta$ are the parameters to be estimated. 
 
-Average fish condition (C) was computed as:
+relative fish condition (C) [@lecren1951] was computed as:
 
 \begin{eqnarray*}\label{eqCondition}
 C = \frac{W}{\alpha L ^\beta}  
@@ -197,14 +205,14 @@ For each category L species, We followed the methods developed by [@Perry:Smith:
 
 We followed the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
 
-For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented the model as a generalised linear using a log link and a Poisson error distribution:
+For each category L species, we fitted a model of the relationship between stratum-level density and overall abundance (the yearly stratified random estimate of abundance, defined above). To properly use the observations of zero catch while accounting for the logarithmic distribution of catch abundance, we implemented a generalized linear model using a log link and a Poisson error distribution:
 
 \begin{eqnarray*}\label{eqHabitat Selection}
 Y_{h,i} = \alpha_{h} Y_{i}^{\beta_h}
 \\
 \end{eqnarray*}
 
-where, $y_{h,i}$ is the average abundance of stratum $h$ in year $i$, and $\alpha_{h,i}$ and  $\beta_{h,i}$ are the fitted parameters. The estimated parameter $\beta_{h,i}$ is referred to as the "slope parameter" and indicates whether stratum-level density is positively ($\beta_{h,i} <= 0$), negatively ($\beta_{h,i} >= 0$) or negligibly ($\beta_{h,i} \approx 0$) related to population abundance.
+where, $Y_{h,i}$ is the average abundance of stratum $h$ in year $i$, and $\alpha_{h}$ and  $\beta_{h}$ are the fitted parameters. The estimated parameter $\beta_{h}$ is referred to as the "slope parameter" and indicates whether stratum-level density is positively ($\beta_{h} <= 0$), negatively ($\beta_{h} >= 0$) or negligibly ($\beta_{h} \approx 0$) related to population abundance.
 
 To estimate the suitability of each stratum, the median abundance observed during the years that are in the top 25% of yearly estimates is used. We combine the slope parameter estimates from the above model with the median abundance to identify strata that have consistently high abundance and whose local density is weakly related to fluctuation in population abundance ($\beta_{h,i} \approx 0$). Preferred strata are identified for each category L species.
 
@@ -217,7 +225,7 @@ Spatial distribution of catch-per unit of effort, (CPUE, kilograms per tow) in J
 
 For Category LR and SR:
 
-Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR). Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
+Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
 
 ### Type B
 For Category L, S and I species:

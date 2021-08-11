@@ -46,7 +46,7 @@ boundaries_simple <- boundaries %>%
       "New Brunswick", "Nova Scotia",
       "Prince Edward Island"
     ),
-    SELECTION == "sparse" #"dense"
+    SELECTION %in% c("sparse","dense") #
   ) %>%
   st_transform(4326)
 
@@ -57,13 +57,14 @@ boundaries_simple <- boundaries %>%
 Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
 
 
+
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
   geom_sf(data=boundaries_simple, fill="cornsilk", color=grey(0.8)) +
   geom_sf(fill="salmon") +  
   # geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
   #geom_sf_label(aes(label = StrataID), size=2, alpha=0.5) +
   geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "powderblue")) + #, panel.border=element_rect(linetype="solid")
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white")) + #, panel.border=element_rect(linetype="solid")
   xlim(-68,-57) + ylim(41.9,47) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 

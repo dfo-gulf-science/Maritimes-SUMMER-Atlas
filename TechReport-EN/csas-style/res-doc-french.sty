@@ -1,6 +1,8 @@
 %% res-doc.sty - Unoffocial LaTeX style file for Canadian
 %%  Science Advisory Secretariat Research Documents.
 \usepackage[french]{babel}
+% https://tex.stackexchange.com/a/325436
+\frenchbsetup{SmallCapsFigTabCaptions=false}
 
 \usepackage{tabularx}
 \usepackage[all]{nowidow}
@@ -321,7 +323,7 @@
 
 %% ------------------------------------------------------------------------------
 %% To add headers and footers to landscape pages
-\usepackage{everypage}
+\usepackage{everypage-1x}
 
 %% Make a landscape page properly, with the page numbers and bars rotated to
 %%  be along the long side for ease of reading in a PDF viewer.
