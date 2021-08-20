@@ -19,7 +19,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-10-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic cod. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -32,7 +32,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-10-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-10-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic cod.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic cod. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -75,7 +75,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic cod.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic cod. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -96,7 +96,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-11-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Haddock. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -109,7 +109,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-11-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-11-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Haddock.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Haddock. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -152,7 +152,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Haddock.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Haddock. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -173,7 +173,7 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-12-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for White hake. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -186,7 +186,7 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-12-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-12-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of White hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of White hake. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -229,7 +229,7 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for White hake.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for White hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -250,7 +250,7 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-13-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Red hake. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -263,7 +263,7 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-13-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-13-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Red hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Red hake. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -306,7 +306,7 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Red hake.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Red hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -327,7 +327,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-14-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Silver hake. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -340,7 +340,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-14-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-14-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Silver hake.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Silver hake. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -383,7 +383,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Silver hake.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Silver hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -404,7 +404,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-16-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Pollock. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -417,7 +417,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-16-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-16-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Pollock.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Pollock. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -460,7 +460,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Pollock.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Pollock. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -481,7 +481,7 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-23-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic redfishes. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -494,7 +494,7 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-23-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-23-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic redfishes.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic redfishes. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -537,7 +537,7 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic redfishes.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic redfishes. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -558,7 +558,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-300-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Longhorn sculpin. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -571,7 +571,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-300-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-300-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Longhorn sculpin.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Longhorn sculpin. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -614,7 +614,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Longhorn sculpin.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Longhorn sculpin. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -635,7 +635,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-304-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Moustache sculpin. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -648,7 +648,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-304-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-304-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Moustache sculpin.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Moustache sculpin. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -691,7 +691,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-304-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Moustache sculpin.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Moustache sculpin. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -712,7 +712,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-320-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Sea raven. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -725,7 +725,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-320-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-320-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Sea raven.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Sea raven. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -768,7 +768,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Sea raven.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Sea raven. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -789,7 +789,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-340-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Alligatorfish. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -802,7 +802,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-340-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-340-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Alligatorfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Alligatorfish. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -845,7 +845,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-340-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Alligatorfish.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Alligatorfish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -866,7 +866,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-30-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic halibut. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -879,7 +879,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-30-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-30-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic halibut.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic halibut. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -922,7 +922,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic halibut.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic halibut. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -943,7 +943,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-40-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for American plaice. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -956,7 +956,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-40-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-40-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of American plaice.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of American plaice. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -999,7 +999,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for American plaice.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for American plaice. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1020,7 +1020,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-41-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Witch flounder. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1033,7 +1033,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-41-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-41-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Witch flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Witch flounder. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1076,7 +1076,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Witch flounder.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Witch flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1097,7 +1097,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-42-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Yellowtail flounder. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1110,7 +1110,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-42-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-42-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Yellowtail flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Yellowtail flounder. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1153,7 +1153,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Yellowtail flounder.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Yellowtail flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1174,7 +1174,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-43-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter flounder. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1187,7 +1187,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-43-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-43-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Winter flounder.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Winter flounder. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1230,7 +1230,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Winter flounder.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Winter flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1251,7 +1251,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-50-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic wolffish. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1264,7 +1264,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-50-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-50-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic wolffish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic wolffish. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1307,7 +1307,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic wolffish.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic wolffish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1328,7 +1328,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-640-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Ocean pout. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1341,7 +1341,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-640-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-640-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Ocean pout.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Ocean pout. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1384,7 +1384,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-640-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Ocean pout.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Ocean pout. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1405,7 +1405,7 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-60-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic herring. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1418,7 +1418,7 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-60-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-60-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic herring.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic herring. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1461,7 +1461,7 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic herring.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic herring. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1482,7 +1482,7 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-400-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Monkfish. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1495,7 +1495,7 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-400-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-400-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Monkfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Monkfish. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1538,7 +1538,7 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Monkfish.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Monkfish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1559,7 +1559,7 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-201-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Thorny skate. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1572,7 +1572,7 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-201-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-201-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Thorny skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Thorny skate. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1615,7 +1615,7 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Thorny skate.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Thorny skate. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1636,7 +1636,7 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-202-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Smooth skate. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1649,7 +1649,7 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-202-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-202-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Smooth skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Smooth skate. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1692,7 +1692,7 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Smooth skate.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Smooth skate. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1713,7 +1713,7 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-204-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Winter skate. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1726,7 +1726,7 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-204-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-204-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Winter skate.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Winter skate. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1769,7 +1769,7 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-204-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Winter skate.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Winter skate. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1790,7 +1790,7 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-220-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Picked dogfish. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1803,7 +1803,7 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-220-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-220-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Picked dogfish.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Picked dogfish. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1846,7 +1846,7 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Picked dogfish.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Picked dogfish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1867,7 +1867,7 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-4511-IDWbiomass.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid.}
+\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Northern shortfin squid. $P(occ)$ is the proportion of tows with catch records for each 5-year period.}
 \end{minipage}  
 
 \newline  
@@ -1880,7 +1880,7 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-4511-distribution-indices-usingB.pdf} & 
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-4511-BvsD75corr.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Northern shortfin squid.}
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Northern shortfin squid. The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}
 \end{minipage} 
 
 \clearpage
@@ -1923,7 +1923,7 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Northern shortfin squid.}
+\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Northern shortfin squid. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage

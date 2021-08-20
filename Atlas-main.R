@@ -9,7 +9,7 @@ necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","
                "foreign","fields","spam","rgeos", "RODBC", 
                "xtable", "MASS", "xlsx", "raster", "rgdal",
                "here","worms",
-               "raster","ncdf4")
+               "raster","ncdf4","sf")
 installed <- necessary %in% installed.packages()[, 'Package']
 if (length(necessary[!installed]) >=1) install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')
 

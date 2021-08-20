@@ -1,6 +1,6 @@
 # Introduction {#sec:introduction}
 
-The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The groundfish survey database storing the information collected during the annual survey provides the main source of fisheries-independent information for marine species in the region. This information is routinely used to support stock assessments, to produce species status reports and has been previously used to publish atlases of species distribution.
+The summer (July-August) groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy was started in 1970 by Fisheries and Oceans Canada Maritimes Region. The survey was originally designed to measure the distribution and abundance of major commercial fish species. Over time, information on non-commercial species was also collected. The annual groundfish survey provides the main source of fisheries-independent information for marine species in the region. This information is available through database storing the information collected during the annual survey and is routinely used to support stock assessments, to produce species status reports and has been previously used to publish atlases of species distribution.
 
 ```{r nspecies, include=FALSE, cache=FALSE}
 library(tidyverse)

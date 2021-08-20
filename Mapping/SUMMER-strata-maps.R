@@ -33,8 +33,6 @@ library(sf)
 library(ggplot2)
 library(tidyverse)
 
-data(Strata_Mar_sf)
-
 boundaries <- read_sf(file.path(main.path, "AC/AC_1M_BoundaryPolygons_shp/AC_1M_BoundaryPolygons.shp"))
 
 boundaries_simple <- boundaries %>%
@@ -54,20 +52,52 @@ boundaries_simple <- boundaries %>%
 #  data.frame(x=c(-58.6),y=c(46.5),text=c("440"))
 #)
 
-Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
+data(Strata_Mar_sf)
 
+## keep only the SUMMER strata
+idx1 <- which(Strata_Mar_sf$StrataID %in% as.character(440:495))
+Strata_Mar_sf <- Strata_Mar_sf[idx1,]
+
+## merged strata 443, 444 and 445
+idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(443,444,445))
+t.strata <- Strata_Mar_sf[idx2,]
+plot(t.strata)
+
+## label placement
+## for strata 440:442,446:495, centroid
+#idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(440:442,446:495))
+#Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
+
+## strata statistics
+strata.tab <- read.csv(file.path(actualreport.path,"strata-statistics.csv"), encoding = "UTF-8")
+strata.tab[strata.tab$NAME=="4VSW","NAME"] <- "4VsW"
+strata.tab[strata.tab$NAME=="4VN","NAME"] <- "4Vn"
+strata.tab[strata.tab$DMIN==0,c("DMAX")] <- 50
+strata.tab[strata.tab$DMIN==0,c("DMIN")] <- 11
+strata.tab$DRANGE <- paste0(strata.tab$DMIN, "-", strata.tab$DMAX)
+
+strata.cols <- data.frame(min.depth=c(11,51,101,151), max.depth=c(50,100,150,200), col=c("lightblue","blue","darkblue","snow1"))
+strata.tab$DCOLOR <- strata.cols[match(strata.tab$DMIN, strata.cols$min.depth),"col"]
+
+
+
+Strata_Mar_sf <- merge(Strata_Mar_sf, strata.tab, by.x="StrataID", by.y="STRAT")
+
+Strata_Mar_sf$depth.range <- factor(Strata_Mar_sf$DRANGE, levels=c("11-50","51-100","101-200", "Mixed"), ordered=TRUE)
+
+Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(443,444,445,459),"depth.range"] <- "Mixed"
 
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
   geom_sf(data=boundaries_simple, fill="cornsilk", color=grey(0.8)) +
-  geom_sf(fill="salmon") +  
+  geom_sf(aes(fill=depth.range)) +  scale_fill_manual(values = c(rgb(191,203,226,maxColorValue = 256), rgb(118,182,213,maxColorValue = 256), rgb(0,135,189,maxColorValue = 256), rgb(239,237,241,maxColorValue = 256))) +
   # geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
   #geom_sf_label(aes(label = StrataID), size=2, alpha=0.5) +
   geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white")) + #, panel.border=element_rect(linetype="solid")
+  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white"), panel.border = element_rect(colour = "black", fill=NA, size=1)) + #, panel.border=element_rect(linetype="solid")
   xlim(-68,-57) + ylim(41.9,47) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
-
+#g
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
 ggsave(f4.n, g)
 

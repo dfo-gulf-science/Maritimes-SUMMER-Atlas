@@ -69,7 +69,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for ", english_name,". $P(occ)$ is the proportion of tows with catch records for each 5-year period.}")
   i <- i + 1
   out[[i]] <- "\\end{minipage}  \n"
   i <- i + 1
@@ -79,6 +79,8 @@ temp <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- "\\vspace{1cm}  \n"
   i <- i + 1
   
+  
+                                 
   #Figures 2,3 and 4
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
@@ -95,7 +97,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of ", english_name,". The predictions from a loess estimator are overlaid on the distribution indices in the middle panel.}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
@@ -179,7 +181,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for ", english_name,".}")
+  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for ", english_name,". The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\\% of median abundance.}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
