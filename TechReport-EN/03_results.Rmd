@@ -12,12 +12,13 @@ A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` r
 
 (ref:caption-map3) Map of the `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows in the Summer survey from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`. 
 
-```{r map3, fig.cap="(ref:caption-map3)"}
+\begin{landscapepage}
+
+```{r map3, fig.cap="(ref:caption-map3)", out.width="100%", out.height="100%"}
 knitr::include_graphics("./figures/SUMMER-tows-map-sf.png")
 ```
 
-
-\begin{landscapepage}
+\newpage
 
 
 ```{r tabtowstratumyear1, results="asis"}
@@ -30,7 +31,9 @@ ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.1)
 ## blank the first two columns of the last row
-tows.strata.year.1[49,1:2] <- ""
+## write "Total" as a multi-column for the first two colunns of the last row
+tows.strata.year.1[nr,1:2] <- ""
+tows.strata.year.1[nr,2] <- "Total"
 
 csas_table(tows.strata.year.1,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
@@ -40,6 +43,7 @@ csas_table(tows.strata.year.1,
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 ```
 
@@ -49,7 +53,8 @@ ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.2)
 ## blank the first two columns of the last row
-tows.strata.year.2[49,1:2] <- ""
+tows.strata.year.2[nr,1:2] <- ""
+tows.strata.year.2[nr,2] <- "Total"
 
 csas_table(tows.strata.year.2,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
@@ -59,6 +64,7 @@ csas_table(tows.strata.year.2,
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 ```
 
@@ -68,7 +74,8 @@ ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.3 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.3)
 ## blank the first two columns of the last row
-tows.strata.year.3[49,1:2] <- ""
+tows.strata.year.3[nr,1:2] <- ""
+tows.strata.year.3[nr,2] <- "Total"
 
 ## totals in the last column
 tows.strata.year.3[,ncol(tows.strata.year.3)+1] <- tows.strata.year[,ncol(tows.strata.year)]
@@ -81,6 +88,7 @@ csas_table(tows.strata.year.3,
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
   kableExtra::kable_styling(font_size = 6) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) %>% 
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
 ```

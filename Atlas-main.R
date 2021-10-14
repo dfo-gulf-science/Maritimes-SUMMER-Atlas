@@ -47,7 +47,7 @@ source(file.path(mapping.path, "Summer-timeline.R")) ## survey timeline inspired
 source(file.path(main.path, "chan.R"))
 # chan.R edit to reflect database credentials, or alternatively use yours: chan <- odbcConnect(dsn='biobank', uid='', pwd='')
 
-## these 3 scripts churn the contents of the RV database, summarise tows, and identifies and ranks the species based on the number of records
+## these 3 scripts churn the contents of the RV database, summarise tows, and identifies/ranks the species based on the number of records
 ## -> these files should be run only when a new year of data is available and the Atlas is to be updated
 #source(file.path(main.path, "summaries.R")) ## summaries of tows, which is stored in the file "Report-generation/Atlas-summary-table-tows-by-year-stratum.csv" 
 #source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch, which is stored in "Report-generation/species-list-for-report.csv" 

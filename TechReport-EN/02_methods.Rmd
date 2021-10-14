@@ -2,9 +2,40 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves at least two separate trips on board an offshore fisheries vessel from the Canadian Coast Guard for a total duration of around 6 weeks at sea.
 
-A number of changes in fishing gear type and vessels used occurred since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. A timeline of the survey platforms can be found in Figure \@ref(fig:timeline). 
+The fishing platform used (the vessel and the type of fishing gear) has changed a number of times since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. The relevant details of the survey vessels [@Maginley-etal-2014] and fishing trawls used can be found in Table \@ref(tab:vesselandgear) and a timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
-In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled. 
+
+\begin{table}
+\caption{Details about the vessels and trawls used over the lifetime of the summer survey. }
+\begin{tabular}{p{0.3\textwidth}p{0.45\textwidth}p{0.25\textwidth}}
+\toprule
+\multicolumn{3}{l}{Survey vessels}\\
+\midrule
+\bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
+\midrule
+A.T. Cameron & Length: 40m & \\
+Lady Hammond & Length: 40m & \\
+& Gross tonnage: 897 t & \\
+\link{https://inter-j01.dfo-mpo.gc.ca/fdat/vessels/2}{CCGS Alfred Needler} & Length: 50.3m & Main survey vessel since 1983 \\
+& Gross tonnage: 959 t & \\
+\link{https://en.wikipedia.org/wiki/CCGS_Wilfred_Templeman}{CCGS Wilfred Templeman} & Length: 50.3m &  Sister ship of CCGS Alfred Needler, used in 2008 \\
+& Gross tonnage: 959 t & \\
+\link{https://inter-j01.dfo-mpo.gc.ca/fdat/vessels/107}{CCGS Teleost} & Length: 63.0m & Used in 2007 and 2018\\
+& Gross tonnage: 2,405.0 t & \\
+\bottomrule
+\multicolumn{3}{l}{Fishing trawls}\\
+\midrule
+\bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
+\midrule
+Yankee 36 & Width: 10.7m & \\
+Western IIA & Width: 12.5m & Used since 1983\\
+\bottomrule
+\end{tabular}
+\label{tab:vesselandgear}
+\end{table}
+
+
+In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled.
 
 (ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
 
@@ -30,10 +61,11 @@ The basic sampling unit of the survey is a 30-minute fishing tow conducted at a 
 
 (ref:caption-map2) Map of the summer survey strata 440 to 495. 
 
-```{r map2, fig.cap="(ref:caption-map2)"}
+\begin{landscapepage}
+```{r map2, fig.cap="(ref:caption-map2)", out.height="90%"}
 knitr::include_graphics("./figures/SUMMER-strata-map-sf.png")
 ```
-
+\end{landscapepage}
 
 \clearpage
 
@@ -73,6 +105,7 @@ csasdown::csas_table(
   longtable=TRUE,
   repeat_header=TRUE
   )  %>% 
+  kableExtra::column_spec(c(3,4), width="2.1cm")  %>% 
   kableExtra::collapse_rows(1:2, latex_hline = "major", valign = "middle") #, row_group_label_position = 'stack')
 
 ```
@@ -118,7 +151,8 @@ SR & short rare & species with less than 200 catch records\\
 
 To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species [@WoRMS] is included for the different species presented in this document (Table \@ref(tab:tabspecies)) .
 
-(ref:spec-fig-cap) List of species included in the Atlas. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name is provided, along with its French and English common names, the species code used in the survey database, its AphiaID with a link to the World Registry of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
+
+(ref:spec-fig-cap) List of the `r nrow(read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8"))` species included in the Atlas. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name are provided, along with its French and English common names, the species code used in the survey database, its AphiaID with a link to the World Register of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(taxo).
 
 \begin{landscapepage}
 ```{r tabspecies}
@@ -160,7 +194,7 @@ csasdown::csas_table(
 
 The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch weight for each species was standardized for the distance towed. The results of the different comparative fishing experiments [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009] show that the different fishing platforms have comparable fishing efficiency and no correction factors are used in the present analyses.
 
-All data processing and analyses were conducted using the R software [@R:2020] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt[@R:package:classInt], RColorBrewer[@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
+All data processing and analyses were conducted using the R software [@R:2021] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt [@R:package:classInt], RColorBrewer [@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
 
 ### Geographic distribution of catches
 
@@ -168,7 +202,9 @@ Spatial interpolation of catch biomass (kg/tow) was done using a weighting inver
 
 ### Biomass indices
 
-For each species, stratified random estimates of catch biomass [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed. In years where some strata were not sampled, the stratified estimate is calculated ignoring the missed strata. This implictly assumes that the captures in the missed strata were the same as the overall mean. If a species does not follow this assumption in the missed strata the estimate will be biased. As such, the values presented herein should be treated with further analytical detail to ascertain that the estimate is unbiased.
+For each species, stratified random estimates of catch biomass and abundance [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed. In years where some strata were not sampled, the stratified estimate is calculated ignoring the missed strata. This implicitly assumes that the captures in the missed strata were the same as the overall mean. If a species does not follow this assumption in the missed strata the estimate will be biased. As such, the values presented herein should be treated with further analytical detail to ascertain that the estimate is unbiased.
+
+
 
 ### Distribution indices
 

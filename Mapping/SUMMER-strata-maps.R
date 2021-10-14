@@ -12,7 +12,7 @@ SS.strata.LL$X <- SS.strata.LL$X
 
 SS.strata.LL2 <- SS.strata.LL
 SS.strata.LL2$X <- SS.strata.LL2$X + 360
-  
+
 my.pids <- unique(SS.strata.LL$PID)
 strata.list <- lapply(my.pids, function(i){subset(SS.strata.LL, PID == i)})
 
@@ -22,7 +22,6 @@ data(worldLLhigh)
 plotMap(worldLLhigh, xlim=c(291.5,303.5), ylim=c(41.5,48), col=grey(0.8), plt=c(0.1,0.98,0.1,0.98),border='black',axes=TRUE,tckLab=FALSE,xlab="",ylab="")
 addPolys(SS.strata.LL2)
 ## annotate with strata numbers
-
 
 dev.off()
 
@@ -58,12 +57,12 @@ data(Strata_Mar_sf)
 idx1 <- which(Strata_Mar_sf$StrataID %in% as.character(440:495))
 Strata_Mar_sf <- Strata_Mar_sf[idx1,]
 
-## merged strata 443, 444 and 445
-idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(443,444,445))
+## merge strata 443, 444 and 445
+idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(c(443,444,445)))
 t.strata <- Strata_Mar_sf[idx2,]
-plot(t.strata)
+#plot(t.strata)
+plot(st_combine(t.strata))
 
-## label placement
 ## for strata 440:442,446:495, centroid
 #idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(440:442,446:495))
 #Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
@@ -87,19 +86,39 @@ Strata_Mar_sf$depth.range <- factor(Strata_Mar_sf$DRANGE, levels=c("11-50","51-1
 
 Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(443,444,445,459),"depth.range"] <- "Mixed"
 
+## label placement
+lab.place <- data.frame(
+  StrataID=440:495,
+  xnudge=0,
+  ynudge=0
+)
+lab.place[lab.place$StrataID==440,c("xnudge","ynudge")] <- c(0.5,0.5)
+
+Strata_Mar_sf <- merge(Strata_Mar_sf, lab.place, by="StrataID")
+
+
 
 g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
   geom_sf(data=boundaries_simple, fill="cornsilk", color=grey(0.8)) +
-  geom_sf(aes(fill=depth.range)) +  scale_fill_manual(values = c(rgb(191,203,226,maxColorValue = 256), rgb(118,182,213,maxColorValue = 256), rgb(0,135,189,maxColorValue = 256), rgb(239,237,241,maxColorValue = 256))) +
+  geom_sf(aes(fill=depth.range)) +  
+  scale_fill_manual(name="Depth range (m)", values = c(rgb(191,203,226,maxColorValue = 256), rgb(118,182,213,maxColorValue = 256), rgb(0,135,189,maxColorValue = 256), rgb(239,237,241,maxColorValue = 256))) +
   # geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
-  #geom_sf_label(aes(label = StrataID), size=2, alpha=0.5) +
-  geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
-  theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "white"), panel.border = element_rect(colour = "black", fill=NA, size=1)) + #, panel.border=element_rect(linetype="solid")
+  #geom_sf_label(aes(label = StrataID), size=2, alpha=1, col="black", 
+  geom_sf_text(aes(label = StrataID),
+                nudge_x = c(0.5,0.07,0.07,rep(0, 40),0.12,-0.45,0.05,0,0),
+                nudge_y = c(-0.22,0.15,0,rep(0, 40),0.25,-0.2,0.02,0,0)) +
+  #geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
+  theme(
+    panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), 
+    panel.background = element_rect(fill = "white"), 
+    panel.border = element_rect(colour = "black", fill=NA, size=1)) + #, panel.border=element_rect(linetype="solid")
   xlim(-68,-57) + ylim(41.9,47) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 #g
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
-ggsave(f4.n, g)
+ggsave(f4.n, g, width=9, height=9, units="in")
+
+file.copy(c(f4.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
 
 ## try a map with depth
 gebco <- raster(file.path(mapping.path, "GEBCO-Scotia-Fundy.nc"))
@@ -178,7 +197,7 @@ g <- ggplot(boundaries_simple) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 
 f5.n <- file.path(mapping.path, "SUMMER-tows-map-sf.png")
-ggsave(f5.n, g)
+ggsave(f5.n, g, width=9, height=6, units="in")
 
 
 ## copy the files to the Technical Report folder

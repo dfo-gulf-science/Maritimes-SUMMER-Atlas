@@ -29,10 +29,14 @@ STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '49
 
 summer.strata.tt <- summer.strata.stats.df[order(summer.strata.stats.df$STRAT),]
 summer.strat <- data.frame(Strata=summer.strata.tt$STRAT, area=summer.strata.tt$AREA, NH=summer.strata.tt$AREA/0.01)
+## the number of trawlable units will differ between the Yankee 36 and the Western IIA
+
 
 my.out.n.mean <- lapply(yrs, function(i){tapply(subset(catch.df,YEAR==i)$totno.corr, subset(catch.df,YEAR==i)$Strata, mean)})
 
 #my.out.n.mean.strat <- lapply(summer.strat$Strata, function(i){tapply(subset(catch.df,Strata==i)$totno.corr, subset(catch.df,Strata==i)$YEAR, mean)})
+
+## 
 
 
 # variance calculations
