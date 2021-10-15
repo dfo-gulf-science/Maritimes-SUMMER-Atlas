@@ -40,8 +40,13 @@ table.all <- table(catch.t.df2$YEAR, catch.t.df2$Strata)
 
 
 my.prop <- table.catch / table.all
+## turn into a long data frame
 my.prop.df <- as.data.frame(my.prop)
-names(my.prop.df) <- c("year", "stratum", "prop")
+st.t <- names(my.prop.df)
+my.prop.df$year <- as.numeric(rownames(my.prop.df))
+my.prop.df <- tidyr::pivot_longer(my.prop.df, cols=all_of(st.t), names_to="stratum", values_to="prop")
+
+# names(my.prop.df) <- c("year", "stratum", "prop")
 
 ## strata statistics
 qu <- paste("
@@ -78,7 +83,6 @@ merged.catch <- merge(catch.df, summer.strat, by="Strata")
 
 # average catch per stratum per year
 stratified.mat <- lapply(yrs, function(i){tapply(subset(merged.catch, YEAR==i)$totwgt.corr, subset(merged.catch, YEAR==i)$Strata, mean)})
-stratified.mat2 <- lapply(yrs, function(i){tapply(subset(merged.catch, YEAR==i)$totno.corr, subset(merged.catch, YEAR==i)$Strata, mean)})
 
 #########################################################################################################
 ## PROBLEM HERE WHEN THERE IS A YEAR WHERE THERE IS NO TOWS IN A GIVEN STRATUM, (e.g. i==15 (1984), stratum 474)
@@ -105,10 +109,14 @@ yearly.stratified <- data.frame(year=yrs, n.strat=stratified.yearly)
 
 ##
 nn <- length(yrs)
-df.to.fill <- data.frame(year=rep(-99,nn), D75=rep(-99,nn), D95=rep(-99,nn), Gini=rep(-99,nn))
+df.to.fill <- data.frame(year=rep(-99,nn), area.surveyed=rep(-99,nn), D75=rep(-99,nn), D95=rep(-99,nn), Gini=rep(-99,nn))
 
 # D50, D75 and D95
 for(i in 1:length(yrs)){ # loop over years
+  ## area surveyed
+  this.df <- catch.df[catch.df$YEAR==yrs[i],]
+  surveyed.area <- sum(summer.strat[summer.strat$Strata %in% unique(this.df$Strata),"area"]) * (1.852^2)
+  
 #for(i in 1:(yrs-1969)){ # loop over years
 #print(i)
 #stratified.df <- as.data.frame(stratified.weighted.mat[,i])
@@ -138,9 +146,11 @@ d.95.i <- ifelse(length(which(tt.df$percent < 95)) == 0, 1, max(which(tt.df$perc
 d.75 <- tt.df[d.75.i,]$cumsum.area
 d.95 <- tt.df[d.95.i,]$cumsum.area
 
-df.to.fill[i,1] <- yrs[i]
-df.to.fill[i,2] <- d.75/1000
-df.to.fill[i,3] <- d.95/1000
+
+df.to.fill[i,"year"] <- yrs[i]
+df.to.fill[i,"area.surveyed"] <- surveyed.area
+df.to.fill[i,"D75"] <- d.75/1000
+df.to.fill[i,"D95"] <- d.95/1000
 
 ## Gini
 oo.asc.strat.est <- stratified.df[oo.asc,]
@@ -158,14 +168,14 @@ tt.df$perc.area <- tt.df$cumsum.area / sum(tt.df$AREA)
 tt.df$prop.area <- tt.df$AREA / sum(tt.df$AREA)
 
 gini <- 2*(0.5 - sum(tt.df$prop.area*(tt.df$percent/100)))
-df.to.fill[i,4] <- gini
+df.to.fill[i,"Gini"] <- gini
 
 }
 
 
 ## final data frame to send back
 
-final.df <- data.frame(year=names(area.occ), area.occupied=area.occ/1000, D75=df.to.fill[,2], D95=df.to.fill[,3], Gini=df.to.fill[,4])
+final.df <- data.frame(year=names(area.occ), area.surveyed=df.to.fill[,"area.surveyed"]/1000, area.occupied=area.occ/1000, D75=df.to.fill[,"D75"], D95=df.to.fill[,"D95"], Gini=df.to.fill[,"Gini"])
 
 ## if there are years with no catch, add NAs
 all.years <- data.frame(year=1970:2020)

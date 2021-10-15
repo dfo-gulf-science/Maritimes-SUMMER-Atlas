@@ -183,3 +183,7 @@ make.figure <- function(fig.name, spec.num) {
   ) # end switch
   
 }
+
+## from colorbrewer2, diverging, 6 classes
+bluetored.fct <- function(n){colorRampPalette(c("#4575b4", "#91bfdb", "#fee090", "#fc8d59", "#d73027"))(n)}
+

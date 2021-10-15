@@ -116,7 +116,7 @@ g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 #g
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")
-ggsave(f4.n, g, width=9, height=9, units="in")
+ggsave(f4.n, g, width=9, height=6, units="in")
 
 file.copy(c(f4.n), file.path(actualreport.path, "figures"), overwrite=TRUE)
 
@@ -193,7 +193,7 @@ g <- ggplot(boundaries_simple) +
   geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill="salmon",alpha=0.1) +
   geom_point(data=summer.tows.df, aes(SLO,SLA), pch=19, cex=0.2) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "powderblue")) +
-  xlim(-68,-57) + ylim(41.9,47) +
+  xlim(-68,-57) + ylim(41.9,47.25) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 
 f5.n <- file.path(mapping.path, "SUMMER-tows-map-sf.png")

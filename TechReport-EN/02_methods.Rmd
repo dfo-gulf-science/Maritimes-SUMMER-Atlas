@@ -62,7 +62,7 @@ The basic sampling unit of the survey is a 30-minute fishing tow conducted at a 
 (ref:caption-map2) Map of the summer survey strata 440 to 495. 
 
 \begin{landscapepage}
-```{r map2, fig.cap="(ref:caption-map2)", out.height="90%"}
+```{r map2, fig.cap="(ref:caption-map2)", out.width="100%"}
 knitr::include_graphics("./figures/SUMMER-strata-map-sf.png")
 ```
 \end{landscapepage}

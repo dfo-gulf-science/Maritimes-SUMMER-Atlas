@@ -172,6 +172,8 @@ data.extract <- function(extract.name, spec.num) {
            },
            "distshort" = { 	#
              ## distribution indices
+             source(file.path(dataextract.path, "data-extract-catch-short.R")) # extract the tow-level data, 1999 onwards
+             
              distribution.df <- distribution.fct(extract.catch.short.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution.csv",sep="")
              write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)

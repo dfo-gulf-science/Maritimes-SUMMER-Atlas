@@ -6,13 +6,18 @@ distribution.usingB.fct <- function(spec.code,which.measure) {
 
 	xlabel = "Year"
 
-	my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+	# my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+	ny <- nrow(dat.in)
+	my.cols <- bluetored.fct(ny)
+	
 	yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
 
 	if('areaocc' %in% which.measure){
 
-	## area occupied
-a.occ <- dat.in[,c(1,2)]
+	  ## area surveyed
+	  a.sur <- dat.in[,c(1,2)]
+	  ## area occupied
+	  a.occ <- dat.in[,c(1,3)]
 
 # axes and labels
 	ylabel1 = expression(paste("Area of occupancy (", 10^3, " ", km^2,")", sep=""))
@@ -50,16 +55,25 @@ a.occ <- dat.in[,c(1,2)]
 
 if('D' %in% which.measure){
 ## D50, D75 and D95
+  par(mar = c(2.5, 3, 0.2, 0.2))
+  
 	ylabel1 = expression(paste("Geographic range (", 10^3, " ", km^2,")", sep=""))
+	
+	## area surveyed
+	a.sur <- dat.in[,c(1,2)]
+	## area occupied
+	a.occ <- dat.in[,c(1,3)]
+	
 
-	d.perc <- dat.in[,c(1,3,4)]
+	d.perc <- dat.in[,c(1,4,5)]
 
 	#if(min(d.perc$year)<1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+4)}
 	#if(min(d.perc$year)>=1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+2)}
 	x.range <- range(d.perc$year, na.rm=T)
 	x.range[2] <- x.range[2]+2.5
 	pretty.x <- pretty(x.range)
-	y.range <- c(0,range(d.perc$D95, na.rm=T)[2]*1.25)
+	#y.range <- c(0,range(d.perc$D95, na.rm=T)[2]*1.25)
+	y.range <- c(0,range(a.sur$area.surveyed, na.rm=T)[2]*1.05)
 	pretty.y  <- pretty(y.range)
 
 	b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
@@ -75,6 +89,11 @@ if('D' %in% which.measure){
 	D95.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D95))
 	
 	plot(D75~year, data=d.perc, type='n', axes=FALSE, ann=FALSE, pch=1, xlim=x.range, ylim=y.range)
+	
+	lines(a.sur, col='black',lwd=2.5)
+	lines(a.occ, col='black',lwd=1.5, lty=2)
+	
+	
 	ll <- dim(d.perc)[1]
 	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D75[i], d.perc$year[i+1], d.perc$D75[i+1], col=yr.cols[i], lty=1, lwd=0.15)})
 	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D95[i], d.perc$year[i+1], d.perc$D95[i+1], col=yr.cols[i], lty=1, lwd=0.15)})
@@ -82,7 +101,7 @@ if('D' %in% which.measure){
 	points(D75~year, data=d.perc, type='p', pch=20, col=yr.cols)
 	points(D95~year, data=d.perc, type='p', pch=20, col=yr.cols)
 
-	lines(D75.loess.df, col='red',lwd=2.5)
+	lines(D75.loess.df, col='red',lwd=2.5, lty=2)
 	lines(D95.loess.df, col='red',lwd=2.5)
 
 	axis(side=1, at = pretty.x, cex.axis=1.3, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
@@ -104,7 +123,15 @@ if('D' %in% which.measure){
 	}
 	
 	box()
-		
+	
+	ll0 <- "area surveyed"
+	ll <- "DWAO"
+	ll1 <- expression(D[95~"%"]) ##c("D95", "D75")
+	ll2 <- expression(D[75~"%"]) ##c("D95", "D75")
+	
+	legend("topleft", c(ll0,ll), lty=c(1,1), bty="n", col=c("black","black"), lwd=c(2,1), text.col=c("black","black"))
+	legend("topright", c(ll1,ll2), lty=c(1,2), bty="n", col=c("red","red"), lwd=c(2,2), text.col=c("red","red"))
+	
 
 }
 if('Gini' %in% which.measure){

@@ -14,7 +14,7 @@ A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` r
 
 \begin{landscapepage}
 
-```{r map3, fig.cap="(ref:caption-map3)", out.width="100%", out.height="100%"}
+```{r map3, fig.cap="(ref:caption-map3)", out.width="100%"}
 knitr::include_graphics("./figures/SUMMER-tows-map-sf.png")
 ```
 
@@ -25,6 +25,7 @@ knitr::include_graphics("./figures/SUMMER-tows-map-sf.png")
 #  Number of tows by stratum-year
 
 tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
+tows.strata.year$Area <- round(tows.strata.year$Area) ## round each stratum area
 
 yrs <- 1970:1989
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
@@ -34,6 +35,7 @@ nr <- nrow(tows.strata.year.1)
 ## write "Total" as a multi-column for the first two colunns of the last row
 tows.strata.year.1[nr,1:2] <- ""
 tows.strata.year.1[nr,2] <- "Total"
+
 
 csas_table(tows.strata.year.1,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
