@@ -2,40 +2,46 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves at least two separate trips on board an offshore fisheries vessel from the Canadian Coast Guard for a total duration of around 6 weeks at sea.
 
-The fishing platform used (the vessel and the type of fishing gear) has changed a number of times since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. The relevant details of the survey vessels [@Maginley-etal-2014] and fishing trawls used can be found in Table \@ref(tab:vesselandgear) and a timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
+The fishing platform used (the vessel and the type of fishing gear) has changed a number of times since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fanning-1985;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. The relevant details of the survey vessels [@Maginley-etal-2014] and fishing trawls [@Fanning-1985] used can be found in Table \@ref(tab:vesselandgear) and a timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
 
 \begin{table}
-\caption{Details about the vessels and trawls used over the lifetime of the summer survey. }
-\begin{tabular}{p{0.3\textwidth}p{0.45\textwidth}p{0.25\textwidth}}
-\toprule
-\multicolumn{3}{l}{Survey vessels}\\
-\midrule
+\caption{Details about the vessels and trawls used over the lifetime of the summer survey.}
+\begin{tabular}{p{0.2\textwidth}p{0.25\textwidth}p{0.5\textwidth}}
+
+\multicolumn{3}{l}{\bfseries{Survey vessels}}\\
 \bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
 \midrule
-A.T. Cameron & Length: 40m & \\
-Lady Hammond & Length: 40m & \\
+A.T. Cameron & Length: 53.0m & Main survey vessel from 1970 to 1981\\
+& Gross tonnage: 735 t & \\
+\midrule[0.5pt]
+Lady Hammond & Length: 58.0m & Vessel used in 1982 and 1983 to bridge between the A.T. Cameron and the CCGS Alfred Needler\\
 & Gross tonnage: 897 t & \\
-\link{https://inter-j01.dfo-mpo.gc.ca/fdat/vessels/2}{CCGS Alfred Needler} & Length: 50.3m & Main survey vessel since 1983 \\
+\midrule[0.5pt]
+CCGS Alfred Needler & Length: 50.3m & Main survey vessel since 1983 \\
 & Gross tonnage: 959 t & \\
-\link{https://en.wikipedia.org/wiki/CCGS_Wilfred_Templeman}{CCGS Wilfred Templeman} & Length: 50.3m &  Sister ship of CCGS Alfred Needler, used in 2008 \\
+\midrule[0.5pt]
+CCGS Wilfred Templeman & Length: 50.3m &  Sister ship of CCGS Alfred Needler, used in 2008 \\
 & Gross tonnage: 959 t & \\
-\link{https://inter-j01.dfo-mpo.gc.ca/fdat/vessels/107}{CCGS Teleost} & Length: 63.0m & Used in 2007 and 2018\\
+\midrule[0.5pt]
+CCGS Teleost & Length: 63.0m & Used in 2007 and 2018\\
 & Gross tonnage: 2,405.0 t & \\
-\bottomrule
-\multicolumn{3}{l}{Fishing trawls}\\
-\midrule
+\toprule
+\multicolumn{3}{l}{\bfseries{Fishing trawls}}\\
 \bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
 \midrule
-Yankee 36 & Width: 10.7m & \\
-Western IIA & Width: 12.5m & Used since 1983\\
+Yankee 36 & Wing spread: 10.7m & \\
+& Headline height: 2.74m & Used on the A.T. Cameron from 1970 to 1982\\
+\midrule[0.5pt]
+Western IIA & Wing spread: 12.5m & Used since 1983\\
+& Headline height: 4.6m & \\
 \bottomrule
 \end{tabular}
 \label{tab:vesselandgear}
 \end{table}
 
 
-In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost and most of the strata in NAFO Division 4VW were not sampled.
+In 2018, because of the unavailability of the CCGS Alfred Needler, only a partial survey coverage was achieved on CCGS Teleost, and most of the strata in NAFO Division 4VW were not sampled. As such, while the limited 2018 data are available, they are not used in the analyses present herein since estimates derived using the 2018 data will not be comparable to other years.
 
 (ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
 
@@ -46,7 +52,7 @@ knitr::include_graphics("./figures/annotated-map-NAFO.png")
 
 (ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the polygon representing the time window when each vessel was used (WIIA is the Western IIA trawl).
 
-```{r timeline, fig.cap="(ref:caption-timeline)"}
+```{r timeline, fig.cap="(ref:caption-timeline)", out.width="100%"}
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 ```
 
@@ -55,9 +61,9 @@ knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
 
 
-The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were only sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)). Strata 443, 444, 445 cover an area with mixed depths and are represented as a single polygon in Figure \@ref(fig:map2). 
+The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)). Strata 443, 444, 445 cover an area with mixed depths and are represented as a single polygon in Figure \@ref(fig:map2).
 
-The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles. 
+The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
 (ref:caption-map2) Map of the summer survey strata 440 to 495. 
 
@@ -94,8 +100,19 @@ oo <- order(strata.tab$STRAT)
 
 vars <- c("NAME","STRAT","DRANGE","DRANGE.METERS","AREA","AREA.KM2")
 
+## add the total survey area in the last row of the table
+## 
+for.table <- strata.tab[oo,vars]
+tot.area <- sum(for.table$AREA)
+tot.area.km2 <- sum(for.table$AREA.KM2)
+##
+for.table <- rbind(for.table, data.frame(NAME="Total", STRAT="", DRANGE="", DRANGE.METERS="", AREA="", AREA.KM2=""))
+nr <- nrow(for.table)
+for.table[nr, "AREA"] <- tot.area
+for.table[nr, "AREA.KM2"] <- tot.area.km2
+
 csasdown::csas_table(
-  strata.tab[oo,vars], 
+  for.table, 
   format="latex", 
   align = rep("c",5), 
   col.names = c("NAFO Div.", "Stratum", "Depth range (fathom)", "Depth range (meter)","Area (nm \\textsuperscript{2})","Area (km \\textsuperscript{2})"), 
@@ -170,13 +187,14 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
 
 csasdown::csas_table(
   spec.tab[oo,vars], 
-  "latex", 
+  format="latex", 
 #  booktabs = TRUE, 
-#  longtable = TRUE, 
+  longtable = TRUE, 
   align = "c", 
   col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), 
   caption = "(ref:spec-fig-cap)",
-  row.names=FALSE) %>%
+  row.names=FALSE,
+repeat_header=TRUE) %>%
   kableExtra::collapse_rows(1:3, row_group_label_position = 'stack', row_group_label_fonts=list(bold = T), longtable_clean_cut=FALSE) %>% # latex_hline = "major"
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
   kableExtra::column_spec(5, width="3cm") %>% 
@@ -192,13 +210,15 @@ csasdown::csas_table(
 
 ## Analyses
 
-The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch weight for each species was standardized for the distance towed. The results of the different comparative fishing experiments [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009] show that the different fishing platforms have comparable fishing efficiency and no correction factors are used in the present analyses.
+The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch weight for each species was standardized for the distance towed. The results of the different comparative fishing experiments [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009] show that the different fishing platforms have comparable fishing efficiency and no further correction factors are used in the present analyses.
 
 All data processing and analyses were conducted using the R software [@R:2021] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt [@R:package:classInt], RColorBrewer [@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
 
 ### Geographic distribution of catches
 
-Spatial interpolation of catch biomass (kg/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. The IDW method was used with a power parameter value of 10.
+Spatial interpolation of catch biomass (kg/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. To achieve a visually appropriate rendition of the available catch data, the IDW method uses a power parameter value of 10. The IDW predictions are over a fixed grid with a resolution of 200 by 200 on the bounding box of the georeferenced survey data. 
+
+
 
 ### Biomass indices
 
@@ -209,6 +229,7 @@ For each species, stratified random estimates of catch biomass and abundance [@S
 ### Distribution indices
 
 For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
+
 
 ### Length frequencies
 

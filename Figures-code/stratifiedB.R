@@ -4,24 +4,31 @@ stratifiedB.fct <- function(spec.code) {
   fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
   dat.in <- read.csv(fn, header=TRUE)
 
+  ## remove 2018
+  dat.in[dat.in$year==2018,c("n","n.var","b","b.var")] <- NA
+  
 #################
 ## biomass
 	x.range <- range(dat.in$year)
   x.range[2] <- x.range[2]+1
 	pretty.x <- pretty(x.range)
-	y.range  <- c(0, range(dat.in$b+sqrt(dat.in$b.var))[2]*1.05)
+	y.range  <- c(0, range(dat.in$b+sqrt(dat.in$b.var), na.rm=TRUE)[2]*1.05)
 	pretty.y  <- pretty(y.range)
 
-	if(range(dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+	if(range(dat.in$b, na.rm=TRUE)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
 
 	# colour code the years to identify the beginning and end of the time-series
-	my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+	ny <- nrow(dat.in)
+	my.cols <- bluetored.fct(ny)
+	
 	yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
+	# my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+	# yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
 
 plot(dat.in[,1], dat.in[,4], type='n', axes=FALSE, ann=FALSE, pch=15, lty=1, xlim=x.range, ylim=y.range)
 
 ll <- dim(dat.in)[1]
-sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,4], dat.in[i+1,1], dat.in[i+1,4], col=yr.cols[i], lty=1, lwd=0.15)})
+sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,4], dat.in[i+1,1], dat.in[i+1,4], col=yr.cols[i], lty=1, lwd=0.5)})
 
 points(dat.in[,1], dat.in[,4], pch=20, col=yr.cols)
 
@@ -57,7 +64,7 @@ lines(dat.in[,1], yy, lty=1, col=grey(0.7), lwd=1.5)
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 	
 	# Affichage du titre et des axes	
-	if(range(dat.in$b)[2]<10){ll<-3}else{ll<-2}
+	if(range(dat.in$b, na.rm=TRUE)[2]<10){ll<-3}else{ll<-2}
 	
 	mtext(xlabel, side = 1, line = 1.5, cex=1.5)
 	mtext(ylabel1, side = 2, line = ll, cex=1.5)

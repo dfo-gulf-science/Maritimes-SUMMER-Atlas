@@ -57,12 +57,6 @@ data(Strata_Mar_sf)
 idx1 <- which(Strata_Mar_sf$StrataID %in% as.character(440:495))
 Strata_Mar_sf <- Strata_Mar_sf[idx1,]
 
-## merge strata 443, 444 and 445
-idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(c(443,444,445)))
-t.strata <- Strata_Mar_sf[idx2,]
-#plot(t.strata)
-plot(st_combine(t.strata))
-
 ## for strata 440:442,446:495, centroid
 #idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(440:442,446:495))
 #Strata_Mar_sf$centroid <- st_centroid(Strata_Mar_sf)
@@ -86,27 +80,88 @@ Strata_Mar_sf$depth.range <- factor(Strata_Mar_sf$DRANGE, levels=c("11-50","51-1
 
 Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(443,444,445,459),"depth.range"] <- "Mixed"
 
+## merge strata 443, 444 and 445 into a single stratum called "443, 444, 445"
+## merge strata 443, 444 and 445
+idx2 <- which(Strata_Mar_sf$StrataID %in% as.character(c(443,444,445)))
+t.strata <- Strata_Mar_sf[idx2,]
+#plot(t.strata)
+#plot(st_combine(t.strata))
+#plot(st_union(st_make_valid(t.strata)))
+#plot(st_union(t.strata))
+t.strata[4,] <- t.strata[3,]
+t.strata[4,"StrataID"] <- "443,444,445"
+t.strata[4,"geometry"] <- st_union(st_make_valid(t.strata))
+
+## remove the 3 separate strata and add the merged one
+idx3 <- which(Strata_Mar_sf$StrataID %in% as.character(setdiff(c(440:466,470:478,480:485,490:495),c(443,444,445))))
+Strata_Mar_sf <- rbind(Strata_Mar_sf[idx3,], t.strata[4,])
+
+
+
 ## label placement
-lab.place <- data.frame(
-  StrataID=440:495,
-  xnudge=0,
-  ynudge=0
-)
-lab.place[lab.place$StrataID==440,c("xnudge","ynudge")] <- c(0.5,0.5)
+lab.place <- 
+rbind(
+  data.frame(StrataID="440", xnudge=0.5, ynudge=-0.22),
+  data.frame(StrataID="441", xnudge=0.1, ynudge=0.2),
+  data.frame(StrataID="442", xnudge=0.07, ynudge=0),
+  data.frame(StrataID="443,444,445", xnudge=0, ynudge=0),
+  data.frame(StrataID="446", xnudge=0.25, ynudge=0),
+  data.frame(StrataID="447", xnudge=0, ynudge=0),
+  data.frame(StrataID="448", xnudge=0.05, ynudge=0),
+  data.frame(StrataID="449", xnudge=-0.25, ynudge=-0.3),
+  data.frame(StrataID="450", xnudge=-0.45, ynudge=-0.1),
+  data.frame(StrataID="451", xnudge=0.1, ynudge=-0.1),
+  data.frame(StrataID="452", xnudge=-0.15, ynudge=0.1),
+  data.frame(StrataID="453", xnudge=-0.2, ynudge=-0.2),
+  data.frame(StrataID="454", xnudge=0, ynudge=0),
+  data.frame(StrataID="455", xnudge=0, ynudge=0),
+  data.frame(StrataID="456", xnudge=0, ynudge=-0.05),
+  data.frame(StrataID="457", xnudge=0, ynudge=0.05),
+  data.frame(StrataID="458", xnudge=0, ynudge=0),
+  data.frame(StrataID="459", xnudge=0, ynudge=0),
+  data.frame(StrataID="460", xnudge=0.1, ynudge=0.15),
+  data.frame(StrataID="461", xnudge=0, ynudge=0),
+  data.frame(StrataID="462", xnudge=0, ynudge=0),
+  data.frame(StrataID="463", xnudge=0, ynudge=0),
+  data.frame(StrataID="464", xnudge=0, ynudge=0),
+  data.frame(StrataID="465", xnudge=-0.1, ynudge=-0.1),
+  data.frame(StrataID="466", xnudge=0, ynudge=0),
+  data.frame(StrataID="470", xnudge=0, ynudge=0),
+  data.frame(StrataID="471", xnudge=0, ynudge=0.05),
+  data.frame(StrataID="472", xnudge=0, ynudge=-0.2),
+  data.frame(StrataID="473", xnudge=0, ynudge=0),
+  data.frame(StrataID="474", xnudge=0, ynudge=0),
+  data.frame(StrataID="475", xnudge=0, ynudge=0),
+  data.frame(StrataID="476", xnudge=-0.1, ynudge=-0.05),
+  data.frame(StrataID="477", xnudge=0, ynudge=0),
+  data.frame(StrataID="478", xnudge=0, ynudge=0),
+  data.frame(StrataID="480", xnudge=-0.05, ynudge=0.1),
+  data.frame(StrataID="481", xnudge=0.3, ynudge=0.35),
+  data.frame(StrataID="482", xnudge=0, ynudge=0.05),
+  data.frame(StrataID="483", xnudge=0, ynudge=0),
+  data.frame(StrataID="484", xnudge=0, ynudge=0),
+  data.frame(StrataID="485", xnudge=0, ynudge=0),
+  data.frame(StrataID="490", xnudge=0, ynudge=0),
+  data.frame(StrataID="491", xnudge=0.12, ynudge=0.25),
+  data.frame(StrataID="492", xnudge=-0.45, ynudge=-0.2),
+  data.frame(StrataID="493", xnudge=0.05, ynudge=0.02),
+  data.frame(StrataID="494", xnudge=0, ynudge=0),
+  data.frame(StrataID="495", xnudge=0, ynudge=0)
+  )
 
-Strata_Mar_sf <- merge(Strata_Mar_sf, lab.place, by="StrataID")
+Strata_Mar_sf_map <- merge(Strata_Mar_sf, lab.place, by="StrataID")
 
 
 
-g <- ggplot(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),]) + 
+g <- ggplot(data = Strata_Mar_sf_map) + 
   geom_sf(data=boundaries_simple, fill="cornsilk", color=grey(0.8)) +
   geom_sf(aes(fill=depth.range)) +  
   scale_fill_manual(name="Depth range (m)", values = c(rgb(191,203,226,maxColorValue = 256), rgb(118,182,213,maxColorValue = 256), rgb(0,135,189,maxColorValue = 256), rgb(239,237,241,maxColorValue = 256))) +
   # geom_text(data=strata.labels, aes(x=x, y=y, label=text)) + 
   #geom_sf_label(aes(label = StrataID), size=2, alpha=1, col="black", 
   geom_sf_text(aes(label = StrataID),
-                nudge_x = c(0.5,0.07,0.07,rep(0, 40),0.12,-0.45,0.05,0,0),
-                nudge_y = c(-0.22,0.15,0,rep(0, 40),0.25,-0.2,0.02,0,0)) +
+                nudge_x = Strata_Mar_sf_map$xnudge,
+                nudge_y =  Strata_Mar_sf_map$ynudge) +
   #geom_sf_label(aes(label = StrataID), size=2.5, col="black", fontface = "bold", alpha=1) + 
   theme(
     panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), 
@@ -190,7 +245,7 @@ dev.off()
 ## tow locations using ggplot
 g <- ggplot(boundaries_simple) +
   geom_sf(fill="cornsilk", color=grey(0.8)) +
-  geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:495),], fill="salmon",alpha=0.1) +
+  geom_sf(data = Strata_Mar_sf[Strata_Mar_sf$StrataID %in% c(440:442, "443,444,445", 446:495),], fill="salmon",alpha=0.1) +
   geom_point(data=summer.tows.df, aes(SLO,SLA), pch=19, cex=0.2) +
   theme(panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), panel.background = element_rect(fill = "powderblue")) +
   xlim(-68,-57) + ylim(41.9,47.25) +
