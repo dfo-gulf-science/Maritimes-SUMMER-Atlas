@@ -112,7 +112,7 @@ rbind(
   data.frame(StrataID="450", xnudge=-0.45, ynudge=-0.1),
   data.frame(StrataID="451", xnudge=0.1, ynudge=-0.1),
   data.frame(StrataID="452", xnudge=-0.15, ynudge=0.1),
-  data.frame(StrataID="453", xnudge=-0.2, ynudge=-0.2),
+  data.frame(StrataID="453", xnudge=-0.3, ynudge=-0.25),
   data.frame(StrataID="454", xnudge=0, ynudge=0),
   data.frame(StrataID="455", xnudge=0, ynudge=0),
   data.frame(StrataID="456", xnudge=0, ynudge=-0.05),
@@ -167,7 +167,7 @@ g <- ggplot(data = Strata_Mar_sf_map) +
     panel.grid.major = element_line(color = gray(.5), linetype = "dashed", size = 0.5), 
     panel.background = element_rect(fill = "white"), 
     panel.border = element_rect(colour = "black", fill=NA, size=1)) + #, panel.border=element_rect(linetype="solid")
-  xlim(-68,-57) + ylim(41.9,47) +
+  xlim(-68,-57) + ylim(41.9,47.25) +
   xlab("Longitude (\u{B0}W)") + ylab("Latitude (\u{B0}N)")
 #g
 f4.n <- file.path(mapping.path, "SUMMER-strata-map-sf.png")

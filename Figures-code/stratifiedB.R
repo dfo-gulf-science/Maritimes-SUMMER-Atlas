@@ -28,7 +28,7 @@ stratifiedB.fct <- function(spec.code) {
 plot(dat.in[,1], dat.in[,4], type='n', axes=FALSE, ann=FALSE, pch=15, lty=1, xlim=x.range, ylim=y.range)
 
 ll <- dim(dat.in)[1]
-sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,4], dat.in[i+1,1], dat.in[i+1,4], col=yr.cols[i], lty=1, lwd=0.5)})
+sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,4], dat.in[i+1,1], dat.in[i+1,4], col=yr.cols[i], lty=1, lwd=1)})
 
 points(dat.in[,1], dat.in[,4], pch=20, col=yr.cols)
 

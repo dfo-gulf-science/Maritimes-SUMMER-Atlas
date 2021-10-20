@@ -3,6 +3,10 @@
 distribution.usingB.fct <- function(spec.code,which.measure) {
   fn <- file.path(figdata.path, paste0("SS",spec.code,"_distribution-usingbiomass.csv"))
   dat.in <- read.csv(fn, header=TRUE)
+  
+  ## for SF species, remove the early years
+  if(is.na(dat.in[dat.in$year==1970,c("area.surveyed")])) dat.in <- dat.in[dat.in$year>=1999,]
+  
   ## remove 2018
   dat.in[dat.in$year==2018,c("DWAO","D75","D95")] <- NA
 
@@ -90,8 +94,8 @@ if('D' %in% which.measure){
 	
 	
 	ll <- dim(d.perc)[1]
-	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D75[i], d.perc$year[i+1], d.perc$D75[i+1], col=yr.cols[i], lty=1, lwd=0.5)})
-	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D95[i], d.perc$year[i+1], d.perc$D95[i+1], col=yr.cols[i], lty=1, lwd=0.5)})
+	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D75[i], d.perc$year[i+1], d.perc$D75[i+1], col=yr.cols[i], lty=1, lwd=1)})
+	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D95[i], d.perc$year[i+1], d.perc$D95[i+1], col=yr.cols[i], lty=1, lwd=1)})
 	
 	points(D75~year, data=d.perc, type='p', pch=20, col=yr.cols)
 	points(D95~year, data=d.perc, type='p', pch=20, col=yr.cols)
