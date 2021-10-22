@@ -12,20 +12,20 @@ The fishing platform used (the vessel and the type of fishing gear) has changed 
 \multicolumn{3}{l}{\bfseries{Survey vessels}}\\
 \bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
 \midrule
-A.T. Cameron & Length: 53.0m & Main survey vessel from 1970 to 1981\\
-& Gross tonnage: 735 t & \\
+A.T. Cameron & Length: 53.0m & \\
+& Gross tonnage: 735 t & Main survey vessel from 1970 to 1981\\
 \midrule[0.5pt]
-Lady Hammond & Length: 58.0m & Vessel used in 1982 and 1983 to bridge between the A.T. Cameron and the CCGS Alfred Needler\\
-& Gross tonnage: 897 t & \\
+Lady Hammond & Length: 58.0m & \\
+& Gross tonnage: 897 t & Vessel used in 1982 and 1983 to bridge between the A.T. Cameron and the CCGS Alfred Needler\\
 \midrule[0.5pt]
-CCGS Alfred Needler & Length: 50.3m & Main survey vessel since 1983 \\
-& Gross tonnage: 959 t & \\
+CCGS Alfred Needler & Length: 50.3m &  \\
+& Gross tonnage: 959 t & Main survey vessel since 1983\\
 \midrule[0.5pt]
-CCGS Wilfred Templeman & Length: 50.3m &  Sister ship of CCGS Alfred Needler, used in 2008 \\
-& Gross tonnage: 959 t & \\
+CCGS Wilfred Templeman & Length: 50.3m &   \\
+& Gross tonnage: 959 t & Sister ship of CCGS Alfred Needler, used in 2008\\
 \midrule[0.5pt]
-CCGS Teleost & Length: 63.0m & Used in 2007 and 2018\\
-& Gross tonnage: 2,405.0 t & \\
+CCGS Teleost & Length: 63.0m & \\
+& Gross tonnage: 2,405.0 t & Used in 2007 and 2018\\
 \toprule
 \multicolumn{3}{l}{\bfseries{Fishing trawls}}\\
 \bfseries{Name} & \bfseries{Measurements} & \bfseries{Description} \\
@@ -33,8 +33,8 @@ CCGS Teleost & Length: 63.0m & Used in 2007 and 2018\\
 Yankee 36 & Wing spread: 10.7m & \\
 & Headline height: 2.74m & Used on the A.T. Cameron from 1970 to 1982\\
 \midrule[0.5pt]
-Western IIA & Wing spread: 12.5m & Used since 1983\\
-& Headline height: 4.6m & \\
+Western IIA & Wing spread: 12.5m & \\
+& Headline height: 4.6m & Used since 1983\\
 \bottomrule
 \end{tabular}
 \label{tab:vesselandgear}
@@ -46,13 +46,13 @@ In 2018, because of the unavailability of the CCGS Alfred Needler, only a partia
 (ref:caption-map1) Map of the Scotian Shelf and Bay of Fundy where the DFO Maritimes summer survey takes place. The bathymetry presented here is the 15 arc-second gridded data set from the General Bathymetric Chart of the Oceans ([GEBCO](https://www.gebco.net/data_and_products/gridded_bathymetry_data/)). Geographical locations of interest and the boundaries of relevant NAFO Divisions are also shown on the map.
 
 \begin{landscapepage}
-```{r map1, fig.cap="(ref:caption-map1)", out.width="90%"}
+```{r map1, fig.cap="(ref:caption-map1)", out.width="88%"}
 knitr::include_graphics("./figures/annotated-map-NAFO.png")
 ```
 \end{landscapepage}
 
 
-(ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the polygon representing the time window when each vessel was used (WIIA is the Western IIA trawl).
+(ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the rectangles representing the time window when each vessel was used (WIIA is the Western IIA trawl).
 
 ```{r timeline, fig.cap="(ref:caption-timeline)", out.width="100%"}
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
@@ -67,7 +67,7 @@ The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] 
 
 The basic sampling unit of the survey is a 30-minute fishing tow conducted at a speed of 3.5 knots. This yields a distance towed of 1.75 nautical miles.
 
-(ref:caption-map2) Map of summer survey strata 440 to 495. 
+(ref:caption-map2) Map of the DFO Maritimes summer survey strata 440 to 495. 
 
 \begin{landscapepage}
 ```{r map2, fig.cap="(ref:caption-map2)", out.width="100%"}
@@ -177,8 +177,13 @@ To ensure concordance with authoritative taxonomic information, the AphiaID from
 ```{r tabspecies}
 library(tidyverse)
 spec.tab <- read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8")
+spec.tab$class <- paste0("Class: ", spec.tab$class)
+spec.tab$order <- paste0("Order: ", spec.tab$order)
+
+spec.tab$class <- factor(spec.tab$class, levels=c("Class: Myxini", "Class: Petromyzonti", "Class: Actinopterygii", "Class: Elasmobranchii", "Class: Cephalopoda", "Class: Malacostraca"), ordered=TRUE)
 
 vars <- c("class","order","family","scientificname","FAO_E_COMMON_NAME","FAO_F_COMMON_NAME","spec", "AphiaID", "nrecords","type")
+
 
 oo <- order(spec.tab$class, spec.tab$order, spec.tab$family, spec.tab$scientificname)
 #knitr::kable(spec.tab[,vars], "latex", booktabs = TRUE, longtable = TRUE, align = "c", col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), caption = "(ref:spec-fig-cap)") %>%
@@ -196,7 +201,7 @@ csasdown::csas_table(
   col.names = c("Class","Order","Family","Scientific name","English name","French name","Species code","AphiaID","Num. records","Category"), 
   caption = "(ref:spec-fig-cap)",
   row.names=FALSE,
-repeat_header=TRUE) %>%
+repeat_header=FALSE) %>%
   kableExtra::collapse_rows(1:3, row_group_label_position = 'stack', row_group_label_fonts=list(bold = T), longtable_clean_cut=FALSE) %>% # latex_hline = "major"
   kableExtra::column_spec(4, italic=T, width="3cm") %>% 
   kableExtra::column_spec(5, width="3cm") %>% 
@@ -204,7 +209,7 @@ repeat_header=TRUE) %>%
   kableExtra::column_spec(7, width="3cm") %>% 
   kableExtra::column_spec(7, link=sections) %>% 
   kableExtra::column_spec(8, link=urls) %>% 
-  kableExtra::kable_styling(font_size = 9) %>%  #, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method = "replace"
+  kableExtra::kable_styling(font_size = 9, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method="replace") %>%  #, latex_options = "repeat_header", repeat_header_text = "", repeat_header_method = "replace"
   sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
 ```
