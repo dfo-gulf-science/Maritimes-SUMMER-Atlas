@@ -62,7 +62,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 \includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-depthpref.pdf} & 
 \includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-bottomtemppref.pdf} \\ 
 \includegraphics[width=3in]{../Figures-Actual/RV-4VWX-10-salinitypref.pdf} & 
-\input{../Figures-data/SS10_alldist.tex}\vadjust{} \\ 
+\input{../Figures-data/SS10_alldist.tex} \\ 
 \end{tabular} 
 \captionof{figure}{Catch distribution by depth, temperature and salinity of Atlantic cod.}
 \end{minipage} 

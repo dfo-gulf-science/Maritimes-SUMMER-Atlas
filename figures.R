@@ -68,31 +68,31 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "stratumabundance.R"))
          },
          "depthpref" = {
-           source(file.path(figcode.path, "depthpref.R"))
+           source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
            fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
-           depthpref.fct(spec.num)
+           envpref.fct(spec.num, "depth")
            dev.off()
            
          },
          "bottomtemppref" = {
-           source(file.path(figcode.path, "bottomtemppref.R"))
+           source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
            fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
-           bottomtemppref.fct(spec.num)
+           envpref.fct(spec.num, "bottomtemperature")
            dev.off()
          },
          "salinitypref" = {
-           source(file.path(figcode.path, "salinitypref.R"))
+           source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
            fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
-           salinitypref.fct(spec.num)
+           envpref.fct(spec.num, "bottomsalinity")
            dev.off()
          },
          "distribution-indices-usingN" = {

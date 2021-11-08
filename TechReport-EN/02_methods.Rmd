@@ -265,6 +265,8 @@ C = \frac{W}{\alpha L ^\beta}
 
 For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
 
+
+
 ### Density-dependent habitat selection
 
 We followed the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.
