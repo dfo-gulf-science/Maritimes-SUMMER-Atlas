@@ -217,7 +217,7 @@ repeat_header=FALSE) %>%
 
 ## Analyses
 
-The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net) are used in the current analyses. To make the available samples comparable, catch weight for each species was standardized for the distance towed. The results of the different comparative fishing experiments [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009] show that the different fishing platforms have comparable fishing efficiency and no further correction factors are used in the present analyses.
+The Oracle relational database where all survey data are stored and archived is accessible from the Bedford Institute of Oceanography in Dartmouth, Nova Scotia. Queries written in Structured Query Language (SQL) are used to extract the data from the production server and to create the data products used in all subsequent analyses. Catch records classified as ”valid” (i.e. coming from a representative tow without damage to the net, and coded as ”type=1” in the Oracle database) are used in the current analyses. To make the available samples comparable, catch weight for each species was standardized for the distance towed. The results of the different comparative fishing experiments [@Koeller-Smith-1983;@Fanning-1984;@Fowler-Showell-2009] show that the different fishing platforms have comparable fishing efficiency and no further correction factors are used in the present analyses.
 
 All data processing and analyses were conducted using the R software [@R:2021] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt [@R:package:classInt], RColorBrewer [@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package developed and maintained by Fisheries and Oceans Canada scientists [@R:csasdown].
 
@@ -261,11 +261,12 @@ C = \frac{W}{\alpha L ^\beta}
 \\
 \end{eqnarray*}
 
+
+
+
 ### Depth, temperature and salinity distribution of catches
 
-For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches.
-
-
+For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
 
 ### Density-dependent habitat selection
 
@@ -299,14 +300,22 @@ For Category L, S and I species:
 Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coefficient between D75% and biomass, and its statistical significance, are also reported in the right panel.
 
 ### Type C.
+For Category LF species:
+
 Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods covered by the surveys.
 
 ### Type D.
+For Category LF species:
+
 Average fish condition for all fish lengths (black dots and black line), large fish (thick gray line), and small fish (thin gray line). Fish condition is presented for NAFO divisions 4VW (right panel) and 4X (left panel).
 
 ### Type E.
+For Category LF species:
+
 Cumulative frequency distributions of depth, temperature and salinity at all sampled locations (thick solid line) and at fishing locations with catch records (thin dashed line). The depth, temperature and salinity associated with 5%, 25%, 50%, 75% and 95% of the cumulative catch is shown in tabular fashion on the bottom right panel.
 
 ### Type F.
+For Category LF species:
+
 Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
 

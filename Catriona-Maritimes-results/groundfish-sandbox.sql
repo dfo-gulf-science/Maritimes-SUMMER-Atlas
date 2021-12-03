@@ -234,3 +234,44 @@ i.mission, extract(YEAR FROM i.sdate), extract(MONTH FROM i.sdate), i.gear, g.GE
 ORDER BY
 extract(YEAR FROM i.sdate) DESC, extract(MONTH FROM i.sdate)
 ;
+
+SELECT 
+*
+FROM 
+GROUNDFISH.GSSPECIES g 
+WHERE 
+g.SPEC LIKE '%JAPONICUS%'
+;
+
+
+
+SELECT
+d.mission,
+d.setno,
+i.strat,
+TO_CHAR(i.sdate,'yyyy') YEAR,
+TO_CHAR(i.sdate,'mm') MONTH,
+TO_CHAR(i.sdate,'dd') DAY,
+s.SPEC SCIEN,
+d.fshno,
+d.flen,
+d.clen,
+d.fwt
+FROM
+groundfish.gsinf i,
+groundfish.gsdet d,
+groundfish.GSSPECIES s
+WHERE
+i.type=1 and
+d.flen is not null and
+i.mission = d.mission AND
+i.setno = d.setno AND
+d.spec=s.CODE AND
+s.CODE = 10
+order by year, month, day, setno,fshno
+;
+
+SELECT 
+*
+FROM
+groundfish.gsinf i;

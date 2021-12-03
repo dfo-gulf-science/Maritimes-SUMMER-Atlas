@@ -35,6 +35,7 @@ order by year, month, day, setno,fshno
 det.df <- sqlQuery(chan, qu)
 
 ## keep only summer strata, collected in June-July-August and keep only individual fish measurements, not binned counts
+## also exclude years 2018 and 2021
 det.summer.df <- 
 subset(
 det.df, 
@@ -43,34 +44,49 @@ STRAT == '450' | STRAT == '451' | STRAT == '452' | STRAT == '453' | STRAT == '45
 STRAT == '460' | STRAT == '461' | STRAT == '462' | STRAT == '463' | STRAT == '464' | STRAT == '465' | STRAT == '466' | 
 STRAT == '470' | STRAT == '471' | STRAT == '472' | STRAT == '473' | STRAT == '474' | STRAT == '475' | STRAT == '476' | STRAT == '477' | STRAT == '478' | 
 STRAT == '480' | STRAT == '481' | STRAT == '482' | STRAT == '483' | STRAT == '484' | STRAT == '485' | 
-STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' )  & (MONTH == 6 | MONTH == 7 | MONTH == 8) & (CLEN == 1)
+STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' )  & (MONTH == 6 | MONTH == 7 | MONTH == 8) & (CLEN == 1) & (YEAR %in% c(1970:2017,2019:2020))
 )
 
 ## now do the same but separately for NAFO 4X and for NAFO 4VW
 nafo.4vw.strat <- c('440','441','442','443','444','445','446','447','448','449','450','451','452','453','454','455','456','457','458','459','460','461','462','463','464','465','466','467','468','469')
 nafo.4x.strat <- c('470','471','472','473','474','475','476','477','478','480','481','482','483','484','485','490','491','492','493','494','495')
 
+idx.4vw <- which(det.summer.df$STRAT %in% nafo.4vw.strat)
+idx.4x <- which(det.summer.df$STRAT %in% nafo.4x.strat)
+
+
 ## NAFO 4X
-det.summer.nafo4x.df <- subset(det.summer.df, STRAT %in% nafo.4x.strat)
+det.summer.df[idx.4x,"nafo"] <- "4X"
 ## NAFO 4VW
-det.summer.nafo4vw.df <- subset(det.summer.df, STRAT %in% nafo.4vw.strat)
+det.summer.df[idx.4vw,"nafo"] <- "4VW"
+
+
+## 
 
 ## ALL
 lw.fit <- lm(log(FWT)~log(FLEN),data=det.summer.df)
 det.summer.df$pred.wgt <- exp(coef(lw.fit)[1]) * (det.summer.df$FLEN ^coef(lw.fit)[2] )
 det.summer.df$condition <- det.summer.df$FWT / det.summer.df$pred.wgt
 
+## identify crazy things such as very small or large conditions 
+#quantile(na.omit(det.summer.df)$condition)
+#idx <- which(det.summer.df$condition>2)
+
+
+# table(is.na(det.summer.df$condition))
+## there are missing weights 
+
 ## NAFO 4X
-lw.fit.nafo4x <- lm(log(FWT)~log(FLEN),data=det.summer.nafo4x.df)
-det.summer.nafo4x.df$pred.wgt <- exp(coef(lw.fit.nafo4x)[1]) * (det.summer.nafo4x.df$FLEN ^coef(lw.fit.nafo4x)[2] )
-det.summer.nafo4x.df$condition <- det.summer.nafo4x.df$FWT / det.summer.nafo4x.df$pred.wgt
+lw.fit.nafo4x <- lm(log(FWT)~log(FLEN),data=det.summer.df[idx.4x,])
+det.summer.df[idx.4x,"pred.wgt"] <- exp(coef(lw.fit.nafo4x)[1]) * (det.summer.df[idx.4x,"FLEN"] ^coef(lw.fit.nafo4x)[2])
+det.summer.df[idx.4x,"condition"] <- det.summer.df[idx.4x, "FWT"] / det.summer.df[idx.4x,"pred.wgt"]
 
 ## NAFO 4VW
-lw.fit.nafo4vw <- lm(log(FWT)~log(FLEN),data=det.summer.nafo4vw.df)
-det.summer.nafo4vw.df$pred.wgt <- exp(coef(lw.fit.nafo4vw)[1]) * (det.summer.nafo4vw.df$FLEN ^coef(lw.fit.nafo4vw)[2] )
-det.summer.nafo4vw.df$condition <- det.summer.nafo4vw.df$FWT / det.summer.nafo4vw.df$pred.wgt
+lw.fit.nafo4vw <- lm(log(FWT)~log(FLEN),data=det.summer.df[idx.4vw,])
+det.summer.df[idx.4vw,"pred.wgt"] <- exp(coef(lw.fit.nafo4vw)[1]) * (det.summer.df[idx.4vw,"FLEN"] ^coef(lw.fit.nafo4x)[2])
+det.summer.df[idx.4vw,"condition"] <- det.summer.df[idx.4vw, "FWT"] / det.summer.df[idx.4vw,"pred.wgt"]
 
-final.list <- list(all=det.summer.df, nafo4x=det.summer.nafo4x.df, nafo4vw=det.summer.nafo4vw.df)
+final.list <- list(all=det.summer.df, nafo4x=det.summer.df[idx.4x,], nafo4vw=det.summer.df[idx.4vw,])
 
 return(final.list)
 } # end function

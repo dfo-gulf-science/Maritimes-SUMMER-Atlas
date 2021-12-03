@@ -33,8 +33,8 @@ make.figure <- function(fig.name, spec.num) {
          "IDWbiomass" = {
            source(file.path(figcode.path, "IDWbiomass.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=8.5, height=6.0)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=8.5, height=6.0)
            IDWbiomass.fig.fct(spec.num)
            dev.off()
            
@@ -42,16 +42,16 @@ make.figure <- function(fig.name, spec.num) {
          "stratifiedB" = {
            source(file.path(figcode.path, "stratifiedB.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=5.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
            stratifiedB.fct(spec.num)
            dev.off()
          },
          "distribution-indices-usingB" = {
            source(file.path(figcode.path, "distribution-indices-usingB.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=5.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
            distribution.usingB.fct(spec.num,which.measure=c('D'))
            dev.off()
            
@@ -59,8 +59,8 @@ make.figure <- function(fig.name, spec.num) {
          "BvsD75corr" = {
            source(file.path(figcode.path, "BvsD75corr.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=5.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
            BvsD75corr.fct(spec.num)
            dev.off()
          },
@@ -71,8 +71,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
            envpref.fct(spec.num, "depth")
            dev.off()
            
@@ -81,8 +81,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
            envpref.fct(spec.num, "bottomtemperature")
            dev.off()
          },
@@ -90,8 +90,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "envpref.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=6.5, height=4.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
            envpref.fct(spec.num, "bottomsalinity")
            dev.off()
          },
@@ -104,8 +104,8 @@ make.figure <- function(fig.name, spec.num) {
          "lengthfreqNAFO" = {
            source(file.path(figcode.path, "lengthfreqNAFO.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=12, height=6)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=12, height=6)
            par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.75, 1.2, 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
            lengthfreqNAFO.fct(spec.num)
            dev.off()
@@ -118,11 +118,11 @@ make.figure <- function(fig.name, spec.num) {
          "conditionNAFO" = {
            source(file.path(figcode.path, "conditionNAFO.R"))
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=12, height=6)
-           par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.75, 1.2, 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-           conditionNAFO.fct(spec.num)
-           dev.off()
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           #pdf(file.path(fig.path, file.name), width=12, height=6)
+           #par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.75, 1.2, 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+           conditionNAFO.fct(spec.num, file.name)
+           #dev.off()
            
            
          },
@@ -133,8 +133,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "DDHS.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=12, height=6)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=12, height=6)
            DDHS.fct(spec.num, "mediantop25")
            dev.off()
            
@@ -149,8 +149,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "IDWbiomassSspecies.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=7.5, height=7.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=7.5, height=7.5)
            IDWbiomassSspecies.fct(spec.num)
            dev.off()
            
@@ -159,8 +159,8 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "presence.R"))
            
            ## PDF
-           fig.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, fig.name), width=7.6, height=5.5)
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=7.6, height=5.5)
            #par(mar=c(4,4,1,1))
            presence.fig.fct(spec.num)
            dev.off()

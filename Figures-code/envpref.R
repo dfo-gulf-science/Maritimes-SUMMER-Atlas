@@ -77,7 +77,7 @@ envpref.fct <- function(spec.code,env.var) {
 	       },
 	       bottomsalinity={
 	         # axes and labels
-	         xlabel = "Salinity (PSU)"
+	         xlabel = "Bottom salinity (PSU)"
 	         ylabel1 = "Cumulative frequency (%)"
 	         leg.label = c("Catch", "Salinity")
 	         
