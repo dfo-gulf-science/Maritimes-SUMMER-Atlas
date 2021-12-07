@@ -72,7 +72,8 @@ make.figure <- function(fig.name, spec.num) {
            
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
+           pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
+           par(mar=c(3,3,1,1))
            envpref.fct(spec.num, "depth")
            dev.off()
            
@@ -82,7 +83,8 @@ make.figure <- function(fig.name, spec.num) {
            
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
+           pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
+           par(mar=c(3,3,1,1))
            envpref.fct(spec.num, "bottomtemperature")
            dev.off()
          },
@@ -91,7 +93,8 @@ make.figure <- function(fig.name, spec.num) {
            
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, file.name), width=6.5, height=4.5)
+           pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
+           par(mar=c(3,3,1,1))
            envpref.fct(spec.num, "bottomsalinity")
            dev.off()
          },
@@ -135,6 +138,7 @@ make.figure <- function(fig.name, spec.num) {
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, file.name), width=12, height=6)
+           par(mar=c(3,4,1,1))
            DDHS.fct(spec.num, "mediantop25")
            dev.off()
            

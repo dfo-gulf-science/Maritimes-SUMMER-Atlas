@@ -102,7 +102,7 @@ envpref.fct <- function(spec.code,env.var) {
 	
 	# Affichage du titre et des axes	
 	mtext(xlabel, side = 1, line = 1.5, cex=1)
-	mtext(ylabel1, side = 2, line = 2.5, cex=1)
+	mtext(ylabel1, side = 2, line = 1.5, cex=1)
 	
 	legend("bottomright", bty="o", leg.label, col = c("Black","Black"), lwd=2, 
 	       text.col = "Black", lty = c(1, 2), cex=1, bg=rgb(1,1,1,alpha=0.7))

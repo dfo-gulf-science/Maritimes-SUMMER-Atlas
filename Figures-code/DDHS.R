@@ -63,7 +63,7 @@ lines(xx, rep(2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(xx, rep(-2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(c(cut.50,cut.50), c(2*avg.stderr,-2*avg.stderr), lty=2, lwd=0.75, col='red')
 
-	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0), )
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
 	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
@@ -71,6 +71,8 @@ lines(c(cut.50,cut.50), c(2*avg.stderr,-2*avg.stderr), lty=2, lwd=0.75, col='red
 		# Affichage du titre et des axes	
 	mtext(xlabel, side = 1, line = 1.5, cex=1)
 	mtext(ylabel1, side = 2, line = 2.5, cex=1)
+	
+	box()
 	}
 
 if(stratum.measure=="mediantop25") {
@@ -98,14 +100,16 @@ lines(xx, rep(2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(xx, rep(-2*avg.stderr,length(xx)), lty=2, lwd=0.75, col='red')
 lines(c(cut.50,cut.50), c(2*avg.stderr,-2*avg.stderr), lty=2, lwd=0.75, col='red')
 
-	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+	axis(side=1, at = pretty.x, cex.axis=1, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0), padj=0.5)
 	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
+	axis(side=2, at = pretty.y, cex.axis=1, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0), hadj=1.2)
 	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
 
 		# Affichage du titre et des axes	
 	mtext(xlabel, side = 1, line = 1.5, cex=1)
 	mtext(ylabel1, side = 2, line = 2.5, cex=1)
+	
+	box()
 	}
 	
 
