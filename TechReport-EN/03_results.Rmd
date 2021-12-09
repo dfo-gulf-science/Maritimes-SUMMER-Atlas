@@ -1,6 +1,6 @@
 # Results
 
-The plots generated for each species are presented in the Appendix.
+The figures generated for each species are presented in the Appendix.
 
 ## Summary of successful tows by year and stratum
 <!-- There is something weird going on here, there are 2 tows with NAs for stratum, (HAM1980042 set 62 and HAM1982072 set 13). -->

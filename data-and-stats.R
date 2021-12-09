@@ -65,7 +65,7 @@ data.extract <- function(extract.name, spec.num) {
              
              # single xtable with all three
              fn.xt <- paste("SS",spec.num,"_alldist.tex",sep="")
-             my.df<-data.frame(Freq=depth.dist.xt[,1],Depth=depth.dist.xt[,2], Temp=temperature.dist.xt[,2], Sal=salinity.dist.xt[,2])
+             my.df<-data.frame(Frequency=depth.dist.xt[,1],Depth=depth.dist.xt[,2], Temperature=temperature.dist.xt[,2], Salinity=salinity.dist.xt[,2])
              print.xtable(xtable(my.df,digits=c(0,0,0,1,2)), type='latex', file=file.path(figdata.path, fn.xt), include.rownames=FALSE, floating=FALSE)
            },
            "dist" = { 	#

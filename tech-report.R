@@ -436,8 +436,13 @@ tempR <- paste(tempR, collapse = "\n")
 
 ## put the 5 tickets classes together and write to the report folder
 temp <- c(
-  "\\pagebreak \n # Appendix\n<!-- This page has been automatically generated: do not edit by hand -->\n \\pagebreak \n", 
-  #  "\\renewcommand\\thefigure{\\thesection\\Alph{figure}} \n",
+"# Figures for all species analysed {#app:appendix}
+<!-- This page has been automatically generated: do not edit by hand -->
+The figures generated for each species are presented here and consist of up to six figures (Figure types A to F) per species, depending on their taxonomic level classification (as described in Section \\@ref(taxo)). The figure types are used as a suffix in each figure number.
+
+To facilitate navigation, use the PDF navigation panel. Alternatively, Table \\@ref(tab:tabspecies) contains the list of all species presented and includes a hyperlink to the first page of figures for each species. Finally an Index is included in the document, containing hyperlinks to each species based on its scientific name, English common name or French common name.
+
+\\pagebreak \n", 
   temp, 
   tempI, 
   tempS, 
