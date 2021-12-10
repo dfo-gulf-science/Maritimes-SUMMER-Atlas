@@ -2,7 +2,7 @@
 ## Survey Description
 The survey is conducted annually in July-August and covers the Scotian Shelf and the Bay of Fundy (Figure \@ref(fig:map1)). It normally involves at least two separate trips on board an offshore fisheries vessel from the Canadian Coast Guard for a total duration of around 6 weeks at sea.
 
-The fishing platform used (the vessel and the type of fishing gear) has changed a number of times since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fanning-1985;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. The relevant details of the survey vessels [@Maginley-etal-2014] and fishing trawls [@Fanning-1985] used can be found in Table \@ref(tab:vesselandgear) and a timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
+The fishing platform used (the vessel and the type of fishing gear) has changed a number of times since the onset of sampling activities [@ClarkEmberley2011]. Comparative fishing experiments were conducted when those changes in survey platforms took place [@Koeller-Smith-1983;@Fanning-1984;@Fanning-1985;@Fowler-Showell-2009]. The A.T. Cameron using a Yankee 36 trawl was the primary survey vessel from 1970 to 1981. The vessel that was then built to replace the A.T. Cameron to conduct trawl surveys (CCGS Alfred Needler) was not yet operational, and the Lady Hammond was used to bridge the gap between the A.T. Cameron and the CCGS Alfred Needler. A change to the Western IIA trawl also took place after A.T. Cameron was retired. The CCGS Alfred Needler entered service for the 1983 summer survey using a Western IIA trawl. It has been the main survey platform since. The CCGS Alfred Needler suffered a fire in 2003 and the CCGS Teleost was used instead. In 2007, 2008 and 2018 the CCGS Alfred Needler was not available and the survey was conducted on the CCGS Teleost in 2007 and 2018, and on the CCGS Wilfred Templeman in 2008. The relevant details of the survey vessels [@Maginley-etal-2014] and fishing trawls [@Fanning-1985] used can be found in Table \@ref(tab:vesselandgear) and a timeline of the survey platforms can be found in Figure \@ref(fig:timeline).
 
 
 \begin{table}
@@ -60,7 +60,7 @@ knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 
 
 ## Sampling Design
-The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
+The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO), which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
 
 
 The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)). Strata 443, 444, 445 cover an area with mixed depths and are represented as a single polygon in Figure \@ref(fig:map2).
@@ -254,7 +254,7 @@ W = \alpha L ^\beta
 
 where W is the total weight (g), L is the length (cm), and, $\alpha$ and $\beta$ are the parameters to be estimated. 
 
-relative fish condition (C) [@lecren1951] was computed as:
+Relative fish condition (C) [@lecren1951] was computed as:
 
 \begin{eqnarray*}\label{eqCondition}
 C = \frac{W}{\alpha L ^\beta}  
@@ -266,7 +266,7 @@ C = \frac{W}{\alpha L ^\beta}
 
 ### Depth, temperature and salinity distribution of catches
 
-For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
+For each category L species, we followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
 
 ### Density-dependent habitat selection
 
