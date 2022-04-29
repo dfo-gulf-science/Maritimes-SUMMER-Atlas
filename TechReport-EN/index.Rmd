@@ -1,6 +1,6 @@
 ---
 title: "Marine fish and invertebrate atlas: geographic distribution, population indices and environmental associations of marine species in the Scotian Shelf and Bay of Fundy derived from the annual Maritimes summer survey (1970-2020)"
-year: 2021
+year: 2022
 report_number: nnn
 author: |
   Daniel Ricard ^1^ 
@@ -19,7 +19,6 @@ address: |
      Maritimes Region\
      Fisheries and Oceans Canada\
      Dartmouth, Nova Scotia, B2Y 4A2, Canada\
-phone: "(506) 851-6216"
 author_footnote: "Email: Daniel.Ricard@dfo-mpo.gc.ca | telephone: (506) 851-6216"
 abstract: |
   The summer groundfish research vessel survey on the Scotian Shelf and in the Bay of Fundy started in 1970 and was designed to measure the distribution and abundance of major commercial fish species. Over time, additional information on non-commercial species was collected, and allowed considerable insight into ecosystem function and structure, as documented in many primary publications whose analyses used the survey data. The same groundfish survey database has also been used to produce species status reports, atlases of species distribution and remains an essential source of information for stock assessments in the Maritimes Region of Fisheries and Oceans Canada. This report builds on previous work and former atlases by updating a comprehensive suite of indices to assess population status and environmental associations of 104 species. For each species, trends in geographic distribution and biomass were plotted. The spatial extent of distribution was plotted over time to gauge how the area occupied has changed. The relationship between abundance or biomass and spatial extent reflected whether the species distribution expands when biomass increases. Length frequencies over time depicted any changes in mean size. The plots of condition over time revealed whether individual fish are fatter or thinner than their long term mean. Depth, temperature and salinity associations were estimated to gauge the range of suitable environmental parameters for each species. Finally, for each stratum, the slope describing how local density varies with regional abundance was estimated. The reproducible set of tools provided in this report constitutes a stepping stone to conduct other ecological analyses using the summer groundfish research vessel survey data by fostering reproducibility and transparency of ecological information collected and reported annually. Recognizing the diversity of approaches for visualizing and mapping fish and invertebrates in the Scotian Shelf bioregion, we recommend the development of a regional community of practice to compare and evaluate approaches for mapping, interpolating and/or modelling fish and invertebrates so future publications and advice can lead to more comparable work and consistent science advice to support processes such as marine spatial planning.

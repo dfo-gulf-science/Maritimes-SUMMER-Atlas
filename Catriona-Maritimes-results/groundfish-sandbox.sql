@@ -274,4 +274,5 @@ order by year, month, day, setno,fshno
 SELECT 
 *
 FROM
-groundfish.gsinf i;
+groundfish.gsinf i
+WHERE EXTRACT(MONTH FROM SDATE)=3;
