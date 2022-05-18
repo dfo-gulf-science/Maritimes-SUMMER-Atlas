@@ -66,11 +66,7 @@ df5 <- data.frame(
 
 my.cols <- c("#d73027","#fc8d59","#fee090","#e0f3f8","#91bfdb","#4575b4") # c("wheat1","#fdae61","tomato1","#abdda4","steelblue1") ##c("firebrick1","forestgreen","","dodgerblue","goldenrod")
 
-
-## comparative fishing experiments
-
-## 
-
+##
 summer.timeline.fig.fct <- function(){
   plot(1969:2021, rep(1,length(1969:2021)), ylim=c(0.5,5.5), type="n", xlab="", ylab="", axes=FALSE)
   abline(v=seq(1970,2021,5), lwd=0.5, col=grey(0.8))
@@ -91,16 +87,36 @@ summer.timeline.fig.fct <- function(){
   polygon(c(df3$year[49:67],rev(df3$year[49:67])), c(rep(2.6,length(49:67)),rep(3.4,length(49:67))), col=my.cols[3])#, border=my.cols[3])
   polygon(c(df3$year[68:72],rev(df3$year[68:72])), c(rep(2.6,length(68:72)),rep(3.4,length(68:72))), col=my.cols[3])#, border=my.cols[3])
   
-  polygon(c(df4$year,rev(df4$year)), c(rep(1.6,nrow(df4)),rep(2.4,nrow(df4))), col=my.cols[4])#, border=my.cols[4])
+  polygon(c(df5$year[1:5],rev(df5$year[1:5])), c(rep(1.6,length(1:5)),rep(2.4,length(1:5))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df5$year[6:8],rev(df5$year[6:8])), c(rep(1.6,length(6:8)),rep(2.4,length(6:8))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df5$year[9:11],rev(df5$year[9:11])), c(rep(1.6,length(9:11)),rep(2.4,length(9:11))), col=my.cols[5])#, border=my.cols[5])
   
-  polygon(c(df5$year[1:5],rev(df5$year[1:5])), c(rep(0.6,length(1:5)),rep(1.4,length(1:5))), col=my.cols[5])#, border=my.cols[5])
-  polygon(c(df5$year[6:8],rev(df5$year[6:8])), c(rep(0.6,length(6:8)),rep(1.4,length(6:8))), col=my.cols[5])#, border=my.cols[5])
-  polygon(c(df5$year[9:11],rev(df5$year[9:11])), c(rep(0.6,length(9:11)),rep(1.4,length(9:11))), col=my.cols[5])#, border=my.cols[5])
+  polygon(c(df4$year,rev(df4$year)), c(rep(0.6,nrow(df4)),rep(1.4,nrow(df4))), col=my.cols[4])#, border=my.cols[4])
+  
+  ## add comparative fishing experiments
+  polygon(c(1977.7,1978.3,1978.3,1977.7), c(4.2,4.2,4.8,4.8), col=grey(0.3, alpha=0.5))
+  polygon(c(1978.7,1979.3,1979.3,1978.7), c(4.2,4.2,4.8,4.8), col=grey(0.3, alpha=0.5))
+  polygon(c(1979.7,1980.3,1980.3,1979.7), c(4.2,4.2,4.8,4.8), col=grey(0.3, alpha=0.5))
+  polygon(c(1980.7,1981.3,1981.3,1980.7), c(4.2,4.2,4.8,4.8), col=grey(0.3, alpha=0.5))
+  
+  polygon(c(1982.7,1983.3,1983.3,1982.7), c(3.2,3.2,3.8,3.8), col=grey(0.3, alpha=0.5))
+  #polygon(c(1991.7,1992.3,1992.3,1991.7), c(3.2,3.2,3.8,3.8), col=grey(0.3, alpha=0.5))
+  #polygon(c(2003.7,2004.3,2004.3,2003.7), c(1.2,1.2,2.8,2.8), col=grey(0.3, alpha=0.5))
+  polygon(c(2004.7,2005.3,2005.3,2004.7), c(2.2,2.2,2.8,2.8), col=grey(0.3, alpha=0.5))
+  
+  text(1972,1.5,"Comparative fishing", cex=2)
+  
+  arrows(1977,1.5, 1978,4.2, lwd=1.5, length=0, col=grey(0.3))
+  arrows(1977,1.5, 1979,4.2, lwd=1.5, length=0, col=grey(0.3))
+  arrows(1977,1.5, 1980,4.2, lwd=1.5, length=0, col=grey(0.3))
+  arrows(1977,1.5, 1981,4.2, lwd=1.5, length=0, col=grey(0.3))
+  arrows(1977,1.5, 1982.6,3.5, lwd=1.5, length=0, col=grey(0.3))
+  arrows(1977,1.5, 2004.6,2.5, lwd=1.5, length=0, col=grey(0.3))
   
   axis(side=1, at=seq(1970,2020,5), cex.axis=2.5, padj=1, tck=-0.02)
   axis(side=1, at=seq(1970,2020,1), labels=F, tck=-0.01)
   
-  axis(side=2, at=c(1:5), labels=rev(c("A.T. Cameron","Lady Hammond","Alfred Needler","Wilfred Templeman","Teleost")), las=1, cex.axis=2.5)
+  axis(side=2, at=c(1:5), labels=rev(c("A.T. Cameron","Lady Hammond","Alfred Needler","Teleost","Wilfred Templeman")), las=1, cex.axis=2.5)
   
   # grid()
   box()
@@ -112,10 +128,10 @@ summer.timeline.fig.fct <- function(){
   text(2005.5, 3, "WIIA", cex=2)
   text(2013, 3, "WIIA", cex=2)
   text(2019.5, 3, "WIIA", cex=2)
-  text(2008, 2, "WIIA", cex=2)
-  text(2004.5, 1, "WIIA", cex=2)
-  text(2007, 1, "WIIA", cex=2)
-  text(2018, 1, "WIIA", cex=2)
+  text(2004.5, 2, "WIIA", cex=2)
+  text(2007, 2, "WIIA", cex=2)
+  text(2018, 2, "WIIA", cex=2)
+  text(2008, 1, "WIIA", cex=2)
   
   
   mtext(side=1, "Year", cex=2.7, line=4.5, at=1992.7, padj = 0.3)

@@ -109,6 +109,9 @@ merged.df[is.na(merged.df$TOTWGT),]$TOTWGT <- 0
 merged.df[is.na(merged.df$TOTNOCORR),]$TOTNOCORR <- 0
 merged.df[is.na(merged.df$TOTWGTCORR),]$TOTWGTCORR <- 0
 
+## there are instances where catch abundance was recorded, but not catch biomass
+## 
+
 names(merged.df) <- c("mission","setno","spec","scien","comm","totno","totwgt","totno.corr","totwgt.corr","Strata","YEAR","month","day","dmin","dmax","temperature","salinity","lon","lat","DEPTH","decade","dist")
 ##
 ##

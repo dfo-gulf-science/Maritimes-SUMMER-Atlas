@@ -1,9 +1,9 @@
 ## average fish condition plot, separately for NAFO 4X and 4VW
 
-conditionNAFO.fct <- function(spec.code) {
-  fn <- file.path(figdata.path, paste0("SS",spec.code,"_lw4x.csv"))
+conditionNAFO.fct <- function(spec.num) {
+  fn <- file.path(figdata.path, paste0("SS",spec.num,"_lw4x.csv"))
 lw.4x <- read.csv(fn, header=TRUE)
-fn <- file.path(figdata.path, paste0("SS",spec.code,"_lw4vw.csv"))
+fn <- file.path(figdata.path, paste0("SS",spec.num,"_lw4vw.csv"))
 lw.4vw <- read.csv(fn, header=TRUE)
 dat.in <- list(df.1=lw.4x, df.2=lw.4vw)
 

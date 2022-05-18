@@ -7,9 +7,11 @@
 # list required libraries, and install if necessary
 necessary <- c("PBSmapping","spatstat","zoo","classInt","RColorBrewer","gstat","maptools",
                "foreign","fields","spam","rgeos", "RODBC", 
-               "xtable", "MASS", "xlsx", "raster", "rgdal",
+               "xtable", "MASS", 
+               #"xlsx", 
+               "raster", "rgdal",
                "here","worms",
-               "raster","ncdf4","sf",
+               "ncdf4","sf",
                "ggplot2")
 installed <- necessary %in% installed.packages()[, 'Package']
 if (length(necessary[!installed]) >=1) install.packages(necessary[!installed], repos='http://mirror.its.dal.ca/cran/')

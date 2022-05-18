@@ -8,15 +8,15 @@ The figures generated for each species are presented in the Appendix.
 tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
 ```
 
-A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)` (Figure \@ref(fig:map3)). Tables \@ref(tab:tabtowstratumyear1), \@ref(tab:tabtowstratumyear2) and \@ref(tab:tabtowstratumyear3) present the number of tows conducted in each stratum and year.
+A total of `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows were conducted for the period spanning from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)` (Figure \@ref(fig:map3)). Tables \@ref(tab:tabtowstratumyear1) to \@ref(tab:tabtowstratumyear6) present the number of tows conducted in each stratum and year.
 
 (ref:caption-map3) Map of the `r tows.strata.year[nrow(tows.strata.year),ncol(tows.strata.year)]` representative tows in the Summer survey from `r substring(names(tows.strata.year)[4],3,7)` to `r substring(names(tows.strata.year)[ncol(tows.strata.year)-1],3,7)`. 
 
 \begin{landscapepage}
-
 ```{r map3, fig.cap="(ref:caption-map3)", out.width="100%"}
 knitr::include_graphics("./figures/SUMMER-tows-map-sf.png")
 ```
+\end{landscapepage}
 
 \newpage
 
@@ -27,7 +27,7 @@ knitr::include_graphics("./figures/SUMMER-tows-map-sf.png")
 tows.strata.year <- read.csv("Atlas-summary-table-tows-by-year-stratum.csv")
 tows.strata.year$Area <- round(tows.strata.year$Area) ## round each stratum area
 
-yrs <- 1970:1989
+yrs <- 1970:1978
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.1 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.1)
@@ -40,17 +40,17 @@ tows.strata.year.1[nr,2] <- "Total"
 csas_table(tows.strata.year.1,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
-  format = "latex", align=c("c",rep("r",15))
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
   ) %>%
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
-  kableExtra::kable_styling(font_size = 6) %>% 
-  kableExtra::row_spec(nr, bold=TRUE) %>% 
-  sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 ```
 
 ```{r tabtowstratumyear2, results="asis"}
-yrs <- 1990:2009
+yrs <- 1979:1987
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.2)
@@ -61,17 +61,80 @@ tows.strata.year.2[nr,2] <- "Total"
 csas_table(tows.strata.year.2,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
-  format = "latex", align=c("c",rep("r",15))
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
   ) %>%
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
-  kableExtra::kable_styling(font_size = 6) %>% 
-  kableExtra::row_spec(nr, bold=TRUE) %>% 
-  sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 ```
 
 ```{r tabtowstratumyear3, results="asis"}
-yrs <- 2010:2020
+yrs <- 1988:1996
+ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
+tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.2)
+## blank the first two columns of the last row
+tows.strata.year.2[nr,1:2] <- ""
+tows.strata.year.2[nr,2] <- "Total"
+
+csas_table(tows.strata.year.2,
+  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
+  ) %>%
+  #kableExtra::landscape() %>%
+#  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
+
+```{r tabtowstratumyear4, results="asis"}
+yrs <- 1997:2005
+ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
+tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.2)
+## blank the first two columns of the last row
+tows.strata.year.2[nr,1:2] <- ""
+tows.strata.year.2[nr,2] <- "Total"
+
+csas_table(tows.strata.year.2,
+  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
+  ) %>%
+  #kableExtra::landscape() %>%
+#  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
+
+```{r tabtowstratumyear5, results="asis"}
+yrs <- 2006:2014
+ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
+tows.strata.year.2 <- tows.strata.year[,c(1,2,3,ii)]
+nr <- nrow(tows.strata.year.2)
+## blank the first two columns of the last row
+tows.strata.year.2[nr,1:2] <- ""
+tows.strata.year.2[nr,2] <- "Total"
+
+csas_table(tows.strata.year.2,
+  col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs)),
+  caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)],"."),
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
+  ) %>%
+  #kableExtra::landscape() %>%
+#  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+```
+
+```{r tabtowstratumyear6, results="asis"}
+yrs <- 2015:2020
 ii <- which(substring(names(tows.strata.year),3,6) %in% as.character(yrs))
 tows.strata.year.3 <- tows.strata.year[,c(1,2,3,ii)]
 nr <- nrow(tows.strata.year.3)
@@ -85,18 +148,15 @@ tows.strata.year.3[,ncol(tows.strata.year.3)+1] <- tows.strata.year[,ncol(tows.s
 csas_table(tows.strata.year.3,
   col.names=c("Stratum","NAFO Div.","Area (km2)",as.character(yrs),"Total"),
   caption = paste0("Number of representative tows conducted in each stratum during the period ",yrs[1]," to ",yrs[length(yrs)], " and for the whole 1970 to 2020 period."),
-  format = "latex", align=c("c",rep("r",15))
+  longtable = TRUE, format = "latex", align=c("c",rep("r",15))
   ) %>%
   #kableExtra::landscape() %>%
 #  kableExtra::kable_styling(font_size = 7, latex_options = "repeat_header", repeat_header_method = "replace") %>% 
-  kableExtra::kable_styling(font_size = 6) %>% 
-  kableExtra::row_spec(nr, bold=TRUE) %>% 
-  sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
+  kableExtra::kable_styling(font_size = 9) %>% 
+  kableExtra::row_spec(nr, bold=TRUE) #%>% 
+  #sub("\\caption\\[\\]\\{\\}", "\\caption*{}", .) 
 
 ```
-\end{landscapepage}
-
-\clearpage
 
 ## Distribution of depth, bottom temperature and bottom salinity from survey tows
 

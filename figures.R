@@ -122,11 +122,11 @@ make.figure <- function(fig.name, spec.num) {
            source(file.path(figcode.path, "conditionNAFO.R"))
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           #pdf(file.path(fig.path, file.name), width=12, height=6)
-           #par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.75, 1.2, 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
-           conditionNAFO.fct(spec.num, file.name)
-           #dev.off()
-           
+           pdf(file.path(fig.path, file.name), width=12, height=6)
+           par(mfrow=c(1,2), omi=c(0,0,0,0), mai=c(0.75, 1.2, 0.1, 0.1), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+           # par(mfrow=c(1,2), ps=16, cex=1, xpd=TRUE, lheight=0.5, xaxs="r", yaxs="r")
+           conditionNAFO.fct(spec.num) #, file.name
+           dev.off()
            
          },
          "IDWabundance" = {

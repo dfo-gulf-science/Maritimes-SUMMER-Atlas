@@ -53,7 +53,7 @@ Scientific name: [Gadus morhua](http://www.marinespecies.org/aphia.php?p=taxdeta
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-10-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic cod.}
 \end{minipage} 
@@ -130,7 +130,7 @@ Scientific name: [Melanogrammus aeglefinus](http://www.marinespecies.org/aphia.p
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-11-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Haddock.}
 \end{minipage} 
@@ -207,7 +207,7 @@ Scientific name: [Urophycis tenuis](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-12-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for White hake.}
 \end{minipage} 
@@ -284,7 +284,7 @@ Scientific name: [Urophycis chuss](http://www.marinespecies.org/aphia.php?p=taxd
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-13-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Red hake.}
 \end{minipage} 
@@ -361,7 +361,7 @@ Scientific name: [Merluccius bilinearis](http://www.marinespecies.org/aphia.php?
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-14-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Silver hake.}
 \end{minipage} 
@@ -438,7 +438,7 @@ Scientific name: [Pollachius virens](http://www.marinespecies.org/aphia.php?p=ta
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-16-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Pollock.}
 \end{minipage} 
@@ -515,7 +515,7 @@ Scientific name: [Sebastes](http://www.marinespecies.org/aphia.php?p=taxdetails&
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-23-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic redfishes.}
 \end{minipage} 
@@ -592,7 +592,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](http://www.marinespecies.org/
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-300-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Longhorn sculpin.}
 \end{minipage} 
@@ -669,7 +669,7 @@ Scientific name: [Triglops murrayi](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-304-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-304-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Moustache sculpin.}
 \end{minipage} 
@@ -746,7 +746,7 @@ Scientific name: [Hemitripterus americanus](http://www.marinespecies.org/aphia.p
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-320-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Sea raven.}
 \end{minipage} 
@@ -823,7 +823,7 @@ Scientific name: [Aspidophoroides monopterygius](http://www.marinespecies.org/ap
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-340-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-340-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Alligatorfish.}
 \end{minipage} 
@@ -900,7 +900,7 @@ Scientific name: [Hippoglossus hippoglossus](http://www.marinespecies.org/aphia.
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-30-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic halibut.}
 \end{minipage} 
@@ -977,7 +977,7 @@ Scientific name: [Hippoglossoides platessoides](http://www.marinespecies.org/aph
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-40-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for American plaice.}
 \end{minipage} 
@@ -1054,7 +1054,7 @@ Scientific name: [Glyptocephalus cynoglossus](http://www.marinespecies.org/aphia
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-41-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Witch flounder.}
 \end{minipage} 
@@ -1131,7 +1131,7 @@ Scientific name: [Limanda ferruginea](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-42-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Yellowtail flounder.}
 \end{minipage} 
@@ -1208,7 +1208,7 @@ Scientific name: [Pseudopleuronectes americanus](http://www.marinespecies.org/ap
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-43-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter flounder.}
 \end{minipage} 
@@ -1285,7 +1285,7 @@ Scientific name: [Anarhichas lupus](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-50-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic wolffish.}
 \end{minipage} 
@@ -1362,7 +1362,7 @@ Scientific name: [Zoarces americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-640-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-640-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Ocean pout.}
 \end{minipage} 
@@ -1439,7 +1439,7 @@ Scientific name: [Clupea harengus](http://www.marinespecies.org/aphia.php?p=taxd
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-60-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Atlantic herring.}
 \end{minipage} 
@@ -1516,7 +1516,7 @@ Scientific name: [Lophius americanus](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-400-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Monkfish.}
 \end{minipage} 
@@ -1593,7 +1593,7 @@ Scientific name: [Amblyraja radiata](http://www.marinespecies.org/aphia.php?p=ta
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-201-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Thorny skate.}
 \end{minipage} 
@@ -1670,7 +1670,7 @@ Scientific name: [Malacoraja senta](http://www.marinespecies.org/aphia.php?p=tax
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-202-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Smooth skate.}
 \end{minipage} 
@@ -1747,7 +1747,7 @@ Scientific name: [Leucoraja ocellata](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-204-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-204-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Winter skate.}
 \end{minipage} 
@@ -1824,7 +1824,7 @@ Scientific name: [Squalus acanthias](http://www.marinespecies.org/aphia.php?p=ta
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-220-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Picked dogfish.}
 \end{minipage} 
@@ -1901,7 +1901,7 @@ Scientific name: [Illex illecebrosus](http://www.marinespecies.org/aphia.php?p=t
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
-\includegraphics[width=6in]{../Figures-Actual/RV-4VWX-4511-conditionNAFO.pdf} \\ 
+\includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-conditionNAFO.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Average fish condition in NAFO units 4X and 4VW for Northern shortfin squid.}
 \end{minipage} 

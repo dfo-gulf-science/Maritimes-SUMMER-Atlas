@@ -128,7 +128,7 @@ temp <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- " \\begin{tabular}{c}"
   i <- i + 1
-  out[[i]] <- paste0("\\includegraphics[width=6in]{../Figures-Actual/",
+  out[[i]] <- paste0("\\includegraphics[width=6.5in]{../Figures-Actual/",
                      spp_file6, "} \\\\ ")
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
