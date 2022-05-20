@@ -34,11 +34,11 @@ spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylu
 300,Longhorn sculpin,Chaboisseau à 18 épines,3292,LF,159520,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159520,Animalia,Chordata,NA,Perciformes,Cottidae,Myoxocephalus octodecemspinosus
 301,Shorthorn sculpin,Chaboisseau à épines courtes,131,LR,127203,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127203,Animalia,Chordata,NA,Perciformes,Cottidae,Myoxocephalus scorpius
 303,Grubby,Chaboisseau bronzé,40,LR,159519,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159519,Animalia,Chordata,NA,Perciformes,Cottidae,Myoxocephalus aenaeus
-304,Moustache sculpin,Faux-trigle armé,1182,LF,127205,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127205,Animalia,Chordata,NA,Perciformes,Cottidae,Triglops murrayi
+304,Moustache sculpin,Faux-trigle armé,1182,LI,127205,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127205,Animalia,Chordata,NA,Perciformes,Cottidae,Triglops murrayi
 306,Arctic hookear sculpin,Hameçon neigeux,306,LIn,127195,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127195,Animalia,Chordata,NA,Perciformes,Cottidae,Artediellus uncinatus
 307,Polar sculpin,Cotte polaire,29,LR,127235,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127235,Animalia,Chordata,NA,Perciformes,Psychrolutidae,Cottunculus microps
 314,Spatulate sculpin,Icèle spatulée,40,LR,127200,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127200,Animalia,Chordata,NA,Perciformes,Cottidae,Icelus spatula
-340,Alligatorfish,Poisson-alligator atlantique,1029,LFn,159459,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159459,Animalia,Chordata,NA,Perciformes,Agonidae,Aspidophoroides monopterygius
+340,Alligatorfish,Poisson-alligator atlantique,1029,LIn,159459,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159459,Animalia,Chordata,NA,Perciformes,Agonidae,Aspidophoroides monopterygius
 341,Arctic alligatorfish,Poisson-alligator arctique,13,LR,274356,https://www.marinespecies.org/aphia.php?p=taxdetails&id=274356,Animalia,Chordata,NA,Perciformes,Agonidae,Ulcina olrikii
 350,Atlantic poacher,Agone atlantique,266,LIn,127191,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127191,Animalia,Chordata,NA,Perciformes,Agonidae,Leptagonus decagonus
 351,Alligatorfishes,Poissons-alligator,43,LR,125588,https://www.marinespecies.org/aphia.php?p=taxdetails&id=125588,Animalia,Chordata,NA,Perciformes,Agonidae,Agonidae
@@ -58,7 +58,7 @@ spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylu
 625,Radiated shanny,Ulvaire deux-lignes,145,LR,159821,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159821,Animalia,Chordata,NA,Perciformes,Stichaeidae,Ulvaria subbifurcata
 626,Fourline snakeblenny,Quatre-lignes atlantique,40,LR,159817,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159817,Animalia,Chordata,NA,Perciformes,Stichaeidae,Eumesogrammus praecisus
 630,Wrymouth,Terrassier tacheté,120,LR,159675,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159675,Animalia,Chordata,NA,Perciformes,Cryptacanthodidae,Cryptacanthodes maculatus
-640,Ocean pout,Loquette d'Amérique,1478,LF,159267,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159267,Animalia,Chordata,NA,Perciformes,Zoarcidae,Zoarces americanus
+640,Ocean pout,Loquette d'Amérique,1478,LI,159267,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159267,Animalia,Chordata,NA,Perciformes,Zoarcidae,Zoarces americanus
 641,Arctic eelpout,Lycode arctique,70,LR,127112,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127112,Animalia,Chordata,NA,Perciformes,Zoarcidae,Lycodes reticulatus
 646,Atlantic soft pout,Mollasse atlantique,43,LR,127120,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127120,Animalia,Chordata,NA,Perciformes,Zoarcidae,Melanostigma atlanticum
 647,Vahl's eelpout,Lycode à carreaux,565,LI,127118,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127118,Animalia,Chordata,NA,Perciformes,Zoarcidae,Lycodes vahlii
@@ -86,7 +86,7 @@ spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylu
 201,Thorny skate,Raie épineuse,3937,LF,105865,https://www.marinespecies.org/aphia.php?p=taxdetails&id=105865,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Amblyraja radiata
 202,Smooth skate,Raie lisse,1773,LF,158554,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158554,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Malacoraja senta
 203,Little skate,Raie hérisson,712,LI,158551,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158551,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja erinacea
-204,Winter skate,Raie tachetée,1180,LF,158553,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158553,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja ocellata
+204,Winter skate,Raie tachetée,1180,LI,158553,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158553,Animalia,Chordata,Elasmobranchii,Rajiformes,Rajidae,Leucoraja ocellata
 220,Piked dogfish,Aiguillat commun,1985,LF,105923,https://www.marinespecies.org/aphia.php?p=taxdetails&id=105923,Animalia,Chordata,Elasmobranchii,Squaliformes,Squalidae,Squalus acanthias
 221,Black dogfish,Aiguillat noir,31,LR,105906,https://www.marinespecies.org/aphia.php?p=taxdetails&id=105906,Animalia,Chordata,Elasmobranchii,Squaliformes,Etmopteridae,Centroscyllium fabricii
 4511,North. shortfin squid,Encornet rouge nordique,4836,LF,153087,https://www.marinespecies.org/aphia.php?p=taxdetails&id=153087,Animalia,Mollusca,Cephalopoda,Oegopsida,Ommastrephidae,Illex illecebrosus
