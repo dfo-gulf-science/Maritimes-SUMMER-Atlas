@@ -6,7 +6,8 @@
 ## description
 ## extract "catch": catch abundance and biomass data
 ## extract "envpref": depth, temperature and salinity distribution 
-## extract "dist": distribution indices
+## extract "distusingB": distribution indices using biomass
+## extract "distusingN": distribution indices using abundance
 ## extract "stratified": yearly stratified random estimates of abundance and weight
 ## extract "ddhs": density-dependent habitat selection
 ## extract "lf": length frequencies
@@ -37,10 +38,12 @@ data.extract <- function(extract.name, spec.num) {
              dat.fn <- paste("SS",spec.num,"_catch.csv",sep="")
              depth.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "depth")
              depth.dist.df <- depth.dist.list[[1]]
-             depth.dist.xt <- depth.dist.list[[2]]
              fn <- paste("SS",spec.num,"_depthdist.csv",sep="")
-             fn.xt <- paste("SS",spec.num,"_depthdist.tex",sep="")
              write.csv(depth.dist.df, file.path(figdata.path, fn), row.names=FALSE)
+             
+             ## file with quantiles
+             depth.dist.xt <- depth.dist.list[[2]]
+             fn.xt <- paste("SS",spec.num,"_depthdist.tex",sep="")
              print.xtable(xtable(depth.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
              ## temperature distribution
@@ -48,8 +51,8 @@ data.extract <- function(extract.name, spec.num) {
              temperature.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "temperature")
              temperature.dist.df <- temperature.dist.list[[1]]
              temperature.dist.xt <- temperature.dist.list[[2]]
-             fn <- paste("SS",spec.num,"_temperaturedist.csv",sep="")
-             fn.xt <- paste("SS",spec.num,"_temperaturedist.tex",sep="")
+             fn <- paste("SS",spec.num,"_bottomtemperaturedist.csv",sep="")
+             fn.xt <- paste("SS",spec.num,"_bottomtemperaturedist.tex",sep="")
              write.csv(temperature.dist.df, file.path(figdata.path, fn), row.names=FALSE)
              print.xtable(xtable(temperature.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
@@ -58,8 +61,8 @@ data.extract <- function(extract.name, spec.num) {
              salinity.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "salinity")
              salinity.dist.df <- salinity.dist.list[[1]]
              salinity.dist.xt <- salinity.dist.list[[2]]
-             fn <- paste("SS",spec.num,"_salinitydist.csv",sep="")
-             fn.xt <- paste("SS",spec.num,"_salinitydist.tex",sep="")
+             fn <- paste("SS",spec.num,"_bottomsalinitydist.csv",sep="")
+             fn.xt <- paste("SS",spec.num,"_bottomsalinitydist.tex",sep="")
              write.csv(salinity.dist.df, file.path(figdata.path, fn), row.names=FALSE)
              print.xtable(xtable(salinity.dist.xt), type='latex', file=file.path(figdata.path, fn.xt),floating=FALSE)
              
@@ -68,20 +71,27 @@ data.extract <- function(extract.name, spec.num) {
              my.df<-data.frame(Frequency=depth.dist.xt[,1],Depth=depth.dist.xt[,2], Temperature=temperature.dist.xt[,2], Salinity=salinity.dist.xt[,2])
              print.xtable(xtable(my.df,digits=c(0,0,0,1,2)), type='latex', file=file.path(figdata.path, fn.xt), include.rownames=FALSE, floating=FALSE)
            },
-           "dist" = { 	#
+           "distusingB" = { 	#
              ## distribution indices
-             source(file.path(dataextract.path, "compute-distribution.R")) # uses the abundance tow-level data to generate yearly distribution indices
              source(file.path(dataextract.path, "compute-distribution-usingbiomass.R")) # uses the biomass tow-level data to generate yearly distribution indices
              
              source(file.path(dataextract.path, "data-extract-catch.R")) # extract the tow-level data
              
-             distribution.df <- distribution.fct(extract.catch.fct(spec.num))
-             fn <- paste("SS",spec.num,"_distribution.csv",sep="")
-             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
-             
              ## distribution indices using biomass
              distribution.df <- distribution.usingbiomass.fct(extract.catch.fct(spec.num))
              fn <- paste("SS",spec.num,"_distribution-usingbiomass.csv",sep="")
+             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
+             
+           },
+           "distusingN" = { 	#
+             ## distribution indices
+             source(file.path(dataextract.path, "compute-distribution-usingabundance.R")) # uses the abundance tow-level data to generate yearly distribution indices
+             
+             source(file.path(dataextract.path, "data-extract-catch.R")) # extract the tow-level data
+             
+             ## distribution indices using abundance
+             distribution.df <- distribution.usingabundance.fct(extract.catch.fct(spec.num))
+             fn <- paste("SS",spec.num,"_distribution-usingabundance.csv",sep="")
              write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
            },

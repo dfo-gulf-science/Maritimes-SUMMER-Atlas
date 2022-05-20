@@ -53,8 +53,8 @@ source(file.path(main.path, "chan.R"))
 ## these 3 scripts churn the contents of the RV database, summarise tows, and identifies/ranks the species based on the number of records
 ## -> these files should be run only when a new year of data is available and the Atlas is to be updated
 #source(file.path(main.path, "summaries.R")) ## summaries of tows, which is stored in the file "Report-generation/Atlas-summary-table-tows-by-year-stratum.csv" 
-#source(file.path(main.path, "summaries-catch-records.R")) ## summaries of catch, which is stored in "Report-generation/species-list-for-report.csv" 
-#source(file.path(main.path, "summaries-taxonomy.R")) ## summary of records with taxonomic details, which is stored in "Report-generation/species-list-for-report-APHIA.csv"
+#source(file.path(main.path, "summaries-catch-records.R"), encoding="UTF-8") ## summaries of catch, which is stored in "Report-generation/species-list-for-report.csv" 
+#source(file.path(main.path, "summaries-taxonomy.R"), encoding="UTF-8") ## summary of records with taxonomic details, which is stored in "Report-generation/species-list-for-report-APHIA.csv"
 
 # this creates a CSV file with the strata statistics that is used for a table in the Tech Report
 #source(file.path(dataextract.path, "strata-statistics.R"))
@@ -69,16 +69,18 @@ spec.list <- read.csv(file.path(main.path, "species-list-for-report.csv"),header
 
 ## test for cod
 ## data.extract(extract.name="envpref", spec.num=10)
+## data.extract(extract.name="catch", spec.num=10)
 
-species.LF <- spec.list[spec.list$type=='LF',]$spec # long timeseries
+species.LF <- spec.list[spec.list$type=='LF',]$spec # long timeseries, using catch weights
 species.SF <- spec.list[spec.list$type=='SF',]$spec # short timeseries
 species.LR <- spec.list[spec.list$type=='LR',]$spec # long timeseries rare
 species.SR <- spec.list[spec.list$type=='SR',]$spec # short timeseries rare
-species.LI <- spec.list[spec.list$type=='LI',]$spec # intermediate species
+species.LI <- spec.list[spec.list$type=='LI',]$spec # intermediate species, using catch weights
+species.LIn <- spec.list[spec.list$type=='LIn',]$spec # intermediate species, using catch numbers
 
 ## LF species
 species.numbers <- species.LF
-l.species.extracts <- c("catch","stratified","envpref","dist","ddhs","lf","lw")
+l.species.extracts <- c("catch","stratified","envpref","distusingB","ddhs","lf","lw")
 print(paste("Starting data extracts, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(l.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, LF species: ", Sys.time()))
@@ -105,6 +107,12 @@ print(paste("Starting data extracts, I species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, I species: ", Sys.time()))
 
+## LIn species
+species.numbers <- species.LIn
+i.species.extracts <- c("catch","stratified","dist")
+print(paste("Starting data extracts, I species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
+print(paste("End data extract, I species: ", Sys.time()))
 
 ## bottom organisms that we shouldn't catch
 ## 6500 - sand dollar
@@ -129,6 +137,7 @@ print(paste("Starting figures, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(lf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LF species: ", Sys.time()))
 
+
 ## SF species
 species.numbers <- c(species.SF)
 sf.figures <- c("IDWbiomassSspecies","stratifiedB","distribution-indices-usingB","BvsD75corr")
@@ -146,6 +155,13 @@ print(paste("End figures, R species: ", Sys.time()))
 ## LI species
 species.numbers <- c(species.LI)
 li.figures <- c("IDWbiomass","stratifiedB","distribution-indices-usingB","BvsD75corr")
+print(paste("Starting figures, LI species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, LI species: ", Sys.time()))
+
+## LIn species
+species.numbers <- c(species.LIn)
+li.figures <- c("IDWabundance","stratifiedN","distribution-indices-usingN","NvsD75corr")
 print(paste("Starting figures, LI species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LI species: ", Sys.time()))

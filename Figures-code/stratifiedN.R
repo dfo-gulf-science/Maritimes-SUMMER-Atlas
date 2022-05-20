@@ -1,67 +1,73 @@
 ## stratified random estimates plots, abundance only
 
-figure13.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0)) {
-# dat.in <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_stratified.csv")
-# dat.in <- read.csv("C:/Users/shackelln/Dropbox/ATLAS_poissons_SS/Data/SS10_stratified.csv")
+stratifiedN.fct <- function(spec.code) {
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+  dat.in <- read.csv(fn, header=TRUE)
+  
+  ## remove 2018
+  dat.in[dat.in$year==2018,c("n","n.var","b","b.var")] <- NA
 
-#################
-## abundance
-	x.range <- range(dat.in$year)
-	pretty.x <- pretty(x.range)
-	y.range  <- c(0, range(dat.in$n+sqrt(dat.in$n.var))[2]*1.05)
-	pretty.y  <- pretty(y.range)
-
-	# colour code the years to identify the beginning and end of the time-series
-	my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
-	yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
-
-plot(dat.in[,1], dat.in[,2], type='n', axes=FALSE, ann=FALSE, pch=15, lty=1, xlim=x.range, ylim=y.range)
-
-ll <- dim(dat.in)[1]
-sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,2], dat.in[i+1,1], dat.in[i+1,2], col=yr.cols[i], lty=1, lwd=0.15)})
-
-points(dat.in[,1], dat.in[,2], pch=20, col=yr.cols)
-
-mm <- mean(dat.in[,2])
-nn <- length(dat.in[,1])
-lines(dat.in[,1], rep(mm,nn), lty=1, col=grey(0.7), lwd=1.5)
-
-#lq <- quantile(dat.in[,2])[2]
-#uq <- quantile(dat.in[,2])[4]
-#abline(h=lq, lty=2, col=grey(0.7), lwd=1.5)
-#abline(h=uq, lty=2, col=grey(0.7), lwd=1.5)
-
-stdev <- sqrt(var(dat.in[,2]))
-lb <- mm - (0.5*stdev)
-ub <- mm + (0.5*stdev)
-lines(dat.in[,1], rep(lb,nn), lty=2, col=grey(0.7), lwd=1.5)
-lines(dat.in[,1], rep(ub,nn), lty=2, col=grey(0.7), lwd=1.5)
-#abline(h=lb, lty=2, col=grey(0.7), lwd=1.5)
-#abline(h=ub, lty=2, col=grey(0.7), lwd=1.5)
-
-## variance
-lines(dat.in[,1], dat.in[,2] + sqrt(dat.in[,3]), lty=1, col=grey(0.7), lwd=1.5)
-yy <- dat.in[,2] - sqrt(dat.in[,3])
-yy[yy<=0] <- 0 # if the mean minus the standard error is negative, set to zero
-lines(dat.in[,1], yy, lty=1, col=grey(0.7), lwd=1.5)
-
-
-# axes and labels
-	xlabel = "Year / Ann\u{E9}e"
-	ylabel2 = "Nombre moyen par trait"	
-	ylabel1 = "Mean number per tow"
-	
-	# labels and such
-	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
-	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0))
-	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
-	
-	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.2+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 2+pos.ylabel[2], cex=cex.in$labels)
-	
-
+  #################
+  ## abundance
+  x.range <- range(dat.in$year)
+  x.range[2] <- x.range[2]+1
+  pretty.x <- pretty(x.range)
+  y.range  <- c(0, range(dat.in$n+sqrt(dat.in$n.var), na.rm=TRUE)[2]*1.05)
+  pretty.y  <- pretty(y.range)
+  
+  if(range(dat.in$n, na.rm=TRUE)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+  
+  # colour code the years to identify the beginning and end of the time-series
+  ny <- nrow(dat.in)
+  my.cols <- bluetored.fct(ny)
+  
+  yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
+  # my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+  # yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
+  
+  plot(dat.in[,1], dat.in[,2], type='n', axes=FALSE, ann=FALSE, pch=15, lty=1, xlim=x.range, ylim=y.range)
+  
+  ll <- dim(dat.in)[1]
+  sapply(1:(ll-1), function(i){segments(dat.in[i,1], dat.in[i,2], dat.in[i+1,1], dat.in[i+1,2], col=yr.cols[i], lty=1, lwd=1)})
+  
+  points(dat.in[,1], dat.in[,2], pch=20, col=yr.cols)
+  
+  mm <- mean(dat.in[,2])
+  nn <- length(dat.in[,1])
+  lines(dat.in[,1], rep(mm,nn), lty=1, col=grey(0.7), lwd=1.5)
+  
+  #abline(h=mm, lty=1, col=grey(0.7), lwd=1.5)
+  
+  stdev <- sqrt(var(dat.in[,2]))
+  lb <- mm - (0.5*stdev)
+  ub <- mm + (0.5*stdev)
+  lines(dat.in[,1], rep(lb,nn), lty=2, col=grey(0.7), lwd=1.5)
+  lines(dat.in[,1], rep(ub,nn), lty=2, col=grey(0.7), lwd=1.5)
+  #abline(h=lb, lty=2, col=grey(0.7), lwd=1.5)
+  #abline(h=ub, lty=2, col=grey(0.7), lwd=1.5)
+  
+  ## variance
+  lines(dat.in[,1], dat.in[,2] + sqrt(dat.in[,3]), lty=1, col=grey(0.7), lwd=1.5)
+  yy <- dat.in[,2] - sqrt(dat.in[,3])
+  yy[yy<=0] <- 0 # if the mean minus the standard error is negative, set to zero
+  lines(dat.in[,1], yy, lty=1, col=grey(0.7), lwd=1.5)
+  
+  # axes and labels
+  xlabel = "Year" #"Year / Ann\u{E9}e"
+  ylabel1 = "Mean abundance (N) per tow"
+  
+  # labels and such
+  
+  axis(side=1, at = pretty.x, cex.axis=1.3, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
+  axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
+  axis(side=2, at = pretty.y, cex.axis=1.3, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0))
+  axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
+  
+  # Affichage du titre et des axes	
+  if(range(dat.in$b, na.rm=TRUE)[2]<10){ll<-3}else{ll<-2}
+  
+  mtext(xlabel, side = 1, line = 1.5, cex=1.5)
+  mtext(ylabel1, side = 2, line = ll, cex=1.5)
+  
+  box()
 } # end function

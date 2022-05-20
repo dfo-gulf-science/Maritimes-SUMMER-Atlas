@@ -44,18 +44,20 @@ switch(env.var,
          ## in Perry and Smith, the proportion is computed as Nh/N 
          ## (st$Wh - st$Nh / N) < 1E-12 ## the numbers numerically differ in R, but they are the same
          
-         depths <- seq(min(x$DEPTH), max(x$DEPTH), length.out=200)
-         
+         depths <- seq(min(x$DEPTH)-2, max(x$DEPTH)+2, length.out=200)
+         #depths <- seq(0, max(x$DEPTH), length.out=200)
          cdf.df <- expand.grid(depth=depths, cdf=NA) ## CDF for sets
          catch.cdf.df <- expand.grid(depth=depths, cdf=NA) ## CDF for catch
          
          for(t in depths){
-           print(paste0("depth ", t))
+           # print(paste0("depth ", t))
            this.depth.cdf <- 0
            this.depth.catch.cdf <- 0
            
            ## loop over strata
            for(h in unique(x$Strata)){
+             #print(paste0("stratum ", h))
+             
              ## number of unique tows in this stratum
              t.df <- x[x$Strata==h,]
              
@@ -69,7 +71,7 @@ switch(env.var,
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
                  (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
                this.depth.catch.cdf <- this.depth.catch.cdf + this.set.catch.cdf
-               
+               #print(paste0("set ", i, " this.depth.catch.cdf: ", this.depth.catch.cdf))
              }## end loop over sets
              
              
@@ -84,20 +86,15 @@ switch(env.var,
          merged.df <- merge(catch.cdf.df, cdf.df, by="depth")
          names(merged.df) <- c("depth","catch.cdf","cdf")
          
-         # return(list(df.freq=data.frame(temperature=both.df$temperature, cum.catch=both.df$cumfreq.catch, cum=both.df$cumfreq.samples), df.tab=my.df))
+         merged.df$interval <- findInterval(merged.df$catch.cdf, c(0.05,0.25,0.5,0.75,0.95)) 
+         agg.df <- aggregate(depth~interval, data=merged.df, max)
+         quantiles.df <- data.frame(freq=c(0.05,0.25,0.5,0.75,0.95), depth=agg.df[1:5,"depth"])
          
-         # depth.cdf <- cdf.df
-         # depth.cdf$variable="Depth (m)"
-         # names(depth.cdf)[1] <- "variable.value"
-         # 
-         # 
-         # out.df <- cdf.df
-         # names(out.df) <- c("depth","cdf.depth")
-         
+
        },
        temperature = { ## temperature
          
-         temperature.df <- catch.in[which(!is.na(catch.in$BOTTOM_TEMPERATURE)),]
+         temperature.df <- catch.in[which(!is.na(catch.in$temperature)),]
          
          st <- read.csv(file.path(actualreport.path, "strata-statistics.csv"))
          st <- st[which(st$STRAT %in% c(440:466, 470:478, 480:485, 490:495)),]
@@ -108,8 +105,8 @@ switch(env.var,
          ##
          ## following Table 1 in Perry and Smith (1994)
          # nh = number of hauls or sets in stratum h (h = 1, . . ., L)
-         nh <- aggregate(unique.id~STRAT, data=x, length)
-         st <- merge(st, nh, by="STRAT")
+         nh <- aggregate(unique.id~Strata, data=x, length)
+         st <- merge(st, nh, by.x="STRAT" , by.y="Strata")
          st$nh <- st$unique.id
          
          
@@ -130,10 +127,10 @@ switch(env.var,
          ## in Perry and Smith, the proportion is computed as Nh/N 
          ## (st$Wh - st$Nh / N) < 1E-12 ## the numbers numerically differ in R, but they are the same
          
-         temperatures <- seq(min(x$BOTTOM_TEMPERATURE), max(x$BOTTOM_TEMPERATURE), length.out=200)
+         temperatures <- seq(min(x$temperature)-2, max(x$temperature)+2, length.out=200)
          
          cdf.df <- expand.grid(temperature=temperatures, cdf=NA) ## CDF for sets
-         catch.cdf.df <- expand.grid(depth=depths, cdf=NA) ## CDF for catch
+         catch.cdf.df <- expand.grid(temperature=temperatures, cdf=NA) ## CDF for catch
          
          for(t in temperatures){
            this.temperature.cdf <- 0
@@ -145,11 +142,11 @@ switch(env.var,
              t.df <- x[x$Strata==h,]
              ## loop over sets in each stratum
              for(i in 1:nrow(t.df)){
-               this.set.cdf <- ifelse(t.df[i,"BOTTOM_TEMPERATURE"]<=t,1,0) * (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"])
+               this.set.cdf <- ifelse(t.df[i,"temperature"]<=t,1,0) * (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"])
                this.temperature.cdf <- this.temperature.cdf + this.set.cdf
                
                # catch
-               this.set.catch.cdf <- ifelse(t.df[i,"DEPTH"]<=t,1,0) * 
+               this.set.catch.cdf <- ifelse(t.df[i,"temperature"]<=t,1,0) * 
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
                  (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
                this.temperature.catch.cdf <- this.temperature.catch.cdf + this.set.catch.cdf
@@ -159,23 +156,21 @@ switch(env.var,
            
            
            cdf.df[cdf.df$temperature==t,"cdf"] <- this.temperature.cdf
-           
+           catch.cdf.df[catch.cdf.df$temperature==t,"cdf"] <- this.temperature.catch.cdf           
          }## end loop over temperatures
          
          
-         merged.df <- merge(catch.cdf.df, cdf.df, by="depth")
-         names(merged.df) <- c("depth","catch.cdf","cdf")
+         merged.df <- merge(catch.cdf.df, cdf.df, by="temperature")
+         names(merged.df) <- c("temperature","catch.cdf","cdf")
          
-         # temp.cdf <- cdf.df
-         # temp.cdf$variable="Bottom temperature (\u{B0}C)"
-         # names(temp.cdf)[1] <- "variable.value"
-         # out.df <- cdf.df
-         # names(out.df) <- c("temperature","cdf.temperature")
+         merged.df$interval <- findInterval(merged.df$catch.cdf, c(0.05,0.25,0.5,0.75,0.95)) 
+         agg.df <- aggregate(temperature~interval, data=merged.df, max)
+         quantiles.df <- data.frame(freq=c(0.05,0.25,0.5,0.75,0.95), temperature=agg.df[1:5,"temperature"])
          
        },
        salinity = { ## salinity
          
-         salinity.df <- catch.in[which(!is.na(catch.in$BOTTOM_SALINITY) & catch.in$BOTTOM_SALINITY>0),]
+         salinity.df <- catch.in[which(!is.na(catch.in$salinity) & catch.in$salinity>0),]
          
          
          st <- read.csv(file.path(actualreport.path, "strata-statistics.csv"))
@@ -187,8 +182,8 @@ switch(env.var,
          ##
          ## following Table 1 in Perry and Smith (1994)
          # nh = number of hauls or sets in stratum h (h = 1, . . ., L)
-         nh <- aggregate(unique.id~STRAT, data=x, length)
-         st <- merge(st, nh, by="STRAT")
+         nh <- aggregate(unique.id~Strata, data=x, length)
+         st <- merge(st, nh, by.x="STRAT" , by.y="Strata")
          st$nh <- st$unique.id
          
          
@@ -209,10 +204,10 @@ switch(env.var,
          ## in Perry and Smith, the proportion is computed as Nh/N 
          ## (st$Wh - st$Nh / N) < 1E-12 ## the numbers numerically differ in R, but they are the same
          
-         salinities <- seq(min(x$BOTTOM_SALINITY), max(x$BOTTOM_SALINITY), length.out=200)
+         salinities <- seq(min(x$salinity)-0.5, max(x$salinity)+0.5, length.out=200)
          
          cdf.df <- expand.grid(salinity=salinities, cdf=NA) ## CDF for sets
-         catch.cdf.df <- expand.grid(depth=depths, cdf=NA) ## CDF for catch
+         catch.cdf.df <- expand.grid(salinity=salinities, cdf=NA) ## CDF for catch
          
          for(t in salinities){
            this.salinity.cdf <- 0
@@ -224,11 +219,11 @@ switch(env.var,
              t.df <- x[x$Strata==h,]
              ## loop over sets in each stratum
              for(i in 1:nrow(t.df)){
-               this.set.cdf <- ifelse(t.df[i,"BOTTOM_SALINITY"]<=t,1,0) * (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"])
+               this.set.cdf <- ifelse(t.df[i,"salinity"]<=t,1,0) * (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"])
                this.salinity.cdf <- this.salinity.cdf + this.set.cdf
                
-               # catch
-               this.set.catch.cdf <- ifelse(t.df[i,"DEPTH"]<=t,1,0) * 
+                              # catch
+               this.set.catch.cdf <- ifelse(t.df[i,"salinity"]<=t,1,0) * 
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
                  (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
                this.salinity.catch.cdf <- this.salinity.catch.cdf + this.set.catch.cdf
@@ -238,20 +233,17 @@ switch(env.var,
            
            
            cdf.df[cdf.df$salinity==t,"cdf"] <- this.salinity.cdf
+           catch.cdf.df[catch.cdf.df$salinity==t,"cdf"] <- this.salinity.catch.cdf           
            
          }## end loop over salinities
          
          
-         merged.df <- merge(catch.cdf.df, cdf.df, by="depth")
-         names(merged.df) <- c("depth","catch.cdf","cdf")
+         merged.df <- merge(catch.cdf.df, cdf.df, by="salinity")
+         names(merged.df) <- c("salinity","catch.cdf","cdf")
          
-         # sal.cdf <- cdf.df
-         # sal.cdf$variable="Bottom salinity (psu)"
-         # names(sal.cdf)[1] <- "variable.value"
-         # 
-         # out.df <- cdf.df
-         # names(out.df) <- c("salinity","cdf.salinity")
-         # 
+         merged.df$interval <- findInterval(merged.df$catch.cdf, c(0.05,0.25,0.5,0.75,0.95)) 
+         agg.df <- aggregate(salinity~interval, data=merged.df, max)
+         quantiles.df <- data.frame(freq=c(0.05,0.25,0.5,0.75,0.95), salinity=agg.df[1:5,"salinity"])
          
        },
        
@@ -261,6 +253,7 @@ switch(env.var,
        }
 ) ## end of switch statement
 
-
+  return(list(merged.df[,c(1:3)], quantiles.df))
+  
 } # end function
 

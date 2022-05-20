@@ -7,7 +7,6 @@
 ## "bottomtemppref" figure: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom temperature
 ## "salinitypref" figure: cumulative distributions showing habitat preference of a species (as per Perry and Smith (1994)), this figure shows the distributions for bottom salinity
 ## "distribution-indices-usingN" figure: time-series plots of distribution indices, includes the Gini index, D50, D75 and D95
-## "stratified" figure: time-series plots of stratified random estimates of catch abundance and catch biomass
 ## "lengthfreqNAFO" figure: length frequency distribution per 7-year period, separately for 4X and 4VW
 ## "LW" figure: length-weight relationship plot
 ## "conditionNAFO" figure: time series of average fish condition, separately for NAFO 4X and NAFO 4VW
@@ -74,7 +73,7 @@ make.figure <- function(fig.name, spec.num) {
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
            par(mar=c(3,3,1,1))
-           envpref.fct(spec.num, "depth")
+           env.pref.fig.fct(spec.num, "depth")
            dev.off()
            
          },
@@ -85,7 +84,7 @@ make.figure <- function(fig.name, spec.num) {
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
            par(mar=c(3,3,1,1))
-           envpref.fct(spec.num, "bottomtemperature")
+           env.pref.fig.fct(spec.num, "bottomtemperature")
            dev.off()
          },
          "salinitypref" = {
@@ -95,14 +94,18 @@ make.figure <- function(fig.name, spec.num) {
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
            pdf(file.path(fig.path, file.name), width=6.0, height=3.9)
            par(mar=c(3,3,1,1))
-           envpref.fct(spec.num, "bottomsalinity")
+           env.pref.fig.fct(spec.num, "bottomsalinity")
            dev.off()
          },
          "distribution-indices-usingN" = {
            source(file.path(figcode.path, "distribution-indices-usingN.R"))
-         },
-         "stratified" = {
-           source(file.path(figcode.path, "stratified.R"))
+           
+           ## PDF
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
+           distribution.usingN.fct(spec.num,which.measure=c('D'))
+           dev.off()
+           
          },
          "lengthfreqNAFO" = {
            source(file.path(figcode.path, "lengthfreqNAFO.R"))
@@ -131,6 +134,12 @@ make.figure <- function(fig.name, spec.num) {
          },
          "IDWabundance" = {
            source(file.path(figcode.path, "IDWabundance.R"))
+           ## PDF
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=8.5, height=6.0)
+           IDWabundance.fig.fct(spec.num)
+           dev.off()
+           
          },
          "DDHS" = {
            source(file.path(figcode.path, "DDHS.R"))
@@ -145,6 +154,11 @@ make.figure <- function(fig.name, spec.num) {
          },
          "stratifiedN" = {
            source(file.path(figcode.path, "stratifiedN.R"))
+           ## PDF
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
+           stratifiedN.fct(spec.num)
+           dev.off()
          },
          "lengthfreqNAFO" = {
            source(file.path(figcode.path, "lengthfreqNAFO.R"))

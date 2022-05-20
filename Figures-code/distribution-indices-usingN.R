@@ -1,121 +1,183 @@
 ## distribution indices timeseries plots, using abundance
-#Distribution
-figure5.fct <- function(dat.in, cex.in, pos.ylabel=c(0,0), which.measure=c('areaocc','D','Gini')) {
-# dat.in <- read.csv(file.path(path.ATLAS,"Data/SS10_distribution.csv"))
 
-	xlabel = "Year / Ann\u{E9}e"
-
-	yy <- seq(min(dat.in$year),max(dat.in$year))
-	ll <- length(yy)
-	my.cols <- colorRampPalette(c('blue','red'))(ll+1)
-	yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
-	
-if('areaocc' %in% which.measure){
-## area occupied
-a.occ <- dat.in[,c(1,2)]
-
-# axes and labels
-
-	ylabel2 = expression(paste("Aire d'occupation (", 10^3, " ", km^2,")", sep=""))	
-	ylabel1 = expression(paste("Area of occupancy (", 10^3, " ", km^2,")", sep=""))
-	
-	# labels and such
-	x.range <- range(a.occ$year)
-	pretty.x <- pretty(x.range)
-	y.range  <- c(range(a.occ$area.occupied)[1]*0.5, range(a.occ$area.occupied)[2]*1.5)
-	pretty.y  <- pretty(y.range)
-	
-	loess.area <- loess(area.occupied~year, data=a.occ)
-	area.loess.df <- data.frame(year=a.occ$year, pred=predict(loess.area))
-	
-
-	plot(area.occupied~year, data=a.occ, type='b', axes=FALSE, ann=FALSE, pch=20, xlim=x.range, ylim=y.range)
-	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0))
-	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
-	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
-	
-	lines(area.loess.df, col='red',lwd=2.5)
-	
-	# Affichage du titre et des axes	
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 2.4+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 1.2+pos.ylabel[2], cex=cex.in$labels)
-	}
-	
-if('D' %in% which.measure){
-## D50, D75 and D95
-	ylabel2 = expression(paste("\u{C9}tendue g\u{E9}ographique  ( ", 10^3, " ", km^2,")", sep=""))	
-	ylabel1 = expression(paste("Geographic range ( ", 10^3, " ", km^2,")", sep=""))
-
-d.perc <- dat.in[,c(1,3,4)]
-
-	x.range <- range(d.perc$year)
-#	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+4)
-
-	pretty.x <- pretty(x.range)
-	y.range <- c(0,range(d.perc$D95)[2]*1.25)
-	pretty.y  <- pretty(y.range)
-
-	loess.D75 <- loess(D75~year, data=d.perc)
-	D75.loess.df <- data.frame(year=d.perc$year, pred=predict(loess.D75))
-	loess.D95 <- loess(D95~year, data=d.perc)
-	D95.loess.df <- data.frame(year=d.perc$year, pred=predict(loess.D95))
-	
-	plot(D75~year, data=d.perc, type='n', axes=FALSE, ann=FALSE, pch=20, xlim=x.range, ylim=y.range)
-	ll <- dim(d.perc)[1]
-	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D75[i], d.perc$year[i+1], d.perc$D75[i+1], col=yr.cols[i], lty=1, lwd=0.15)})
-	sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D95[i], d.perc$year[i+1], d.perc$D95[i+1], col=yr.cols[i], lty=1, lwd=0.15)})
-
-	points(D75~year, data=d.perc, type='p', pch=20, col=yr.cols)
-	points(D95~year, data=d.perc, type='p', pch=20, col=yr.cols)
-
-	lines(D75.loess.df, col='red',lwd=2.5)
-	lines(D95.loess.df, col='red',lwd=2.5)
-
-	#axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0))
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
-	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0))
-	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
-
-	#mtext(xlabel, side = 1, line = 0.5, cex=cex.in$labels)
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	#mtext(ylabel1, side = 2, line = 1.75+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.0+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 1.8+pos.ylabel[2], cex=cex.in$labels)
-	
-	ii <- length(d.perc$D75)
-	text(max(d.perc$year)+4, D75.loess.df$pred[ii], "D75%", cex=cex.in$labels, col='red')
-	text(max(d.perc$year)+4, D95.loess.df$pred[ii], "D95%", cex=cex.in$labels, col='red')
-	}
-	
-if('Gini' %in% which.measure){
-	## Gini index
-	ylabel2 = "Index Gini"
-	ylabel1 = "Gini index"
-
-gini <- dat.in[,c(1,5)]
-	x.range <- range(gini$year)
-	pretty.x <- pretty(x.range)
-	y.range <- c(range(gini$Gini)[1]*0.5, 1)
-	pretty.y  <- pretty(y.range)
-
-	loess.Gini <- loess(Gini~year, data=gini)
-	Gini.loess.df <- data.frame(year=gini$year, pred=predict(loess.Gini))
-
-	plot(Gini~year, data=gini, type='b', axes=FALSE, ann=FALSE, pch=20, xlim=x.range, ylim=y.range)
-	lines(Gini.loess.df, col='red',lwd=2.5)
-	
-	axis(side=1, at = pretty.x, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,-0.2,0))
-	axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
-	axis(side=2, at = pretty.y, cex.axis=cex.in$axis, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
-	axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
-
-	mtext(xlabel, side = 1, line = 1.5, cex=cex.in$labels)
-	mtext(ylabel1, side = 2, line = 3.0+pos.ylabel[2], cex=cex.in$labels)
-	mtext(ylabel2, side = 2, line = 1.8+pos.ylabel[2], cex=cex.in$labels)
-}
-
+distribution.usingN.fct <- function(spec.code,which.measure) {
+  fn <- file.path(figdata.path, paste0("SS",spec.code,"_distribution-usingabundance.csv"))
+  dat.in <- read.csv(fn, header=TRUE)
+  
+  ## for SF species, remove the early years
+  if(is.na(dat.in[dat.in$year==1970,c("area.surveyed")])) dat.in <- dat.in[dat.in$year>=1999,]
+  
+  ## remove 2018
+  dat.in[dat.in$year==2018,c("DWAO","D75","D95")] <- NA
+  
+  xlabel = "Year"
+  
+  # my.cols <- colorRampPalette(c('blue','red'))(dim(dat.in)[1])
+  ny <- nrow(dat.in)
+  my.cols <- bluetored.fct(ny)
+  
+  yr.cols <- my.cols[dat.in$year-min(dat.in$year)+1]
+  
+  if('areaocc' %in% which.measure){
+    
+    ## area surveyed
+    a.sur <- dat.in[,c(1,2)]
+    ## DWAO
+    a.occ <- dat.in[,c(1,3)]
+    
+    # axes and labels
+    ylabel1 = expression(paste("Area of occupancy (", 10^3, " ", km^2,")", sep=""))
+    
+    # labels and such
+    x.range <- range(a.occ$year)
+    x.range[2] <- x.range[2]+1
+    pretty.x <- pretty(x.range)
+    y.range  <- c(range(a.occ$area.occupied)[1]*0.5, range(a.occ$area.occupied)[2]*1.5)
+    pretty.y  <- pretty(y.range)
+    
+    b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+    b.dat.in <- read.csv(b.fn, header=TRUE)
+    
+    if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+    
+    loess.area <- loess(area.occupied~year, data=a.occ)
+    area.loess.df <- data.frame(year=a.occ$year, pred=predict(loess.area))
+    
+    
+    plot(area.occupied~year, data=a.occ, type='b', axes=FALSE, ann=FALSE, pch=19, xlim=x.range, ylim=y.range)
+    
+    axis(side=1, at = pretty.x, cex.axis=1.3, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+    axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
+    axis(side=2, at = pretty.y, cex.axis=1.3, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
+    axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
+    
+    lines(area.loess.df, col='red',lwd=2.5)
+    
+    # Affichage du titre et des axes	
+    mtext(xlabel, side = 1, line = 1.5, cex=1.5)
+    mtext(ylabel2, side = 2, line = 1.5, cex=1.5)
+  }	
+  
+  
+  if('D' %in% which.measure){
+    ## D50, D75 and D95
+    par(mar = c(2.5, 3, 0.2, 0.2))
+    
+    ylabel1 = expression(paste("Geographic range (", 10^3, " ", km^2,")", sep=""))
+    
+    ## area surveyed
+    a.sur <- dat.in[,c(1,2)]
+    ## DWAO
+    a.occ <- dat.in[,c(1,3)]
+    
+    
+    d.perc <- dat.in[,c(1,4,5)]
+    
+    #if(min(d.perc$year)<1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+4)}
+    #if(min(d.perc$year)>=1985){	x.range <- c(range(d.perc$year)[1],range(d.perc$year)[2]+2)}
+    x.range <- range(d.perc$year, na.rm=T)
+    x.range[2] <- x.range[2]+0.5
+    pretty.x <- pretty(x.range)
+    #y.range <- c(0,range(d.perc$D95, na.rm=T)[2]*1.25)
+    y.range <- c(0,range(a.sur$area.surveyed, na.rm=T)[2]*1.15)
+    pretty.y  <- pretty(y.range)
+    
+    b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+    b.dat.in <- read.csv(b.fn, header=TRUE)
+    
+    if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+    
+    plot(D75~year, data=d.perc, type='n', axes=FALSE, ann=FALSE, pch=1, xlim=x.range, ylim=y.range)
+    
+    lines(a.sur, col='black',lwd=2.5)
+    lines(a.occ, col='black',lwd=1.5, lty=1)
+    
+    
+    ll <- dim(d.perc)[1]
+    sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D75[i], d.perc$year[i+1], d.perc$D75[i+1], col=yr.cols[i], lty=1, lwd=1)})
+    sapply(1:(ll-1), function(i){segments(d.perc$year[i], d.perc$D95[i], d.perc$year[i+1], d.perc$D95[i+1], col=yr.cols[i], lty=1, lwd=1)})
+    
+    points(D75~year, data=d.perc, type='p', pch=20, col=yr.cols)
+    points(D95~year, data=d.perc, type='p', pch=20, col=yr.cols)
+    
+    
+    ## fit a loess to D75, if there are more than 5 data points
+    
+    if(length(which(is.na(d.perc$D75)))<45){
+      loess.D75 <- loess(D75~year, data=d.perc)
+      yrs.loess <- d.perc[!is.na(d.perc$D75), "year"]
+      D75.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D75))
+      lines(D75.loess.df, col='red',lwd=2.5, lty=2)
+      
+    }
+    
+    if(length(which(is.na(d.perc$D95)))<45){
+      loess.D95 <- loess(D95~year, data=d.perc)
+      yrs.loess <- d.perc[!is.na(d.perc$D95), "year"]
+      D95.loess.df <- data.frame(year=yrs.loess, pred=predict(loess.D95))
+      lines(D95.loess.df, col='red',lwd=2.5)
+    }
+    
+    axis(side=1, at = pretty.x, cex.axis=1.3, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.4,0))
+    axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
+    axis(side=2, at = pretty.y, cex.axis=1.3, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.4,0))
+    axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
+    
+    mtext(xlabel, side = 1, line = 1.5, cex=1.5)
+    mtext(ylabel1, side = 2, line = 2, cex=1.5)
+    
+    ii <- length(yrs.loess)
+    # if(min(d.perc$year)<1985){ 
+    # 	text(max(d.perc$year)+2.5, D75.loess.df$pred[ii], "D75%", cex=1, col='red')
+    # 	text(max(d.perc$year)+2.5, D95.loess.df$pred[ii], "D95%", cex=1, col='red')
+    # 	}
+    # if(min(d.perc$year)>=1985){ 
+    # 	text(max(d.perc$year)+0.5, D75.loess.df$pred[ii], "D75%", cex=1, col='red')
+    # 	text(max(d.perc$year)+0.5, D95.loess.df$pred[ii], "D95%", cex=1, col='red')
+    # }
+    # 
+    box()
+    
+    ll0 <- "area surveyed"
+    ll <- "DWAO"
+    ll1 <- expression(D[95~"%"]) ##c("D95", "D75")
+    ll2 <- expression(D[75~"%"]) ##c("D95", "D75")
+    
+    legend("topleft", c(ll0,ll), lty=c(1,1), bty="n", col=c("black","black"), lwd=c(2,1), text.col=c("black","black"))
+    legend("topright", c(ll1,ll2), lty=c(1,2), bty="n", col=c("red","red"), lwd=c(2,2), text.col=c("red","red"))
+    
+    
+  }
+  if('Gini' %in% which.measure){
+    
+    ## Gini index
+    ylabel1 = "Gini index"
+    
+    gini <- dat.in[,c(1,5)]
+    x.range <- range(gini$year)
+    x.range[2] <- x.range[2]+1
+    pretty.x <- pretty(x.range)
+    y.range <- c(range(gini$Gini)[1]*0.5, 1)
+    pretty.y  <- pretty(y.range)
+    
+    b.fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))
+    b.dat.in <- read.csv(b.fn, header=TRUE)
+    
+    if(range(b.dat.in$b)[2]<10){par(mar=c(3,5,1,1))}else{par(mar=c(3,4,1,1))}
+    
+    loess.Gini <- loess(Gini~year, data=gini)
+    Gini.loess.df <- data.frame(year=gini$year, pred=predict(loess.Gini))
+    
+    plot(Gini~year, data=gini, type='b', axes=FALSE, ann=FALSE, pch=19, xlim=x.range, ylim=y.range)
+    lines(Gini.loess.df, col='red',lwd=2.5)
+    
+    axis(side=1, at = pretty.x, cex.axis=1.3, labels=TRUE, tcl=-0.2, las=0, mgp=c(0,0.2,0))
+    axis(side=1, seq(min(pretty.x), max(pretty.x), by=((pretty.x[2]-pretty.x[1])/2)), labels=F, tck = -0.015)
+    axis(side=2, at = pretty.y, cex.axis=1.3, labels=TRUE, tcl=-0.15, las=1, mgp=c(0,0.2,0))
+    axis(side=2, seq(min(pretty.y), max(pretty.y), by=((pretty.y[2]-pretty.y[1])/2)), labels=F, tck = -0.01)
+    
+    mtext(xlabel, side = 1, line = 1.5, cex=1.5)
+    mtext(ylabel1, side = 2, line = 2.4, cex=1.5)
+    
+  }
 } # end function

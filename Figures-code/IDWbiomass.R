@@ -16,8 +16,7 @@ logic.rare <- quantile(subset(dat.in, totno.corr != 0)$totno.corr, probs=c(0.95)
 
 my.levels <- if (logic.abundant) {c(0,0.1,5,20,50,100,500)} else { if (logic.rare) {c(0,0.001,0.01,0.05,0.1,1,2)} else {c(0,0.05,0.1,0.5,1,5,10)}}
 
-if(spec.code %in% c(6500)) my.levels <- c(0,0.05,0.1,0.5,1,5,10) ## fix for sand dollars
-if(spec.code %in% c(340)) my.levels <- c(0,0.05,0.1,0.25,0.5,1,2) ## fix for alligatorfish
+if(spec.code %in% c(6500)) {my.levels <- c(0,0.05,0.1,0.5,1,5,10); logic.rare <- TRUE} ## fix for sand dollars
 
 #my.levels <- if(max(dat.in$totno.corr)>=1000) c(0,0.1,5,20,50,100) else c(0,0.05,0.1,0.5,1,5)
 my.legend <- ifelse(logic.abundant, "abundant","rare")

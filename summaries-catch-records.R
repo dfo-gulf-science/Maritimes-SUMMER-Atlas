@@ -31,7 +31,9 @@ tows.summer.df <- subset(
                  STRAT == '460' | STRAT == '461' | STRAT == '462' | STRAT == '463' | STRAT == '464' | STRAT == '465' | STRAT == '466' | 
                  STRAT == '470' | STRAT == '471' | STRAT == '472' | STRAT == '473' | STRAT == '474' | STRAT == '475' | STRAT == '476' | STRAT == '477' | STRAT == '478' | 
                  STRAT == '480' | STRAT == '481' | STRAT == '482' | STRAT == '483' | STRAT == '484' | STRAT == '485' | 
-                 STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' ) & (MONTH == 6 | MONTH == 7 | MONTH == 8)
+                 STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' ) 
+        & (MONTH == 6 | MONTH == 7 | MONTH == 8)
+        & (YEAR <= 2020)
 )
 
 ## taxonomic summary
@@ -55,10 +57,15 @@ species.all <- sqlQuery(chan,qu, stringsAsFactors = FALSE)
 colnames(species.all)[colnames(species.all) == 'SPEC'] <- 'SCIEN' 
 colnames(species.all)[colnames(species.all) == 'CODE'] <- 'SPEC' 
 
-catch.summer <- merge(merge(tows.summer.df, all.catch, 
-                            by.x=c('MISSION','SETNO'), 
-                            by.y=c('MISSION','SETNO')), 
-                      species.all, all.y=FALSE, 'SPEC')
+m1.df <- merge(tows.summer.df, all.catch, 
+               by.x=c('MISSION','SETNO'), 
+               by.y=c('MISSION','SETNO'))
+
+
+m2.df <- merge(m1.df, species.all, 
+                      all.y=FALSE, 
+                      by='SPEC')
+catch.summer <- m2.df
 
 catch.summer <- droplevels(catch.summer)
 catch.by.species <- table(catch.summer$SPEC)
@@ -66,9 +73,13 @@ catch.by.species.df <- data.frame(catch.by.species)
 catch.by.scien <- table(catch.summer$SCIEN)
 catch.by.scien.df <- data.frame(catch.by.scien)
 
-merged.df <- merge(merge(species.all, catch.by.species.df, 
-                         by.x='SPEC', by.y='Var1'), 
-                   catch.by.scien.df, by.x='SCIEN', by.y='Var1')
+m1.df <- merge(species.all, catch.by.species.df, 
+               by.x='SPEC', by.y='Var1')
+
+m2.df <- merge(m1.df, catch.by.scien.df, 
+                   by.x='SCIEN', 
+                   by.y='Var1')
+merged.df <- m2.df
 
 oo<-order(merged.df$Freq.x, decreasing = TRUE)
 ordered.df <- merged.df[oo,]
@@ -95,7 +106,7 @@ df.for.xtable$type <- ifelse(df.for.xtable$nrecords <= 200 &
                                df.for.xtable$ORDER=='Decapoda', "SR", 
                              ifelse(df.for.xtable$nrecords <= 200, "LR", 
                                     ifelse(df.for.xtable$ORDER=='Decapoda',"SF",
-                                           ifelse(df.for.xtable$nrecords <= 1000, "LI","LF")) ))
+                                           ifelse(df.for.xtable$nrecords < 1500, "LI","LF")) ))
 ##
 ## manually clean up to remove undesired entries
 df.for.xtable <- subset(df.for.xtable, !(spec %in% c(4521,4321,2210,642,2600,4320,4514,500,323)))
@@ -283,7 +294,7 @@ spec.xtable.df[spec.xtable.df$spec==625,]$FAO_F_COMMON_NAME <- "Ulvaire deux-lig
 
 spec.xtable.df[spec.xtable.df$spec==641,]$FAO_F_COMMON_NAME <- "Lycode arctique"
 
-spec.xtable.df[spec.xtable.df$spec==646,]$FAO_F_COMMON_NAME <- "Molasse atlantique"
+spec.xtable.df[spec.xtable.df$spec==646,]$FAO_F_COMMON_NAME <- "Mollasse atlantique"
 
 spec.xtable.df[spec.xtable.df$spec==603,]$FAO_F_COMMON_NAME <- "Lycode à tête longue"
 
@@ -298,26 +309,47 @@ spec.xtable.df[spec.xtable.df$spec==314,]$FAO_F_COMMON_NAME <- "Icèle spatulée
 spec.xtable.df[spec.xtable.df$spec==640,]$FAO_E_COMMON_NAME <- "Ocean pout"
 spec.xtable.df[spec.xtable.df$spec==640,]$FAO_F_COMMON_NAME <- "Loquette d'Amérique"
 
+spec.xtable.df[spec.xtable.df$spec==220,]$FAO_E_COMMON_NAME <- "Piked dogfish"
+
 ## fix the species that have an "unaccepted" status on WoRMS
 # Loligo pealeii, 4512
 # Zenopsis conchifera, 704
 spec.xtable.df[spec.xtable.df$spec==4512,]$ACCEPTED_SCIENT_NAME <- "Doryteuthis pealeii"
 spec.xtable.df[spec.xtable.df$spec==704,]$ACCEPTED_SCIENT_NAME <- "Zenopsis conchifer"
 
+## fix names that are long and cause pagination problems
+spec.xtable.df[spec.xtable.df$spec==4511,]$FAO_E_COMMON_NAME <- "North. shortfin squid"
+spec.xtable.df[spec.xtable.df$spec==300,]$FAO_F_COMMON_NAME <- "Chaboisseau à 18 épines"
 
 # spec.xtable.df[spec.xtable.df$spec==200,]$type <- "LR"
 # spec.xtable.df[spec.xtable.df$spec==340,]$type <- "I"
 # spec.xtable.df[spec.xtable.df$spec==501,]$type <- "LR"
 # spec.xtable.df[spec.xtable.df$spec==502,]$type <- "LR"
- spec.xtable.df[spec.xtable.df$spec==610,]$type <- "LI"
+# spec.xtable.df[spec.xtable.df$spec==610,]$type <- "LI"
 
+ ## species that were not weighted in early years 
+ ## should be classified differently
+spec.xtable.df[spec.xtable.df$spec==340,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==114,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==123,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==306,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==350,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==502,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==31,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==44,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==610,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==622,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==623,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==701,]$type <- "LIn"
+spec.xtable.df[spec.xtable.df$spec==64,]$type <- "LIn"
  
  ## at this point, the data frame spec.xtable.df has everything we need for the report except an APHIA ID, so call worms to get those based on the scientific name that we have
  
  spec.xtable.df.final <- spec.xtable.df
  
  #spec.xtable.df.final <- na.omit(spec.xtable.df.final)
- 
+
+ ## keep our 104 species 
  spec.xtable.df.final <- spec.xtable.df.final[spec.xtable.df.final$spec 
                                               %in% c(241,240,604,156,149,712,720,60,62,61,10,11,12,16,13,112,15,114,17,410,412,414,14,19,400,742,150,160,64,63,610,50,51,52,637,630,122,621,70,623,622,625,626,701,640,647,641,619,620,646,603,816,44,142,40,41,42,43,30,31,143,340,350,351,341,300,304,306,880,301,314,303,501,502,320,503,512,505,520,307,23,123,158,741,159,704,201,202,204,203,200,221,220,4512,4511,2511,2513,2532,2523,2550,2526,2527,2521,2211), ]
 
