@@ -165,10 +165,9 @@ make.figure <- function(fig.name, spec.num) {
          },
          "IDWbiomassSspecies" = {
            source(file.path(figcode.path, "IDWbiomassSspecies.R"))
-           
            ## PDF
            file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
-           pdf(file.path(fig.path, file.name), width=7.5, height=7.5)
+           pdf(file.path(fig.path, file.name), width=8, height=3.95)
            IDWbiomassSspecies.fct(spec.num)
            dev.off()
            
@@ -186,9 +185,12 @@ make.figure <- function(fig.name, spec.num) {
          },
          "NvsD75corr" = {
            source(file.path(figcode.path, "NvsD75corr.R"))
-         },
-         "conditionNAFO" = {
-           source(file.path(figcode.path, "conditionNAFO.R"))
+           ## PDF
+           file.name <- paste(paste("RV-4VWX", spec.num, fig.name, sep="-"), ".pdf", sep="")
+           pdf(file.path(fig.path, file.name), width=6.5, height=5.5)
+           NvsD75corr.fct(spec.num)
+           dev.off()
+           
          },
          "IDWabundanceSspecies" = {
            source(file.path(figcode.path, "IDWabundanceSspecies.R"))

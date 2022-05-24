@@ -319,8 +319,13 @@ spec.xtable.df[spec.xtable.df$spec==704,]$ACCEPTED_SCIENT_NAME <- "Zenopsis conc
 
 ## fix names that are long and cause pagination problems
 spec.xtable.df[spec.xtable.df$spec==4511,]$FAO_E_COMMON_NAME <- "North. shortfin squid"
+spec.xtable.df[spec.xtable.df$spec==4511,]$FAO_F_COMMON_NAME <- "Encornet rouge nord."
 spec.xtable.df[spec.xtable.df$spec==300,]$FAO_F_COMMON_NAME <- "Chaboisseau à 18 épines"
-
+spec.xtable.df[spec.xtable.df$spec==410,]$FAO_F_COMMON_NAME <- "Grenadier Grand Banc"
+spec.xtable.df[spec.xtable.df$spec==114,]$FAO_F_COMMON_NAME <- "Motelle à 4 barbillons"
+spec.xtable.df[spec.xtable.df$spec==502,]$FAO_E_COMMON_NAME <- "Atl. spiny lumpsucker"
+spec.xtable.df[spec.xtable.df$spec==502,]$FAO_F_COMMON_NAME <- "Petite poule de mer atl."
+                           
 # spec.xtable.df[spec.xtable.df$spec==200,]$type <- "LR"
 # spec.xtable.df[spec.xtable.df$spec==340,]$type <- "I"
 # spec.xtable.df[spec.xtable.df$spec==501,]$type <- "LR"

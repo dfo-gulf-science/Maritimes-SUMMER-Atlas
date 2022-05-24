@@ -143,8 +143,8 @@ if('D' %in% which.measure){
 	ll1 <- expression(D[95~"%"]) ##c("D95", "D75")
 	ll2 <- expression(D[75~"%"]) ##c("D95", "D75")
 	
-	legend("topleft", c(ll0,ll), lty=c(1,1), bty="n", col=c("black","black"), lwd=c(2,1), text.col=c("black","black"))
-	legend("topright", c(ll1,ll2), lty=c(1,2), bty="n", col=c("red","red"), lwd=c(2,2), text.col=c("red","red"))
+	legend("topleft", c(ll0,ll), lty=c(1,1), bty="n", col=c("black","black"), lwd=c(2,1), text.col=c("black","black"), cex=1.4)
+	legend("topright", c(ll1,ll2), lty=c(1,2), bty="n", col=c("red","red"), lwd=c(2,2), text.col=c("red","red"), cex=1.4)
 	
 
 }

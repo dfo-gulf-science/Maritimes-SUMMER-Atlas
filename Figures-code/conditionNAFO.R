@@ -28,7 +28,7 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	aa4vw = round(exp(coef(lw.fit4vw)[1]),4)
 	bb4vw = round(coef(lw.fit4vw)[2],5)
 	
-	y.range  <- c(0.75,1.35) 
+	y.range  <- c(0.70,1.35) 
 	
 	## yearly mean
 	tt.dat <- all.df[all.df$nafo=="4X",]

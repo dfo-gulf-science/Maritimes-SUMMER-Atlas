@@ -67,9 +67,11 @@ switch(env.var,
                this.depth.cdf <- this.depth.cdf + this.set.cdf
                
                # catch
+               third.term <- (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"])) ## this term will return NA if no fish were ever caught in that stratum
+               if(is.na(third.term)) third.term <- 0
                this.set.catch.cdf <- ifelse(t.df[i,"DEPTH"]<=t,1,0) * 
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
-                 (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
+                 third.term
                this.depth.catch.cdf <- this.depth.catch.cdf + this.set.catch.cdf
                #print(paste0("set ", i, " this.depth.catch.cdf: ", this.depth.catch.cdf))
              }## end loop over sets
@@ -146,19 +148,21 @@ switch(env.var,
                this.temperature.cdf <- this.temperature.cdf + this.set.cdf
                
                # catch
+               third.term <- (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"])) ## this term will return NA if no fish were ever caught in that stratum
+               if(is.na(third.term)) third.term <- 0
                this.set.catch.cdf <- ifelse(t.df[i,"temperature"]<=t,1,0) * 
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
-                 (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
+                 third.term 
                this.temperature.catch.cdf <- this.temperature.catch.cdf + this.set.catch.cdf
                
+               if(is.na(this.temperature.catch.cdf)) {stop(paste0("Stratum ", h, " set ", i,  " this.temperature.catch.cdf:", this.temperature.catch.cdf))}
              }## end loop over sets
            }## end loop over strata
            
            
            cdf.df[cdf.df$temperature==t,"cdf"] <- this.temperature.cdf
-           catch.cdf.df[catch.cdf.df$temperature==t,"cdf"] <- this.temperature.catch.cdf           
+           catch.cdf.df[catch.cdf.df$temperature==t,"cdf"] <- this.temperature.catch.cdf
          }## end loop over temperatures
-         
          
          merged.df <- merge(catch.cdf.df, cdf.df, by="temperature")
          names(merged.df) <- c("temperature","catch.cdf","cdf")
@@ -223,9 +227,11 @@ switch(env.var,
                this.salinity.cdf <- this.salinity.cdf + this.set.cdf
                
                               # catch
+               third.term <- (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"])) ## this term will return NA if no fish were ever caught in that stratum
+               if(is.na(third.term)) third.term <- 0
                this.set.catch.cdf <- ifelse(t.df[i,"salinity"]<=t,1,0) * 
                  (st[st$STRAT==h,"Wh"] / st[st$STRAT==h,"nh"]) * 
-                 (t.df[i,"totno.corr"] / mean(t.df[,"totno.corr"]))
+                 third.term
                this.salinity.catch.cdf <- this.salinity.catch.cdf + this.set.catch.cdf
                
              }## end loop over sets

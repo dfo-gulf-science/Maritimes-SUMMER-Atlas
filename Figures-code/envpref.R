@@ -30,8 +30,8 @@ env.pref.fig.fct <- function(spec.code, env.var){
   }
   
   
-  my.xlab <- ifelse(env.var=="depth", "Depth (m)", ifelse(env.var=="bottomtemp","Temperature (C)",ifelse(env.var=="bottomsalinity","Salinity (PSU)","blah")))
-  my.legend <- ifelse(env.var=="depth", "Depth", ifelse(env.var=="bottomtemp","Temperature",ifelse(env.var=="bottomsalinity","Salinity","blah")))
+  my.xlab <- ifelse(env.var=="depth", "Depth (m)", ifelse(env.var=="bottomtemperature","Temperature (C)",ifelse(env.var=="bottomsalinity","Salinity (PSU)","blah")))
+  my.legend <- ifelse(env.var=="depth", "Depth", ifelse(env.var=="bottomtemperature","Temperature",ifelse(env.var=="bottomsalinity","Salinity","blah")))
   
   
   par(mar = c(2.5, 3, 1, 1), xaxs="i", yaxs="i")

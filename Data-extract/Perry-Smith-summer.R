@@ -40,7 +40,8 @@ summer.tows.df <- subset(
      STRAT == '480' | STRAT == '481' | STRAT == '482' | STRAT == '483' | STRAT == '484' | STRAT == '485' | 
      STRAT == '490' | STRAT == '491' | STRAT == '492' | STRAT == '493' | STRAT == '494' | STRAT == '495' ) 
   & 
-    (MONTH == 6 | MONTH == 7 | MONTH == 8)
+    (MONTH == 6 | MONTH == 7 | MONTH == 8) &
+    (YEAR <= 2020)
 )
 
 
@@ -346,7 +347,7 @@ for(t in salinities){
 }## end loop over salinities
 
 sal.cdf <- cdf.df
-sal.cdf$variable="Bottom salinity (psu)"
+sal.cdf$variable="Bottom salinity (PSU)"
 names(sal.cdf)[1] <- "variable.value"
 
 out.df <- cdf.df
@@ -369,7 +370,7 @@ g <- ggplot(all.df, aes(x=variable.value, y=cdf)) +
   geom_line(aes(x=variable.value, y=cdf)) + 
   facet_wrap(~variable, scales="free",ncol=1) +
   theme_bw() +
-  xlab("Variable value") + 
+  xlab("Value") + 
   ylab("Cumulative frequency distribution")
 
 g
@@ -657,7 +658,7 @@ g <- ggplot(all.df, aes(x=variable.value, y=cdf.temperature)) +
   facet_wrap(~variable, scales="fixed",ncol=1) + 
   scale_color_discrete("Decade") +
   theme_bw() + 
-  xlab("Variable value") + 
+  xlab("Value") + 
   ylab("Cumulative frequency distribution")
 
 g

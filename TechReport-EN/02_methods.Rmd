@@ -266,11 +266,11 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
 \hspace{1em}\hspace{1em} &  & Myctophidae & Myctophidae & Lanternfishes & Poissons-lanternes & \link{#sec:150}{150} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=125498}{125498} & 160 & LR\\
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Osmeriformes}}\\
-\hspace{1em}\hspace{1em} &  & Osmeridae & Mallotus villosus & Capelin & Capelan & \link{#sec:64}{64} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126735}{126735} & 540 & LI\\
+\hspace{1em}\hspace{1em} &  & Osmeridae & Mallotus villosus & Capelin & Capelan & \link{#sec:64}{64} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126735}{126735} & 540 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Osmerus mordax & Rainbow smelt & Éperlan arc-en-ciel & \link{#sec:63}{63} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126737}{126737} & 59 & LR\\
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Perciformes}}\\
-\hspace{1em}\hspace{1em} &  & Ammodytidae & Ammodytes dubius & Sand lance & Lançon & \link{#sec:610}{610} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=151520}{151520} & 1,283 & LI\\
+\hspace{1em}\hspace{1em} &  & Ammodytidae & Ammodytes dubius & Sand lance & Lançon & \link{#sec:610}{610} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=151520}{151520} & 1,283 & LIn\\
  \hspace{1em}\hspace{1em} &  & Anarhichadidae & Anarhichas denticulatus & Northern wolffish & Loup à tête large & \link{#sec:52}{52} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126757}{126757} & 17 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Anarhichas lupus & Atlantic wolffish & Loup atlantique & \link{#sec:50}{50} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126758}{126758} & 1,572 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Anarhichas minor & Spotted wolffish & Loup tacheté & \link{#sec:51}{51} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126759}{126759} & 20 & LR\\
@@ -280,10 +280,10 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
  \hspace{1em}\hspace{1em} &  & Pholidae & Pholis gunnellus & Rock gunnel & Sigouine de roche & \link{#sec:621}{621} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126996}{126996} & 21 & LR\\
  \hspace{1em}\hspace{1em} &  & Scombridae & Scomber scombrus & Atlantic mackerel & Maquereau commun & \link{#sec:70}{70} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127023}{127023} & 696 & LI\\
  \hspace{1em}\hspace{1em} &  & Stichaeidae & Eumesogrammus praecisus & Fourline snakeblenny & Quatre-lignes atlantique & \link{#sec:626}{626} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159817}{159817} & 40 & LR\\
- \hspace{1em}\hspace{1em} &  &  & Leptoclinus maculatus & Daubed shanny & Lompénie tachetée & \link{#sec:623}{623} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127072}{127072} & 443 & LI\\
- \hspace{1em}\hspace{1em} &  &  & Lumpenus lampretaeformis & Snakeblenny & Lompénie-serpent & \link{#sec:622}{622} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=154675}{154675} & 423 & LI\\
+ \hspace{1em}\hspace{1em} &  &  & Leptoclinus maculatus & Daubed shanny & Lompénie tachetée & \link{#sec:623}{623} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127072}{127072} & 443 & LIn\\
+ \hspace{1em}\hspace{1em} &  &  & Lumpenus lampretaeformis & Snakeblenny & Lompénie-serpent & \link{#sec:622}{622} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=154675}{154675} & 423 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Ulvaria subbifurcata & Radiated shanny & Ulvaire deux-lignes & \link{#sec:625}{625} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159821}{159821} & 145 & LR\\
- \hspace{1em}\hspace{1em} &  & Stromateidae & Peprilus triacanthus & Atlantic butterfish & Stromaté fossette & \link{#sec:701}{701} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159828}{159828} & 487 & LI\\
+ \hspace{1em}\hspace{1em} &  & Stromateidae & Peprilus triacanthus & Atlantic butterfish & Stromaté fossette & \link{#sec:701}{701} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159828}{159828} & 487 & LIn\\
  \hspace{1em}\hspace{1em} &  & Zoarcidae & Lycenchelys verrillii & Wolf eelpout & Lycode à tête longue & \link{#sec:603}{603} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159258}{159258} & 40 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Lycodes lavalaei & Newfoundland eelpout & Lycode du Labrador & \link{#sec:620}{620} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127107}{127107} & 72 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Lycodes reticulatus & Arctic eelpout & Lycode arctique & \link{#sec:641}{641} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127112}{127112} & 70 & LR\\
@@ -294,37 +294,37 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Pleuronectiformes}}\\
 \hspace{1em}\hspace{1em} &  & Cynoglossidae & Symphurus diomedeanus & Spottedfin tonguefish & Langue fil noir & \link{#sec:816}{816} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159358}{159358} & 24 & LR\\
- \hspace{1em}\hspace{1em} &  & Paralichthyidae & Citharichthys arctifrons & Gulf Stream flounder & Plie du Gulf Stream & \link{#sec:44}{44} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158791}{158791} & 382 & LI\\
+ \hspace{1em}\hspace{1em} &  & Paralichthyidae & Citharichthys arctifrons & Gulf Stream flounder & Plie du Gulf Stream & \link{#sec:44}{44} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158791}{158791} & 382 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Hippoglossina oblonga & Fourspot flounder & Cardeau à quatre ocelles & \link{#sec:142}{142} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158833}{158833} & 76 & LR\\
  \hspace{1em}\hspace{1em} &  & Pleuronectidae & Glyptocephalus cynoglossus & Witch flounder & Plie grise & \link{#sec:41}{41} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127136}{127136} & 4,301 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Hippoglossoides platessoides & American plaice & Plie canadienne & \link{#sec:40}{40} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127137}{127137} & 6,023 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Hippoglossus hippoglossus & Atlantic halibut & Flétan de l'Atlantique & \link{#sec:30}{30} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127138}{127138} & 1,634 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Limanda ferruginea & Yellowtail flounder & Limande à queue jaune & \link{#sec:42}{42} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158879}{158879} & 3,233 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Pseudopleuronectes americanus & Winter flounder & Limande-plie rouge & \link{#sec:43}{43} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158885}{158885} & 1,632 & LF\\
- \hspace{1em}\hspace{1em} &  &  & Reinhardtius hippoglossoides & Greenland halibut & Flétan noir & \link{#sec:31}{31} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127144}{127144} & 736 & LI\\
+ \hspace{1em}\hspace{1em} &  &  & Reinhardtius hippoglossoides & Greenland halibut & Flétan noir & \link{#sec:31}{31} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127144}{127144} & 736 & LIn\\
  \hspace{1em}\hspace{1em} &  & Scophthalmidae & Scophthalmus aquosus & Windowpane flounder & Turbot de sable & \link{#sec:143}{143} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158907}{158907} & 115 & LR\\
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Scorpaeniformes}}\\
 \hspace{1em}\hspace{1em} &  & Agonidae & Agonidae & Alligatorfishes & Poissons-alligator & \link{#sec:351}{351} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=125588}{125588} & 43 & LR\\
- \hspace{1em}\hspace{1em} &  &  & Aspidophoroides monopterygius & Alligatorfish & Poisson-alligator atlantique & \link{#sec:340}{340} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159459}{159459} & 1,029 & LF\\
- \hspace{1em}\hspace{1em} &  &  & Leptagonus decagonus & Atlantic poacher & Agone atlantique & \link{#sec:350}{350} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127191}{127191} & 266 & LI\\
+ \hspace{1em}\hspace{1em} &  &  & Aspidophoroides monopterygius & Alligatorfish & Poisson-alligator atlantique & \link{#sec:340}{340} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159459}{159459} & 1,029 & LIn\\
+ \hspace{1em}\hspace{1em} &  &  & Leptagonus decagonus & Atlantic poacher & Agone atlantique & \link{#sec:350}{350} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127191}{127191} & 266 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Ulcina olrikii & Arctic alligatorfish & Poisson-alligator arctique & \link{#sec:341}{341} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=274356}{274356} & 13 & LR\\
  \hspace{1em}\hspace{1em} &  & Cottidae & Artediellus atlanticus & Atlantic hookear sculpin & Hameçon atlantique & \link{#sec:880}{880} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127193}{127193} & 258 & LI\\
- \hspace{1em}\hspace{1em} &  &  & Artediellus uncinatus & Arctic hookear sculpin & Hameçon neigeux & \link{#sec:306}{306} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127195}{127195} & 306 & LI\\
+ \hspace{1em}\hspace{1em} &  &  & Artediellus uncinatus & Arctic hookear sculpin & Hameçon neigeux & \link{#sec:306}{306} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127195}{127195} & 306 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Icelus spatula & Spatulate sculpin & Icèle spatulée & \link{#sec:314}{314} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127200}{127200} & 40 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Myoxocephalus aenaeus & Grubby & Chaboisseau bronzé & \link{#sec:303}{303} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159519}{159519} & 40 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Myoxocephalus octodecemspinosus & Longhorn sculpin & Chaboisseau à dix-huit épines & \link{#sec:300}{300} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159520}{159520} & 3,292 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Myoxocephalus scorpius & Shorthorn sculpin & Chaboisseau à épines courtes & \link{#sec:301}{301} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127203}{127203} & 131 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Triglops murrayi & Moustache sculpin & Faux-trigle armé & \link{#sec:304}{304} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127205}{127205} & 1,182 & LF\\
  \hspace{1em}\hspace{1em} &  & Cyclopteridae & Cyclopterus lumpus & Lumpfish & Lompe & \link{#sec:501}{501} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127214}{127214} & 216 & LI\\
- \hspace{1em}\hspace{1em} &  &  & Eumicrotremus spinosus & Atlantic spiny lumpsucker & Petite poule de mer atlantique & \link{#sec:502}{502} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127217}{127217} & 226 & LI\\
+ \hspace{1em}\hspace{1em} &  &  & Eumicrotremus spinosus & Atlantic spiny lumpsucker & Petite poule de mer atlantique & \link{#sec:502}{502} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127217}{127217} & 226 & LIn\\
  \hspace{1em}\hspace{1em} &  & Hemitripteridae & Hemitripterus americanus & Sea raven & Hémitriptère atlantique & \link{#sec:320}{320} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159518}{159518} & 2,126 & LF\\
  \hspace{1em}\hspace{1em} &  & Liparidae & Careproctus reinhardti & Sea tadpole & Petite limace de mer & \link{#sec:520}{520} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127212}{127212} & 18 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Liparis atlanticus & Atlantic seasnail & Limace atlantique & \link{#sec:503}{503} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159524}{159524} & 34 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Liparis fabricii & Gelatinous snailfish & Limace gélatineuse & \link{#sec:505}{505} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127218}{127218} & 27 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Liparis gibbus & Variegated snailfish & Limace marbée & \link{#sec:512}{512} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159526}{159526} & 41 & LR\\
  \hspace{1em}\hspace{1em} &  & Psychrolutidae & Cottunculus microps & Polar sculpin & Cotte polaire & \link{#sec:307}{307} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127235}{127235} & 29 & LR\\
- \hspace{1em}\hspace{1em} &  & Sebastidae & Helicolenus dactylopterus & Blackbelly rosefish & Sébaste chèvre & \link{#sec:123}{123} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127251}{127251} & 610 & LI\\
+ \hspace{1em}\hspace{1em} &  & Sebastidae & Helicolenus dactylopterus & Blackbelly rosefish & Sébaste chèvre & \link{#sec:123}{123} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127251}{127251} & 610 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Sebastes & Atlantic redfishes & Sébastes de l'Atlantique & \link{#sec:23}{23} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=126175}{126175} & 4,152 & LF\\
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Stomiiformes}}\\
@@ -367,7 +367,7 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
  \hspace{1em}\hspace{1em} &  & Oregoniidae & Chionoecetes opilio & Queen crab & Crabe des neiges & \link{#sec:2526}{2526} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107315}{107315} & 1,546 & SF\\
  \hspace{1em}\hspace{1em} &  &  & Hyas araneus & Great spider crab & Crabe lyre araignée & \link{#sec:2527}{2527} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107322}{107322} & 625 & SF\\
  \hspace{1em}\hspace{1em} &  &  & Hyas coarctatus & Arctic lyre crab & Crabe Hyas coarctatus & \link{#sec:2521}{2521} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107323}{107323} & 711 & SF\\
-  &  & Pandalidae & Pandalus borealis & Northern prawn & Crevette nordique & \link{#sec:2221}{2211} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107649}{107649} & 718 & SF\\* \end{longtable}
+  &  & Pandalidae & Pandalus borealis & Northern prawn & Crevette nordique & \link{#sec:2211}{2211} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107649}{107649} & 718 & SF\\* \end{longtable}
 
 \endgroup{} \endgroup{}
 \end{landscapepage}

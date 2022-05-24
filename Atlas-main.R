@@ -59,6 +59,10 @@ source(file.path(main.path, "chan.R"))
 # this creates a CSV file with the strata statistics that is used for a table in the Tech Report
 #source(file.path(dataextract.path, "strata-statistics.R"))
 
+## this creates the figures of environmental CDFs for the survey
+#source(file.path(dataextract.path, "Perry-Smith-summer.R"))
+
+
 # source the code that defines the data extraction functions
 source(file.path(main.path, "data-and-stats.R"))
 
@@ -102,14 +106,14 @@ print(paste("End data extract, R species: ", Sys.time()))
 
 ## LI species
 species.numbers <- species.LI
-i.species.extracts <- c("catch","stratified","dist")
+i.species.extracts <- c("catch","stratified","distusingB")
 print(paste("Starting data extracts, I species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, I species: ", Sys.time()))
 
 ## LIn species
 species.numbers <- species.LIn
-i.species.extracts <- c("catch","stratified","dist")
+i.species.extracts <- c("catch","stratified","distusingN")
 print(paste("Starting data extracts, I species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(i.species.extracts, function(de){data.extract(extract.name=de, spec.num=ss)})})
 print(paste("End data extract, I species: ", Sys.time()))
@@ -137,20 +141,12 @@ print(paste("Starting figures, LF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(lf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LF species: ", Sys.time()))
 
-
 ## SF species
 species.numbers <- c(species.SF)
 sf.figures <- c("IDWbiomassSspecies","stratifiedB","distribution-indices-usingB","BvsD75corr")
 print(paste("Starting figures, SF species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(sf.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, SF species: ", Sys.time()))
-
-## R species
-species.numbers <- c(species.LR, species.SR)
-r.figures <- c("presence")
-print(paste("Starting figures, R species: ", Sys.time()))
-lapply(species.numbers, function(ss){lapply(r.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
-print(paste("End figures, R species: ", Sys.time()))
 
 ## LI species
 species.numbers <- c(species.LI)
@@ -166,7 +162,16 @@ print(paste("Starting figures, LI species: ", Sys.time()))
 lapply(species.numbers, function(ss){lapply(li.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
 print(paste("End figures, LI species: ", Sys.time()))
 
+## R species
+species.numbers <- c(species.LR, species.SR)
+r.figures <- c("presence")
+print(paste("Starting figures, R species: ", Sys.time()))
+lapply(species.numbers, function(ss){lapply(r.figures, function(ff){make.figure(fig.name=ff, spec.num=ss)})})
+print(paste("End figures, R species: ", Sys.time()))
+
 ## bottom organisms that we shouldn't catch
+## not in the Atlas, mostly to investigate the 19ft wire
+## on the Western IIA trawl
 ## 6500 - sand dollar
 make.figure(fig.name="IDWbiomass", spec.num=6500)
 make.figure(fig.name="stratifiedB", spec.num=6500)

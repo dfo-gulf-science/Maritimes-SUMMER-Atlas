@@ -1,4 +1,4 @@
-## plot distribution vs. abundance for the 3 distribution indices
+## plot distribution vs. biomass for the 3 distribution indices
 
 BvsD75corr.fct <- function(spec.code) {
   fn <- file.path(figdata.path, paste0("SS",spec.code,"_stratified.csv"))

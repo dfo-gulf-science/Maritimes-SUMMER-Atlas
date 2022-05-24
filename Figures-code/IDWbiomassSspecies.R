@@ -22,26 +22,32 @@ yy.lat<-c(42,44,46)
 xx.lon.labs <- paste(360-xx.lon,"\u{B0}W",sep="")
 yy.lat.labs <- paste(yy.lat,"\u{B0}N",sep="")
 
-mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
-ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
+#mat.layout2 <- matrix(c(0,2,0,0,1,3,5,0,0,4,6,8,0,0,7,0),nrow=4, ncol=4)
+#ll <- layout(mat.layout2, widths=3*c(2,6.5,6.5,2), heights=3*c(2,4.8,4.8,2), respect=TRUE)
 
+mat.layout2 <- matrix(c(0,2,0,0,1,3,6,0,0,4,7,0,0,5,8,9,0,0,10,0),nrow=4, ncol=5)
+ll <- layout(mat.layout2, widths=7*c(0.075,0.283,0.283,0.283,0.075), heights=5*c(0.075,0.425,0.425,0.075))
+
+#layout.show(ll)
 #yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2013")
-yrs.labels <- c("1999-2004","2005-2009","2010-2014","2015-2020")
+#yrs.labels <- c("1999-2004","2005-2009","2010-2014","2015-2020")
+yrs.labels <- c("1999-2002","2003-2006","2007-2010","2011-2014","2015-2018","2019-2020")
 
 my.cols.palette <- c('white','#FEF0D9', '#FDCC8A', '#FC8D59', '#E34A33', '#B30000')
 
 ## layout and such, to allow for the axes
 # top left longitude axis
-par(mar=c(0,0,3,0), las=1)
+par(mar=c(0,0,0,0), las=1)
 plot(1,1,type='n',axes=F)
 
 # top left latitude
-par(mar=c(0,3,0,0),las=2)
+par(mar=c(0,0,0,0),las=2)
 plot(1,1,type='n',axes=F)
 
 
-## loop over 3-year periods
-for (i in 1:4) {
+## loop over time periods
+for (i in 1:6) {
+  par(mar=c(0,0,0,0))
 dx=0.285
 dy=0.225
 #	switch(i,
@@ -113,9 +119,11 @@ res <- lapply(getSpPpolygonsSlot(res), checkPolygonsHoles)
 
 R <- as.SpatialPolygons.PolygonsList(res)
 	
+data(worldLLhigh)	
+
 plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.0,1.0,0.0,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
 if(i==1){axis(side=3, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=2, at=yy.lat, labels=yy.lat.labs)}
-if(i==4){axis(side=1, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=4, at=yy.lat, labels=yy.lat.labs)}
+if(i==6){axis(side=1, at=xx.lon, labels=xx.lon.labs, las=1); axis(side=4, at=yy.lat, labels=yy.lat.labs)}
 
 text(293.2,46.4,yrs.labels[i],bg='white',cex=0.95)
 text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=0.75)
@@ -147,26 +155,27 @@ addPolys(SS.strata.mask.LL)
 
 #addPolys(combinePolys(fixBound(SUMMER.strata.mask,tol=0.01)))
 
-if(i==1 | i==4) {
+if(i==1 | i==6) {
 	if(my.legend=="abundant"){
 							text(299.5,42,"kg/tow",cex=0.75)
 							#text(299.45,41.6,"kg/trait",cex=0.75)
-							legend('bottomright', c("0","<5","<20","<50","<100",">=100"), col='black', fill=my.cols.palette, bg='white',cex=0.95)
+							legend('bottomright', c("0","<5","<20","<50","<100",">=100"), col='black', fill=my.cols.palette, bg='white',cex=0.70)
 							}
 	if(my.legend=="rare"){
 							text(299.5,42,"kg/tow",cex=0.75)
 							#text(299.45,41.6,"kg/trait",cex=0.75)
-							legend('bottomright', c("0","<0.1","<0.5","<1","<5",">=5"), col='black', fill=my.cols.palette, bg='white',cex=0.95)
+							legend('bottomright', c("0","<0.1","<0.5","<1","<5",">=5"), col='black', fill=my.cols.palette, bg='white',cex=0.70)
 							}
 	}
 	
-}# end loop over 3-year periods
+}# end loop over time periods
 
 # bottom right latitude
-par(mar=c(0,0,0,2),las=2)
+par(mar=c(0,0,0,0),las=2)
 plot(1,1,type='n',axes=F)
+
 # bottom right longitude axis
-par(mar=c(2,0,0,0),las=1)
+par(mar=c(0,0,0,0),las=1)
 plot(1,1,type='n',axes=F)
 
 

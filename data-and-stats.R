@@ -35,6 +35,7 @@ data.extract <- function(extract.name, spec.num) {
              source(file.path(dataextract.path, "generate-cumul-dist.R")) # uses the tow-level data to generate the cumulative distribution of catches and environmental variables
              
              ## depth distribution
+             print("Depth distribution")
              dat.fn <- paste("SS",spec.num,"_catch.csv",sep="")
              depth.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "depth")
              depth.dist.df <- depth.dist.list[[1]]
@@ -48,6 +49,7 @@ data.extract <- function(extract.name, spec.num) {
              
              ## temperature distribution
              #temperature.dist.list <- generate.cumul.dist(extract.catch.fct(spec.num), "temperature")
+             print("Temperature distribution")
              temperature.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "temperature")
              temperature.dist.df <- temperature.dist.list[[1]]
              temperature.dist.xt <- temperature.dist.list[[2]]
@@ -58,6 +60,7 @@ data.extract <- function(extract.name, spec.num) {
              
              ## salinity distribution
              #salinity.dist.list <- generate.cumul.dist(extract.catch.fct(spec.num), "salinity")
+             print("Salinity distribution")
              salinity.dist.list <- generate.cumul.dist(read.csv(file.path(figdata.path, dat.fn)), "salinity")
              salinity.dist.df <- salinity.dist.list[[1]]
              salinity.dist.xt <- salinity.dist.list[[2]]
@@ -182,11 +185,12 @@ data.extract <- function(extract.name, spec.num) {
            },
            "distshort" = { 	#
              ## distribution indices
+             source(file.path(dataextract.path, "compute-distribution-usingbiomass.R")) # uses the biomass tow-level data to generate yearly distribution indices
              source(file.path(dataextract.path, "data-extract-catch-short.R")) # extract the tow-level data, 1999 onwards
              
-             distribution.df <- distribution.fct(extract.catch.short.fct(spec.num))
-             fn <- paste("SS",spec.num,"_distribution.csv",sep="")
-             write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
+             #distribution.df <- distribution.fct(extract.catch.short.fct(spec.num))
+             #fn <- paste("SS",spec.num,"_distribution.csv",sep="")
+             #write.csv(distribution.df, file.path(figdata.path, fn), row.names=FALSE)
              
              ## distribution indices using biomass
              distribution.df <- distribution.usingbiomass.fct(extract.catch.short.fct(spec.num))

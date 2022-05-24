@@ -2,24 +2,24 @@ ACCEPTED_SCIENT_NAME,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,spec,nrecords,CLASS_,OR
 Hippoglossoides platessoides,American plaice,Plie canadienne,40,6023,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
 Melanogrammus aeglefinus,Haddock,Aiglefin,11,5827,Actinopterygii,Gadiformes,Gadidae,LF
 Gadus morhua,Atlantic cod,Morue franche,10,5451,Actinopterygii,Gadiformes,Gadidae,LF
-Merluccius bilinearis,Silver hake,Merlu argenté,14,4936,Actinopterygii,Gadiformes,Merlucciidae,LF
-Illex illecebrosus,North. shortfin squid,Encornet rouge nordique,4511,4836,Cephalopoda,Teuthida,Ommastrephidae,LF
+Merluccius bilinearis,Silver hake,Merlu argent<e9>,14,4936,Actinopterygii,Gadiformes,Merlucciidae,LF
+Illex illecebrosus,North. shortfin squid,Encornet rouge nord.,4511,4836,Cephalopoda,Teuthida,Ommastrephidae,LF
 Glyptocephalus cynoglossus,Witch flounder,Plie grise,41,4301,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
 Sebastes,Atlantic redfishes,Sébastes de l'Atlantique,23,4152,Actinopterygii,Scorpaeniformes,Scorpaenidae,LF
 Amblyraja radiata,Thorny skate,Raie épineuse,201,3937,Chondrichthyes,Rajiformes,Rajidae,LF
 Urophycis tenuis,White hake,Merluche blanche,12,3524,Actinopterygii,Gadiformes,Gadidae,LF
 Clupea harengus,Atlantic herring,Hareng de l'Atlantique,60,3487,Actinopterygii,Clupeiformes,Clupeidae,LF
 Myoxocephalus octodecemspinosus,Longhorn sculpin,Chaboisseau à 18 épines,300,3292,Actinopterygii,Scorpaeniformes,Cottidae,LF
-Limanda ferruginea,Yellowtail flounder,Limande à queue jaune,42,3233,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
+Limanda ferruginea,Yellowtail flounder,Limande <e0> queue jaune,42,3233,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
 Pollachius virens,Pollock,Goberge,16,2787,Actinopterygii,Gadiformes,Gadidae,LF
-Urophycis chuss,Red hake,Merluche écureuil,13,2195,Actinopterygii,Gadiformes,Gadidae,LF
+Urophycis chuss,Red hake,Merluche <e9>cureuil,13,2195,Actinopterygii,Gadiformes,Gadidae,LF
 Hemitripterus americanus,Sea raven,Hémitriptère atlantique,320,2126,Actinopterygii,Scorpaeniformes,Hemitripteridae,LF
 Squalus acanthias,Piked dogfish,Aiguillat commun,220,1985,Chondrichthyes,Squaliformes,Squalidae,LF
 Lophius americanus,Monkfish,Baudroie d'Amérique,400,1970,Actinopterygii,Lophiiformes,Lophiidae,LF
 Malacoraja senta,Smooth skate,Raie lisse,202,1773,Chondrichthyes,Rajiformes,Rajidae,LF
-Hippoglossus hippoglossus,Atlantic halibut,Flétan de l'Atlantique,30,1634,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
+Hippoglossus hippoglossus,Atlantic halibut,Fl<e9>tan de l'Atlantique,30,1634,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
 Pseudopleuronectes americanus,Winter flounder,Limande-plie rouge,43,1632,Actinopterygii,Pleuronectiformes,Pleuronectidae,LF
-Homarus americanus,American lobster,Homard américain,2550,1623,Malacostraca,Decapoda,Nephropidae,SF
+Homarus americanus,American lobster,Homard am<e9>ricain,2550,1623,Malacostraca,Decapoda,Nephropidae,SF
 Anarhichas lupus,Atlantic wolffish,Loup atlantique,50,1572,Actinopterygii,Perciformes,Anarhichadidae,LF
 Chionoecetes opilio,Queen crab,Crabe des neiges,2526,1546,Malacostraca,Decapoda,Oregoniidae,SF
 Zoarces americanus,Ocean pout,Loquette d'Amérique,640,1478,Actinopterygii,Perciformes,Zoarcidae,LI
@@ -31,22 +31,22 @@ Aspidophoroides monopterygius,Alligatorfish,Poisson-alligator atlantique,340,102
 Alosa pseudoharengus,Alewife,Gaspareau,62,977,Actinopterygii,Clupeiformes,Clupeidae,LI
 Argentina silus,Greater argentine,Grande argentine,160,963,Actinopterygii,Osmeriformes,Argentinidae,LI
 Myxine glutinosa,Atlantic hagfish,Myxine du nord,241,804,Myxini,Myxiniformes,Myxinidae,LI
-Cancer irroratus,Atlantic rock crab,Tourteau poïnclos,2513,788,Malacostraca,Decapoda,Cancridae,SF
+Cancer irroratus,Atlantic rock crab,Tourteau po<ef>nclos,2513,788,Malacostraca,Decapoda,Cancridae,SF
 Phycis chesteri,Longfin hake,Merluche à longues nageoires,112,784,Actinopterygii,Gadiformes,Gadidae,LI
-Reinhardtius hippoglossoides,Greenland halibut,Flétan noir,31,736,Actinopterygii,Pleuronectiformes,Pleuronectidae,LIn
+Reinhardtius hippoglossoides,Greenland halibut,Fl<e9>tan noir,31,736,Actinopterygii,Pleuronectiformes,Pleuronectidae,LIn
 Pandalus borealis,Northern prawn,Crevette nordique,2211,718,Malacostraca,Decapoda,Pandalidae,SF
 Leucoraja erinacea,Little skate,Raie hérisson,203,712,Chondrichthyes,Rajiformes,Rajidae,LI
 Hyas coarctatus,Arctic lyre crab,Crabe Hyas coarctatus,2521,711,Malacostraca,Decapoda,Oregoniidae,SF
 Scomber scombrus,Atlantic mackerel,Maquereau commun,70,696,Actinopterygii,Perciformes,Scombridae,LI
-Enchelyopus cimbrius,Fourbeard rockling,Motelle à quatre barbillons,114,693,Actinopterygii,Gadiformes,Gadidae,LIn
+Enchelyopus cimbrius,Fourbeard rockling,Motelle à 4 barbillons,114,693,Actinopterygii,Gadiformes,Gadidae,LIn
 Brosme brosme,Cusk,Brosme,15,688,Actinopterygii,Gadiformes,Gadidae,LI
 Hyas araneus,Great spider crab,Crabe lyre araignée,2527,625,Malacostraca,Decapoda,Oregoniidae,SF
-Helicolenus dactylopterus,Blackbelly rosefish,Sébaste chèvre,123,610,Actinopterygii,Scorpaeniformes,Scorpaenidae,LIn
+Helicolenus dactylopterus,Blackbelly rosefish,S<e9>baste ch<e8>vre,123,610,Actinopterygii,Scorpaeniformes,Scorpaenidae,LIn
 Lycodes vahlii,Vahl's eelpout,Lycode à carreaux,647,565,Actinopterygii,Perciformes,Zoarcidae,LI
 Mallotus villosus,Capelin,Capelan,64,540,Actinopterygii,Osmeriformes,Osmeridae,LIn
 Lithodes maja,Atlantic king crab,Crabe épineux du nord,2523,531,Malacostraca,Decapoda,Lithodidae,SF
-Nezumia bairdii,Marlin-spike grenadier,Grenadier du Grand Banc,410,529,Actinopterygii,Gadiformes,Macrouridae,LI
-Peprilus triacanthus,Atlantic butterfish,Stromaté fossette,701,487,Actinopterygii,Perciformes,Stromateidae,LIn
+Nezumia bairdii,Marlin-spike grenadier,Grenadier Grand Banc,410,529,Actinopterygii,Gadiformes,Macrouridae,LI
+Peprilus triacanthus,Atlantic butterfish,Stromat<e9> fossette,701,487,Actinopterygii,Perciformes,Stromateidae,LIn
 Alosa sapidissima,American shad,Alose savoureuse,61,468,Actinopterygii,Clupeiformes,Clupeidae,LI
 Leptoclinus maculatus,Daubed shanny,Lompénie tachetée,623,443,Actinopterygii,Perciformes,Stichaeidae,LIn
 Lumpenus lampretaeformis,Snakeblenny,Lompénie-serpent,622,423,Actinopterygii,Perciformes,Stichaeidae,LIn
@@ -55,10 +55,10 @@ Artediellus uncinatus,Arctic hookear sculpin,Hameçon neigeux,306,306,Actinopter
 Leptagonus decagonus,Atlantic poacher,Agone atlantique,350,266,Actinopterygii,Scorpaeniformes,Agonidae,LIn
 Artediellus atlanticus,Atlantic hookear sculpin,Hameçon atlantique,880,258,Actinopterygii,Scorpaeniformes,Cottidae,LI
 Dipturus laevis,Barndoor skate,Grande raie,200,246,Chondrichthyes,Rajiformes,Rajidae,LI
-Eumicrotremus spinosus,Atlantic spiny lumpsucker,Petite poule de mer atlantique,502,226,Actinopterygii,Scorpaeniformes,Cyclopteridae,LIn
+Eumicrotremus spinosus,Atl. spiny lumpsucker,Petite poule de mer atl.,502,226,Actinopterygii,Scorpaeniformes,Cyclopteridae,LIn
 Cyclopterus lumpus,Lumpfish,Lompe,501,216,Actinopterygii,Scorpaeniformes,Cyclopteridae,LI
 Arctozenus risso,White barracudina,Lussion blanc,712,196,Actinopterygii,Aulopiformes,Paralepididae,LR
-Merluccius albidus,Offshore silver hake,Merlu argenté du large,19,161,Actinopterygii,Gadiformes,Merlucciidae,LR
+Merluccius albidus,Offshore silver hake,Merlu argent<e9> du large,19,161,Actinopterygii,Gadiformes,Merlucciidae,LR
 Myctophidae,Lanternfishes,Poissons-lanternes,150,160,Actinopterygii,Myctophiformes,Myctophidae,LR
 Ulvaria subbifurcata,Radiated shanny,Ulvaire deux-lignes,625,145,Actinopterygii,Perciformes,Stichaeidae,LR
 Myoxocephalus scorpius,Shorthorn sculpin,Chaboisseau à épines courtes,301,131,Actinopterygii,Scorpaeniformes,Cottidae,LR
@@ -93,7 +93,7 @@ Liparis fabricii,Gelatinous snailfish,Limace gélatineuse,505,27,Actinopterygii,
 Symphurus diomedeanus,Spottedfin tonguefish,Langue fil noir,816,24,Actinopterygii,Pleuronectiformes,Cynoglossidae,LR
 Pholis gunnellus,Rock gunnel,Sigouine de roche,621,21,Actinopterygii,Perciformes,Pholidae,LR
 Sternoptychidae,Hatchetfishes,Haches d'argent,741,21,Actinopterygii,Stomiiformes,Sternoptychidae,LR
-Anarhichas minor,Spotted wolffish,Loup tacheté,51,20,Actinopterygii,Perciformes,Anarhichadidae,LR
+Anarhichas minor,Spotted wolffish,Loup tachet<e9>,51,20,Actinopterygii,Perciformes,Anarhichadidae,LR
 Stomias boa,Boa dragonfish,Dragon-boa,159,20,Actinopterygii,Stomiiformes,Stomiidae,LR
 Foetorepus agassizii,Spotfin dragonet,Dragonnet tacheté,637,20,Actinopterygii,Perciformes,Callionymidae,LR
 Trachyrincus murrayi,Roughnose grenadier,Grenadier-scie,412,18,Actinopterygii,Gadiformes,Macrouridae,LR

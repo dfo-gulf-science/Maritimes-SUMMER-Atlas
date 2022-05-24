@@ -42,8 +42,11 @@ my.prop <- table.catch / table.all
 ## turn into a long data frame
 my.prop.df <- as.data.frame(my.prop)
 st.t <- names(my.prop.df)
-my.prop.df$year <- as.numeric(rownames(my.prop.df))
-my.prop.df <- tidyr::pivot_longer(my.prop.df, cols=all_of(st.t), names_to="stratum", values_to="prop")
+#my.prop.df$year <- as.numeric(rownames(my.prop.df))
+my.prop.df$year <- as.numeric(as.character(my.prop.df$Var1))
+
+#my.prop.df <- tidyr::pivot_longer(my.prop.df, cols=all_of(st.t), names_to="stratum", values_to="prop")
+names(my.prop.df) <- c("Var1","stratum","prop","year")
 
 # names(my.prop.df) <- c("year", "stratum", "prop")
 
