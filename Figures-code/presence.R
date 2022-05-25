@@ -29,9 +29,9 @@ pr.occ <- round(mean(tt$occ), digits=3)
 
 data(worldLLhigh)
 plotMap(worldLLhigh, my.xlim, my.ylim, col=grey(0.9),plt=c(0.1,1.0,0.1,1.0),border=grey(0.7),axes=FALSE,tckLab=FALSE,xlab="",ylab="")
-text(293.2,46.4,yrs.labels,cex=1.5)
-text(293.2,45.9,paste("P(occ) = ",pr.occ,sep=""),cex=1.25)
-text(293.2,45.6,paste("n = ",sum(tt$occ), " catches" ,sep=""),cex=1.25)
+text(293.2,46.6,yrs.labels,cex=1.5)
+text(293.2,46.1,paste("P(occ) = ",pr.occ,sep=""),cex=1.25)
+text(293.2,45.8,paste("n = ",sum(tt$occ), " catches" ,sep=""),cex=1.25)
 
 addPolys(SS.strata.mask.LL)
 ttt <- subset(tt, occ==1)

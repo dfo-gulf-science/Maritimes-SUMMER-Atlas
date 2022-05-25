@@ -41,7 +41,6 @@ spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylu
 340,Alligatorfish,Poisson-alligator atlantique,1029,LIn,159459,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159459,Animalia,Chordata,NA,Perciformes,Agonidae,Aspidophoroides monopterygius
 341,Arctic alligatorfish,Poisson-alligator arctique,13,LR,274356,https://www.marinespecies.org/aphia.php?p=taxdetails&id=274356,Animalia,Chordata,NA,Perciformes,Agonidae,Ulcina olrikii
 350,Atlantic poacher,Agone atlantique,266,LIn,127191,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127191,Animalia,Chordata,NA,Perciformes,Agonidae,Leptagonus decagonus
-351,Alligatorfishes,Poissons-alligator,43,LR,125588,https://www.marinespecies.org/aphia.php?p=taxdetails&id=125588,Animalia,Chordata,NA,Perciformes,Agonidae,Agonidae
 501,Lumpfish,Lompe,216,LI,127214,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127214,Animalia,Chordata,NA,Perciformes,Cyclopteridae,Cyclopterus lumpus
 502,Atl. spiny lumpsucker,Petite poule de mer atl.,226,LIn,127217,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127217,Animalia,Chordata,NA,Perciformes,Cyclopteridae,Eumicrotremus spinosus
 503,Atlantic seasnail,Limace atlantique,34,LR,159524,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159524,Animalia,Chordata,NA,Perciformes,Liparidae,Liparis atlanticus

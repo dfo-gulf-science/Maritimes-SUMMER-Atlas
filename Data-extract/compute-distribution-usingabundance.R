@@ -42,7 +42,7 @@ my.prop <- table.catch / table.all
 ## turn into a long data frame
 my.prop.df <- as.data.frame(my.prop)
 st.t <- names(my.prop.df)
-#my.prop.df$year <- as.numeric(rownames(my.prop.df))
+
 my.prop.df$year <- as.numeric(as.character(my.prop.df$Var1))
 
 #my.prop.df <- tidyr::pivot_longer(my.prop.df, cols=all_of(st.t), names_to="stratum", values_to="prop")
@@ -116,6 +116,7 @@ names(st.area) <- c("stratum", "area")
 # df.to.fill <- data.frame(year=rep(-99,nn), area.surveyed=rep(-99,nn), D75=rep(-99,nn), D95=rep(-99,nn), Gini=rep(-99,nn))
 # 
 # D50, D75 and D95
+yrs<- seq(min(catch.df$YEAR),max(catch.df$YEAR))
 dwao.df <- data.frame(year=yrs, survey.area=rep(NA,length(yrs)), dwao=rep(NA,length(yrs)))
 d50.d75.d95.df <- data.frame(year=yrs, survey.area=rep(NA,length(yrs)), D50=rep(NA,length(yrs)), D75=rep(NA,length(yrs)), D95=rep(NA,length(yrs)))
 

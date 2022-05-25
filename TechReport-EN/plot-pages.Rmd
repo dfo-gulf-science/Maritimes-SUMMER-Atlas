@@ -3186,27 +3186,6 @@ Scientific name: [Ulcina olrikii](https://www.marinespecies.org/aphia.php?p=taxd
 
 \setcounter{figure}{0} 
 
-## Alligatorfishes (Poissons-alligator) - species code 351 (category LR) {#sec:351} 
-
-\index{Poissons-alligator} \index{Alligatorfishes} \index{Agonidae} 
-
-\index{Agonidae!Agonidae} 
-
-Scientific name: [Agonidae](https://www.marinespecies.org/aphia.php?p=taxdetails&id=125588) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=6.0in]{../Figures-Actual/RV-4VWX-351-presence.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Catch distribution for Alligatorfishes.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## Atlantic seasnail (Limace atlantique) - species code 503 (category LR) {#sec:503} 
 
 \index{Limace atlantique} \index{Atlantic seasnail} \index{Liparis atlanticus} 
