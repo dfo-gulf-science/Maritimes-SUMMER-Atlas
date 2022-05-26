@@ -1,8 +1,9 @@
 ##
 ##
 stratified.fct <- function(catch.df, DDHS=FALSE, bynafo=FALSE) {
-# catch.df <- read.csv("C:/ATLAS_poissons_SS/Data/SS10_catch.csv", header=TRUE)
-
+# catch.df <- read.csv(file.path(figdata.path,"SS10_catch.csv"), header=TRUE)
+  
+            
 #yrs<- seq(min(catch.df$YEAR),max(catch.df$YEAR))
 yrs<- sort(unique(catch.df$YEAR))
 n.yrs <- length(yrs)
@@ -97,6 +98,9 @@ if(bynafo){
 
 if(DDHS){
 ## now fit density-dependent habitat selection models
+  
+## aggregate(data=catch.df, )  
+  
 tt.df <- merge(catch.df, my.df, by.x="YEAR", by.y="year")
 
 dd.for.fit.tt <- data.frame(year=tt.df$YEAR, stratum=tt.df$Strata, catch.abundance=tt.df$totno, catch.abundance.corr=tt.df$totno.corr,  catch.biomass=tt.df$totwgt, catch.biomass.corr=tt.df$totwgt.corr,  yearly.estimate=tt.df$n, dist=tt.df$dist)
@@ -107,6 +111,12 @@ my.st <- names(my.tt[my.tt >= 5])
 
 dd.for.fit <- subset(dd.for.fit.tt, stratum %in% my.st)
 dd.for.fit <- droplevels(dd.for.fit) # drop unused levels, otherwise mean and variance will be computed for all strata 
+
+## library(ggplot2)
+g <- ggplot(aes(x=yearly.estimate, y=catch.abundance.corr), data=dd.for.fit) +
+  geom_point() + 
+  facet_wrap(vars(stratum), scales="free") # + scale_y_continuous(trans='log')
+
 
 # remove years where the yearly estimate is zero
 tt <- subset(dd.for.fit, yearly.estimate != 0)

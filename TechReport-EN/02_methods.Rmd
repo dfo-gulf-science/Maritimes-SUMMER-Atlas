@@ -58,7 +58,7 @@ knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 
 
 ## Sampling Design
-The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO) which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
+The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO), which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
 
 The survey follows a stratified random design [@DoubledayRivard1981; @Lohr1999] (Figure \@ref(fig:map2)). The number of tows conducted in each stratum is approximately proportional to the surface area of the stratum. The targeted area covered by the survey has remained constant since its inception, with the exception of additional deeper strata that were sampled a few times since 2000. Because the sampling of the deeper strata is opportunistic and irregular, the analyses presented herein only include strata 440 to 495 which cover NAFO Divisions 4V, 4W and 4X (Figure \@ref(fig:map2) and Table \@ref(tab:tabstrata)). Strata 443, 444, 445 cover an area with mixed depths and are represented as a single polygon in Figure \@ref(fig:map2).
 
@@ -109,6 +109,9 @@ for.table <- rbind(for.table, data.frame(NAME="Total", STRAT="", DRANGE="", DRAN
 nr <- nrow(for.table)
 for.table[nr, "AREA"] <- tot.area
 for.table[nr, "AREA.KM2"] <- tot.area.km2
+
+for.table$AREA <- as.numeric(for.table$AREA)
+for.table$AREA.KM2 <- as.numeric(for.table$AREA.KM2)
 
 csasdown::csas_table(
   for.table, 
@@ -406,7 +409,7 @@ C = \frac{W}{\alpha L ^\beta}
 \end{eqnarray*}
 
 ### Depth, temperature and salinity distribution of catches
-For each category L species, We followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
+For each category L species, we followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
 
 ### Density-dependent habitat selection
 We followed the methods of [@Myers:Stokes:1989] to evaluate how fish abundance in each stratum varied with overall temporal fluctuations of population abundance.

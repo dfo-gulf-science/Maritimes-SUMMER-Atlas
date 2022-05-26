@@ -217,6 +217,22 @@ g.mission='NED2003002' AND
 g.SETNO=2
 ;
 
+SELECT 
+extract(YEAR FROM i.sdate),
+count(*)
+FROM 
+groundfish.GSINF i,
+groundfish.GSCAT c 
+WHERE 
+  I.MISSION=C.MISSION AND 
+  I.SETNO=C.SETNO AND
+c.SPEC = 323 
+GROUP BY 
+extract(YEAR FROM i.sdate)
+ORDER BY 
+extract(YEAR FROM i.sdate)
+;
+
 
 SELECT
 extract(YEAR FROM i.sdate),
@@ -286,3 +302,16 @@ WHERE EXTRACT(MONTH FROM SDATE)=3;
   SETNO = 96
   ;
   
+ 
+ SELECT
+ i.*,
+c.*
+FROM 
+GROUNDFISH.GSINF i,
+groundfish.GSCAT c
+WHERE
+  I.MISSION=C.MISSION AND 
+  I.SETNO=C.SETNO AND
+c.SPEC = 10 AND 
+c.TOTNO >10000
+;

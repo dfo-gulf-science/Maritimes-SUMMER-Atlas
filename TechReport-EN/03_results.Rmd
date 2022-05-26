@@ -160,7 +160,7 @@ csas_table(tows.strata.year.3,
 
 ## Distribution of depth, bottom temperature and bottom salinity from survey tows
 
-The depth, bottom temperature and bottom salinity cumulative frequency distribution for the survey are presented in Figure \@ref(fig:setsdist).
+The depth, bottom temperature, and bottom salinity cumulative frequency distribution for the survey are presented in Figure \@ref(fig:setsdist).
 
 (ref:setsdistcap) Cumulative frequency distribution of bottom salinity (top panel), bottom temperature (middle panel) and depth (bottom panel) of representative sets from the DFO Maritimes summer survey. 
 
