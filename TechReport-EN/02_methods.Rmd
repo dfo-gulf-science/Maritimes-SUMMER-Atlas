@@ -50,7 +50,7 @@ knitr::include_graphics("./figures/annotated-map-NAFO.png")
 \end{landscapepage}
 
 
-(ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the rectangles representing the time window when each vessel was used (WIIA is the Western IIA trawl).
+(ref:caption-timeline) Timeline of survey platforms used in the Maritimes Region summer survey. The x axis denotes the timespan of the survey. The y axis identifies the vessel on which survey sets were conducted. The type of fishing gear deployed is overlaid on the rectangles representing the time window when each vessel was used (WIIA is the Western IIA trawl). Comparative fishing experiments are identified by gray polygons overlapping the survey platforms under comparison.
 
 ```{r timeline, fig.cap="(ref:caption-timeline)", out.width="100%"}
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
@@ -113,13 +113,14 @@ for.table[nr, "AREA.KM2"] <- tot.area.km2
 csasdown::csas_table(
   for.table, 
   format="latex", 
-  align = rep("c",5), 
+  align = c("c","c","c","c","r","r"), 
   col.names = c("NAFO Div.", "Stratum", "Depth range (fathom)", "Depth range (meter)","Area (nm \\textsuperscript{2})","Area (km \\textsuperscript{2})"), 
   caption = "(ref:strata-tab-cap)",
   row.names=FALSE,
   #booktabs=TRUE,
   longtable=TRUE,
-  repeat_header=TRUE
+  repeat_header=TRUE#,
+  #format.args = list(big.mark = ",")
   )  %>% 
   kableExtra::column_spec(c(3,4), width="2.1cm")  %>% 
   kableExtra::collapse_rows(1:2, latex_hline = "major", valign = "middle") #, row_group_label_position = 'stack')
@@ -308,7 +309,7 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
  \hspace{1em}\hspace{1em} &  &  & Aspidophoroides monopterygius & Alligatorfish & Poisson-alligator atlantique & \link{#sec:340}{340} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159459}{159459} & 1,029 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Leptagonus decagonus & Atlantic poacher & Agone atlantique & \link{#sec:350}{350} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127191}{127191} & 266 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Ulcina olrikii & Arctic alligatorfish & Poisson-alligator arctique & \link{#sec:341}{341} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=274356}{274356} & 13 & LR\\
- \hspace{1em}\hspace{1em} &  & Cottidae & Artediellus atlanticus & Atlantic hookear sculpin & Hameçon atlantique & \link{#sec:880}{880} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127193}{127193} & 258 & LI\\
+ \hspace{1em}\hspace{1em} &  & Cottidae & Artediellus atlanticus & Atlantic hookear sculpin & Hameçon atlantique & \link{#sec:880}{880} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127193}{127193} & 258 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Artediellus uncinatus & Arctic hookear sculpin & Hameçon neigeux & \link{#sec:306}{306} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127195}{127195} & 306 & LIn\\
  \hspace{1em}\hspace{1em} &  &  & Icelus spatula & Spatulate sculpin & Icèle spatulée & \link{#sec:314}{314} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127200}{127200} & 40 & LR\\
  \hspace{1em}\hspace{1em} &  &  & Myoxocephalus aenaeus & Grubby & Chaboisseau bronzé & \link{#sec:303}{303} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=159519}{159519} & 40 & LR\\

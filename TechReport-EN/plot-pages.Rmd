@@ -1901,40 +1901,6 @@ Scientific name: [Lycodes vahlii](https://www.marinespecies.org/aphia.php?p=taxd
 
 \setcounter{figure}{0} 
 
-## Atlantic hookear sculpin (Hameçon atlantique) - species code 880 (category LI) {#sec:880} 
-
-\index{Hameçon atlantique} \index{Atlantic hookear sculpin} \index{Artediellus atlanticus} 
-
-\index{Cottidae!Artediellus atlanticus} 
-
-Scientific name: [Artediellus atlanticus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127193) 
- \newline
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{c}
-\includegraphics[width=7in]{../Figures-Actual/RV-4VWX-880-IDWbiomass.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Inverse distance weighted distribution of catch biomass (kg/tow) for Atlantic hookear sculpin.}
-\end{minipage} 
-
-\newline  
-
-\vspace{1cm}  
-
-\begin{minipage}{1.0\textwidth}
- \begin{tabular}{ccc}
-\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-stratifiedB.pdf} & 
-\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-distribution-indices-usingB.pdf} & 
-\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-BvsD75corr.pdf} \\ 
-\end{tabular} 
-\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic hookear sculpin.}
-\end{minipage} 
-
-\clearpage
-
-\renewcommand\thefigure{\thesubsection\Alph{figure}} 
-
-\setcounter{figure}{0} 
-
 ## American shad (Alose savoureuse) - species code 61 (category LI) {#sec:61} 
 
 \index{Alose savoureuse} \index{American shad} \index{Alosa sapidissima} 
@@ -2573,6 +2539,40 @@ Scientific name: [Peprilus triacanthus](https://www.marinespecies.org/aphia.php?
 \includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-701-NvsD75corr.pdf} \\ 
 \end{tabular} 
 \captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic butterfish.}
+\end{minipage} 
+
+\clearpage
+
+\renewcommand\thefigure{\thesubsection\Alph{figure}} 
+
+\setcounter{figure}{0} 
+
+## Atlantic hookear sculpin (Hameçon atlantique) - species code 880 (category LIn) {#sec:880} 
+
+\index{Hameçon atlantique} \index{Atlantic hookear sculpin} \index{Artediellus atlanticus} 
+
+\index{Cottidae!Artediellus atlanticus} 
+
+Scientific name: [Artediellus atlanticus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127193) 
+ \newline
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{c}
+\includegraphics[width=7in]{../Figures-Actual/RV-4VWX-880-IDWabundance.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Inverse distance weighted distribution of catch abundance (N/tow) for Atlantic hookear sculpin.}
+\end{minipage} 
+
+\newline  
+
+\vspace{1cm}  
+
+\begin{minipage}{1.0\textwidth}
+ \begin{tabular}{ccc}
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-stratifiedN.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-distribution-indices-usingN.pdf} & 
+\includegraphics[width=2.0in]{../Figures-Actual/RV-4VWX-880-NvsD75corr.pdf} \\ 
+\end{tabular} 
+\captionof{figure}{Stratified random estimates of biomass (kg/tow), D75 and D95 and the correlation between D75 and biomass of Atlantic hookear sculpin.}
 \end{minipage} 
 
 \clearpage

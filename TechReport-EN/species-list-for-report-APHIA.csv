@@ -62,7 +62,7 @@ spec,FAO_E_COMMON_NAME,FAO_F_COMMON_NAME,nrecords,type,AphiaID,url,kingdom,phylu
 646,Atlantic soft pout,Mollasse atlantique,43,LR,127120,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127120,Animalia,Chordata,NA,Perciformes,Zoarcidae,Melanostigma atlanticum
 647,Vahl's eelpout,Lycode à carreaux,565,LI,127118,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127118,Animalia,Chordata,NA,Perciformes,Zoarcidae,Lycodes vahlii
 701,Atlantic butterfish,Stromat<e9> fossette,487,LIn,159828,https://www.marinespecies.org/aphia.php?p=taxdetails&id=159828,Animalia,Chordata,NA,Perciformes,Stromateidae,Peprilus triacanthus
-880,Atlantic hookear sculpin,Hameçon atlantique,258,LI,127193,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127193,Animalia,Chordata,NA,Perciformes,Cottidae,Artediellus atlanticus
+880,Atlantic hookear sculpin,Hameçon atlantique,258,LIn,127193,https://www.marinespecies.org/aphia.php?p=taxdetails&id=127193,Animalia,Chordata,NA,Perciformes,Cottidae,Artediellus atlanticus
 60,Atlantic herring,Hareng de l'Atlantique,3487,LF,126417,https://www.marinespecies.org/aphia.php?p=taxdetails&id=126417,Animalia,Chordata,NA,Clupeiformes,Clupeidae,Clupea harengus
 61,American shad,Alose savoureuse,468,LI,158670,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158670,Animalia,Chordata,NA,Clupeiformes,Clupeidae,Alosa sapidissima
 62,Alewife,Gaspareau,977,LI,158669,https://www.marinespecies.org/aphia.php?p=taxdetails&id=158669,Animalia,Chordata,NA,Clupeiformes,Clupeidae,Alosa pseudoharengus

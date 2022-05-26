@@ -347,7 +347,8 @@ spec.xtable.df[spec.xtable.df$spec==622,]$type <- "LIn"
 spec.xtable.df[spec.xtable.df$spec==623,]$type <- "LIn"
 spec.xtable.df[spec.xtable.df$spec==701,]$type <- "LIn"
 spec.xtable.df[spec.xtable.df$spec==64,]$type <- "LIn"
- 
+spec.xtable.df[spec.xtable.df$spec==880,]$type <- "LIn"
+
  ## at this point, the data frame spec.xtable.df has everything we need for the report except an APHIA ID, so call worms to get those based on the scientific name that we have
  
  spec.xtable.df.final <- spec.xtable.df
