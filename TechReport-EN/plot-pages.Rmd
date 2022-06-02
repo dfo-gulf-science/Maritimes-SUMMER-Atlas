@@ -80,7 +80,7 @@ Scientific name: [Gadus morhua](https://www.marinespecies.org/aphia.php?p=taxdet
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic cod. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic cod. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -157,7 +157,7 @@ Scientific name: [Melanogrammus aeglefinus](https://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Haddock. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Haddock. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -234,7 +234,7 @@ Scientific name: [Urophycis tenuis](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for White hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for White hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -311,7 +311,7 @@ Scientific name: [Urophycis chuss](https://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Red hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Red hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -388,7 +388,7 @@ Scientific name: [Merluccius bilinearis](https://www.marinespecies.org/aphia.php
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Silver hake. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Silver hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -465,7 +465,7 @@ Scientific name: [Pollachius virens](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Pollock. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Pollock. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -542,7 +542,7 @@ Scientific name: [Hemitripterus americanus](https://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Sea raven. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Sea raven. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -619,7 +619,7 @@ Scientific name: [Hippoglossus hippoglossus](https://www.marinespecies.org/aphia
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic halibut. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic halibut. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -696,7 +696,7 @@ Scientific name: [Hippoglossoides platessoides](https://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for American plaice. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for American plaice. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -773,7 +773,7 @@ Scientific name: [Glyptocephalus cynoglossus](https://www.marinespecies.org/aphi
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Witch flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Witch flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -850,7 +850,7 @@ Scientific name: [Limanda ferruginea](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Yellowtail flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Yellowtail flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -927,7 +927,7 @@ Scientific name: [Pseudopleuronectes americanus](https://www.marinespecies.org/a
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Winter flounder. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Winter flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1004,7 +1004,7 @@ Scientific name: [Sebastes](https://www.marinespecies.org/aphia.php?p=taxdetails
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic redfishes. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic redfishes. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1081,7 +1081,7 @@ Scientific name: [Anarhichas lupus](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic wolffish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic wolffish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1158,7 +1158,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](https://www.marinespecies.org
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Longhorn sculpin. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Longhorn sculpin. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1235,7 +1235,7 @@ Scientific name: [Clupea harengus](https://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Atlantic herring. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic herring. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1312,7 +1312,7 @@ Scientific name: [Lophius americanus](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Monkfish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Monkfish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1389,7 +1389,7 @@ Scientific name: [Amblyraja radiata](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Thorny skate. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Thorny skate. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1466,7 +1466,7 @@ Scientific name: [Malacoraja senta](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Smooth skate. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Smooth skate. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1543,7 +1543,7 @@ Scientific name: [Squalus acanthias](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for Piked dogfish. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Piked dogfish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1620,7 +1620,7 @@ Scientific name: [Illex illecebrosus](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for North. shortfin squid. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for North. shortfin squid. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage

@@ -19,14 +19,14 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	
 	
 	
-	lw.fit4x <- lm(log(FWT)~log(FLEN),data=all.df[all.df$nafo=="4X",])
-	lw.fit4vw <- lm(log(FWT)~log(FLEN),data=all.df[all.df$nafo=="4VW",])
+	#lw.fit4x <- lm(log(FWT)~log(FLEN),data=all.df[all.df$nafo=="4X",])
+	#lw.fit4vw <- lm(log(FWT)~log(FLEN),data=all.df[all.df$nafo=="4VW",])
 	
-	aa4x = round(exp(coef(lw.fit4x)[1]),4)
-	bb4x = round(coef(lw.fit4x)[2],5)
+	#aa4x = round(exp(coef(lw.fit4x)[1]),4)
+	#bb4x = round(coef(lw.fit4x)[2],5)
 	
-	aa4vw = round(exp(coef(lw.fit4vw)[1]),4)
-	bb4vw = round(coef(lw.fit4vw)[2],5)
+	#aa4vw = round(exp(coef(lw.fit4vw)[1]),4)
+	#bb4vw = round(coef(lw.fit4vw)[2],5)
 	
 	y.range  <- c(0.70,1.35) 
 	
@@ -64,8 +64,10 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	  polygon(xx, yy1, col=grey(0.8), border=grey(0.8))
 	  lines(as.numeric(names(yearly.cond.4x)), yearly.cond.4x, lty=1)
 	  points(as.numeric(names(yearly.cond.4x)), yearly.cond.4x, pch=19)
-	  
-	  lines(as.numeric(names(yearly.cond.4x)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  yrs<-1970:2020
+	  ny <- length(yrs)
+	  #lines(as.numeric(names(yearly.cond.4x)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  lines(yrs, rep(1,ny), lty=2, col=grey(0.3), lwd=2)
 	  
 	  legend("top", cex=1.2, bty="n", legend=c("4X"))	
 	  #legend("topright", bty="o", legend=(bquote(y == .(aa4x)*x^.(bb4x))), cex=0.9)	
@@ -90,8 +92,11 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	  lines(as.numeric(names(yearly.cond.4x[ii.late])), yearly.cond.4x[ii.late], lty=1)
 	  points(as.numeric(names(yearly.cond.4x[ii.late])), yearly.cond.4x[ii.late], pch=19)
 	  
-	  lines(as.numeric(names(yearly.cond.4x)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
-	  
+	  yrs<-1970:2020
+	  ny <- length(yrs)
+	  #lines(as.numeric(names(yearly.cond.4x)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  lines(yrs, rep(1,ny), lty=2, col=grey(0.3), lwd=2)
+
 	  legend("top", cex=1.2, bty="n", c("4X"))
 	  #legend("topright", bty="o", legend=(bquote(y == .(aa4x)*x^.(bb4x))), cex=0.9)	
 	}
@@ -119,7 +124,10 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	  lines(as.numeric(names(yearly.cond.4vw)), yearly.cond.4vw, lty=1)
 	  points(as.numeric(names(yearly.cond.4vw)), yearly.cond.4vw, pch=19)
 	  
-	  lines(as.numeric(names(yearly.cond.4vw)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  yrs<-1970:2020
+	  ny <- length(yrs)
+	  #lines(as.numeric(names(yearly.cond.4vw)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  lines(yrs, rep(1,ny), lty=2, col=grey(0.3), lwd=2)
 	  
 	  legend("top", cex=1.2, bty="n", legend=c("4vw"))	
 	  #legend("topright", bty="o", legend=(bquote(y == .(aa4vw)*x^.(bb4vw))), cex=0.9)	
@@ -144,7 +152,10 @@ conditionNAFO.fct <- function(spec.code) { #, file.name
 	  lines(as.numeric(names(yearly.cond.4vw[ii.late])), yearly.cond.4vw[ii.late], lty=1)
 	  points(as.numeric(names(yearly.cond.4vw[ii.late])), yearly.cond.4vw[ii.late], pch=19)
 	  
-	  lines(as.numeric(names(yearly.cond.4vw)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  yrs<-1970:2020
+	  ny <- length(yrs)
+	  #lines(as.numeric(names(yearly.cond.4vw)), rep(1,nn), lty=2, col=grey(0.3), lwd=2)
+	  lines(yrs, rep(1,ny), lty=2, col=grey(0.3), lwd=2)
 	  
 	  legend("top", cex=1.2, bty="n", c("4VW"))
 	  #legend("topright", bty="o", legend=(bquote(y == .(aa4vw)*x^.(bb4vw))), cex=0.9)	

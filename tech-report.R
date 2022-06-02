@@ -181,7 +181,7 @@ tempLF <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance. The last two digits of each stratum number is shown in the figure for ", english_name,". The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\\% of median abundance.}")
+  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance for ", english_name,". . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\\% of median abundance.}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1

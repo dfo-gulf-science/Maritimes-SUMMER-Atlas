@@ -17,17 +17,23 @@ DDHS.fct <- function(spec.code, stratum.measure="mean") {
 	dat.in$high.suitability <- ifelse(dat.in$slope.zero==1 & dat.in$abundance.high==1,1,0)
 	dat.in$high.suitability.mediantop25 <- ifelse(dat.in$slope.zero==1 & dat.in$abundance.high.mediantop25==1,1,0)
 
-my.lm <- lm(slope.glm.poisson~mean.n, data=dat.in)
-my.loess <- loess(slope.glm.poisson~mean.n, data=dat.in, degree=1)
+	## also identify strata with zeroes so they are not selected and identified in red
+	dat.in$is.strat.nonzero <- ifelse(dat.in$strat.median.top25>0,1,0)
+	
+	dat.in$high.suitability <- dat.in$high.suitability * dat.in$is.strat.nonzero
+	dat.in$high.suitability.mediantop25 <- dat.in$high.suitability.mediantop25 * dat.in$is.strat.nonzero
+	
+#my.lm <- lm(slope.glm.poisson~mean.n, data=dat.in)
+#my.loess <- loess(slope.glm.poisson~mean.n, data=dat.in, degree=1)
 
-my.lm.mediantop25 <- lm(slope.glm.poisson~strat.median.top25, data=dat.in)
-my.loess.mediantop25 <- loess(slope.glm.poisson~strat.median.top25, data=dat.in, degree=1)
+#my.lm.mediantop25 <- lm(slope.glm.poisson~strat.median.top25, data=dat.in)
+#my.loess.mediantop25 <- loess(slope.glm.poisson~strat.median.top25, data=dat.in, degree=1)
 
-my.df <- data.frame(x=dat.in$mean.n, y=predict(my.loess), yy=predict(my.lm))
-oo<-order(my.df$x)
+#my.df <- data.frame(x=dat.in$mean.n, y=predict(my.loess), yy=predict(my.lm))
+#oo<-order(my.df$x)
 
-my.df.mediantop25 <- data.frame(x=dat.in$strat.median.top25, y=predict(my.loess.mediantop25), yy=predict(my.lm.mediantop25))
-oo.mediantop25<-order(my.df.mediantop25$x)
+#my.df.mediantop25 <- data.frame(x=dat.in$strat.median.top25, y=predict(my.loess.mediantop25), yy=predict(my.lm.mediantop25))
+#oo.mediantop25<-order(my.df.mediantop25$x)
 
 # axes and labels
 	ylabel1 = "DDHS Poisson slope"
@@ -45,8 +51,8 @@ if(stratum.measure=="mean") {
 
 plot(slope.glm.poisson~mean.n, data=dat.in, type='n', axes=FALSE, ann=FALSE, xlim=x.range, ylim=y.range)
 
-lines(y~x, data=my.df[oo,], col='red', lwd=2)
-lines(yy~x, data=my.df[oo,], lwd=1.5, lty=1, col=grey(0.5))
+#lines(y~x, data=my.df[oo,], col='red', lwd=2)
+#lines(yy~x, data=my.df[oo,], lwd=1.5, lty=1, col=grey(0.5))
 
 text(x=dat.in$mean.n, y=dat.in$slope.glm.poisson, labels=(dat.in$stratum-400), col=ifelse(dat.in$high.suitability==1,"red","black"), cex=ifelse(dat.in$high.suitability==1,1.25,1))
 
@@ -85,8 +91,8 @@ if(stratum.measure=="mediantop25") {
 
 	plot(slope.glm.poisson~strat.median.top25, data=dat.in, type='n', axes=FALSE, ann=FALSE, xlim=x.range, ylim=y.range)
 
-	lines(y~x, data=my.df.mediantop25[oo.mediantop25,], col='red', lwd=2)
-	lines(yy~x, data=my.df.mediantop25[oo.mediantop25,], lwd=1.5, lty=1, col=grey(0.5))
+	#lines(y~x, data=my.df.mediantop25[oo.mediantop25,], col='red', lwd=2)
+	#lines(yy~x, data=my.df.mediantop25[oo.mediantop25,], lwd=1.5, lty=1, col=grey(0.5))
 
 	text(x=dat.in$strat.median.top25, y=dat.in$slope.glm.poisson, labels=(dat.in$stratum-400), col=ifelse(dat.in$high.suitability.mediantop25==1,"red","black"), cex=ifelse(dat.in$high.suitability.mediantop25==1,1.25,0.75))
 

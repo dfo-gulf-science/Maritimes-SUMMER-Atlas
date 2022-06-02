@@ -362,8 +362,8 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
 \multicolumn{10}{l}{\textbf{Class: Malacostraca}}\\
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Decapoda}}\\
-\hspace{1em}\hspace{1em} &  & Cancridae & Cancer borealis & Jonah crab & Tourteau jona & \link{#sec:2511}{2511} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158056}{158056} & 1,387 & SF\\
- \hspace{1em}\hspace{1em} &  &  & Cancer irroratus & Atlantic rock crab & Tourteau poïnclos & \link{#sec:2513}{2513} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158057}{158057} & 788 & SF\\
+\hspace{1em}\hspace{1em} &  & Cancridae & Cancer borealis & Jonah crab & Crabe boréal & \link{#sec:2511}{2511} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158056}{158056} & 1,387 & SF\\
+ \hspace{1em}\hspace{1em} &  &  & Cancer irroratus & Atlantic rock crab & Crabe commun & \link{#sec:2513}{2513} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158057}{158057} & 788 & SF\\
  \hspace{1em}\hspace{1em} &  & Geryonidae & Chaceon quinquedens & Red deepsea crab & Crabe rouge & \link{#sec:2532}{2532} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158407}{158407} & 33 & SR\\
  \hspace{1em}\hspace{1em} &  & Lithodidae & Lithodes maja & Atlantic king crab & Crabe épineux du nord & \link{#sec:2523}{2523} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107205}{107205} & 531 & SF\\
  \hspace{1em}\hspace{1em} &  & Nephropidae & Homarus americanus & American lobster & Homard américain & \link{#sec:2550}{2550} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=156134}{156134} & 1,623 & SF\\
@@ -382,13 +382,13 @@ The Oracle relational database where all survey data are stored and archived is 
 All data processing and analyses were conducted using the R software [@R:2021] using packages gstat [@R:package:gstat], PBSmapping [@R:package:PBSmapping], RODBC [@R:package:RODBC], spatstat [@R:package:spatstat],  maptools [@R:package:maptools], rgeos [@R:package:rgeos], classInt [@R:package:classInt], RColorBrewer [@R:package:RColorBrewer], MASS [@R:package:MASS], worms [@R:package:worms], and tidyverse [@R:Tidyverse]. The present document is rendered as a Technical Report using the csasdown R package [@R:csasdown].
 
 ### Geographic distribution of catches
-Spatial interpolation of catch biomass (kg/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. To achieve a visually appropriate rendition of the available catch data, the IDW method uses a power parameter value of 10. The IDW predictions are over a fixed grid with a resolution of 200 by 200 on the bounding box of the georeferenced survey data. 
+Spatial interpolation of catch (biomass/tow or abundance/tow) was done using a weighting inversely proportional to the distance (inverse-distance weighted, IDW), using function ”idw” of the spatstat R package [@R:package:spatstat]. To achieve a visually appropriate rendition of the available catch data, the IDW method uses a power parameter value of 10. The IDW predictions are over a fixed grid with a resolution of 200 by 200 on the bounding box of the georeferenced survey data. 
 
 ### Abundance and biomass indices
-For each species, stratified random estimates of catch biomass and abundance [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed. In years where some strata were not sampled, the stratified estimate is calculated ignoring the missed strata. This implicitly assumes that the captures in the missed strata were the same as the overall mean. If a species does not follow this assumption in the missed strata the estimate will be biased. As such, the values presented herein should be treated with further analytical detail to ascertain that the estimate is unbiased.
+For each species, stratified random estimates of catch biomass or abundance [@Smith:1996] were computed for each year. Yearly estimates of the standard error were also computed. In years where some strata were not sampled, the stratified estimate is calculated ignoring the missed strata. This implicitly assumes that the captures in the missed strata were the same as the overall mean. If a species does not follow this assumption in the missed strata the estimate will be biased. As such, the values presented herein should be treated with further analytical detail to ascertain that the estimate is unbiased.
 
 ### Distribution indices
-For each Category L, I and S fish species, the minimum area required to account for 75% and 95% of the total biomass were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
+For each Category L and S species, the minimum area required to account for 75% and 95% of the total biomass were computed (D75% and D95%). For each category LIn species, the minimum area required to account for 75% and 95% of the total abundance were computed (D75% and D95%). These measures of distributions were computed for each year by using the Lorenz curve of mean stratum-level catch estimates and the area of occupied strata [@Swain:Sinclair:1994:cjfas; @Swain:Morin:1996:cjfas].
 
 ### Length frequencies
 The length frequency distribution of catch (the stratified numbers-at-length) is tabulated for each seven-year period (1970-2009), and last ten-year period (2010-2020).
@@ -407,6 +407,8 @@ where $W$ is the observed weight (g), L is the length (cm), and, $\alpha$ and $\
 C = \frac{W}{\alpha L ^\beta}  
 \\
 \end{eqnarray*}
+
+Note that the fish condition for Atlantic herring (species code 60) is only calculated until 2015 since the survey protocol changed from fork length measurements in centimeters to total length measurements in millimeters in 2016 (Don S. Clark, pers. comm.).
 
 ### Depth, temperature and salinity distribution of catches
 For each category L species, we followed the methods developed by [@Perry:Smith:1994:cjfas] and generated cumulative frequency distributions of depth, temperature and salinity of survey catches. These cumulative frequency distributions can be compared to those obtained when using all survey sets in order to identify depth, temperature and salinity associations for the different species captured in the survey.
@@ -429,23 +431,32 @@ To estimate the suitability of each stratum, the median abundance observed durin
 The figures generated for each species are presented in the Appendix and consist of up to six figures (Figure types A to F) per species, depending on their taxonomic level classification (as described in Section \@ref(sec:taxo) above). The figure types are used as a suffix in each figure number.
 
 ### Type A
-For Category L and S species: 
+For Category L species: 
 
-Spatial distribution of catch-per unit of effort, (CPUE, kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf in five-year periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence ($P(occ)$, the proportion of tows with catch records for a given species) was also reported for each five-year period.
+Spatial distribution of catch-per unit of effort, (CPUE, in kilograms per tow for LF and LI species, or in abundance per tow for LIn species) in July-August for the Bay of Fundy and Scotian Shelf for different time periods. The top-left map shows the first 10 years of available data (1970-1979). The other maps use data for 5-year (1980-1984, 1985-1989, 1990-1994, 1995-1999, 2000-2004, 2005-2009, 2010-2014) or 6-year (2015-2020) periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence ($P(occ)$, the proportion of tows with catch records for a given species) was also reported for each five-year period.
+
+For Category S species: 
+
+Spatial distribution of catch-per unit of effort, (CPUE, in kilograms per tow) in July-August for the Bay of Fundy and Scotian Shelf for different time periods. The maps use data for 4-year (1999-2002, 2003-2006, 2007-2010, 2011-2014, 2015-2018) or 2-year (2019-2020) periods. Spatial interpolation between tows was done using Inverse Distance Weight (IDW). The probability of occurrence ($P(occ)$, the proportion of tows with catch records for a given species) was also reported for each five-year period.
 
 For Category LR and SR:
 
 Location of tows with catch over the period 1970-2020 (Type LR) or the period 1999-2020 (Type SR).
 
 ### Type B
-For Category L, S and I species:
+For Category LF, LI and S species:
 
 Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of biomass, middle panel), and distribution vs. weight per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coefficient between D75% and biomass, and its statistical significance, are also reported in the right panel.
+
+For Category LIn species:
+
+Stratified random estimate of CPUE (left panel), distribution indices (D75% and D95%, the minimum area containing 75% and 95% of abundance, middle panel), and distribution vs. abundance per tow (right panel). The stratified random mean is plotted as a solid line with the 95% confidence region indicated by the solid grey line. The overall mean is plotted as a grey horizontal line and the overall mean plus or minus 50% of the standard deviation appear as horizontal dashed lines. In all three panels, the early years appear in blue and the last years appear in red. The predictions from a loess estimator are overlaid on the distribution indices (middle panel). The Pearson correlation coefficient between D75% and biomass, and its statistical significance, are also reported in the right panel.
+
 
 ### Type C.
 For Category LF species:
 
-Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods covered by the surveys.
+Length frequency distribution for NAFO divisions 4X and 4VW. A smoothed length frequency distribution is shown for each 7-year periods for the period 1970 to 2009, and for the last last ten-year period (2010 to 2020).
 
 ### Type D.
 For Category LF species:
@@ -460,5 +471,4 @@ Cumulative frequency distributions of depth, temperature and salinity at all sam
 ### Type F.
 For Category LF species:
 
-Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.
-
+Slopes estimates from the density-dependent habitat selection model (y axis) plotted versus the median abundance during the top 25% of years. The red box and red labels indicate strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25% of median abundance. Each stratum is identified on the plot by the last two digits of its number.

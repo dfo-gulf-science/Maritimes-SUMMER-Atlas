@@ -156,13 +156,13 @@ data.extract <- function(extract.name, spec.num) {
              fn <- paste("SS",spec.num,"_lw.csv",sep="")
              write.csv(lw.df, file.path(figdata.path, fn), row.names=FALSE)
              
-             lw.df.nafo4x <- lw.list[[2]]
-             fn <- paste("SS",spec.num,"_lw4x.csv",sep="")
-             write.csv(lw.df.nafo4x, file.path(figdata.path, fn), row.names=FALSE)
+             #lw.df.nafo4x <- lw.list[[2]]
+             #fn <- paste("SS",spec.num,"_lw4x.csv",sep="")
+             #write.csv(lw.df.nafo4x, file.path(figdata.path, fn), row.names=FALSE)
              
-             lw.df.nafo4vw <- lw.list[[3]]
-             fn <- paste("SS",spec.num,"_lw4vw.csv",sep="")
-             write.csv(lw.df.nafo4vw, file.path(figdata.path, fn), row.names=FALSE)
+             #lw.df.nafo4vw <- lw.list[[3]]
+             #fn <- paste("SS",spec.num,"_lw4vw.csv",sep="")
+             #write.csv(lw.df.nafo4vw, file.path(figdata.path, fn), row.names=FALSE)
              
            },
            "catchshort" = { 	#

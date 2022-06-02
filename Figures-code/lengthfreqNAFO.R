@@ -63,7 +63,7 @@ dat.in.4vw <- list.in[[2]]
 		#my.cols <- c("#000000","#FFEDA0","#FED976","#FEB24C","#FD8D3C","#FC4E2A","#E31A1C","#BD0026","#800026") # obtained from color brewer
 		my.cols <- c("#000000","#FED976","#FEB24C","#FD8D3C","#F03B20","#BD0026","#5c0012") # obtained from color brewer
 		#FFFFCC
-		par(mai=c(0.5, 0.75, 0.1, 0.1))
+		par(mai=c(0.5, 0.75, 0.23, 0.1))
 		
 		plot(dat.in.4x[,1], dat.in.4x[,2], col=my.cols[1], axes=FALSE, xlim=x.range, ylim=y.range, type='l', lwd=2, ann=FALSE)
 		lines(dat.in.4x[,1], dat.in.4x[,3], col=my.cols[2], lwd=2)
@@ -97,7 +97,7 @@ dat.in.4vw <- list.in[[2]]
 	#ylabel2 = "Frequ\u{E9}nce par trait"	
 	ylabel1 = "Frequency per tow"
 	#leg.label = c("1970 - 1974", "1975 - 1979", "1980 - 1984", "1985 - 1989", "1990 - 1994", "1995 - 1999", "2000 - 2004", "2005 - 2009", "2010 - 2014")
-	par(mai=c(0.5, 0.5, 0.1, 0.1))
+	par(mai=c(0.5, 0.5, 0.23, 0.1))
 	
 	plot(dat.in.4vw[,1], dat.in.4vw[,2], col=my.cols[1], axes=FALSE, xlim=x.range, ylim=y.range, type='l', lwd=2, ann=FALSE)
 	lines(dat.in.4vw[,1], dat.in.4vw[,3], col=my.cols[2], lwd=2)
