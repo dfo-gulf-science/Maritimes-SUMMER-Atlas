@@ -311,6 +311,9 @@ spec.xtable.df[spec.xtable.df$spec==640,]$FAO_F_COMMON_NAME <- "Loquette d'Amér
 
 spec.xtable.df[spec.xtable.df$spec==220,]$FAO_E_COMMON_NAME <- "Piked dogfish"
 
+spec.xtable.df[spec.xtable.df$spec==2511,]$FAO_F_COMMON_NAME <- "Crabe boréal"
+spec.xtable.df[spec.xtable.df$spec==2513,]$FAO_F_COMMON_NAME <- "Crabe commun"
+
 ## fix the species that have an "unaccepted" status on WoRMS
 # Loligo pealeii, 4512
 # Zenopsis conchifera, 704

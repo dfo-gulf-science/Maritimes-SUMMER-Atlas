@@ -7,8 +7,9 @@ author: |
   Catalina Gomez ^2^ 
   Jamie Emberley ^3^ 
   Catriona Regnier-McKellar ^3^ 
-author_list: "Ricard, D., Gomez, C., Emberley, J. and Regnier-McKellar, C."
-region: Maritimes Region
+  Ryan Martin ^3^ 
+author_list: "Ricard, D., Gomez, C., Emberley, J., Regnier-McKellar, C. and Martin, R."
+region: Gulf Region
 isbn: ""
 address: |
   ^1^Science Branch\
