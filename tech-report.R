@@ -59,6 +59,9 @@ tempLF <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- paste0(
     "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
   i <- i + 1
+  out[[i]] <- "\\vspace{-0.5cm}"
+  i <- i + 1
+  
   #Figure 1
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
@@ -181,7 +184,7 @@ tempLF <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- "\\end{tabular} "
   i <- i + 1
-  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance for ", english_name,". . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\\% of median abundance.}")
+  out[[i]] <- paste0("\\captionof{figure}{DDHS slopes versus median stratum abundance for ", english_name,". The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\\% of median abundance.}")
   i <- i + 1
   out[[i]] <- "\\end{minipage} \n"
   i <- i + 1
@@ -243,6 +246,9 @@ tempI <- lapply(taxo.final$species.code, function(x) {
   out[[i]] <- paste0(
     "Scientific name: [", latin_name, "](",worms_link,") \n \\newline")
   i <- i + 1
+  out[[i]] <- "\\vspace{-0.5cm}"
+  i <- i + 1
+  
   #Figure 1
   out[[i]] <- "\\begin{minipage}{1.0\\textwidth}"
   i <- i + 1
@@ -260,7 +266,7 @@ tempI <- lapply(taxo.final$species.code, function(x) {
   #end of Figure 1
   out[[i]] <- "\\newline  \n"
   i <- i + 1
-  out[[i]] <- "\\vspace{1cm}  \n"
+  out[[i]] <- "\\vspace{0.5cm}  \n"
   i <- i + 1
   
   #Figures 2,3 and 4
@@ -350,7 +356,7 @@ tempIn <- lapply(taxo.final$species.code, function(x) {
   #end of Figure 1
   out[[i]] <- "\\newline  \n"
   i <- i + 1
-  out[[i]] <- "\\vspace{1cm}  \n"
+  out[[i]] <- "\\vspace{0.5cm}  \n"
   i <- i + 1
   
   #Figures 2,3 and 4
@@ -546,8 +552,7 @@ To facilitate navigation, use the PDF navigation panel. Alternatively, Table \\@
   tempI, 
   tempIn,
   tempS, 
-  tempR, 
-  "\\printindex \n")
+  tempR)
 
 #if (!exists("N"))
   writeLines(temp, con = file.path("TechReport-EN", "plot-pages.Rmd"), useBytes=T)

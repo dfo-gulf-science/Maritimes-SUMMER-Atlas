@@ -180,3 +180,4 @@ The decadal cumulative frequency distribution of surface and bottom temperatures
 knitr::include_graphics("./figures/summer-surface-temperatures-decadal-CDF.png")
 ```
 
+\clearpage

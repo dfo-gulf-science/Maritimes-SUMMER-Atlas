@@ -110,6 +110,8 @@ data.extract <- function(extract.name, spec.num) {
            },
            "ddhs" = { 	#
              ## yearly stratified random estimates of abundance and weight and DDHS
+             source(file.path(dataextract.path, "compute-stratified.R")) # uses the tow-level data to generate yearly stratified random estimates
+             
              strat.list <- stratified.fct(extract.catch.fct(spec.num), DDHS=TRUE)
              stratified.df <- strat.list[[1]]
              fn <- paste("SS",spec.num,"_stratified.csv",sep="")

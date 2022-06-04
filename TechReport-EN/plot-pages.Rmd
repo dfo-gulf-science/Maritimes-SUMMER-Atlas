@@ -20,6 +20,7 @@ To facilitate navigation, use the PDF navigation panel. Alternatively, Table \@r
 
 Scientific name: [Gadus morhua](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126436) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-10-IDWbiomass.pdf} \\ 
@@ -80,7 +81,7 @@ Scientific name: [Gadus morhua](https://www.marinespecies.org/aphia.php?p=taxdet
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-10-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic cod. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic cod. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -97,6 +98,7 @@ Scientific name: [Gadus morhua](https://www.marinespecies.org/aphia.php?p=taxdet
 
 Scientific name: [Melanogrammus aeglefinus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126437) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-11-IDWbiomass.pdf} \\ 
@@ -157,7 +159,7 @@ Scientific name: [Melanogrammus aeglefinus](https://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-11-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Haddock. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Haddock. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -174,6 +176,7 @@ Scientific name: [Melanogrammus aeglefinus](https://www.marinespecies.org/aphia.
 
 Scientific name: [Urophycis tenuis](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126504) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-12-IDWbiomass.pdf} \\ 
@@ -234,7 +237,7 @@ Scientific name: [Urophycis tenuis](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-12-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for White hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for White hake. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -251,6 +254,7 @@ Scientific name: [Urophycis tenuis](https://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Urophycis chuss](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126503) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-13-IDWbiomass.pdf} \\ 
@@ -311,7 +315,7 @@ Scientific name: [Urophycis chuss](https://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-13-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Red hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Red hake. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -328,6 +332,7 @@ Scientific name: [Urophycis chuss](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Merluccius bilinearis](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158962) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-14-IDWbiomass.pdf} \\ 
@@ -388,7 +393,7 @@ Scientific name: [Merluccius bilinearis](https://www.marinespecies.org/aphia.php
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-14-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Silver hake. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Silver hake. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -405,6 +410,7 @@ Scientific name: [Merluccius bilinearis](https://www.marinespecies.org/aphia.php
 
 Scientific name: [Pollachius virens](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126441) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-16-IDWbiomass.pdf} \\ 
@@ -465,7 +471,7 @@ Scientific name: [Pollachius virens](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-16-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Pollock. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Pollock. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -482,6 +488,7 @@ Scientific name: [Pollachius virens](https://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Hemitripterus americanus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=159518) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-320-IDWbiomass.pdf} \\ 
@@ -542,7 +549,7 @@ Scientific name: [Hemitripterus americanus](https://www.marinespecies.org/aphia.
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-320-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Sea raven. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Sea raven. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -559,6 +566,7 @@ Scientific name: [Hemitripterus americanus](https://www.marinespecies.org/aphia.
 
 Scientific name: [Hippoglossus hippoglossus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127138) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-30-IDWbiomass.pdf} \\ 
@@ -619,7 +627,7 @@ Scientific name: [Hippoglossus hippoglossus](https://www.marinespecies.org/aphia
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-30-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic halibut. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic halibut. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -636,6 +644,7 @@ Scientific name: [Hippoglossus hippoglossus](https://www.marinespecies.org/aphia
 
 Scientific name: [Hippoglossoides platessoides](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127137) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-40-IDWbiomass.pdf} \\ 
@@ -696,7 +705,7 @@ Scientific name: [Hippoglossoides platessoides](https://www.marinespecies.org/ap
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-40-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for American plaice. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for American plaice. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -713,6 +722,7 @@ Scientific name: [Hippoglossoides platessoides](https://www.marinespecies.org/ap
 
 Scientific name: [Glyptocephalus cynoglossus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127136) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-41-IDWbiomass.pdf} \\ 
@@ -773,7 +783,7 @@ Scientific name: [Glyptocephalus cynoglossus](https://www.marinespecies.org/aphi
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-41-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Witch flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Witch flounder. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -790,6 +800,7 @@ Scientific name: [Glyptocephalus cynoglossus](https://www.marinespecies.org/aphi
 
 Scientific name: [Limanda ferruginea](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158879) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-42-IDWbiomass.pdf} \\ 
@@ -850,7 +861,7 @@ Scientific name: [Limanda ferruginea](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-42-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Yellowtail flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Yellowtail flounder. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -867,6 +878,7 @@ Scientific name: [Limanda ferruginea](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Pseudopleuronectes americanus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158885) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-43-IDWbiomass.pdf} \\ 
@@ -927,7 +939,7 @@ Scientific name: [Pseudopleuronectes americanus](https://www.marinespecies.org/a
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-43-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Winter flounder. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Winter flounder. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -944,6 +956,7 @@ Scientific name: [Pseudopleuronectes americanus](https://www.marinespecies.org/a
 
 Scientific name: [Sebastes](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126175) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-23-IDWbiomass.pdf} \\ 
@@ -1004,7 +1017,7 @@ Scientific name: [Sebastes](https://www.marinespecies.org/aphia.php?p=taxdetails
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-23-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic redfishes. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic redfishes. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1021,6 +1034,7 @@ Scientific name: [Sebastes](https://www.marinespecies.org/aphia.php?p=taxdetails
 
 Scientific name: [Anarhichas lupus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126758) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-50-IDWbiomass.pdf} \\ 
@@ -1081,7 +1095,7 @@ Scientific name: [Anarhichas lupus](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-50-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic wolffish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic wolffish. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1098,6 +1112,7 @@ Scientific name: [Anarhichas lupus](https://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Myoxocephalus octodecemspinosus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=159520) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-300-IDWbiomass.pdf} \\ 
@@ -1158,7 +1173,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](https://www.marinespecies.org
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-300-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Longhorn sculpin. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Longhorn sculpin. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1175,6 +1190,7 @@ Scientific name: [Myoxocephalus octodecemspinosus](https://www.marinespecies.org
 
 Scientific name: [Clupea harengus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126417) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-60-IDWbiomass.pdf} \\ 
@@ -1235,7 +1251,7 @@ Scientific name: [Clupea harengus](https://www.marinespecies.org/aphia.php?p=tax
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-60-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic herring. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Atlantic herring. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1252,6 +1268,7 @@ Scientific name: [Clupea harengus](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Lophius americanus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=159184) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-400-IDWbiomass.pdf} \\ 
@@ -1312,7 +1329,7 @@ Scientific name: [Lophius americanus](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-400-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Monkfish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Monkfish. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1329,6 +1346,7 @@ Scientific name: [Lophius americanus](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Amblyraja radiata](https://www.marinespecies.org/aphia.php?p=taxdetails&id=105865) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-201-IDWbiomass.pdf} \\ 
@@ -1389,7 +1407,7 @@ Scientific name: [Amblyraja radiata](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-201-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Thorny skate. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Thorny skate. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1406,6 +1424,7 @@ Scientific name: [Amblyraja radiata](https://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Malacoraja senta](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158554) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-202-IDWbiomass.pdf} \\ 
@@ -1466,7 +1485,7 @@ Scientific name: [Malacoraja senta](https://www.marinespecies.org/aphia.php?p=ta
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-202-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Smooth skate. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Smooth skate. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1483,6 +1502,7 @@ Scientific name: [Malacoraja senta](https://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Squalus acanthias](https://www.marinespecies.org/aphia.php?p=taxdetails&id=105923) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-220-IDWbiomass.pdf} \\ 
@@ -1543,7 +1563,7 @@ Scientific name: [Squalus acanthias](https://www.marinespecies.org/aphia.php?p=t
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-220-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for Piked dogfish. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for Piked dogfish. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1560,6 +1580,7 @@ Scientific name: [Squalus acanthias](https://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Illex illecebrosus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=153087) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=6.75in]{../Figures-Actual/RV-4VWX-4511-IDWbiomass.pdf} \\ 
@@ -1620,7 +1641,7 @@ Scientific name: [Illex illecebrosus](https://www.marinespecies.org/aphia.php?p=
  \begin{tabular}{c}
 \includegraphics[width=6.5in]{../Figures-Actual/RV-4VWX-4511-DDHS.pdf} \\ 
 \end{tabular} 
-\captionof{figure}{DDHS slopes versus median stratum abundance for North. shortfin squid. . The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
+\captionof{figure}{DDHS slopes versus median stratum abundance for North. shortfin squid. The last two digits of each stratum number is shown in the figure. The red box indicates strata of particular importance for a species by identifying slopes that are within a standard error from zero and that are within the top 25\% of median abundance.}
 \end{minipage} 
 
 \clearpage
@@ -1637,6 +1658,7 @@ Scientific name: [Illex illecebrosus](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Myxine glutinosa](https://www.marinespecies.org/aphia.php?p=taxdetails&id=101170) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-241-IDWbiomass.pdf} \\ 
@@ -1646,7 +1668,7 @@ Scientific name: [Myxine glutinosa](https://www.marinespecies.org/aphia.php?p=ta
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1671,6 +1693,7 @@ Scientific name: [Myxine glutinosa](https://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Brosme brosme](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126447) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-15-IDWbiomass.pdf} \\ 
@@ -1680,7 +1703,7 @@ Scientific name: [Brosme brosme](https://www.marinespecies.org/aphia.php?p=taxde
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1705,6 +1728,7 @@ Scientific name: [Brosme brosme](https://www.marinespecies.org/aphia.php?p=taxde
 
 Scientific name: [Phycis chesteri](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158988) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-112-IDWbiomass.pdf} \\ 
@@ -1714,7 +1738,7 @@ Scientific name: [Phycis chesteri](https://www.marinespecies.org/aphia.php?p=tax
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1739,6 +1763,7 @@ Scientific name: [Phycis chesteri](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Nezumia bairdii](https://www.marinespecies.org/aphia.php?p=taxdetails&id=183289) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-410-IDWbiomass.pdf} \\ 
@@ -1748,7 +1773,7 @@ Scientific name: [Nezumia bairdii](https://www.marinespecies.org/aphia.php?p=tax
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1773,6 +1798,7 @@ Scientific name: [Nezumia bairdii](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Triglops murrayi](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127205) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-304-IDWbiomass.pdf} \\ 
@@ -1782,7 +1808,7 @@ Scientific name: [Triglops murrayi](https://www.marinespecies.org/aphia.php?p=ta
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1807,6 +1833,7 @@ Scientific name: [Triglops murrayi](https://www.marinespecies.org/aphia.php?p=ta
 
 Scientific name: [Cyclopterus lumpus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127214) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-501-IDWbiomass.pdf} \\ 
@@ -1816,7 +1843,7 @@ Scientific name: [Cyclopterus lumpus](https://www.marinespecies.org/aphia.php?p=
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1841,6 +1868,7 @@ Scientific name: [Cyclopterus lumpus](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Zoarces americanus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=159267) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-640-IDWbiomass.pdf} \\ 
@@ -1850,7 +1878,7 @@ Scientific name: [Zoarces americanus](https://www.marinespecies.org/aphia.php?p=
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1875,6 +1903,7 @@ Scientific name: [Zoarces americanus](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Lycodes vahlii](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127118) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-647-IDWbiomass.pdf} \\ 
@@ -1884,7 +1913,7 @@ Scientific name: [Lycodes vahlii](https://www.marinespecies.org/aphia.php?p=taxd
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1909,6 +1938,7 @@ Scientific name: [Lycodes vahlii](https://www.marinespecies.org/aphia.php?p=taxd
 
 Scientific name: [Alosa sapidissima](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158670) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-61-IDWbiomass.pdf} \\ 
@@ -1918,7 +1948,7 @@ Scientific name: [Alosa sapidissima](https://www.marinespecies.org/aphia.php?p=t
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1943,6 +1973,7 @@ Scientific name: [Alosa sapidissima](https://www.marinespecies.org/aphia.php?p=t
 
 Scientific name: [Alosa pseudoharengus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158669) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-62-IDWbiomass.pdf} \\ 
@@ -1952,7 +1983,7 @@ Scientific name: [Alosa pseudoharengus](https://www.marinespecies.org/aphia.php?
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -1977,6 +2008,7 @@ Scientific name: [Alosa pseudoharengus](https://www.marinespecies.org/aphia.php?
 
 Scientific name: [Argentina silus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=126715) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-160-IDWbiomass.pdf} \\ 
@@ -1986,7 +2018,7 @@ Scientific name: [Argentina silus](https://www.marinespecies.org/aphia.php?p=tax
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2011,6 +2043,7 @@ Scientific name: [Argentina silus](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Dipturus laevis](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158548) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-200-IDWbiomass.pdf} \\ 
@@ -2020,7 +2053,7 @@ Scientific name: [Dipturus laevis](https://www.marinespecies.org/aphia.php?p=tax
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2045,6 +2078,7 @@ Scientific name: [Dipturus laevis](https://www.marinespecies.org/aphia.php?p=tax
 
 Scientific name: [Leucoraja erinacea](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158551) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-203-IDWbiomass.pdf} \\ 
@@ -2054,7 +2088,7 @@ Scientific name: [Leucoraja erinacea](https://www.marinespecies.org/aphia.php?p=
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2079,6 +2113,7 @@ Scientific name: [Leucoraja erinacea](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Leucoraja ocellata](https://www.marinespecies.org/aphia.php?p=taxdetails&id=158553) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-204-IDWbiomass.pdf} \\ 
@@ -2088,7 +2123,7 @@ Scientific name: [Leucoraja ocellata](https://www.marinespecies.org/aphia.php?p=
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2113,6 +2148,7 @@ Scientific name: [Leucoraja ocellata](https://www.marinespecies.org/aphia.php?p=
 
 Scientific name: [Scomber scombrus](https://www.marinespecies.org/aphia.php?p=taxdetails&id=127023) 
  \newline
+\vspace{-0.5cm}
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{c}
 \includegraphics[width=7in]{../Figures-Actual/RV-4VWX-70-IDWbiomass.pdf} \\ 
@@ -2122,7 +2158,7 @@ Scientific name: [Scomber scombrus](https://www.marinespecies.org/aphia.php?p=ta
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2156,7 +2192,7 @@ Scientific name: [Enchelyopus cimbrius](https://www.marinespecies.org/aphia.php?
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2190,7 +2226,7 @@ Scientific name: [Reinhardtius hippoglossoides](https://www.marinespecies.org/ap
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2224,7 +2260,7 @@ Scientific name: [Citharichthys arctifrons](https://www.marinespecies.org/aphia.
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2258,7 +2294,7 @@ Scientific name: [Helicolenus dactylopterus](https://www.marinespecies.org/aphia
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2292,7 +2328,7 @@ Scientific name: [Artediellus uncinatus](https://www.marinespecies.org/aphia.php
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2326,7 +2362,7 @@ Scientific name: [Aspidophoroides monopterygius](https://www.marinespecies.org/a
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2360,7 +2396,7 @@ Scientific name: [Leptagonus decagonus](https://www.marinespecies.org/aphia.php?
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2394,7 +2430,7 @@ Scientific name: [Eumicrotremus spinosus](https://www.marinespecies.org/aphia.ph
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2428,7 +2464,7 @@ Scientific name: [Ammodytes dubius](https://www.marinespecies.org/aphia.php?p=ta
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2462,7 +2498,7 @@ Scientific name: [Lumpenus lampretaeformis](https://www.marinespecies.org/aphia.
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2496,7 +2532,7 @@ Scientific name: [Leptoclinus maculatus](https://www.marinespecies.org/aphia.php
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2530,7 +2566,7 @@ Scientific name: [Peprilus triacanthus](https://www.marinespecies.org/aphia.php?
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2564,7 +2600,7 @@ Scientific name: [Artediellus atlanticus](https://www.marinespecies.org/aphia.ph
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -2598,7 +2634,7 @@ Scientific name: [Mallotus villosus](https://www.marinespecies.org/aphia.php?p=t
 
 \newline  
 
-\vspace{1cm}  
+\vspace{0.5cm}  
 
 \begin{minipage}{1.0\textwidth}
  \begin{tabular}{ccc}
@@ -3811,6 +3847,4 @@ Scientific name: [Foetorepus agassizii](https://www.marinespecies.org/aphia.php?
 \end{minipage} 
 
 \clearpage
-
-\printindex 
 

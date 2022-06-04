@@ -9,3 +9,6 @@
 \setlength{\parskip}{8pt}
 <div id="refs"></div>
 \clearpage
+
+\printindex 
+

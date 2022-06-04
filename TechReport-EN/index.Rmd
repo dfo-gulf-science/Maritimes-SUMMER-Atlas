@@ -10,18 +10,15 @@ author: |
   Ryan Martin ^3^ 
 author_list: "Ricard, D., Gomez, C., Emberley, J., Regnier-McKellar, C. and Martin, R."
 region: Gulf Region
-isbn: ""
+isbn: "ISBN GOES HERE"
 address: |
-  ^1^Science Branch\
-     Gulf Region\
+  ^1^Science Branch - Gulf Region\
      Fisheries and Oceans Canada\
      Moncton, New Brunswick, E1C 5K4, Canada\
-  ^2^Science Branch\
-     Maritimes Region\
+  ^2^Science Branch - Maritimes Region\
      Fisheries and Oceans Canada\
      Dartmouth, Nova Scotia, B2Y 4A2, Canada\
-  ^3^Science Branch\
-     Maritimes Region\
+  ^3^Science Branch - Maritimes Region\
      Fisheries and Oceans Canada\
      St. Andrews, New Brunswick, E5B 0E4, Canada\
 abstract: |

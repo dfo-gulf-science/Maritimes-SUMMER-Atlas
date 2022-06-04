@@ -1,29 +1,29 @@
-
-qu <- paste0(
-  "
-  SELECT
-  m.SEASON,
-i.mission,
-extract(YEAR FROM i.sdate),
-i.gear,
-g.geardesc,
-count(*)
-FROM 
-groundfish.GSMISSIONS m,
-GROUNDFISH.GSINF i,
-GROUNDFISH.GSGEAR g 
-WHERE 
-m.mission = i.mission AND 
-i.gear=g.gear AND 
-m.SEASON = 'SUMMER'
-GROUP BY
-m.SEASON, i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
-ORDER BY
-extract(YEAR FROM i.sdate)
-  "
-)
-
-sqlQuery(chan,qu)
+# 
+# qu <- paste0(
+#   "
+#   SELECT
+#   m.SEASON,
+# i.mission,
+# extract(YEAR FROM i.sdate),
+# i.gear,
+# g.geardesc,
+# count(*)
+# FROM 
+# groundfish.GSMISSIONS m,
+# GROUNDFISH.GSINF i,
+# GROUNDFISH.GSGEAR g 
+# WHERE 
+# m.mission = i.mission AND 
+# i.gear=g.gear AND 
+# m.SEASON = 'SUMMER'
+# GROUP BY
+# m.SEASON, i.mission, extract(YEAR FROM i.sdate), i.gear, g.geardesc
+# ORDER BY
+# extract(YEAR FROM i.sdate)
+#   "
+# )
+# 
+# sqlQuery(chan,qu)
 
 ##
 ##
@@ -68,8 +68,16 @@ my.cols <- c("#d73027","#fc8d59","#fee090","#e0f3f8","#91bfdb","#4575b4") # c("w
 
 ##
 summer.timeline.fig.fct <- function(){
-  plot(1969:2021, rep(1,length(1969:2021)), ylim=c(0.5,5.5), type="n", xlab="", ylab="", axes=FALSE)
+  plot(1969:2021, rep(1,length(1969:2021)), ylim=c(0.1,5.5), type="n", xlab="", ylab="", axes=FALSE)
   abline(v=seq(1970,2021,5), lwd=0.5, col=grey(0.8))
+  
+  arrows(1970,0.15, 1990.5, 0.15, col="black", lwd=0.5, code = 1)
+  arrows(1999.5,0.15, 2020, 0.15, col="black", lwd=0.5, code = 2)
+  arrows(1999,0.35, 2005.5, 0.35, col="black", lwd=0.5, code = 1)
+  arrows(2014.5,0.35, 2020, 0.35, col="black", lwd=0.5, code = 2)
+  
+  text(1995, 0.15, "Category L species", cex=2)
+  text(2010, 0.35, "Category S species", cex=2)
   
   #abline(h=c(1,2,3,4,6.5,7.5,8.5), col=grey(0.8), lwd=0.5)
   segments(1967,5,1969.5,5, col=grey(0.8), lwd=0.5)
