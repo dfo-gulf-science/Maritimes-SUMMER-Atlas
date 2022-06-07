@@ -305,7 +305,7 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
  \hspace{1em}\hspace{1em} &  &  & Hippoglossus hippoglossus & Atlantic halibut & Flétan de l'Atlantique & \link{#sec:30}{30} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127138}{127138} & 1,634 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Limanda ferruginea & Yellowtail flounder & Limande à queue jaune & \link{#sec:42}{42} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158879}{158879} & 3,233 & LF\\
  \hspace{1em}\hspace{1em} &  &  & Pseudopleuronectes americanus & Winter flounder & Limande-plie rouge & \link{#sec:43}{43} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158885}{158885} & 1,632 & LF\\
- \hspace{1em}\hspace{1em} &  &  & Reinhardtius hippoglossoides & Greenland halibut & Flétan noir & \link{#sec:31}{31} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127144}{127144} & 736 & LIn\\
+ \hspace{1em}\hspace{1em} &  &  & Reinhardtius hippoglossoides & Greenland halibut & Flétan du Groënland & \link{#sec:31}{31} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=127144}{127144} & 736 & LIn\\
  \hspace{1em}\hspace{1em} &  & Scophthalmidae & Scophthalmus aquosus & Windowpane flounder & Turbot de sable & \link{#sec:143}{143} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158907}{158907} & 115 & LR\\
  \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Scorpaeniformes}}\\
@@ -362,7 +362,7 @@ sections <- paste0("#sec:",spec.tab$spec[oo])
 \multicolumn{10}{l}{\textbf{Class: Malacostraca}}\\
 \addlinespace[0.3em]
 \multicolumn{10}{l}{\textit{Order: Decapoda}}\\
-\hspace{1em}\hspace{1em} &  & Cancridae & Cancer borealis & Jonah crab & Crabe boréal & \link{#sec:2511}{2511} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158056}{158056} & 1,387 & SF\\
+\hspace{1em}\hspace{1em} &  & Cancridae & Cancer borealis & Jonah crab & Crabe nordique & \link{#sec:2511}{2511} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158056}{158056} & 1,387 & SF\\
  \hspace{1em}\hspace{1em} &  &  & Cancer irroratus & Atlantic rock crab & Crabe commun & \link{#sec:2513}{2513} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158057}{158057} & 788 & SF\\
  \hspace{1em}\hspace{1em} &  & Geryonidae & Chaceon quinquedens & Red deepsea crab & Crabe rouge & \link{#sec:2532}{2532} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=158407}{158407} & 33 & SR\\
  \hspace{1em}\hspace{1em} &  & Lithodidae & Lithodes maja & Atlantic king crab & Crabe épineux du nord & \link{#sec:2523}{2523} & \link{http://www.marinespecies.org/aphia.php?p=taxdetails\&id=107205}{107205} & 531 & SF\\

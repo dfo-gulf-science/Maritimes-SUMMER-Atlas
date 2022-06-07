@@ -484,6 +484,14 @@ taxo.final <- in.df
 names(taxo.final)[1:3] <- c("species.code","comm.english","comm.fr")
 taxo.final <- taxo.final[taxo.final$type %in% c("LR","SR"),]
 
+## manual fix for Éperlan arc-en-ciel (species code 63) 
+## and Éperlan du large (species code 156) 
+## so that they are not sent to the end of the index
+
+taxo.final$idx.fr.entry <- taxo.final$comm.fr
+taxo.final[taxo.final$species.code==63,"idx.fr.entry"] <- "Eperlan arc-en-ciel@Éperlan arc-en-ciel"
+taxo.final[taxo.final$species.code==156,"idx.fr.entry"] <- "Eperlan du large@Éperlan du large"
+
 tempR <- lapply(taxo.final$species.code, function(x) {
   
   out <- list()
@@ -493,6 +501,7 @@ tempR <- lapply(taxo.final$species.code, function(x) {
   latin_name <- taxo.final$scientificname[taxo.final$species.code == x]
   english_name <- taxo.final$comm.english[taxo.final$species.code == x]
   french_name <- taxo.final$comm.fr[taxo.final$species.code == x]
+  french_idx_entry <- taxo.final$idx.fr.entry[taxo.final$species.code == x]
   family_name <- taxo.final$family[taxo.final$species.code == x]
   worms_id <- taxo.final$AphiaID[taxo.final$species.code == x]
   worms_link <- taxo.final$url[taxo.final$species.code == x]
@@ -505,7 +514,7 @@ tempR <- lapply(taxo.final$species.code, function(x) {
   i <- i + 1
   out[[i]] <- paste0("## ", english_name, " (", french_name, ") - species code ", x, " (category ", category, ")"," {#sec:", x, "} \n")
   i <- i + 1
-  out[[i]] <- paste0("\\index{", french_name, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
+  out[[i]] <- paste0("\\index{", french_idx_entry, "} ",  "\\index{", english_name, "} ",  "\\index{", latin_name, "} \n")
   i <- i + 1
   out[[i]] <- paste0("\\index{", family_name, "!", latin_name, "} \n")
   i <- i + 1

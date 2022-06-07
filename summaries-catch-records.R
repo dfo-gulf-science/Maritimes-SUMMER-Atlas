@@ -311,8 +311,26 @@ spec.xtable.df[spec.xtable.df$spec==640,]$FAO_F_COMMON_NAME <- "Loquette d'Amér
 
 spec.xtable.df[spec.xtable.df$spec==220,]$FAO_E_COMMON_NAME <- "Piked dogfish"
 
-spec.xtable.df[spec.xtable.df$spec==2511,]$FAO_F_COMMON_NAME <- "Crabe boréal"
+spec.xtable.df[spec.xtable.df$spec==2511,]$FAO_F_COMMON_NAME <- "Crabe nordique"
 spec.xtable.df[spec.xtable.df$spec==2513,]$FAO_F_COMMON_NAME <- "Crabe commun"
+
+spec.xtable.df[spec.xtable.df$spec==30,]$FAO_F_COMMON_NAME <- "Flétan de l'Atlantique"
+spec.xtable.df[spec.xtable.df$spec==31,]$FAO_F_COMMON_NAME <- "Flétan du Groënland"
+
+spec.xtable.df[spec.xtable.df$spec==123,]$FAO_F_COMMON_NAME <- "Sébaste chèvre"
+
+spec.xtable.df[spec.xtable.df$spec==2550,]$FAO_F_COMMON_NAME <- "Homard américain"
+
+spec.xtable.df[spec.xtable.df$spec==42,]$FAO_F_COMMON_NAME <- "Limande à queue jaune"
+
+spec.xtable.df[spec.xtable.df$spec==13,]$FAO_F_COMMON_NAME <- "Merluche écureuil"
+spec.xtable.df[spec.xtable.df$spec==14,]$FAO_F_COMMON_NAME <- "Merlu argenté"
+spec.xtable.df[spec.xtable.df$spec==19,]$FAO_F_COMMON_NAME <- "Merlu argenté du large"
+
+spec.xtable.df[spec.xtable.df$spec==701,]$FAO_F_COMMON_NAME <- "Stromatée à fossettes"
+
+spec.xtable.df[spec.xtable.df$spec==51,]$FAO_F_COMMON_NAME <- "Loup tacheté"
+
 
 ## fix the species that have an "unaccepted" status on WoRMS
 # Loligo pealeii, 4512
@@ -358,7 +376,7 @@ spec.xtable.df[spec.xtable.df$spec==880,]$type <- "LIn"
  
  #spec.xtable.df.final <- na.omit(spec.xtable.df.final)
 
- ## keep our 104 species 
+ ## keep our 103 species 
  spec.xtable.df.final <- spec.xtable.df.final[spec.xtable.df.final$spec 
                                               %in% c(241,240,604,156,149,712,720,60,62,61,10,11,12,16,13,112,15,114,17,410,412,414,14,19,400,742,150,160,64,63,610,50,51,52,637,630,122,621,70,623,622,625,626,701,640,647,641,619,620,646,603,816,44,142,40,41,42,43,30,31,143,340,350,341,300,304,306,880,301,314,303,501,502,320,503,512,505,520,307,23,123,158,741,159,704,201,202,204,203,200,221,220,4512,4511,2511,2513,2532,2523,2550,2526,2527,2521,2211), ] #,351
 

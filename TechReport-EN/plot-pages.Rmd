@@ -246,9 +246,9 @@ Scientific name: [Urophycis tenuis](https://www.marinespecies.org/aphia.php?p=ta
 
 \setcounter{figure}{0} 
 
-## Red hake (Merluche <e9>cureuil) - species code 13 (category LF) {#sec:13} 
+## Red hake (Merluche écureuil) - species code 13 (category LF) {#sec:13} 
 
-\index{Merluche <e9>cureuil} \index{Red hake} \index{Urophycis chuss} 
+\index{Merluche écureuil} \index{Red hake} \index{Urophycis chuss} 
 
 \index{Phycidae!Urophycis chuss} 
 
@@ -324,9 +324,9 @@ Scientific name: [Urophycis chuss](https://www.marinespecies.org/aphia.php?p=tax
 
 \setcounter{figure}{0} 
 
-## Silver hake (Merlu argent<e9>) - species code 14 (category LF) {#sec:14} 
+## Silver hake (Merlu argenté) - species code 14 (category LF) {#sec:14} 
 
-\index{Merlu argent<e9>} \index{Silver hake} \index{Merluccius bilinearis} 
+\index{Merlu argenté} \index{Silver hake} \index{Merluccius bilinearis} 
 
 \index{Merlucciidae!Merluccius bilinearis} 
 
@@ -558,9 +558,9 @@ Scientific name: [Hemitripterus americanus](https://www.marinespecies.org/aphia.
 
 \setcounter{figure}{0} 
 
-## Atlantic halibut (Fl<e9>tan de l'Atlantique) - species code 30 (category LF) {#sec:30} 
+## Atlantic halibut (Flétan de l'Atlantique) - species code 30 (category LF) {#sec:30} 
 
-\index{Fl<e9>tan de l'Atlantique} \index{Atlantic halibut} \index{Hippoglossus hippoglossus} 
+\index{Flétan de l'Atlantique} \index{Atlantic halibut} \index{Hippoglossus hippoglossus} 
 
 \index{Pleuronectidae!Hippoglossus hippoglossus} 
 
@@ -792,9 +792,9 @@ Scientific name: [Glyptocephalus cynoglossus](https://www.marinespecies.org/aphi
 
 \setcounter{figure}{0} 
 
-## Yellowtail flounder (Limande <e0> queue jaune) - species code 42 (category LF) {#sec:42} 
+## Yellowtail flounder (Limande à queue jaune) - species code 42 (category LF) {#sec:42} 
 
-\index{Limande <e0> queue jaune} \index{Yellowtail flounder} \index{Limanda ferruginea} 
+\index{Limande à queue jaune} \index{Yellowtail flounder} \index{Limanda ferruginea} 
 
 \index{Pleuronectidae!Limanda ferruginea} 
 
@@ -2209,9 +2209,9 @@ Scientific name: [Enchelyopus cimbrius](https://www.marinespecies.org/aphia.php?
 
 \setcounter{figure}{0} 
 
-## Greenland halibut (Fl<e9>tan noir) - species code 31 (category LIn) {#sec:31} 
+## Greenland halibut (Flétan du Groënland) - species code 31 (category LIn) {#sec:31} 
 
-\index{Fl<e9>tan noir} \index{Greenland halibut} \index{Reinhardtius hippoglossoides} 
+\index{Flétan du Groënland} \index{Greenland halibut} \index{Reinhardtius hippoglossoides} 
 
 \index{Pleuronectidae!Reinhardtius hippoglossoides} 
 
@@ -2277,9 +2277,9 @@ Scientific name: [Citharichthys arctifrons](https://www.marinespecies.org/aphia.
 
 \setcounter{figure}{0} 
 
-## Blackbelly rosefish (S<e9>baste ch<e8>vre) - species code 123 (category LIn) {#sec:123} 
+## Blackbelly rosefish (Sébaste chèvre) - species code 123 (category LIn) {#sec:123} 
 
-\index{S<e9>baste ch<e8>vre} \index{Blackbelly rosefish} \index{Helicolenus dactylopterus} 
+\index{Sébaste chèvre} \index{Blackbelly rosefish} \index{Helicolenus dactylopterus} 
 
 \index{Sebastidae!Helicolenus dactylopterus} 
 
@@ -2549,9 +2549,9 @@ Scientific name: [Leptoclinus maculatus](https://www.marinespecies.org/aphia.php
 
 \setcounter{figure}{0} 
 
-## Atlantic butterfish (Stromat<e9> fossette) - species code 701 (category LIn) {#sec:701} 
+## Atlantic butterfish (Stromatée à fossettes) - species code 701 (category LIn) {#sec:701} 
 
-\index{Stromat<e9> fossette} \index{Atlantic butterfish} \index{Peprilus triacanthus} 
+\index{Stromatée à fossettes} \index{Atlantic butterfish} \index{Peprilus triacanthus} 
 
 \index{Stromateidae!Peprilus triacanthus} 
 
@@ -2683,9 +2683,9 @@ Scientific name: [Pandalus borealis](https://www.marinespecies.org/aphia.php?p=t
 
 \setcounter{figure}{0} 
 
-## Jonah crab (Tourteau jona) - species code 2511 (category SF) {#sec:2511} 
+## Jonah crab (Crabe nordique) - species code 2511 (category SF) {#sec:2511} 
 
-\index{Tourteau jona} \index{Jonah crab} \index{Cancer borealis} 
+\index{Crabe nordique} \index{Jonah crab} \index{Cancer borealis} 
 
 \index{Cancridae!Cancer borealis} 
 
@@ -2715,9 +2715,9 @@ Scientific name: [Cancer borealis](https://www.marinespecies.org/aphia.php?p=tax
 
 \setcounter{figure}{0} 
 
-## Atlantic rock crab (Tourteau po<ef>nclos) - species code 2513 (category SF) {#sec:2513} 
+## Atlantic rock crab (Crabe commun) - species code 2513 (category SF) {#sec:2513} 
 
-\index{Tourteau po<ef>nclos} \index{Atlantic rock crab} \index{Cancer irroratus} 
+\index{Crabe commun} \index{Atlantic rock crab} \index{Cancer irroratus} 
 
 \index{Cancridae!Cancer irroratus} 
 
@@ -2875,9 +2875,9 @@ Scientific name: [Hyas araneus](https://www.marinespecies.org/aphia.php?p=taxdet
 
 \setcounter{figure}{0} 
 
-## American lobster (Homard am<e9>ricain) - species code 2550 (category SF) {#sec:2550} 
+## American lobster (Homard américain) - species code 2550 (category SF) {#sec:2550} 
 
-\index{Homard am<e9>ricain} \index{American lobster} \index{Homarus americanus} 
+\index{Homard américain} \index{American lobster} \index{Homarus americanus} 
 
 \index{Nephropidae!Homarus americanus} 
 
@@ -2949,9 +2949,9 @@ Scientific name: [Microgadus tomcod](https://www.marinespecies.org/aphia.php?p=t
 
 \setcounter{figure}{0} 
 
-## Offshore silver hake (Merlu argent<e9> du large) - species code 19 (category LR) {#sec:19} 
+## Offshore silver hake (Merlu argenté du large) - species code 19 (category LR) {#sec:19} 
 
-\index{Merlu argent<e9> du large} \index{Offshore silver hake} \index{Merluccius albidus} 
+\index{Merlu argenté du large} \index{Offshore silver hake} \index{Merluccius albidus} 
 
 \index{Merlucciidae!Merluccius albidus} 
 
@@ -3075,9 +3075,9 @@ Scientific name: [Symphurus diomedeanus](https://www.marinespecies.org/aphia.php
 
 \setcounter{figure}{0} 
 
-## Spotted wolffish (Loup tachet<e9>) - species code 51 (category LR) {#sec:51} 
+## Spotted wolffish (Loup tacheté) - species code 51 (category LR) {#sec:51} 
 
-\index{Loup tachet<e9>} \index{Spotted wolffish} \index{Anarhichas minor} 
+\index{Loup tacheté} \index{Spotted wolffish} \index{Anarhichas minor} 
 
 \index{Anarhichadidae!Anarhichas minor} 
 
@@ -3497,7 +3497,7 @@ Scientific name: [Melanostigma atlanticum](https://www.marinespecies.org/aphia.p
 
 ## Rainbow smelt (Éperlan arc-en-ciel) - species code 63 (category LR) {#sec:63} 
 
-\index{Éperlan arc-en-ciel} \index{Rainbow smelt} \index{Osmerus mordax} 
+\index{Eperlan arc-en-ciel@Éperlan arc-en-ciel} \index{Rainbow smelt} \index{Osmerus mordax} 
 
 \index{Osmeridae!Osmerus mordax} 
 
@@ -3539,7 +3539,7 @@ Scientific name: [Parasudis truculenta](https://www.marinespecies.org/aphia.php?
 
 ## Shortnose greeneye (Éperlan du large) - species code 156 (category LR) {#sec:156} 
 
-\index{Éperlan du large} \index{Shortnose greeneye} \index{Chlorophthalmus agassizi} 
+\index{Eperlan du large@Éperlan du large} \index{Shortnose greeneye} \index{Chlorophthalmus agassizi} 
 
 \index{Chlorophthalmidae!Chlorophthalmus agassizi} 
 
