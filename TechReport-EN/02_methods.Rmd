@@ -56,6 +56,7 @@ knitr::include_graphics("./figures/annotated-map-NAFO.png")
 knitr::include_graphics("./figures/Maritimes-SUMMER-survey-timeline-2020.png")
 ```
 
+\vspace{-0.5cm}
 
 ## Sampling Design
 The summer survey covers divisions 4V, 4W and 4X of the Northwest Atlantic Fisheries Organization (NAFO), which includes the Scotian Shelf and the Bay of Fundy. The eastern limit of the survey is the Laurentian Channel and the western limit is the Fundian Channel (Figure \@ref(fig:map1)).
@@ -162,7 +163,7 @@ SR & short rare & species with less than 200 catch records\\
 \label{tab:taxocat}
 \end{table}
 
-To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species [@WoRMS] is included for the different species presented in this document (Table \@ref(tab:tabspecies)) .
+To ensure concordance with authoritative taxonomic information, the AphiaID from the World Register of Marine Species [@WoRMS] is included for the different species presented in this document (Table \@ref(tab:tabspecies)).
 
 
 (ref:spec-fig-cap) List of the `r nrow(read.csv("species-list-for-report-APHIA.csv", encoding = "UTF-8"))` species included in the Atlas. For each taxonomic order and class, each species is listed in the table, its taxonomic family and scientific name are provided, along with its French and English common names, the species code used in the survey database, its AphiaID with a link to the World Register of Marine Species, its number of catch records in the survey database and its classification category as defined in section \@ref(sec:taxo).
