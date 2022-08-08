@@ -1,7 +1,7 @@
 ---
 title: "Marine fish and invertebrate atlas: geographic distribution, population indices and environmental associations of marine species in the Scotian Shelf and Bay of Fundy derived from the annual Maritimes summer survey (1970-2020)"
 year: 2022
-report_number: nnn
+report_number: 3498
 author: |
   Daniel Ricard ^1^ 
   Catalina Gomez ^2^ 
@@ -10,7 +10,7 @@ author: |
   Ryan Martin ^3^ 
 author_list: "Ricard, D., Gomez, C., Emberley, J., Regnier-McKellar, C. and Martin, R."
 region: Gulf Region
-isbn: "ISBN GOES HERE"
+isbn: "978-0-660-44410-9"
 address: |
   ^1^Science Branch - Gulf Region\
      Fisheries and Oceans Canada\

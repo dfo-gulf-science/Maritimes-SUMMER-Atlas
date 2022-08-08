@@ -122,7 +122,13 @@ print(paste("End data extract, I species: ", Sys.time()))
 ## 6500 - sand dollar
 data.extract(extract.name="catch", spec.num=6500)
 data.extract(extract.name="stratified", spec.num=6500)
-data.extract(extract.name="dist", spec.num=6500)
+data.extract(extract.name="distusingB", spec.num=6500)
+## 6200 - brittle stars
+data.extract(extract.name="catch", spec.num=6200)
+data.extract(extract.name="stratified", spec.num=6200)
+data.extract(extract.name="distusingB", spec.num=6200)
+
+
 # RODBC::odbcClose(chan)
 
 #####################################################################################################################################################  
@@ -174,6 +180,10 @@ print(paste("End figures, R species: ", Sys.time()))
 make.figure(fig.name="IDWbiomass", spec.num=6500)
 make.figure(fig.name="stratifiedB", spec.num=6500)
 make.figure(fig.name="distribution-indices-usingB", spec.num=6500)
+## 6200 - brittle star
+make.figure(fig.name="IDWbiomass", spec.num=6200)
+make.figure(fig.name="stratifiedB", spec.num=6200)
+make.figure(fig.name="distribution-indices-usingB", spec.num=6200)
 
 #####################################################################################################################################################  
 

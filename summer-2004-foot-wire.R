@@ -1,5 +1,5 @@
 ## checking the effect of having that 19' foot-wire on the trawl catches
-## - following on conversation with BIll MacEachern
+## - following on conversation with Bill MacEachern
 
 ## details about the 2004 summer survey
 
