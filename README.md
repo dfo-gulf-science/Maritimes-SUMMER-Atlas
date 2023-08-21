@@ -1,5 +1,5 @@
 # Maritimes-SUMMER-Atlas
-Repository for the Maritimes Region Summer RV survey atlas
+Repository for the [Maritimes Region Summer RV survey atlas published in 2022](https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41066005.pdf)
 
 The contents of this repository are as follows:
 
